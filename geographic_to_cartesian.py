@@ -30,6 +30,7 @@ def geographic_to_cartesian(ref_lon, ref_lat, lon1, lat1, lon2, lat2):
     return (diff_x1, diff_y1), (diff_x2, diff_y2)
 
 # Example usage:
+'''
 ref_lon, ref_lat = 5.677191738694266, 58.843097521369714
 lon1, lat1 = 5.678947997678502, 58.843103409011356 
 lon2, lat2 = 5.677172772614523, 58.843656842858145
@@ -39,3 +40,4 @@ print("Difference in X axis for coordinate 1:", diff1[0], "meters")
 print("Difference in Y axis for coordinate 1:", diff1[1], "meters")
 print("Difference in X axis for coordinate 2:", diff2[0], "meters")
 print("Difference in Y axis for coordinate 2:", diff2[1], "meters")
+'''
