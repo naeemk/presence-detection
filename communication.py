@@ -12,15 +12,16 @@ udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 udp_socket.bind((listen_ip, listen_port))
 
 # Generate a random number
-random_number = random.randint(1, 100)
+
+all_received_numbers = []
 
 # Function to receive numbers from other Raspberry Pis, add them to own number, and print the result
 def receive_numbers():
     while True:
         data, addr = udp_socket.recvfrom(1024)  # Receive data from other Raspberry Pis
         received_number = int(data.decode())     # Decode the received number
-        random_number += received_number         # Add received number to own number
-        print("Result:", random_number)          # Print the result
+        all_received_numbers.append(received_number)         # Add received number to own number
+        print("Result:", all_received_numbers)          # Print the result
 
 # Start receiving numbers from other Raspberry Pis in a separate thread
 import threading
@@ -33,5 +34,5 @@ broadcast_port = 12345             # Same port as the one we're listening on
 # Send the random number to other Raspberry Pis every second
 import time
 while True:
-    udp_socket.sendto(str(random_number).encode(), (broadcast_ip, broadcast_port))
-    time.sleep(1)
+    udp_socket.sendto(str(random.randint(1, 100)).encode(), (broadcast_ip, broadcast_port))
+    time.sleep(3)
