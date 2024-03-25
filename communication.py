@@ -10,6 +10,9 @@ udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Bind the socket to the IP address and port
 udp_socket.bind((listen_ip, listen_port))
+udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1) # fixes permission error on broadcast part
+
+
 
 # Generate a random number
 
@@ -20,8 +23,9 @@ def receive_numbers():
     while True:
         data, addr = udp_socket.recvfrom(1024)  # Receive data from other Raspberry Pis
         received_number = int(data.decode())     # Decode the received number
-        all_received_numbers.append(received_number)         # Add received number to own number
-        print("Result:", all_received_numbers)          # Print the result
+        if addr[0] != socket.gethostbyname(socket.gethostname()):
+            all_received_numbers.append(received_number)  # Add received number to own number
+            print("Result:", all_received_numbers)       # Print the result
 
 # Start receiving numbers from other Raspberry Pis in a separate thread
 import threading
