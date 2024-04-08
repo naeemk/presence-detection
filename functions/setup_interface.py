@@ -1,3 +1,5 @@
+import subprocess
+
 def setup_interface():
     global monitor_interface
     # Commands to set up the interface for monitoring
