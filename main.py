@@ -2,9 +2,23 @@ import threading
 import queue
 import time
 import random
+from objects.proberequest import ProbeRequest
+from functions import extract_vendor_specific, process_packet, setup_interface
 
-# Function to simulate sending elements to the queue at unpredictable time periods
-def sender(queue):
+
+probes = []
+
+
+
+
+
+
+
+
+
+
+"""
+def capture(queue):
     while True:
         # Simulate unpredictable time periods
         time.sleep(random.uniform(0.5, 2.0))
@@ -15,6 +29,7 @@ def sender(queue):
         # Put the element into the queue
         queue.put(fingerprint)
         print(f"Sent: {fingerprint}")
+
 
 # Function to process elements from the queue in real-time
 def processor(queue):
@@ -27,6 +42,7 @@ def processor(queue):
         
         # Simulate processing time
         # time.sleep(0.5)
+"""
 
 # Create a queue
 q = queue.Queue()

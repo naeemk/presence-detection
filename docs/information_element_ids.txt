@@ -1,0 +1,10 @@
+SSID: ID : 0
+Supported Rates: ID : 1
+DS Parameter Set (Channel): ID : 10
+HT Capabilities: ID : 45
+Extended Supported Rates: ID : 50
+VHT Capabilities: ID : 191
+Vendor Specific: ID : 221
+Extended Capabilities: ID : 127
+DS Parameter Set: ID : 3
+HE Capabilities: ID : 35
