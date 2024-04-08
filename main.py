@@ -44,8 +44,7 @@ def processor(queue):
         # time.sleep(0.5)
 """
 
-# Create a queue
-q = queue.Queue()
+
 
 # Create and start the sender thread
 sender_thread = threading.Thread(target=sender, args=(q,))
