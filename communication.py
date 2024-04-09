@@ -1,6 +1,7 @@
 import socket
 import time
 
+"""
 # IP address and port to listen on
 listen_ip = "0.0.0.0"  # Listen on all available network interfaces
 listen_port = 12345
@@ -11,34 +12,50 @@ udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 # Bind the socket to the IP address and port
 udp_socket.bind((listen_ip, listen_port))
 udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1) # fixes permission error on broadcast part
+"""
 
 
 
-# Generate a random number
 
-all_received_numbers = []
+
 
 # Function to receive numbers from other Raspberry Pis, add them to own number, and print the result
-def receive_numbers():
+def receive_probes(all_received_probes ,udp_socket):
     while True:
         data, addr = udp_socket.recvfrom(1024)  # Receive data from other Raspberry Pis
-        received_number = int(data.decode())     # Decode the received number
-        if addr[0] != socket.gethostbyname(socket.gethostname()):
-            all_received_numbers.append(received_number)  # Add received number to own number
-            print("Result:", all_received_numbers)       # Print the result
+        
+        # Convert bytes to string
+        data_str = data.decode()
 
-# Start receiving numbers from other Raspberry Pis in a separate thread
-import threading
-threading.Thread(target=receive_numbers).start()
+        # Parse JSON data and create ProbeRequest objects
+        try:
+            decoded_data = json.loads(data_str)
+            for item in decoded_data:
+                probe = ProbeRequest(
+                    item.get("macaddress"),
+                    item.get("rssi"),
+                    item.get("fingerprint"),
+                    item.get("sequencenumber")
+                )
+                all_received_probes.append(probe)
+        except json.JSONDecodeError as e:
+            print("Error decoding JSON:", e)
+            continue
+        
+        print("Received Probe Requests:")
+        for probe in all_received_probes:
+            print(f"  MAC Address: {probe.macaddress}, RSSI: {probe.rssi}, Fingerprint: {probe.fingerprint}, Sequence Number: {probe.sequencenumber}")
+        print("All Probe Requests Received:", all_received_probes)  # Print all received ProbeRequest objects
 
-# Send the random number to other Raspberry Pis on the network
-broadcast_ip = "255.255.255.255"  # Broadcast IP address to send to all devices on the network
-broadcast_port = 12345             # Same port as the one we're listening on
 
-# Send the random number to other Raspberry Pis every second
 
-def broadcast(probelist):
+
+
+
+def broadcast_probes(probelist):
     i = 0
+    broadcast_ip = "255.255.255.255"  
+    broadcast_port = 12345      
     while True:
         if len(probelist) >= 1:
             while i < len(probelist):
