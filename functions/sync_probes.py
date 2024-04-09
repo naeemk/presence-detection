@@ -2,7 +2,7 @@ import queue
 import threading
 import time
 
-def find_and_remove_corresponding_elements(list1, list2, common_queue, lock):
+def sync_probes(list1, list2, common_queue, lock):
     while True:
         time.sleep(0.2)
         with lock:
