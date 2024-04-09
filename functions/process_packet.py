@@ -25,7 +25,7 @@ def process_packet(packet, probelist, lock):
 
         #  Create fingerprint
         fingerprint= ""
-        ie_Ids = [0, 1, 10, 45, 50, 191, 221, 127, 3, 35]
+        ie_Ids = [1, 10, 45, 50, 191, 221, 127, 3, 35]
         for el in ie_Ids:
             ie = packet.getlayer(Dot11Elt, ID=el)
             if ie:
