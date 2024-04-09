@@ -1,5 +1,5 @@
 import socket
-import random
+import time
 
 # IP address and port to listen on
 listen_ip = "0.0.0.0"  # Listen on all available network interfaces
@@ -36,7 +36,20 @@ broadcast_ip = "255.255.255.255"  # Broadcast IP address to send to all devices 
 broadcast_port = 12345             # Same port as the one we're listening on
 
 # Send the random number to other Raspberry Pis every second
-import time
-while True:
-    udp_socket.sendto(str(random.randint(1, 100)).encode(), (broadcast_ip, broadcast_port))
-    time.sleep(3)
+
+def broadcast(probelist):
+    i = 0
+    while True:
+        if len(probelist) >= 1:
+            while i < len(probelist):
+                probe_request_json = json.dumps({
+                    "macaddress": probelist[i].macaddress,
+                    "rssi": probelist[i].rssi,
+                    "fingerprint": probelist[i].fingerprint,
+                    "sequencenumber": probelist[i].sequencenumber
+                })
+                probe_request_bytes = probe_request_json.encode()
+                udp_socket.sendto(probe_request_bytes, (broadcast_ip, broadcast_port))
+                i+=1
+            time.sleep(1)
+            
