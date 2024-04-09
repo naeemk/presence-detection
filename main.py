@@ -2,12 +2,32 @@ import threading
 import queue
 import time
 import random
+import subprocess
+from scapy.all import *
+from scapy.layers.dot11 import Dot11, Dot11Elt
 from objects.proberequest import ProbeRequest
 from objects.device import Device
-from functions import extract_vendor_specific, process_packet, setup_interface
+from functions import extract_vendor_specific, process_packet, setup_interface, radar, packet_sniffer, process_burst
 
 
-probes = []
+if __name__ == "__main__":
+    unfilteredprobes = []
+    probebursts = []
+    localqueue = []
+    allreceivedprobes = []
+    lock = threading.Lock() 
+
+    setup_interface.setup_interface()
+
+    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer, args=(monitor_interface, unfilteredprobes, lock))
+    process_burst_thread = threading.Thread(target=process_burst.process_burst, args=(unfilteredprobes, localqueue, lock))
+
+    sniff_thread.start()
+    
+
+
+
+
 
 
 

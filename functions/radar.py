@@ -1,8 +1,15 @@
 import tkinter as tk
-import random
 from tkinter import ttk
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import random
+import threading
+import time
+
+class Device:
+    def __init__(self, name, coordinates):
+        self.name = name
+        self.coordinates = coordinates
 
 class RandomCoordinatesApp:
     def __init__(self, master):
@@ -17,27 +24,33 @@ class RandomCoordinatesApp:
         self.plot_button.pack(side=tk.BOTTOM)
 
         self.running = False
+        self.devices = []
+        self.lock = threading.Lock()
 
     def start_plot(self):
         self.running = True
         self.plot_button.config(text="Stop", command=self.stop_plot)
-        self.generate_coordinates()
+        self.plot_thread = threading.Thread(target=self.plot_coordinates)
+        self.plot_thread.start()
 
     def stop_plot(self):
         self.running = False
         self.plot_button.config(text="Start", command=self.start_plot)
 
-    def generate_coordinates(self):
-        if self.running:
-            x = random.randint(-50, 50)  # Update to generate coordinates between -50 and 50
-            y = random.randint(-50, 50)  # Update to generate coordinates between -50 and 50
+    def plot_coordinates(self):
+        while self.running:
             self.ax.clear()
-            self.ax.plot(x, y, 'bo')  # 'bo' for blue dots
+
+            with self.lock:
+                for device in self.devices:
+                    x, y = device.coordinates
+                    self.ax.plot(x, y, 'bo')  # 'bo' for blue dots
+
             self.ax.set_xlim(-50, 50)  # Set x-axis limits
             self.ax.set_ylim(-50, 50)  # Set y-axis limits
             self.ax.set_xlabel('X')
             self.ax.set_ylabel('Y')
-            self.ax.set_title('Random Coordinates')
+            self.ax.set_title('Device Coordinates')
 
             # Draw a cross intersecting at (0, 0)
             self.ax.axhline(0, color='k', linestyle='--')  # Horizontal line
@@ -45,8 +58,7 @@ class RandomCoordinatesApp:
 
             self.canvas.draw()
 
-            # Schedule the function to be called again after 2 seconds
-            self.master.after(2000, self.generate_coordinates)
+            time.sleep(2)  # Update interval
 
 def main():
     root = tk.Tk()
