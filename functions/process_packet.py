@@ -33,4 +33,4 @@ def process_packet(packet, probelist, lock):
 
         # Create probe object and append to list
         with lock:
-            probelist.append(ProbeRequest(mac_address, rssi, fingerprint))
+            probelist.append(ProbeRequest(mac_address, rssi, fingerprint, sequence_number))

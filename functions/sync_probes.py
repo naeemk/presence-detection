@@ -8,7 +8,7 @@ def find_and_remove_corresponding_elements(list1, list2, common_queue, lock):
         with lock:
             for item1 in list1[:]:
                 # Generate a key to check for corresponding elements based on mac and sn
-                key = (item1['mac'], item1['sn'])
+                key = (item1['macaddress'], item1['sn'])
 
                 # Find corresponding elements in list2
                 corresponding_elements = [item2 for item2 in list2 if (item2['mac'], item2['sn']) == key]

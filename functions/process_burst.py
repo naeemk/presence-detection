@@ -18,7 +18,8 @@ def process_burst(probelist, localqueue, lock):
                             print(f"  MAC Address: {probe.macaddress}")
                             print(f"  RSSI: {probe.rssi}")
                             print(f"  Fingerprint: {probe.fingerprint}")
-                            
+                            print(f"  Sequence number: {probe.sequencenumber}")
+
                         counter = i + 1  # Update counter to next position
                         break  # Exit the loop after processing one burst
                     else:
