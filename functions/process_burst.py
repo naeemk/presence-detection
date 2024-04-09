@@ -11,6 +11,14 @@ def process_burst(probelist, localqueue, lock):
                         # Found the element followed by a different MAC address
                         element_to_push = probelist[i]
                         localqueue.append(element_to_push)
+
+                        #print so far
+                        for i, probe in enumerate(localqueue, 1):
+                            print(f"Probe {i}:")
+                            print(f"  MAC Address: {probe.macaddress}")
+                            print(f"  RSSI: {probe.rssi}")
+                            print(f"  Fingerprint: {probe.fingerprint}")
+                            
                         counter = i + 1  # Update counter to next position
                         break  # Exit the loop after processing one burst
                     else:
