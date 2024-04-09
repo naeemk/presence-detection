@@ -1,11 +1,14 @@
 import time
 
+
+# this function aims to filter the list of all received probe requests 
+# so there are no duplicate mac addresses, to counter bursting nature of probes
 def process_burst(probelist, localqueue, lock):
-    counter = 0  # Initialize counter variable
+    counter = 0  
     while True:
         with lock:
             if len(probelist) >= 2:
-                i = counter  # Start from the counter value
+                i = counter  
                 while i < len(probelist) - 1:
                     if i + 1 < len(probelist) and probelist[i].macaddress != probelist[i + 1].macaddress:
                         # Found the element followed by a different MAC address
@@ -20,8 +23,8 @@ def process_burst(probelist, localqueue, lock):
                             print(f"  Fingerprint: {probe.fingerprint}")
                             print(f"  Sequence number: {probe.sequencenumber}")
 
-                        counter = i + 1  # Update counter to next position
-                        break  # Exit the loop after processing one burst
+                        counter = i + 1  
+                        break  
                     else:
                         i += 1
                 if not i < len(probelist) - 1:

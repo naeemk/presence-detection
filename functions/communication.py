@@ -15,11 +15,28 @@ udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1) # fixes permiss
 """
 
 
+# this function takes the list returned by "process_burst", encodes the data into json -> bytes and broadcasts it
+def broadcast_probes(uniqueprobelist, udp_socket):
+    i = 0
+    broadcast_ip = "255.255.255.255"  
+    broadcast_port = 12345      
+    while True:
+        if len(uniqueprobelist) >= 1:
+            while i < len(uniqueprobelist):
+                probe_request_json = json.dumps({
+                    "macaddress": uniqueprobelist[i].macaddress,
+                    "rssi": uniqueprobelist[i].rssi,
+                    "fingerprint": uniqueprobelist[i].fingerprint,
+                    "sequencenumber": uniqueprobelist[i].sequencenumber
+                })
+                probe_request_bytes = probe_request_json.encode()
+                udp_socket.sendto(probe_request_bytes, (broadcast_ip, broadcast_port))
+                i+=1
+            time.sleep(1)
 
 
-
-
-# Function to receive numbers from other Raspberry Pis, add them to own number, and print the result
+# this function receives data in the form of bytes, as broadcasted above, and converts it 
+# into proberequest objects then populates a list with the objects, which will be processed by trilateration function
 def receive_probes(all_received_probes ,udp_socket):
     while True:
         data, addr = udp_socket.recvfrom(1024)  # Receive data from other Raspberry Pis
@@ -52,21 +69,5 @@ def receive_probes(all_received_probes ,udp_socket):
 
 
 
-def broadcast_probes(probelist, udp_socket):
-    i = 0
-    broadcast_ip = "255.255.255.255"  
-    broadcast_port = 12345      
-    while True:
-        if len(probelist) >= 1:
-            while i < len(probelist):
-                probe_request_json = json.dumps({
-                    "macaddress": probelist[i].macaddress,
-                    "rssi": probelist[i].rssi,
-                    "fingerprint": probelist[i].fingerprint,
-                    "sequencenumber": probelist[i].sequencenumber
-                })
-                probe_request_bytes = probe_request_json.encode()
-                udp_socket.sendto(probe_request_bytes, (broadcast_ip, broadcast_port))
-                i+=1
-            time.sleep(1)
+
             
