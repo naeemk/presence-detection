@@ -1,6 +1,8 @@
 import socket
 import time
 
+from objects.proberequest import ProbeRequest
+
 """
 # IP address and port to listen on
 listen_ip = "0.0.0.0"  # Listen on all available network interfaces
@@ -16,7 +18,7 @@ udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1) # fixes permiss
 
 
 # this function takes the list returned by "process_burst", encodes the data into json -> bytes and broadcasts it
-def broadcast_probes(uniqueprobelist, udp_socket):
+def broadcast_probes(uniqueprobelist, geocords, udp_socket):
     i = 0
     broadcast_ip = "255.255.255.255"  
     broadcast_port = 12345      
@@ -27,7 +29,8 @@ def broadcast_probes(uniqueprobelist, udp_socket):
                     "macaddress": uniqueprobelist[i].macaddress,
                     "rssi": uniqueprobelist[i].rssi,
                     "fingerprint": uniqueprobelist[i].fingerprint,
-                    "sequencenumber": uniqueprobelist[i].sequencenumber
+                    "sequencenumber": uniqueprobelist[i].sequencenumber,
+                    "geocords": geocords
                 })
                 probe_request_bytes = probe_request_json.encode()
                 udp_socket.sendto(probe_request_bytes, (broadcast_ip, broadcast_port))
@@ -52,7 +55,8 @@ def receive_probes(all_received_probes ,udp_socket):
                     item.get("macaddress"),
                     item.get("rssi"),
                     item.get("fingerprint"),
-                    item.get("sequencenumber")
+                    item.get("sequencenumber"),
+                    item.get("geocords")
                 )
                 all_received_probes.append(probe)
         except json.JSONDecodeError as e:
