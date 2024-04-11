@@ -9,13 +9,14 @@ def process_burst(probelist, localqueue, lock):
         with lock:
             if len(probelist) >= 2:
                 i = counter  
-                while i < len(probelist) - 1:
-                    if i + 1 < len(probelist) and probelist[i].macaddress != probelist[i + 1].macaddress:
+                while i < len(probelist):
+                    if (i + 1 < len(probelist) and probelist[i].macaddress != probelist[i + 1].macaddress) or (i + 1 == len(probelist)):
                         # Found the element followed by a different MAC address
                         element_to_push = probelist[i]
                         localqueue.append(element_to_push)
 
                         #print so far
+                        print("localqueue so far:")
                         for i, probe in enumerate(localqueue, 1):
                             print(f"Probe {i}:")
                             print(f"  MAC Address: {probe.macaddress}")
@@ -27,8 +28,6 @@ def process_burst(probelist, localqueue, lock):
                         break  
                     else:
                         i += 1
-                if not i < len(probelist) - 1:
-                    break
             else:
                 # If probelist doesn't have enough elements, wait for more data
                 time.sleep(1)

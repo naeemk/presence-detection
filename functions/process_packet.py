@@ -1,6 +1,8 @@
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
 
+from objects.proberequest import ProbeRequest
+
 # processes packets, creates proberequest objects of all received probes and populates list
 # which is then filtered by process_burst
 def process_packet(packet, probelist, lock):

@@ -26,6 +26,25 @@ if __name__ == "__main__":
     
 
 
+    """
+    # Simulating a probe request packet
+    from scapy.all import Dot11, RadioTap
+
+    # Craft a simulated probe request packet
+    packet = RadioTap() / Dot11(type=0, subtype=4, addr1="ff:ff:ff:ff:ff:ff", addr2="11:22:33:44:55:66") / Dot11ProbeReq()
+    packet = RadioTap() / Dot11(type=0, subtype=4, addr1="ff:ff:ff:ff:ff:ff", addr2="11:22:33:44:55:66") / Dot11ProbeReq()
+
+    # Call the process_packet function with the simulated packet
+    probelist = []
+    localqueue = []
+    lock = threading.Lock()  # Assuming you're using threading
+    process_packet.process_packet(packet, probelist, lock)
+    process_packet.process_packet(packet, probelist, lock)
+    process_burst.process_burst(probelist, localqueue, lock)
+    print(probelist, localqueue)
+    """
+
+
 
 
 
