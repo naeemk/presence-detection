@@ -1,15 +1,44 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, messagebox
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import threading
 import time
 
-# Global variable to store data
-global_data = []  # List of dictionaries, each containing 'x' and 'y' coordinates
+class CoordinatesInputWindow:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("Enter Geographical Coordinates")
+
+        self.label_lat = ttk.Label(master, text="Latitude:")
+        self.label_lat.pack()
+        self.entry_lat = ttk.Entry(master)
+        self.entry_lat.pack()
+
+        self.label_long = ttk.Label(master, text="Longitude:")
+        self.label_long.pack()
+        self.entry_long = ttk.Entry(master)
+        self.entry_long.pack()
+
+        self.submit_button = ttk.Button(master, text="Submit", command=self.submit_coordinates)
+        self.submit_button.pack()
+
+    def submit_coordinates(self):
+        lat = self.entry_lat.get()
+        long = self.entry_long.get()
+        if lat and long:
+            try:
+                lat = float(lat)
+                long = float(long)
+                self.coordinates = {'latitude': lat, 'longitude': long}
+                self.master.destroy()  # Close the input window
+            except ValueError:
+                messagebox.showerror("Error", "Invalid input. Please enter numeric values for coordinates.")
+        else:
+            messagebox.showerror("Error", "Please enter both latitude and longitude.")
 
 class CoordinatesApp:
-    def __init__(self, master):
+    def __init__(self, master, input_coordinates):
         self.master = master
         self.master.title("Coordinates Plotter")
 
@@ -17,7 +46,9 @@ class CoordinatesApp:
         self.canvas = FigureCanvasTkAgg(self.fig, master=self.master)
         self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
 
-        # Schedule the method to update the map based on global data
+        self.input_coordinates = input_coordinates
+
+        # Schedule the method to update the map based on input coordinates
         self.master.after(1000, self.update_map)
 
     def update_map(self):
@@ -54,14 +85,19 @@ def update_global_data():
         time.sleep(1)  # Sleep for some time (simulating data update interval)
 
 def main():
-    root = tk.Tk()
-    app = CoordinatesApp(root)
+    input_root = tk.Tk()
+    coordinates_input_window = CoordinatesInputWindow(input_root)
+    input_root.mainloop()
 
-    # Start a separate thread to update the global data
-    update_thread = threading.Thread(target=update_global_data, daemon=True)
-    update_thread.start()
+    input_coordinates = coordinates_input_window.coordinates
 
-    root.mainloop()
+    if input_coordinates:
+        root = tk.Tk()
+        app = CoordinatesApp(root, input_coordinates)
+        root.mainloop()
 
 if __name__ == "__main__":
+    global_data = []  # List of dictionaries, each containing 'x' and 'y' coordinates
+    update_thread = threading.Thread(target=update_global_data, daemon=True)
+    update_thread.start()
     main()
