@@ -5,6 +5,9 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import threading
 import time
 
+# Global variable for run solo option
+run_solo = False
+
 class CoordinatesInputWindow:
     def __init__(self, master):
         self.master = master
@@ -20,16 +23,23 @@ class CoordinatesInputWindow:
         self.entry_long = ttk.Entry(master)
         self.entry_long.pack()
 
+        # Checkbox for running solo or not
+        self.run_solo_var = tk.BooleanVar(value=False)  # Default is unticked
+        self.checkbox_solo = ttk.Checkbutton(master, text="Run Solo", variable=self.run_solo_var)
+        self.checkbox_solo.pack()
+
         self.submit_button = ttk.Button(master, text="Submit", command=self.submit_coordinates)
         self.submit_button.pack()
 
     def submit_coordinates(self):
+        global run_solo  # Access the global variable
         lat = self.entry_lat.get()
         long = self.entry_long.get()
         if lat and long:
             try:
                 lat = float(lat)
                 long = float(long)
+                run_solo = self.run_solo_var.get()  # Get the value of the checkbox
                 self.coordinates = {'latitude': lat, 'longitude': long}
                 self.master.destroy()  # Close the input window
             except ValueError:
@@ -52,29 +62,29 @@ class CoordinatesApp:
         self.master.after(1000, self.update_map)
 
     def update_map(self):
-        # Update the map based on global data
-        # Extract coordinates from the global objects
-        coordinates = [(obj['x'], obj['y']) for obj in global_data]
+            # Update the map based on global data
+            # Extract coordinates from the global objects
+            coordinates = [(obj['x'], obj['y']) for obj in global_data]
 
-        # Clear the existing plot
-        self.ax.clear()
+            # Clear the existing plot
+            self.ax.clear()
 
-        # Plot the new data
-        for x, y in coordinates:
-            self.ax.plot(x, y, 'ro')  # 'ro' for red dots
-        self.ax.set_xlabel('X')
-        self.ax.set_ylabel('Y')
-        self.ax.set_title('Map Based on Global Data')
+            # Plot the new data
+            for x, y in coordinates:
+                self.ax.plot(x, y, 'ro')  # 'ro' for red dots
+            self.ax.set_xlabel('X')
+            self.ax.set_ylabel('Y')
+            self.ax.set_title('Map Based on Global Data')
 
-        # Draw a cross intersecting at (0, 0)
-        self.ax.axhline(0, color='k', linestyle='--')  # Horizontal line
-        self.ax.axvline(0, color='k', linestyle='--')  # Vertical line
+            # Draw a cross intersecting at (0, 0)
+            self.ax.axhline(0, color='k', linestyle='--')  # Horizontal line
+            self.ax.axvline(0, color='k', linestyle='--')  # Vertical line
 
-        # Redraw the canvas
-        self.canvas.draw()
+            # Redraw the canvas
+            self.canvas.draw()
 
-        # Schedule the next update
-        self.master.after(1000, self.update_map)
+            # Schedule the next update
+            self.master.after(1000, self.update_map)
 
 def update_global_data():
     global global_data
@@ -97,7 +107,7 @@ def main():
         root.mainloop()
 
 if __name__ == "__main__":
-    global_data = []  # List of dictionaries, each containing 'x' and 'y' coordinates
+    global_data = [{'x': -2, 'y': -2}]  # List of dictionaries, each containing 'x' and 'y' coordinates
     update_thread = threading.Thread(target=update_global_data, daemon=True)
     update_thread.start()
     main()
