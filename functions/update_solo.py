@@ -1,4 +1,4 @@
 
 
-def update_solo(localqueue, lock):
+def update_solo(probelist, lock):
     pass

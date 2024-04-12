@@ -18,18 +18,18 @@ udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1) # fixes permiss
 
 
 # this function takes the list returned by "process_burst", encodes the data into json -> bytes and broadcasts it
-def broadcast_probes(uniqueprobelist, geocords, udp_socket):
+def broadcast_probes(probelist, geocords, udp_socket):
     i = 0
     broadcast_ip = "255.255.255.255"  
     broadcast_port = 12345      
     while True:
-        if len(uniqueprobelist) >= 1:
-            while i < len(uniqueprobelist):
+        if len(probelist) >= 1:
+            while i < len(probelist):
                 probe_request_json = json.dumps({
-                    "macaddress": uniqueprobelist[i].macaddress,
-                    "rssi": uniqueprobelist[i].rssi,
-                    "fingerprint": uniqueprobelist[i].fingerprint,
-                    "sequencenumber": uniqueprobelist[i].sequencenumber,
+                    "macaddress": probelist[i].macaddress,
+                    "rssi": probelist[i].rssi,
+                    "fingerprint": probelist[i].fingerprint,
+                    "sequencenumber": probelist[i].sequencenumber,
                     "geocords": geocords
                 })
                 probe_request_bytes = probe_request_json.encode()
