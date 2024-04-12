@@ -1,6 +1,6 @@
 import subprocess
 
-def setup_interface():
+def setup_interface(interface):
     global monitor_interface
     # Commands to set up the interface for monitoring
     subprocess.call(["sudo", "ifconfig", interface, "down"])
