@@ -69,8 +69,8 @@ def process_burst(probelist, localqueue, lock):
             print()
             
             if len(probelist) >= 2:
-                while counter +1 < len(probelist):
-                    if counter + 1 < len(probelist) and probelist[counter].macaddress != probelist[counter + 1].macaddress:
+                while counter < len(probelist):
+                    if (counter + 1 < len(probelist) and probelist[counter].macaddress != probelist[counter + 1].macaddress) or counter +1 == len(probelist):
                         print("Found the element followed by a different MAC address")
                         element_to_push = probelist[counter]
                         localqueue.append(element_to_push)
@@ -142,7 +142,7 @@ packet_thread = threading.Thread(target=generate_random_packets,
                                  args=(process_packet, probelist, geocords, lock))
 process_burst_thread = threading.Thread(target=process_burst, args=(probelist, localqueue, lock))
 packet_thread.start()
-process_burst_thread.start()
+
 
 try:
 
