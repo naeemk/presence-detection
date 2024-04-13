@@ -158,7 +158,7 @@ def update_global_data():
         time.sleep(1)  # Sleep for some time (simulating data update interval)
 
 
-def main():
+def radar_main():
     input_root = tk.Tk()
     coordinates_input_window = RadarInputWindow(input_root)
     input_root.mainloop()
@@ -184,4 +184,4 @@ def main():
 
 if __name__ == "__main__":
     global_data = []
-    main()
+    radar_main()
