@@ -5,7 +5,7 @@ from objects.proberequest import ProbeRequest
 
 # processes packets, creates proberequest objects of all received probes and populates list
 # which is then filtered by process_burst
-def process_packet(packet, probelist, geocords, lock):
+def process_packet(packet, probelist, sniffercords, lock):
     if packet.haslayer(Dot11ProbeReq):
         print("\nProbe Request Detected:")
 
@@ -35,6 +35,10 @@ def process_packet(packet, probelist, geocords, lock):
             if ie:
                 fingerprint += ie.info.hex()
 
+
+
+        print(f"[process_packet] sniffercords: {sniffercords}")
+
         # Create probe object and append to list
         with lock:
-            probelist.append(ProbeRequest(mac_address, rssi, fingerprint, sequence_number, geocords))
+            probelist.append(ProbeRequest(mac_address, rssi, fingerprint, sequence_number, sniffercords))

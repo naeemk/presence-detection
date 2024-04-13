@@ -12,12 +12,12 @@ from functions import extract_vendor_specific, process_packet, setup_interface, 
 def run_solo():
     unfiltered_probes = []
     local_queue = []
-    geocords = []
+    sniffercords = []
     interface = "wlan0"
     lock = threading.Lock()
     monitor_interface = setup_interface.setup_interface(interface)
     
-    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer, args=(monitor_interface, unfiltered_probes, geocords, lock))
+    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer, args=(monitor_interface, unfiltered_probes, sniffercords, lock))
    
 
     sniff_thread.start()

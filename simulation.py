@@ -18,7 +18,7 @@ from objects.proberequest import ProbeRequest
 
 
 # Define process_packet function
-def process_packet(packet, probelist, geocords, lock):
+def process_packet(packet, probelist, sniffercords, lock):
     if packet.haslayer(Dot11ProbeReq):
         print("\nProbe Request Detected:")
         # Extract the MAC address of the device
@@ -50,7 +50,7 @@ def process_packet(packet, probelist, geocords, lock):
             print()
             print("process packet acquiring lock")
             print()
-            probelist.append(ProbeRequest(mac_address, rssi, fingerprint, sequence_number, geocords))
+            probelist.append(ProbeRequest(mac_address, rssi, fingerprint, sequence_number, sniffercords))
             print("finished processing and appending to probelist")
             mac_addresses = [probe.macaddress for probe in probelist]
             print("probelist so far:", mac_addresses)
@@ -100,7 +100,7 @@ def process_burst(probelist, localqueue, lock):
 
 
 # Define function to generate random packets
-def generate_random_packets(process_func, probelist, geocords, lock):
+def generate_random_packets(process_func, probelist, sniffercords, lock):
     while not stop_threads:
         mac_addresses = [
             "00:11:22:33:44:55",
@@ -120,15 +120,15 @@ def generate_random_packets(process_func, probelist, geocords, lock):
 
         # Process the packet using the provided function
         print("processing new packet")
-        process_func(packet, probelist, geocords, lock)
+        process_func(packet, probelist, sniffercords, lock)
 
         # Sleep for a random interval before generating the next packet
         time.sleep(randint(1, 5))
 
 
-# Create lists to store probe requests and geocords
+# Create lists to store probe requests and sniffercords
 probelist = []
-geocords = []
+sniffercords = []
 localqueue = []
 
 # Create a lock to ensure thread-safe access to the probelist
@@ -139,7 +139,7 @@ stop_threads = False
 
 # Start the packet generation thread
 packet_thread = threading.Thread(target=generate_random_packets,
-                                 args=(process_packet, probelist, geocords, lock))
+                                 args=(process_packet, probelist, sniffercords, lock))
 process_burst_thread = threading.Thread(target=process_burst, args=(probelist, localqueue, lock))
 packet_thread.start()
 

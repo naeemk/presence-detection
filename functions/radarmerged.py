@@ -164,7 +164,7 @@ def update_global_data():
         time.sleep(1)  # Sleep for some time (simulating data update interval)
 
 
-def radar_main(devicesparameter, inputcoordinatesglobal):
+def radar_main(devicesparameter, sniffercords, sniffercordsready):
     input_root = tk.Tk()
     coordinates_input_window = RadarInputWindow(input_root)
     input_root.mainloop()
@@ -172,7 +172,8 @@ def radar_main(devicesparameter, inputcoordinatesglobal):
     input_coordinates = coordinates_input_window.coordinates
     global devices
     devices = devicesparameter
-    inputcoordinatesglobal[0] = input_coordinates
+    sniffercords[0] = input_coordinates
+    sniffercordsready.set()
 
     if input_coordinates:
         print(input_coordinates)
