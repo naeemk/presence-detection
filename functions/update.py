@@ -11,3 +11,8 @@ def update(common_queue, devices, lock):
     # get its rssi's of all 3
     # get sniffercords of all 3
     # perform trilateration to calculate coords
+    # create device object with fingerprint and coords that was just calculated
+    # check devices whether to update or add new device
+
+
+    
