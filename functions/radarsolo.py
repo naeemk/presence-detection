@@ -7,7 +7,7 @@ import time
 import math
 import random
 
-class CoordinatesApp:
+class RadarSolo:
     def __init__(self, master):
         self.master = master
         self.master.title("Coordinates Plotter")
@@ -47,7 +47,7 @@ class CoordinatesApp:
             # Schedule the next update
             self.master.after(1000, self.update_map)
 
-def update_global_data():
+def update_global_data_solo():
     global global_data
     global_data = [10, 20, 30] 
     while True:
@@ -58,11 +58,11 @@ def update_global_data():
 
 def main():
     root = tk.Tk()
-    app = CoordinatesApp(root)
+    app = RadarSolo(root)
     root.mainloop()
 
 if __name__ == "__main__":
     global_data = []  # List of integers representing radii of circles
-    update_thread = threading.Thread(target=update_global_data, daemon=True)
+    update_thread = threading.Thread(target=update_global_data_solo, daemon=True)
     update_thread.start()
     main()
