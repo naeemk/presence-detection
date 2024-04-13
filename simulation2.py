@@ -3,6 +3,7 @@ import time
 from scapy.all import Dot11ProbeReq, RadioTap, Dot11, Dot11Elt
 from random import randint
 from functions import radarmerged
+from functions.update_solo import update_solo
 
 import sys
 import os
@@ -148,6 +149,8 @@ if __name__ == "__main__":
     probelist = []
     geocords = []
     localqueue = []
+    devices = []
+    input_coordinates = []
     stop_threads = False
     # Create a lock to ensure thread-safe access to the probelist
     lock = threading.Lock()
@@ -162,6 +165,12 @@ if __name__ == "__main__":
 
     thread1 = threading.Thread(target=thread_function, daemon=True)
     thread1.start()
+
+    update_solo_thread = threading.Thread(target=update_solo,
+                                    args=(probelist, devices, lock))
+    update_solo_thread.start()
+    print("main block")
+    radarmerged.radar_main(devices, input_coordinates)
 
 
 

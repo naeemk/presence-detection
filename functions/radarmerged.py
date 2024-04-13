@@ -68,10 +68,15 @@ class Radar:
     def update_map(self):
             # Update the map based on global data
             # Extract coordinates from the global objects
-            coordinates = [(obj['x'], obj['y']) for obj in global_data]
+            coordinates = []
+            for el in devices:
+                coordinates.append(devices.coordinates)
 
             # Clear the existing plot
             self.ax.clear()
+
+            # Coordinates should look like this
+            # coordinates = [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16)]
 
             # Plot the new data
             for x, y in coordinates:
@@ -110,14 +115,15 @@ class RadarSolo:
     def update_map(self):
             # Update the map based on global data
             # Extract coordinates from the global objects
-            coordinates = global_data
-            print(coordinates)
+            coordinates = devices
+            print("coordinates: ", coordinates)
 
             # Clear the existing plot
             self.ax.clear()
 
             # Plot the new data
-            for radius in coordinates:
+            for element in coordinates:
+                radius = element.coordinates
                 theta = [i * (2 * math.pi / 360) for i in range(0, 361)]  # Generate angles from 0 to 360 degrees
                 x = [radius * math.cos(angle) for angle in theta]  # Calculate x coordinates
                 y = [radius * math.sin(angle) for angle in theta]  # Calculate y coordinates
@@ -158,24 +164,27 @@ def update_global_data():
         time.sleep(1)  # Sleep for some time (simulating data update interval)
 
 
-def radar_main():
+def radar_main(devicesparameter, inputcoordinatesglobal):
     input_root = tk.Tk()
     coordinates_input_window = RadarInputWindow(input_root)
     input_root.mainloop()
     global input_coordinates
     input_coordinates = coordinates_input_window.coordinates
+    global devices
+    devices = devicesparameter
+    inputcoordinatesglobal[0] = input_coordinates
 
     if input_coordinates:
         print(input_coordinates)
         if run_solo:
-            update_thread = threading.Thread(target=update_global_data_solo, daemon=True)
-            update_thread.start()
+            #update_thread = threading.Thread(target=update_global_data_solo, daemon=True)
+            #update_thread.start()
             root = tk.Tk()
             app = RadarSolo(root)
             root.mainloop()
         else:
-            update_thread = threading.Thread(target=update_global_data, daemon=True)
-            update_thread.start()
+            #update_thread = threading.Thread(target=update_global_data, daemon=True)
+            #update_thread.start()
             root = tk.Tk()
             app = Radar(root, input_coordinates)
             root.mainloop()
@@ -183,5 +192,4 @@ def radar_main():
 
 
 if __name__ == "__main__":
-    global_data = []
     radar_main()
