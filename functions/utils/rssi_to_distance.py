@@ -2,8 +2,11 @@ import random
 
 
 def rssi_to_distance(rssi):
-    if rssi != None:
-        return abs(rssi)
-    else:
-        return random.randint(1,100)
-        # return None
+    measured_power = 40
+    n = 2
+    distance = 10 ** ((measured_power - rssi) / (10 * n))
+
+    
+
+
+
