@@ -116,7 +116,13 @@ class RadarSolo:
             # Update the map based on global data
             # Extract coordinates from the global objects
             coordinates = devices
-            print("coordinates: ", coordinates)
+            print(f"[RadarSolo] Received list of devices")
+            print(f"[RadarSolo] Printing distance of each device")
+
+            for device in coordinates:
+                print(f"{device.coordinates}")
+            
+            print(f"[RadarSolo] Updating map based on this list")
 
             # Clear the existing plot
             self.ax.clear()
@@ -130,7 +136,7 @@ class RadarSolo:
                 self.ax.plot(x, y)  # Plot the circle
             self.ax.set_xlabel('X')
             self.ax.set_ylabel('Y')
-            self.ax.set_title('Map Based on Global Data')
+            self.ax.set_title('Devices')
 
             # Draw a cross intersecting at (0, 0)
             self.ax.axhline(0, color='k', linestyle='--')  # Horizontal line

@@ -25,8 +25,8 @@ def run_solo():
     update_solo_thread = threading.Thread(target=update_solo,
                                     args=(probelist, devices, lock))
     
-    update_solo_thread.start()
     sniff_thread.start()
+    update_solo_thread.start()
     radarmerged.radar_main(devices, sniffercords, sniffercords_ready)
 
 def run():
@@ -45,6 +45,9 @@ def run():
 
 
 if __name__ == "__main__":
+    print("[Main] Starting program")
+    print("[Main] Starting program")
+    print("[Main] Starting program")
     run_solo()
     
 

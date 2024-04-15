@@ -7,7 +7,7 @@ from objects.proberequest import ProbeRequest
 # which is then filtered by process_burst
 def process_packet(packet, probelist, sniffercords, lock):
     if packet.haslayer(Dot11ProbeReq):
-        print("\nProbe Request Detected:")
+        print("\n[process_packet] Probe Request Detected:")
 
         # Extract the MAC address of the device
         mac_address = packet.addr2
@@ -37,7 +37,7 @@ def process_packet(packet, probelist, sniffercords, lock):
 
 
 
-        print(f"[process_packet] sniffercords: {sniffercords}")
+        print(f"Fingerprint: {fingerprint}")
 
         # Create probe object and append to list
         with lock:

@@ -9,23 +9,27 @@ def update_solo(probelist, devices, lock):
     while True:
         time.sleep(0.5)
         with lock:
-            print("update solo has lock")
-            print(f"checking {counter} < {len(probelist)}")
             while counter < len(probelist):
-                print("starting update solo")
                 distance = rssi_to_distance(probelist[counter].rssi)
+                print(f"[update_solo] Calculated rssi: {probelist[counter].rssi} to distance: {distance}")
                 if distance > max_distance:
                     counter+=1
                     continue
                 new_device = Device(probelist[counter].fingerprint, distance)
                 should_append = True
-
+                counter2 = 0
                 for device in devices:
                     if device.fingerprint == new_device.fingerprint:
+                        print(f"[update_solo] Found device with similar fingerprint at index {counter2}")
+                        print(f"[update_solo] Updating distance from {device.coordinates} to {new_device.coordinates}")
                         device.coordinates == new_device.coordinates
                         should_append = False
+                    counter += 1
 
                 if should_append:
+                    print(f"[update_solo] Did not recognize fingerprint, appending device to list")
                     devices.append(new_device)
                 counter += 1
-                print("devices: ", devices)
+                print("[update_solo] Coordinates of each device")
+                for device in devices:
+                    print(device.coordinates)
