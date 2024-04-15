@@ -5,6 +5,7 @@ import time
 
 def update_solo(probelist, devices, lock):
     counter = 0
+    max_distance = 5
     while True:
         time.sleep(0.5)
         with lock:
@@ -13,6 +14,9 @@ def update_solo(probelist, devices, lock):
             while counter < len(probelist):
                 print("starting update solo")
                 distance = rssi_to_distance(probelist[counter].rssi)
+                if distance > max_distance:
+                    counter+=1
+                    continue
                 new_device = Device(probelist[counter].fingerprint, distance)
                 should_append = True
 
