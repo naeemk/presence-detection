@@ -5,23 +5,30 @@ import random
 import subprocess
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
+from functions.update_solo import update_solo
 from objects.proberequest import ProbeRequest
 from objects.device import Device
 from functions import extract_vendor_specific, process_packet, setup_interface, radar, packet_sniffer, process_burst
+from functions import radarmerged
 
 def run_solo():
-    unfiltered_probes = []
+    probelist = []
     local_queue = []
-    sniffercords = []
+    devices = []
+    sniffercords = [None]
+    sniffercords_ready = threading.Event()
     interface = "wlan0"
     lock = threading.Lock()
     monitor_interface = setup_interface.setup_interface(interface)
     
-    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer, args=(monitor_interface, unfiltered_probes, sniffercords, lock))
-   
-
-    sniff_thread.start()
+    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer, args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready))
+    update_solo_thread = threading.Thread(target=update_solo,
+                                    args=(probelist, devices, lock))
     
+    update_solo_thread.start()
+    sniff_thread.start()
+    radarmerged.radar_main(devices, sniffercords, sniffercords_ready)
+
 def run():
     unfiltered_probes = []
     local_queue = []

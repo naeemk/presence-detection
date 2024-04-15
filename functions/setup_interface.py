@@ -9,3 +9,4 @@ def setup_interface(interface):
     monitor_interface = "wlan0mon" if interface == "wlan0" else interface
     subprocess.call(["sudo", "ifconfig", monitor_interface, "up"])
     print(f"{monitor_interface} set to monitor mode and brought up.")
+    return monitor_interface
