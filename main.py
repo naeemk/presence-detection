@@ -21,9 +21,10 @@ def run_solo():
     lock = threading.Lock()
     monitor_interface = setup_interface.setup_interface(interface)
     
-    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer, args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready))
+    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer,
+                                     args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready), daemon=True)
     update_solo_thread = threading.Thread(target=update_solo,
-                                    args=(probelist, devices, lock))
+                                    args=(probelist, devices, lock), daemon=True)
     
     sniff_thread.start()
     update_solo_thread.start()
@@ -37,7 +38,7 @@ def run():
     interface = "wlan0"
     monitor_interface = setup_interface.setup_interface(interface)
 
-    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer, args=(monitor_interface, unfiltered_probes, lock))
+    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer, args=(monitor_interface, unfiltered_probes, lock), daemon=True)
     process_burst_thread = threading.Thread(target=process_burst.process_burst, args=(unfiltered_probes, local_queue, lock))
 
     sniff_thread.start()
