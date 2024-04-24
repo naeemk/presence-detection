@@ -124,16 +124,21 @@ class RadarSolo:
 
         # Plot the new data
         legend_data = {}
-        counter = 0
-        for element in coordinates:
-            radius = element
+        for idx, obj in enumerate(coordinates):
+            radius = obj.radius
+            last_update_time = obj.check_last_modified()  # Get last update time for object
+            if last_update_time is None:
+                last_update_text = "Never updated"
+            else:
+                print(f"[update map]   last update time is {last_update_time}")
+                time_elapsed = int(last_update_time) # Time elapsed in minutes
+                print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
+                last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {obj.radius}"
             theta = [i * (2 * math.pi / 360) for i in range(0, 361)]  # Generate angles from 0 to 360 degrees
             x = [radius * math.cos(angle) for angle in theta]  # Calculate x coordinates
             y = [radius * math.sin(angle) for angle in theta]  # Calculate y coordinates
-            plot = self.ax.plot(x, y)  # Plot the circle
-            if radius != 0:
-                legend_data[plot[0]] = f"Device {counter}: RSSI:  {radius} Mac: 00-B0-D0-63-C2-26."  # Store the plot and its corresponding value
-            counter += 1
+            plot = self.ax.plot(x, y, label=f"Device {idx}: {last_update_text}")  # Plot the circle
+
 
         self.ax.set_xlabel('X')
         self.ax.set_ylabel('Y')
@@ -143,8 +148,11 @@ class RadarSolo:
         self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
         self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
 
-        # Add legend
-        self.ax.legend(legend_data.values(), loc='upper right')
+        # Add legend outside of the radar plot
+        legend = self.ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+
+        # Adjust figure size to fit legend
+        self.fig.tight_layout()
 
         # Redraw the canvas
         self.canvas.draw()
@@ -157,15 +165,30 @@ class RadarSolo:
 
 
 
+class ModifiedObject:
+    def __init__(self, radius):
+        self.last_modified = time.time()
+        self.radius = radius
+
+    def update(self, new_radius):
+        self.last_modified = time.time()
+        self.radius = new_radius
+
+    def check_last_modified(self):
+        current_time = time.time()
+        time_difference = current_time - self.last_modified
+        print(f"time difference is {time_difference}")
+        return time_difference
+
 
 def update_global_data_solo():
     global global_data
-    global_data = [10, 20, 30] 
+    global_data = [ModifiedObject(10), ModifiedObject(20), ModifiedObject(30)]
     while True:
         print("loop of solo update global")
         # Update global data here (replace with your actual data update logic)
         # For demonstration, I'm just adding a new random integer to the list alternatively
-        global_data[0] = random.randint(1,30)
+        global_data[0].update(random.randint(1,30))
         time.sleep(1)  # Sleep for some time (simulating data update interval)
 
 
