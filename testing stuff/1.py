@@ -86,7 +86,7 @@ class Radar:
 
         self.ax.set_xlabel('X')
         self.ax.set_ylabel('Y')
-        self.ax.set_title('Map Based on Global Data')
+        self.ax.set_title('Estimated position of devices')
 
         # Draw a cross intersecting at (0, 0)
         self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
@@ -131,18 +131,23 @@ class RadarSolo:
                 last_update_text = "Never updated"
             else:
                 print(f"[update map]   last update time is {last_update_time}")
-                time_elapsed = int(last_update_time) # Time elapsed in minutes
+                time_elapsed = int(last_update_time) # Time elapsed in seconds
                 print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
-                last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {obj.radius}"
+                if time_elapsed < 60:
+                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {obj.radius}"
+                elif last_update_time < 120:
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minute ago \nDistance: {obj.radius}"
+                else:
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minutes ago \nDistance: {obj.radius}"
             theta = [i * (2 * math.pi / 360) for i in range(0, 361)]  # Generate angles from 0 to 360 degrees
             x = [radius * math.cos(angle) for angle in theta]  # Calculate x coordinates
             y = [radius * math.sin(angle) for angle in theta]  # Calculate y coordinates
-            plot = self.ax.plot(x, y, label=f"Device {idx}: {last_update_text}")  # Plot the circle
+            plot = self.ax.plot(x, y, label=f"Device {idx+1}: {last_update_text}")  # Plot the circle
 
 
         self.ax.set_xlabel('X')
         self.ax.set_ylabel('Y')
-        self.ax.set_title('Map Based on Global Data')
+        self.ax.set_title('Position may be on any point on circle')
 
         # Draw a cross intersecting at (0, 0)
         self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
