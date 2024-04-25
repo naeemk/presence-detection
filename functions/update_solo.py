@@ -18,7 +18,7 @@ def update_solo(probelist, devices, lock):
                 new_device = Device(probelist[counter].fingerprint, distance)
                 should_append = True
                 counter2 = 0
-                for device in devices:
+                for index, device in enumerate(devices):
                     if device.fingerprint == new_device.fingerprint:
                         print(f"[update_solo] Found device with similar fingerprint at index {counter2}")
                         print(f"[update_solo] Updating distance from {device.coordinates} to {new_device.coordinates}")
