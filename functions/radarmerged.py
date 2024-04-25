@@ -124,7 +124,7 @@ class RadarSolo:
         for device in coordinates:
             print(f"{device.coordinates}")
         
-        print(f"[RadarSolo] Updating map based on this list")
+        print(f"[RadarSolo] Updating map based on list above")
 
         # Clear the existing plot
         self.ax.clear()
@@ -132,7 +132,7 @@ class RadarSolo:
         # Plot the new data
         legend_data = {}
         for idx, obj in enumerate(coordinates):
-            radius = obj.coordinates
+            radius = obj.coordinates[0]
             last_update_time = obj.check_last_modified()  # Get last update time for object
             if last_update_time is None:
                 last_update_text = "Never updated"
@@ -141,11 +141,11 @@ class RadarSolo:
                 time_elapsed = int(last_update_time) # Time elapsed in seconds
                 print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
                 if time_elapsed < 60:
-                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {obj.radius}"
+                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {radius}"
                 elif last_update_time < 120:
-                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minute ago \nDistance: {obj.radius}"
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minute ago \nDistance: {obj}"
                 else:
-                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minutes ago \nDistance: {obj.radius}"
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minutes ago \nDistance: {obj.coordinates}"
             theta = [i * (2 * math.pi / 360) for i in range(0, 361)]  # Generate angles from 0 to 360 degrees
             x = [radius * math.cos(angle) for angle in theta]  # Calculate x coordinates
             y = [radius * math.sin(angle) for angle in theta]  # Calculate y coordinates

@@ -31,7 +31,7 @@ def update_solo(probelist, devices, lock):
                         
                         print(f"[update_solo] Found device with similar fingerprint at index {counter2}")
                         print(f"[update_solo] Updating distance from {device.coordinates} to {new_device.coordinates}")
-                        device.coordinates.update(new_device.coordinates)
+                        device.update(new_device.coordinates)
                         should_append = False
                     counter += 1
                     counter2 += 1
