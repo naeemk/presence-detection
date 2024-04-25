@@ -66,37 +66,40 @@ class Radar:
         self.master.after(1000, self.update_map)
 
     def update_map(self):
-            # Update the map based on global data
-            # Extract coordinates from the global objects
-            coordinates = []
-            for el in devices:
-                coordinates.append(devices.coordinates)
+        # Update the map based on global data
+        # Extract coordinates from the global objects
+        coordinates = []
+        for el in devices:
+            coordinates.append(devices.coordinates)
 
-            # Clear the existing plot
-            self.ax.clear()
+        # Clear the existing plot
+        self.ax.clear()
 
-            # Coordinates should look like this
-            # coordinates = [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16)]
+        # Coordinates should look like this
+        # coordinates = [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16)]
 
-            # Plot the new data
-            for x, y in coordinates:
-                self.ax.plot(x, y, 'ro')  # 'ro' for red dots
-            self.ax.set_xlabel('X')
-            self.ax.set_ylabel('Y')
-            self.ax.set_title('Map Based on Global Data')
+        # Plot the new data
+        legend_data = {}
+        for x, y in coordinates:
+            plot = self.ax.plot(x, y, 'ro')  # 'ro' for red dots
+            legend_data[plot[0]] = f"({x}, {y})"  # Store the plot and its corresponding value
 
-            # Draw a cross intersecting at (0, 0)
-            self.ax.axhline(0, color='k', linestyle='--')  # Horizontal line
-            self.ax.axvline(0, color='k', linestyle='--')  # Vertical line
+        self.ax.set_xlabel('X')
+        self.ax.set_ylabel('Y')
+        self.ax.set_title('Estimated position of devices')
 
-            # Redraw the canvas
-            self.canvas.draw()
+        # Draw a cross intersecting at (0, 0)
+        self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
+        self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
 
-            # Schedule the next update
-            self.master.after(1000, self.update_map)
+        # Add legend
+        self.ax.legend(legend_data.values(), loc='upper right')
 
+        # Redraw the canvas
+        self.canvas.draw()
 
-
+        # Schedule the next update
+        self.master.after(1000, self.update_map)
 
 
 class RadarSolo:
@@ -111,63 +114,66 @@ class RadarSolo:
         # Schedule the method to update the map based on input coordinates
         self.master.after(1000, self.update_map)
 
-
     def update_map(self):
-            # Update the map based on global data
-            # Extract coordinates from the global objects
-            coordinates = devices
-            print(f"[RadarSolo] Received list of devices")
-            print(f"[RadarSolo] Printing distance of each device")
+        # Update the map based on global data
+        # Extract coordinates from the global objects
+        coordinates = devices
+        print(f"[RadarSolo] Received list of devices")
+        print(f"[RadarSolo] Printing distance of each device")
 
-            for device in coordinates:
-                print(f"{device.coordinates}")
-            
-            print(f"[RadarSolo] Updating map based on this list")
+        for device in coordinates:
+            print(f"{device.coordinates}")
+        
+        print(f"[RadarSolo] Updating map based on this list")
 
-            # Clear the existing plot
-            self.ax.clear()
+        # Clear the existing plot
+        self.ax.clear()
 
-            # Plot the new data
-            for element in coordinates:
-                radius = element.coordinates
-                theta = [i * (2 * math.pi / 360) for i in range(0, 361)]  # Generate angles from 0 to 360 degrees
-                x = [radius * math.cos(angle) for angle in theta]  # Calculate x coordinates
-                y = [radius * math.sin(angle) for angle in theta]  # Calculate y coordinates
-                self.ax.plot(x, y)  # Plot the circle
-            self.ax.set_xlabel('X')
-            self.ax.set_ylabel('Y')
-            self.ax.set_title('Devices')
-
-            # Draw a cross intersecting at (0, 0)
-            self.ax.axhline(0, color='k', linestyle='--')  # Horizontal line
-            self.ax.axvline(0, color='k', linestyle='--')  # Vertical line
-
-            # Redraw the canvas
-            self.canvas.draw()
-
-            # Schedule the next update
-            self.master.after(1000, self.update_map)
-
-
-def update_global_data_solo():
-    global global_data
-    global_data = [10, 20, 30] 
-    while True:
-        print("loop of solo update global")
-        # Update global data here (replace with your actual data update logic)
-        # For demonstration, I'm just adding a new random integer to the list alternatively
-        global_data.append(random.randint(1,30))
-        time.sleep(1)  # Sleep for some time (simulating data update interval)
+        # Plot the new data
+        legend_data = {}
+        for idx, obj in enumerate(coordinates):
+            radius = obj.coordinates
+            last_update_time = obj.check_last_modified()  # Get last update time for object
+            if last_update_time is None:
+                last_update_text = "Never updated"
+            else:
+                print(f"[update map]   last update time is {last_update_time}")
+                time_elapsed = int(last_update_time) # Time elapsed in seconds
+                print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
+                if time_elapsed < 60:
+                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {obj.radius}"
+                elif last_update_time < 120:
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minute ago \nDistance: {obj.radius}"
+                else:
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minutes ago \nDistance: {obj.radius}"
+            theta = [i * (2 * math.pi / 360) for i in range(0, 361)]  # Generate angles from 0 to 360 degrees
+            x = [radius * math.cos(angle) for angle in theta]  # Calculate x coordinates
+            y = [radius * math.sin(angle) for angle in theta]  # Calculate y coordinates
+            plot = self.ax.plot(x, y, label=f"Device {idx+1}: {last_update_text}")  # Plot the circle
 
 
-def update_global_data():
-    global global_data
-    global_data = [{'x': -2, 'y': -2}]  # Reset global data for non-solo mode
-    while True:
-        # Update global data here (replace with your actual data update logic)
-        # For demonstration, I'm just adding a new dictionary to the list alternatively
-        global_data.append({'x': len(global_data), 'y': len(global_data) ** 2})
-        time.sleep(1)  # Sleep for some time (simulating data update interval)
+        self.ax.set_xlabel('X')
+        self.ax.set_ylabel('Y')
+        self.ax.set_title('Position may be on any point on circle')
+
+        # Draw a cross intersecting at (0, 0)
+        self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
+        self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
+
+        # Add legend outside of the radar plot
+        legend = self.ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+
+        # Adjust figure size to fit legend
+        self.fig.tight_layout()
+
+        # Redraw the canvas
+        self.canvas.draw()
+
+        # Schedule the next update
+        self.master.after(1000, self.update_map)
+
+
+
 
 
 def radar_main(devicesparameter, sniffercords, sniffercordsready):
