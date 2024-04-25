@@ -7,7 +7,7 @@ class Device:
         if isinstance(coordinates, tuple) and len(coordinates) == 2 and all(isinstance(coord, (int, float)) for coord in coordinates):
             self.coordinates = coordinates
         elif isinstance(coordinates, (int, float)):
-            self.coordinates = (coordinates, coordinates)
+            self.coordinates = coordinates
         else:
             raise ValueError("Coordinates must be a number or a tuple of two numbers.")
 
@@ -20,20 +20,9 @@ class Device:
         else:
             raise ValueError("Coordinates must be a number or a tuple of two numbers.")
 
-    def check_last_modified(self):
-        current_time = time.time()
-        time_difference = current_time - self.last_modified
-        print(f"time difference is {time_difference}")
-        return time_difference
-
-"""
 # Example usage:
 device1 = Device("fingerprint1", (10, 20))
 print(device1.coordinates)  # Output: (10, 20)
 
 device1.update(30)
 print(device1.coordinates)  # Output: 30
-time.sleep(2)
-
-device1.check_last_modified()  # Output: Time difference since last modification
-"""
