@@ -31,18 +31,23 @@ def run_solo():
     radarmerged.radar_main(devices, sniffercords, sniffercords_ready)
 
 def run():
-    unfiltered_probes = []
+    probelist = []
     local_queue = []
-    socket_probe_requests = []
-    lock = threading.Lock() 
+    devices = []
+    sniffercords = [None]
+    sniffercords_ready = threading.Event()
     interface = "wlan0"
+    lock = threading.Lock()
     monitor_interface = setup_interface.setup_interface(interface)
 
-    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer, args=(monitor_interface, unfiltered_probes, lock), daemon=True)
-    process_burst_thread = threading.Thread(target=process_burst.process_burst, args=(unfiltered_probes, local_queue, lock))
-
+    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer,
+                                     args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready), daemon=True)
+    update_solo_thread = threading.Thread(target=update_solo,
+                                    args=(probelist, devices, lock), daemon=True)
+    
     sniff_thread.start()
-    process_burst_thread.start()
+    update_solo_thread.start()
+    radarmerged.radar_main(devices, sniffercords, sniffercords_ready)
 
 
 if __name__ == "__main__":
