@@ -11,7 +11,24 @@ from objects.device import Device
 from functions import extract_vendor_specific, process_packet, setup_interface, radar, packet_sniffer, process_burst
 from functions import radarmerged
 
-
+def run_solo():
+    probelist = []
+    local_queue = []
+    devices = []
+    sniffercords = [None]
+    sniffercords_ready = threading.Event()
+    interface = "wlan0"
+    lock = threading.Lock()
+    monitor_interface = setup_interface.setup_interface(interface)
+    
+    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer,
+                                     args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready), daemon=True)
+    update_solo_thread = threading.Thread(target=update_solo,
+                                    args=(probelist, devices, lock), daemon=True)
+    
+    sniff_thread.start()
+    update_solo_thread.start()
+    radarmerged.radar_main(devices, sniffercords, sniffercords_ready)
 
 def run():
     probelist = []

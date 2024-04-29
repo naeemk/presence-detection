@@ -4,7 +4,13 @@ from objects.proberequest import ProbeRequest
 import time
 
 def update(common_queue, devices, lock):
-    pass
+    counter = 0
+    max_distance = 5
+    while True:
+        time.sleep(0.5)
+        with lock:
+            three_elements = common_queue.get()
+            
     #for each element in common queue
     # get it, 
     # get its fingerprint, which should be the same on all 3
