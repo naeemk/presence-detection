@@ -4,7 +4,9 @@ from objects.proberequest import ProbeRequest
 from functions.utils.write_to_file import write_to_csv
 import time
 
+
 def update_solo(probelist, devices, lock):
+    should_filter = [False, 'Fingerprint here']
     counter = 0
     max_distance = 5
     while True:
@@ -18,6 +20,16 @@ def update_solo(probelist, devices, lock):
                     counter+=1
                     continue
                 new_device = Device(probelist[counter].fingerprint, distance)
+
+                if should_filter[0]:
+                    if len(devices) == 0:
+                        if new_device.fingerprint == should_filter[1]:
+                            devices.append(new_device)
+                    elif len(devices) == 1:
+                        if new_device.fingerprint == should_filter[1]:
+                            devices[0].update(new_device.coordinates)
+                    continue
+
                 should_append = True
                 counter2 = 0
                 for index, device in enumerate(devices):

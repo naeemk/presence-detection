@@ -8,7 +8,7 @@ from scapy.layers.dot11 import Dot11, Dot11Elt
 from functions.update_solo import update_solo
 from objects.proberequest import ProbeRequest
 from objects.device import Device
-from functions import extract_vendor_specific, process_packet, setup_interface, radar, packet_sniffer, process_burst
+from functions import extract_vendor_specific, process_packet, setup_interface, radar, packet_sniffer, process_burst, configure_adhoc
 from functions import radarmerged
 
 
@@ -19,9 +19,15 @@ def run():
     devices = []
     sniffercords = [None]
     sniffercords_ready = threading.Event()
-    interface = "wlan0"
     lock = threading.Lock()
+
+    interface = "wlan0"
     monitor_interface = setup_interface.setup_interface(interface)
+
+    interface2 = ""
+
+
+
 
     sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer,
                                      args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready), daemon=True)

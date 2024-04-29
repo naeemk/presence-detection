@@ -4,18 +4,28 @@ import time
 
 from objects.proberequest import ProbeRequest
 
-"""
+
 # IP address and port to listen on
-listen_ip = "0.0.0.0"  # Listen on all available network interfaces
-listen_port = 12345
+def create_udp_socket(interface_ip, listen_port):
+    """
+    Create and bind a UDP socket to the specified IP address and port.
+    
+    Args:
+        interface_ip (str): The IP address of the network interface to bind the socket to.
+        listen_port (int): The port to listen on.
+    
+    Returns:
+        socket.socket: The created UDP socket.
+    """
+    # Create a UDP socket
+    udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-# Create a UDP socket
-udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    # Bind the socket to the interface IP address and port
+    udp_socket.bind((interface_ip, listen_port))
+    udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1) # fixes permission error on broadcast part
+    return udp_socket
 
-# Bind the socket to the IP address and port
-udp_socket.bind((listen_ip, listen_port))
-udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1) # fixes permission error on broadcast part
-"""
+
 
 
 # this function takes the list returned by "process_burst", encodes the data into json -> bytes and broadcasts it
