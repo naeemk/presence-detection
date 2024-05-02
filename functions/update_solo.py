@@ -8,7 +8,7 @@ import time
 def update_solo(probelist, devices, lock):
     should_filter = [False, 'Fingerprint here']
     counter = 0
-    max_distance = 5
+    max_distance = 1000
     while True:
         time.sleep(0.5)
         with lock:
