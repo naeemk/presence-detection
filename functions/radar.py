@@ -43,7 +43,7 @@ class RadarInputWindow:
                 x = float(x)
                 y = float(y)
                 run_solo = self.run_solo_var.get()  # Get the value of the checkbox
-                self.coordinates = {'x-coordinate': x, 'y-coordinate': y}
+                self.coordinates = {'x': x, 'y': y}
                 self.master.destroy()  # Close the input window
             except ValueError:
                 messagebox.showerror("Error", "Invalid input. Please enter numeric values for coordinates.")

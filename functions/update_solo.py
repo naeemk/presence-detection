@@ -32,8 +32,9 @@ def update_solo(probelist, devices, lock):
                             write_to_csv('test.csv', 0, new_device.coordinates)
                     continue
 
+
                 should_append = True
-                counter2 = 0
+                
                 for index, device in enumerate(devices):
                     if device.fingerprint == new_device.fingerprint:
 
@@ -43,12 +44,12 @@ def update_solo(probelist, devices, lock):
                         
                         
                         
-                        print(f"[update_solo] Found device with similar fingerprint at index {counter2}")
+                        print(f"[update_solo] Found device with similar fingerprint at index {index}")
                         print(f"[update_solo] Updating distance from {device.coordinates} to {new_device.coordinates}")
                         device.update(new_device.coordinates)
                         should_append = False
-                    counter += 1
-                    counter2 += 1
+
+
 
                 if should_append:
                     print(f"[update_solo] Did not recognize fingerprint, appending device to list")
@@ -60,7 +61,7 @@ def update_solo(probelist, devices, lock):
 
 
 
-                counter += 1
+
                 print("[update_solo] Coordinates of each device")
                 for device in devices:
                     print(device.coordinates)

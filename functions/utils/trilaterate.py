@@ -21,7 +21,8 @@ def trilaterate(x1, x2, x3, y1, y2, y3, d1, d2, d3):
     inverse_matrix = np.linalg.inv(matrix1)
 
     # Perform matrix multiplication
-    result = np.dot(inverse_matrix, matrix2)
+    result_2d_array = np.dot(inverse_matrix, matrix2)
+    result = {'x': result_2d_array[0][0], 'y': result_2d_array[1][0]}
 
     print("Result of matrix multiplication:")
     print(result)
@@ -29,3 +30,7 @@ def trilaterate(x1, x2, x3, y1, y2, y3, d1, d2, d3):
 
 # example: should return 55,45
 # trilaterate(40, 30, 80, 30, 70, 50, 21, 35, 25) 
+"""
+Result of matrix multiplication:
+{'x': 55.08888888888889, 'y': 45.22222222222222}
+"""
