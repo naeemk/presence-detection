@@ -16,12 +16,12 @@ class RadarInputWindow:
         self.master = master
         self.master.title("Enter Geographical Coordinates")
 
-        self.label_lat = ttk.Label(master, text="Latitude:")
+        self.label_lat = ttk.Label(master, text="x:")
         self.label_lat.pack()
         self.entry_lat = ttk.Entry(master)
         self.entry_lat.pack()
 
-        self.label_long = ttk.Label(master, text="Longitude:")
+        self.label_long = ttk.Label(master, text="y:")
         self.label_long.pack()
         self.entry_long = ttk.Entry(master)
         self.entry_long.pack()
@@ -36,19 +36,19 @@ class RadarInputWindow:
 
     def submit_coordinates(self):
         global run_solo  # Access the global variable
-        lat = self.entry_lat.get()
-        long = self.entry_long.get()
-        if lat and long:
+        x = self.entry_lat.get()
+        y = self.entry_long.get()
+        if x and y:
             try:
-                lat = float(lat)
-                long = float(long)
+                x = float(x)
+                y = float(y)
                 run_solo = self.run_solo_var.get()  # Get the value of the checkbox
-                self.coordinates = {'latitude': lat, 'longitude': long}
+                self.coordinates = {'x-coordinate': x, 'y-coordinate': y}
                 self.master.destroy()  # Close the input window
             except ValueError:
                 messagebox.showerror("Error", "Invalid input. Please enter numeric values for coordinates.")
         else:
-            messagebox.showerror("Error", "Please enter both latitude and longitude.")
+            messagebox.showerror("Error", "Please enter both x and y coordinates.")
 
 
 class Radar:
