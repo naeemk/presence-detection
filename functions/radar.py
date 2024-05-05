@@ -1,3 +1,5 @@
+import math
+import random
 import tkinter as tk
 from tkinter import ttk, messagebox
 import matplotlib.pyplot as plt
@@ -7,6 +9,7 @@ import time
 
 # Global variable for run solo option
 run_solo = False
+
 
 class RadarInputWindow:
     def __init__(self, master):
@@ -47,6 +50,7 @@ class RadarInputWindow:
         else:
             messagebox.showerror("Error", "Please enter both latitude and longitude.")
 
+
 class Radar:
     def __init__(self, master, input_coordinates):
         self.master = master
@@ -62,52 +66,145 @@ class Radar:
         self.master.after(1000, self.update_map)
 
     def update_map(self):
-            # Update the map based on global data
-            # Extract coordinates from the global objects
-            coordinates = [(obj['x'], obj['y']) for obj in global_data]
+        # Update the map based on global data
+        # Extract coordinates from the global objects
+        coordinates = []
+        for el in devices:
+            coordinates.append(devices.coordinates)
 
-            # Clear the existing plot
-            self.ax.clear()
+        # Clear the existing plot
+        self.ax.clear()
 
-            # Plot the new data
-            for x, y in coordinates:
-                self.ax.plot(x, y, 'ro')  # 'ro' for red dots
-            self.ax.set_xlabel('X')
-            self.ax.set_ylabel('Y')
-            self.ax.set_title('Map Based on Global Data')
+        # Coordinates should look like this
+        # coordinates = [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16)]
 
-            # Draw a cross intersecting at (0, 0)
-            self.ax.axhline(0, color='k', linestyle='--')  # Horizontal line
-            self.ax.axvline(0, color='k', linestyle='--')  # Vertical line
+        # Plot the new data
+        legend_data = {}
+        for x, y in coordinates:
+            plot = self.ax.plot(x, y, 'ro')  # 'ro' for red dots
+            legend_data[plot[0]] = f"({x}, {y})"  # Store the plot and its corresponding value
 
-            # Redraw the canvas
-            self.canvas.draw()
+        self.ax.set_xlabel('X')
+        self.ax.set_ylabel('Y')
+        self.ax.set_title('Estimated position of devices')
 
-            # Schedule the next update
-            self.master.after(1000, self.update_map)
+        # Draw a cross intersecting at (0, 0)
+        self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
+        self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
 
-def update_global_data():
-    global global_data
-    while True:
-        # Update global data here (replace with your actual data update logic)
-        # For demonstration, I'm just adding a new dictionary to the list alternatively
-        global_data.append({'x': len(global_data), 'y': len(global_data) ** 2})
-        time.sleep(1)  # Sleep for some time (simulating data update interval)
+        # Add legend
+        self.ax.legend(legend_data.values(), loc='upper right')
 
-def main():
+        # Redraw the canvas
+        self.canvas.draw()
+
+        # Schedule the next update
+        self.master.after(1000, self.update_map)
+
+
+class RadarSolo:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("Coordinates Plotter")
+
+        self.fig, self.ax = plt.subplots()
+        self.canvas = FigureCanvasTkAgg(self.fig, master=self.master)
+        self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
+
+        # Schedule the method to update the map based on input coordinates
+        self.master.after(1000, self.update_map)
+
+    def update_map(self):
+        # Update the map based on global data
+        # Extract coordinates from the global objects
+        coordinates = devices
+        print(f"[RadarSolo] Received list of devices")
+        print(f"[RadarSolo] Printing distance of each device")
+
+        for device in coordinates:
+            print(f"{device.coordinates}")
+        
+        print(f"[RadarSolo] Updating map based on list above")
+
+        # Clear the existing plot
+        self.ax.clear()
+
+        # Plot the new data
+        legend_data = {}
+        for idx, obj in enumerate(coordinates):
+            radius = obj.coordinates[0]
+            fingerprint = obj.fingerprint
+            last_update_time = obj.check_last_modified()  # Get last update time for object
+            if last_update_time is None:
+                last_update_text = "Never updated"
+            else:
+                print(f"[update map]   last update time is {last_update_time}")
+                time_elapsed = int(last_update_time) # Time elapsed in seconds
+                print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
+                if time_elapsed < 60:
+                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {radius} \nFingerprint: {fingerprint}"
+                elif last_update_time < 120:
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minute ago \nDistance: {radius} \nFingerprint: {fingerprint}"
+                else:
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minutes ago \nDistance: {radius} \nFingerprint: {fingerprint}"
+            theta = [i * (2 * math.pi / 360) for i in range(0, 361)]  # Generate angles from 0 to 360 degrees
+            x = [radius * math.cos(angle) for angle in theta]  # Calculate x coordinates
+            y = [radius * math.sin(angle) for angle in theta]  # Calculate y coordinates
+            plot = self.ax.plot(x, y, label=f"Device {idx+1}: {last_update_text}")  # Plot the circle
+
+
+        self.ax.set_xlabel('X')
+        self.ax.set_ylabel('Y')
+        self.ax.set_title('Position may be on any point on circle')
+
+        # Draw a cross intersecting at (0, 0)
+        self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
+        self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
+
+        # Add legend outside of the radar plot
+        legend = self.ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+
+        # Adjust figure size to fit legend
+        self.fig.tight_layout()
+
+        # Redraw the canvas
+        self.canvas.draw()
+
+        # Schedule the next update
+        self.master.after(1000, self.update_map)
+
+
+
+
+
+def radar_main(devicesparameter, sniffercords, sniffercordsready):
     input_root = tk.Tk()
     coordinates_input_window = RadarInputWindow(input_root)
     input_root.mainloop()
-
+    global input_coordinates
     input_coordinates = coordinates_input_window.coordinates
+    print(f"[Radar] Received input coordinates:\n \t {input_coordinates}")
+    global devices
+    devices = devicesparameter
+    sniffercords[0] = input_coordinates
+    sniffercordsready.set()
 
     if input_coordinates:
-        root = tk.Tk()
-        app = Radar(root, input_coordinates)
-        root.mainloop()
+        print(input_coordinates)
+        if run_solo:
+            #update_thread = threading.Thread(target=update_global_data_solo, daemon=True)
+            #update_thread.start()
+            root = tk.Tk()
+            app = RadarSolo(root)
+            root.mainloop()
+        else:
+            #update_thread = threading.Thread(target=update_global_data, daemon=True)
+            #update_thread.start()
+            root = tk.Tk()
+            app = Radar(root, input_coordinates)
+            root.mainloop()
+
+
 
 if __name__ == "__main__":
-    global_data = [{'x': -2, 'y': -2}]  # List of dictionaries, each containing 'x' and 'y' coordinates
-    update_thread = threading.Thread(target=update_global_data, daemon=True)
-    update_thread.start()
-    main()
+    radar_main()

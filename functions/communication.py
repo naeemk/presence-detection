@@ -30,22 +30,22 @@ def create_udp_socket(interface_ip, listen_port):
 
 # this function takes the list returned by "process_burst", encodes the data into json -> bytes and broadcasts it
 def broadcast_probes(probelist, udp_socket):
-    i = 0
+    counter = 0
     broadcast_ip = "255.255.255.255"  
     broadcast_port = 12345      
     while True:
         if len(probelist) >= 1:
-            while i < len(probelist):
+            while counter < len(probelist):
                 probe_request_json = json.dumps({
-                    "macaddress": probelist[i].macaddress,
-                    "rssi": probelist[i].rssi,
-                    "fingerprint": probelist[i].fingerprint,
-                    "sequencenumber": probelist[i].sequencenumber,
-                    "sniffercords": probelist[i].sniffercords
+                    "macaddress": probelist[counter].macaddress,
+                    "rssi": probelist[counter].rssi,
+                    "fingerprint": probelist[counter].fingerprint,
+                    "sequencenumber": probelist[counter].sequencenumber,
+                    "sniffercords": probelist[counter].sniffercords
                 })
                 probe_request_bytes = probe_request_json.encode()
                 udp_socket.sendto(probe_request_bytes, (broadcast_ip, broadcast_port))
-                i+=1
+                counter+=1
         time.sleep(0.1)
 
 
@@ -74,10 +74,10 @@ def receive_probes(all_received_probes ,udp_socket):
             print("Error decoding JSON:", e)
             continue
         
-        print("Received Probe Requests:")
+        print(f"[receive_probes] Received Probe Requests:")
         for probe in all_received_probes:
             print(f"  MAC Address: {probe.macaddress}, RSSI: {probe.rssi}, Fingerprint: {probe.fingerprint}, Sequence Number: {probe.sequencenumber}")
-        print("All Probe Requests Received:", all_received_probes)  # Print all received ProbeRequest objects
+        # print("All Probe Requests Received:", all_received_probes)  # Print all received ProbeRequest objects
 
 
 

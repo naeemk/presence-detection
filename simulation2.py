@@ -2,7 +2,7 @@ import threading
 import time
 from scapy.all import Dot11ProbeReq, RadioTap, Dot11, Dot11Elt
 from random import randint
-from functions import radarmerged
+from functions import radar
 from functions.update_solo import update_solo
 
 import sys
@@ -135,7 +135,7 @@ if __name__ == "__main__":
                                     args=(probelist, devices, lock))
     update_solo_thread.start()
     print("main block")
-    radarmerged.radar_main(devices, sniffercords, sniffercords_ready)
+    radar.radar_main(devices, sniffercords, sniffercords_ready)
 
 
 

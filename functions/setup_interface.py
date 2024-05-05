@@ -6,7 +6,7 @@ def setup_interface(interface):
     subprocess.call(["sudo", "ifconfig", interface, "down"])
     subprocess.call(["sudo", "airmon-ng", "start", interface])
     # Adjust for your environment - some systems rename the interface to wlan0mon
-    monitor_interface = "wlan0mon" if interface == "wlan0" else interface
+    monitor_interface = "wlan1mon" if interface == "wlan1" else interface
     subprocess.call(["sudo", "ifconfig", monitor_interface, "up"])
     print(f"{monitor_interface} set to monitor mode and brought up.")
     return monitor_interface

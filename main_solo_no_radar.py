@@ -9,7 +9,7 @@ from functions.update_solo import update_solo
 from objects.proberequest import ProbeRequest
 from objects.device import Device
 from functions import extract_vendor_specific, process_packet, setup_interface, radar, packet_sniffer, process_burst
-from functions import radarmerged
+from functions import radar
 
 def run_solo():
     probelist = []
@@ -46,7 +46,7 @@ def run():
     
     sniff_thread.start()
     update_solo_thread.start()
-    radarmerged.radar_main(devices, sniffercords, sniffercords_ready)
+    radar.radar_main(devices, sniffercords, sniffercords_ready)
 
 
 if __name__ == "__main__":

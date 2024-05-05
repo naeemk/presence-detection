@@ -5,11 +5,12 @@ import time
 
 def update(common_queue, devices, lock):
     counter = 0
-    max_distance = 5
+    max_distance = 1000
     while True:
         time.sleep(0.5)
         with lock:
             three_elements = common_queue.get()
+            # x1 = three_elements['element1'].
             
     #for each element in common queue
     # get it, 
