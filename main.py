@@ -28,6 +28,14 @@ def run():
     interface = "wlan1"
     monitor_interface = setup_interface.setup_interface(interface)
 
+    
+    interface = 'wlan0'  
+    ssid = 'AdHocNetwork'  
+    channel = 1  
+
+    
+    configure_adhoc.configure_adhoc_network(interface, ssid, channel)
+
     interface_ip = "0.0.0.0"
     listen_port = "12345"
 
