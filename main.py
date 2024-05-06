@@ -29,7 +29,6 @@ def run():
     monitor_interface = setup_interface.setup_interface(interface)
 
     
-    interface = 'wlan0'  
     ssid = 'AdHocNetwork'  
     channel = 1  
 
