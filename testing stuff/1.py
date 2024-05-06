@@ -1,239 +1,149 @@
-import math
-import random
-import tkinter as tk
-from tkinter import ttk, messagebox
-import matplotlib.pyplot as plt
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import threading
+import os
+
+import subprocess
+
+import socket
+
 import time
 
-# Global variable for run solo option
-run_solo = False
+import random
 
+import threading
 
-class RadarInputWindow:
-    def __init__(self, master):
-        self.master = master
-        self.master.title("Enter Geographical Coordinates")
+ 
 
-        self.label_lat = ttk.Label(master, text="Latitude:")
-        self.label_lat.pack()
-        self.entry_lat = ttk.Entry(master)
-        self.entry_lat.pack()
+def get_unique_ip(base):
 
-        self.label_long = ttk.Label(master, text="Longitude:")
-        self.label_long.pack()
-        self.entry_long = ttk.Entry(master)
-        self.entry_long.pack()
+    # Get the MAC address of wlan0 to generate a unique IP
 
-        # Checkbox for running solo or not
-        self.run_solo_var = tk.BooleanVar(value=False)  # Default is unticked
-        self.checkbox_solo = ttk.Checkbutton(master, text="Run Solo", variable=self.run_solo_var)
-        self.checkbox_solo.pack()
+    result = subprocess.run(['cat', '/sys/class/net/wlan0/address'], stdout=subprocess.PIPE)
 
-        self.submit_button = ttk.Button(master, text="Submit", command=self.submit_coordinates)
-        self.submit_button.pack()
+    mac = result.stdout.decode('utf-8').strip()
 
-    def submit_coordinates(self):
-        global run_solo  # Access the global variable
-        lat = self.entry_lat.get()
-        long = self.entry_long.get()
-        if lat and long:
-            try:
-                lat = float(lat)
-                long = float(long)
-                run_solo = self.run_solo_var.get()  # Get the value of the checkbox
-                self.coordinates = {'latitude': lat, 'longitude': long}
-                self.master.destroy()  # Close the input window
-            except ValueError:
-                messagebox.showerror("Error", "Invalid input. Please enter numeric values for coordinates.")
-        else:
-            messagebox.showerror("Error", "Please enter both latitude and longitude.")
+    unique_suffix = int(mac.split(':')[-1], 16) % 254 + 1  # Using last byte of MAC address for uniqueness
 
+    return f"{base}{unique_suffix}"
 
-class Radar:
-    def __init__(self, master, input_coordinates):
-        self.master = master
-        self.master.title("Coordinates Plotter")
+ 
 
-        self.fig, self.ax = plt.subplots()
-        self.canvas = FigureCanvasTkAgg(self.fig, master=self.master)
-        self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
+def configure_adhoc_network():
 
-        self.input_coordinates = input_coordinates
+    # Stop interfering services
 
-        # Schedule the method to update the map based on input coordinates
-        self.master.after(1000, self.update_map)
+    os.system('sudo systemctl stop NetworkManager')
 
-    def update_map(self):
-        # Update the map based on global data
-        # Extract coordinates from the global objects
-        coordinates = []
-        for el in devices:
-            coordinates.append(devices.coordinates)
+    os.system('sudo systemctl stop wpa_supplicant')
 
-        # Clear the existing plot
-        self.ax.clear()
+    os.system('sudo ifconfig wlan0 down')
 
-        # Coordinates should look like this
-        # coordinates = [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16)]
+    os.system('sudo iwconfig wlan0 mode ad-hoc')
 
-        # Plot the new data
-        legend_data = {}
-        for x, y in coordinates:
-            plot = self.ax.plot(x, y, 'ro')  # 'ro' for red dots
-            legend_data[plot[0]] = f"({x}, {y})"  # Store the plot and its corresponding value
+    os.system('sudo iwconfig wlan0 essid "YourAdHocSSID"')
 
-        self.ax.set_xlabel('X')
-        self.ax.set_ylabel('Y')
-        self.ax.set_title('Estimated position of devices')
+    os.system('sudo iwconfig wlan0 channel 1')
 
-        # Draw a cross intersecting at (0, 0)
-        self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
-        self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
+    # Assign unique IP based on MAC address
 
-        # Add legend
-        self.ax.legend(legend_data.values(), loc='upper right')
+    unique_ip = get_unique_ip('10.192.200.')
 
-        # Redraw the canvas
-        self.canvas.draw()
+    os.system(f'sudo ifconfig wlan0 {unique_ip} netmask 255.255.0.0')
 
-        # Schedule the next update
-        self.master.after(1000, self.update_map)
+    os.system('sudo ifconfig wlan0 up')
 
+    return unique_ip
 
-class RadarSolo:
-    def __init__(self, master):
-        self.master = master
-        self.master.title("Coordinates Plotter")
+ 
 
-        self.fig, self.ax = plt.subplots()
-        self.canvas = FigureCanvasTkAgg(self.fig, master=self.master)
-        self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
+def configure_socket(interface_ip):
 
-        # Schedule the method to update the map based on input coordinates
-        self.master.after(1000, self.update_map)
+    # Bind a socket to the interface IP and a specific port for UDP communication
 
-    def update_map(self):
-        # Update the map based on global data
-        # Extract coordinates from the global objects
-        coordinates = global_data
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-        # Clear the existing plot
-        self.ax.clear()
+    sock.bind((interface_ip, 12345))
 
-        # Plot the new data
-        legend_data = {}
-        for idx, obj in enumerate(coordinates):
-            radius = obj.radius
-            last_update_time = obj.check_last_modified()  # Get last update time for object
-            if last_update_time is None:
-                last_update_text = "Never updated"
-            else:
-                print(f"[update map]   last update time is {last_update_time}")
-                time_elapsed = int(last_update_time) # Time elapsed in seconds
-                print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
-                if time_elapsed < 60:
-                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {obj.radius}"
-                elif last_update_time < 120:
-                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minute ago \nDistance: {obj.radius}"
-                else:
-                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minutes ago \nDistance: {obj.radius}"
-            theta = [i * (2 * math.pi / 360) for i in range(0, 361)]  # Generate angles from 0 to 360 degrees
-            x = [radius * math.cos(angle) for angle in theta]  # Calculate x coordinates
-            y = [radius * math.sin(angle) for angle in theta]  # Calculate y coordinates
-            plot = self.ax.plot(x, y, label=f"Device {idx+1}: {last_update_text}")  # Plot the circle
+    return sock
 
+ 
 
-        self.ax.set_xlabel('X')
-        self.ax.set_ylabel('Y')
-        self.ax.set_title('Position may be on any point on circle')
+def send_data(sock, network_ips, probelist):
 
-        # Draw a cross intersecting at (0, 0)
-        self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
-        self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
-
-        # Add legend outside of the radar plot
-        legend = self.ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
-
-        # Adjust figure size to fit legend
-        self.fig.tight_layout()
-
-        # Redraw the canvas
-        self.canvas.draw()
-
-        # Schedule the next update
-        self.master.after(1000, self.update_map)
-
-
-
-
-
-
-class ModifiedObject:
-    def __init__(self, radius):
-        self.last_modified = time.time()
-        self.radius = radius
-
-    def update(self, new_radius):
-        self.last_modified = time.time()
-        self.radius = new_radius
-
-    def check_last_modified(self):
-        current_time = time.time()
-        time_difference = current_time - self.last_modified
-        print(f"time difference is {time_difference}")
-        return time_difference
-
-
-def update_global_data_solo():
-    global global_data
-    global_data = [ModifiedObject(10), ModifiedObject(20), ModifiedObject(30)]
+    counter = 0  
     while True:
-        print("loop of solo update global")
-        # Update global data here (replace with your actual data update logic)
-        # For demonstration, I'm just adding a new random integer to the list alternatively
-        global_data[0].update(random.randint(1,30))
-        time.sleep(1)  # Sleep for some time (simulating data update interval)
+        if len(probelist) >= 1:
+            while counter < len(probelist):
+                probe_request_json = json.dumps({
+                    "macaddress": probelist[counter].macaddress,
+                    "rssi": probelist[counter].rssi,
+                    "fingerprint": probelist[counter].fingerprint,
+                    "sequencenumber": probelist[counter].sequencenumber,
+                    "sniffercords": probelist[counter].sniffercords
+                })
+                probe_request_bytes = probe_request_json.encode()
+                for ip in network_ips:
+                    sock.sendto(probe_request_bytes, (ip, 12345))
+                counter+=1
+        time.sleep(0.1)
 
+ 
 
-def update_global_data():
-    global global_data
-    global_data = [{'x': -2, 'y': -2}]  # Reset global data for non-solo mode
+def receive_data(sock, all_received_probes):
+
     while True:
-        # Update global data here (replace with your actual data update logic)
-        # For demonstration, I'm just adding a new dictionary to the list alternatively
-        global_data.append({'x': len(global_data), 'y': len(global_data) ** 2})
-        time.sleep(1)  # Sleep for some time (simulating data update interval)
+
+        data, addr = sock.recvfrom(1024)
+
+        data_str = data.decode()
+
+        # Parse JSON data and create ProbeRequest objects
+        try:
+            decoded_data = json.loads(data_str)
+            for item in decoded_data:
+                probe = ProbeRequest(
+                    item.get("macaddress"),
+                    item.get("rssi"),
+                    item.get("fingerprint"),
+                    item.get("sequencenumber"),
+                    item.get("sniffercords")
+                )
+                all_received_probes.append(probe)
+        except json.JSONDecodeError as e:
+            print("Error decoding JSON:", e)
+            continue
+        
+        print(f"[receive_probes] Received This Probe)")
+        print(f"\n \tMac: {probe.macaddress}\tSN: {probe.sequencenumber}\tSniffercords: {probe.sniffercords}")
+           
+        # print("All Probe Requests Received:", all_received_probes)  # Print all received ProbeRequest objects
 
 
-def radar_main():
-    input_root = tk.Tk()
-    coordinates_input_window = RadarInputWindow(input_root)
-    input_root.mainloop()
-    global input_coordinates
-    input_coordinates = coordinates_input_window.coordinates
-    global devices
-    
 
-    if input_coordinates:
-        print(input_coordinates)
-        if run_solo:
-            #update_thread = threading.Thread(target=update_global_data_solo, daemon=True)
-            #update_thread.start()
-            root = tk.Tk()
-            app = RadarSolo(root)
-            root.mainloop()
-        else:
-            #update_thread = threading.Thread(target=update_global_data, daemon=True)
-            #update_thread.start()
-            root = tk.Tk()
-            app = Radar(root, input_coordinates)
-            root.mainloop()
-
-
+ 
 
 if __name__ == "__main__":
-    update_thread = threading.Thread(target=update_global_data_solo, daemon=True)
-    update_thread.start()
-    radar_main()
+
+    my_ip = configure_adhoc_network()
+
+    sock = configure_socket(my_ip)
+
+    network_ips = [f"10.192.200.{i}" for i in range(1, 255) if f"10.192.200.{i}" != my_ip]
+
+ 
+
+    # Start receiving data in a separate thread
+
+    threading.Thread(target=receive_data, args=(sock,), daemon=True).start()
+
+ 
+
+    # Continuously send random data to other Pis on the network
+
+    while True:
+
+        random_value = random.randint(1000, 9999)
+
+        for ip in network_ips:
+
+            send_data(sock, ip, f"Random value {random_value}")
+
+        time.sleep(5)
