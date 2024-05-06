@@ -30,7 +30,7 @@ def run():
     monitor_interface = setup_interface.setup_interface(interface)
 
     
-    my_ip = configure_adhoc_network()
+    my_ip = configure_adhoc_network.configure_adhoc_network()
 
     sock = configure_socket(my_ip)
 
