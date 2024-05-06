@@ -13,9 +13,7 @@ def update_solo(probelist, devices, lock):
         time.sleep(0.5)
         with lock:
             while counter < len(probelist):
-                distance = rssi_to_distance(probelist[counter].rssi)
-                rssi = probelist[counter].rssi
-                print(f"[update_solo] Calculated rssi: {probelist[counter].rssi} to distance: {distance}")
+                distance = probelist[counter].distance
                 if distance > max_distance:
                     counter+=1
                     continue

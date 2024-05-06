@@ -1,6 +1,7 @@
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
 
+from functions.utils.rssi_to_distance import rssi_to_distance
 from objects.proberequest import ProbeRequest
 
 # processes packets, creates proberequest objects of all received probes and populates list
@@ -42,6 +43,6 @@ def process_packet(packet, probelist, sniffercords, lock):
 
         # Create probe object and append to list
         with lock:
-            probelist.append(ProbeRequest(mac_address, rssi, fingerprint, sequence_number, sniffercords[0]))
+            probelist.append(ProbeRequest(mac_address, rssi_to_distance(rssi), fingerprint, sequence_number, sniffercords[0]))
         print(f"Probelist length: {len(probelist)}")
         print()

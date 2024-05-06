@@ -1,7 +1,7 @@
 class ProbeRequest:
-    def __init__(self, macaddress, rssi, fingerprint, sequencenumber, sniffercords):
+    def __init__(self, macaddress, distance, fingerprint, sequencenumber, sniffercords):
         self.macaddress = macaddress
-        self.rssi = rssi
+        self.distance = distance
         self.fingerprint = fingerprint
         self.sequencenumber = sequencenumber
         self.sniffercords = sniffercords

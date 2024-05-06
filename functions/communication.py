@@ -12,6 +12,7 @@ import random
 
 import threading
 
+from functions.utils.rssi_to_distance import rssi_to_distance
 from objects.proberequest import ProbeRequest
 
  
@@ -30,7 +31,7 @@ def send_data(sock, network_ips, probelist):
             while counter < len(probelist):
                 probe_request_json = json.dumps({
                     "macaddress": probelist[counter].macaddress,
-                    "rssi": probelist[counter].rssi,
+                    "distance": probelist[counter].distance,
                     "fingerprint": probelist[counter].fingerprint,
                     "sequencenumber": probelist[counter].sequencenumber,
                     "sniffercords": probelist[counter].sniffercords
@@ -58,7 +59,7 @@ def receive_data(sock, all_received_probes):
             for item in decoded_data:
                 probe = ProbeRequest(
                     item.get("macaddress"),
-                    item.get("rssi"),
+                    item.get("distance"),
                     item.get("fingerprint"),
                     item.get("sequencenumber"),
                     item.get("sniffercords")

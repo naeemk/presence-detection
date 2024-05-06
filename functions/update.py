@@ -15,15 +15,15 @@ def update(common_queue, devices, lock):
             fingerprint = three_elements['element1'].fingerprint
             x1 = three_elements['element1'].sniffercords['x']
             y1 = three_elements['element1'].sniffercords['y']
-            d1 = rssi_to_distance(three_elements['element1'].rssi)
+            d1 = three_elements['element1'].distance
 
             x2 = three_elements['element2'].sniffercords['x']
             y2 = three_elements['element2'].sniffercords['y']
-            d2 = rssi_to_distance(three_elements['element2'].rssi)
+            d2 = three_elements['element2'].distance
 
             x3 = three_elements['element3'].sniffercords['x']
             y3 = three_elements['element3'].sniffercords['y']
-            d3 = rssi_to_distance(three_elements['element3'].rssi)
+            d3 = three_elements['element3'].distance
             
             device_coordinates = trilaterate(x1, x2, x3, y1, y2, y3, d1, d2, d3) # dict with keys "x" "y"
             
