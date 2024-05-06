@@ -41,9 +41,11 @@ def run():
     sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer,
                                      args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready), daemon=True)
     
+    print(f"[main]\tStarting broadcast thread with args: sock={sock}, network_ips={network_ips}, probelist={probelist}, ")
     broadcast_probes_thread = threading.Thread(target=send_data,
                                      args=(sock, network_ips, probelist), daemon=True)
     
+    print(f"[main]\tStarting broadcast thread with args: sock={sock}, all_received_probes={network_ips}")
     receive_probes_thread = threading.Thread(target=receive_data,
                                      args=(sock, all_received_probes), daemon=True)
     
