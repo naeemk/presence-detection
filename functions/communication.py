@@ -21,9 +21,12 @@ from objects.proberequest import ProbeRequest
  
 
 def send_data(sock, network_ips, probelist):
+    print(f"[send_data]\tExecuting send_data thread")
     counter = 0  
     while True:
+        print(f"[send_data]\tchecking if probelist: {len(probelist)} >= 1")
         if len(probelist) >= 1:
+            print(f"[send_data]\tchecking if counter: {counter} < probelist: {len(probelist)}")
             while counter < len(probelist):
                 probe_request_json = json.dumps({
                     "macaddress": probelist[counter].macaddress,
@@ -42,11 +45,11 @@ def send_data(sock, network_ips, probelist):
  
 
 def receive_data(sock, all_received_probes):
-
+    print(f"[receive_data]\tExecuting receive_data thread")
     while True:
 
         data, addr = sock.recvfrom(1024)
-
+        print(f"[receive_data]\treceived data")
         data_str = data.decode()
 
         # Parse JSON data and create ProbeRequest objects
