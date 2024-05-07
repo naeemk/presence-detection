@@ -1,159 +1,272 @@
+import math
+import random
+import sys
+import tkinter as tk
+from tkinter import ttk, messagebox
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import threading
 import time
-from scapy.all import Dot11ProbeReq, RadioTap, Dot11, Dot11Elt
-from random import randint
 
-import sys
-import os
-import random
-
-# Add the path to folder B to the Python path
-current_path = os.path.dirname(os.path.abspath(__file__))  # Get the absolute path of the current file
-folder_b_path = os.path.abspath(os.path.join(current_path, '..', ''))  # Get the absolute path of folder B
-sys.path.append(folder_b_path)  # Add folder B to the Python path
-print(folder_b_path)
-
-# Now you can import module c from folder C
-from objects.proberequest import ProbeRequest
+sys.path.append('../localization')
+from objects.device import Device
 
 
-# Define process_packet function
-def process_packet(packet, probelist, sniffercords, lock):
-    if packet.haslayer(Dot11ProbeReq):
-        print("\nProbe Request Detected:")
-        # Extract the MAC address of the device
-        mac_address = packet.addr2
-        print(f"MAC: {mac_address}")
 
-        # Extract and print RSSI value
-        if packet.haslayer(RadioTap):
-            rssi = packet[RadioTap].dBm_AntSignal
-            print(f"RSSI: {rssi} dBm")
+# Global variable for run solo option
+run_solo = False
+
+
+class RadarInputWindow:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("Enter Geographical Coordinates")
+
+        self.label_lat = ttk.Label(master, text="x:")
+        self.label_lat.pack()
+        self.entry_lat = ttk.Entry(master)
+        self.entry_lat.pack()
+
+        self.label_long = ttk.Label(master, text="y:")
+        self.label_long.pack()
+        self.entry_long = ttk.Entry(master)
+        self.entry_long.pack()
+
+        # Checkbox for running solo or not
+        self.run_solo_var = tk.BooleanVar(value=False)  # Default is unticked
+        self.checkbox_solo = ttk.Checkbutton(master, text="Run Solo", variable=self.run_solo_var)
+        self.checkbox_solo.pack()
+
+        self.submit_button = ttk.Button(master, text="Submit", command=self.submit_coordinates)
+        self.submit_button.pack()
+
+    def submit_coordinates(self):
+        global run_solo  # Access the global variable
+        x = self.entry_lat.get()
+        y = self.entry_long.get()
+        if x and y:
+            try:
+                x = float(x)
+                y = float(y)
+                run_solo = self.run_solo_var.get()  # Get the value of the checkbox
+                self.coordinates = {'x': x, 'y': y}
+                self.master.destroy()  # Close the input window
+            except ValueError:
+                messagebox.showerror("Error", "Invalid input. Please enter numeric values for coordinates.")
         else:
-            rssi = 0
-            print("RSSI: Not available")
-
-        # Extract sequence number
-        sequence_number = packet[Dot11].SC >> 4
-        print(f"Sequence Number: {sequence_number}")
-
-        # Create fingerprint
-        fingerprint = ""
-        ie_Ids = [1, 10, 45, 50, 191, 221, 127, 3, 35]
-        for el in ie_Ids:
-            ie = packet.getlayer(Dot11Elt, ID=el)
-            if ie:
-                fingerprint += ie.info.hex()
-
-        # Create probe object and append to list
-        with lock:
-            print()
-            print("process packet acquiring lock")
-            print()
-            probelist.append(ProbeRequest(mac_address, rssi, fingerprint, sequence_number, sniffercords))
-            print("finished processing and appending to probelist")
-            mac_addresses = [probe.macaddress for probe in probelist]
-            print("probelist so far:", mac_addresses)
-            print()
+            messagebox.showerror("Error", "Please enter both x and y coordinates.")
 
 
-def process_burst(probelist, localqueue, lock):
-    counter = 0
-    while not stop_threads:
-        time.sleep(2)
-        with lock:
-            print()
-            print("probe burst acquiring lock")
-            
-            
-            print()
-            
-            if len(probelist) >= 2:
-                while counter < len(probelist):
-                    if (counter + 1 < len(probelist) and probelist[counter].macaddress != probelist[counter + 1].macaddress) or counter +1 == len(probelist):
-                        print("Found the element followed by a different MAC address")
-                        element_to_push = probelist[counter]
-                        localqueue.append(element_to_push)
+class Radar:
+    def __init__(self, master, input_coordinates):
+        self.master = master
+        self.master.title("Coordinates Plotter")
 
-                        # print so far
-                        print("localqueue so far:")
-                        for j, probe in enumerate(localqueue, 1):
-                            print(f"Probe {j}:")
-                            print(f"  MAC Address: {probe.macaddress}")
-                            print(f"  RSSI: {probe.rssi}")
-                            print(f"  Fingerprint: {probe.fingerprint}")
-                            print(f"  Sequence number: {probe.sequencenumber}")
+        self.fig, self.ax = plt.subplots()
+        self.canvas = FigureCanvasTkAgg(self.fig, master=self.master)
+        self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
 
-                        # Move counter to the next element
-                        counter += 1
-                    else:
-                        # Increment the counter
-                        print("did not go into the if")
-                        print("length of probelist: ", len(probelist))
-                        print("counter is ", counter)
-                        print("element mac + next mac")
-                        print(probelist[counter].macaddress, probelist[counter+1].macaddress)
-                        counter += 1
+        self.input_coordinates = input_coordinates
+
+        # Schedule the method to update the map based on input coordinates
+        self.master.after(1000, self.update_map)
+
+    def update_map(self):
+        # Update the map based on global data
+        # Extract coordinates from the global objects
+        coordinates = devices
+
+        coordinates = devices
+        print(f"[Radar] Received list of devices")
+        print(f"[Radar] Printing distance of each device")
+
+        for device in coordinates:
+            print(f"{device.coordinates}")
+
+        print(f"[Radar] Updating map based on list above")
+
+        # Clear the existing plot
+        self.ax.clear()
+
+
+        max_abs_x = 5 + max(abs(device.coordinates[0]) for device in coordinates)
+        max_abs_y = 5 + max(abs(device.coordinates[1]) for device in coordinates)
+        max_abs = max(max_abs_x, max_abs_y)
+
+        # Set x and y limits centered at (0, 0)
+        self.ax.set_xlim(-max_abs, max_abs)
+        self.ax.set_ylim(-max_abs, max_abs)
+
+        # Coordinates should look like this
+        # coordinates = [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16)]
+
+        # Plot the new data
+        legend_data = {}
+        for idx, obj in enumerate(coordinates):
+            x_coord = obj.coordinates[0]
+            y_coord = obj.coordinates[1]
+            fingerprint = obj.fingerprint
+            distance = math.sqrt((x_coord - input_coordinates['x']) ** 2 + (y_coord - input_coordinates['y']) ** 2)
+            last_update_time = obj.check_last_modified()  # Get last update time for object
+            if last_update_time is None:
+                last_update_text = "Never updated"
             else:
-                # If probelist doesn't have enough elements, wait for more data
-                time.sleep(1)
+                print(f"[update map]   last update time is {last_update_time}")
+                time_elapsed = int(last_update_time)  # Time elapsed in seconds
+                print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
+                if time_elapsed < 60:
+                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
+                elif last_update_time < 120:
+                    last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minute ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
+                else:
+                    last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minutes ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
+            self.ax.plot(x_coord, y_coord, marker='o', markersize=5, label=f"Device {idx + 1}: {last_update_text}")  # Plot the dot
+
+        self.ax.set_xlabel('X')
+        self.ax.set_ylabel('Y')
+        self.ax.set_title('Estimated position of devices')
+
+        # Draw a cross intersecting at (0, 0)
+        self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
+        self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
+
+        # Add legend outside of the radar plot
+        legend = self.ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+
+        # Adjust figure size to fit legend
+        self.fig.tight_layout()
 
 
-# Define function to generate random packets
-def generate_random_packets(process_func, probelist, sniffercords, lock):
-    while not stop_threads:
-        mac_addresses = [
-            "00:11:22:33:44:55",
-            "aa:bb:cc:dd:ee:ff",
-            "12:34:56:78:90:ab",
-            "de:ad:be:ef:12:34"
-        ]
-        # Generate random packet data
-        random_mac_address = f"00:11:22:{randint(0, 255)}:{randint(0, 255)}:{randint(0, 255)}"
-        random_rssi = randint(-100, 0)  # Random RSSI value between -100 and 0 dBm
+        # Redraw the canvas
+        self.canvas.draw()
 
-        # Create a Dot11ProbeReq packet
-        packet = RadioTap() / Dot11(type=0, subtype=4, addr1="ff:ff:ff:ff:ff:ff",
-                                    addr2=random.choice(mac_addresses)) / Dot11ProbeReq()
-
-        # Add the RadioTap layer and set the dBm_AntSignal field
-
-        # Process the packet using the provided function
-        print("processing new packet")
-        process_func(packet, probelist, sniffercords, lock)
-
-        # Sleep for a random interval before generating the next packet
-        time.sleep(randint(1, 5))
+        # Schedule the next update
+        self.master.after(1000, self.update_map)
 
 
-# Create lists to store probe requests and sniffercords
-probelist = []
-sniffercords = []
-localqueue = []
+class RadarSolo:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("Coordinates Plotter")
 
-# Create a lock to ensure thread-safe access to the probelist
-lock = threading.Lock()
+        self.fig, self.ax = plt.subplots()
+        self.canvas = FigureCanvasTkAgg(self.fig, master=self.master)
+        self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=1)
 
-# Variable to control threads
-stop_threads = False
+        # Schedule the method to update the map based on input coordinates
+        self.master.after(1000, self.update_map)
 
-# Start the packet generation thread
-packet_thread = threading.Thread(target=generate_random_packets,
-                                 args=(process_packet, probelist, sniffercords, lock))
-process_burst_thread = threading.Thread(target=process_burst, args=(probelist, localqueue, lock))
-packet_thread.start()
+    def update_map(self):
+        # Update the map based on global data
+        # Extract coordinates from the global objects
+        coordinates = devices
+        print(f"[RadarSolo] Received list of devices")
+        print(f"[RadarSolo] Printing distance of each device")
+
+        for device in coordinates:
+            print(f"{device.coordinates}")
+        
+        print(f"[RadarSolo] Updating map based on list above")
+
+        # Clear the existing plot
+        self.ax.clear()
+
+        # Plot the new data
+        legend_data = {}
+        for idx, obj in enumerate(coordinates):
+            radius = obj.coordinates[0]
+            fingerprint = obj.fingerprint
+            last_update_time = obj.check_last_modified()  # Get last update time for object
+            if last_update_time is None:
+                last_update_text = "Never updated"
+            else:
+                print(f"[update map]   last update time is {last_update_time}")
+                time_elapsed = int(last_update_time) # Time elapsed in seconds
+                print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
+                if time_elapsed < 60:
+                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {radius} \nFingerprint: {fingerprint}"
+                elif last_update_time < 120:
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minute ago \nDistance: {radius} \nFingerprint: {fingerprint}"
+                else:
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minutes ago \nDistance: {radius} \nFingerprint: {fingerprint}"
+            theta = [i * (2 * math.pi / 360) for i in range(0, 361)]  # Generate angles from 0 to 360 degrees
+            x = [radius * math.cos(angle) for angle in theta]  # Calculate x coordinates
+            y = [radius * math.sin(angle) for angle in theta]  # Calculate y coordinates
+            plot = self.ax.plot(x, y, label=f"Device {idx+1}: {last_update_text}")  # Plot the circle
 
 
-try:
+        self.ax.set_xlabel('X')
+        self.ax.set_ylabel('Y')
+        self.ax.set_title('Position may be on any point on circle')
 
-    while not stop_threads:
-        # Print probelist every 10 iterations
-        # Perform other tasks if needed
-        # For testing, we are just sleeping here
-        time.sleep(1)
-except KeyboardInterrupt:
-    # If Ctrl+C is pressed, stop the threads
-    stop_threads = True
-    print("Threads stopped.")
-    packet_thread.join()
-    process_burst_thread.join()
+        # Draw a cross intersecting at (0, 0)
+        self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
+        self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
+
+        # Add legend outside of the radar plot
+        legend = self.ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+
+        # Adjust figure size to fit legend
+        self.fig.tight_layout()
+
+        # Redraw the canvas
+        self.canvas.draw()
+
+        # Schedule the next update
+        self.master.after(1000, self.update_map)
+
+
+
+
+def update_global_data():
+    global devices
+    devices = [] 
+    random_x = random.randint(-10,10)
+    random_y = random.randint(-10,10)
+    device = Device("fing",(random_x, random_y))
+    devices.append(device)
+    while True:
+        # Update global data here (replace with your actual data update logic)
+        # For demonstration, I'm just adding a new random integer to the list alternatively
+        random_x = random.randint(-10,10)
+        random_y = random.randint(-10,10)
+        devices[0].update((random_x,random_y))
+        time.sleep(1)  # Sleep for some time (simulating data update interval)
+
+def radar_main():
+    input_root = tk.Tk()
+    coordinates_input_window = RadarInputWindow(input_root)
+    input_root.mainloop()
+    global input_coordinates
+    input_coordinates = coordinates_input_window.coordinates
+    print(f"[Radar] Received input coordinates:\n \t {input_coordinates}")
+    global devices
+
+
+    if input_coordinates:
+        print(input_coordinates)
+        if run_solo:
+            #update_thread = threading.Thread(target=update_global_data_solo, daemon=True)
+            #update_thread.start()
+            root = tk.Tk()
+            app = RadarSolo(root)
+            root.mainloop()
+        else:
+            update_thread = threading.Thread(target=update_global_data, daemon=True)
+            update_thread.start()
+            root = tk.Tk()
+            app = Radar(root, input_coordinates)
+            root.mainloop()
+
+
+
+if __name__ == "__main__":
+    radar_main()
+
+
+
+
+
+
+
+

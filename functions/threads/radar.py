@@ -82,6 +82,15 @@ class Radar:
         # Clear the existing plot
         self.ax.clear()
 
+
+        max_abs_x = 5 + max(abs(device.coordinates[0]) for device in coordinates)
+        max_abs_y = 5 + max(abs(device.coordinates[1]) for device in coordinates)
+        max_abs = max(max_abs_x, max_abs_y)
+
+        # Set x and y limits centered at (0, 0)
+        self.ax.set_xlim(-max_abs, max_abs)
+        self.ax.set_ylim(-max_abs, max_abs)
+
         # Coordinates should look like this
         # coordinates = [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16)]
 
@@ -100,11 +109,11 @@ class Radar:
                 time_elapsed = int(last_update_time)  # Time elapsed in seconds
                 print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
                 if time_elapsed < 60:
-                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {distance:.2f} units\nFingerprint: {fingerprint}"
+                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
                 elif last_update_time < 120:
-                    last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minute ago \nDistance: {distance:.2f} units\nFingerprint: {fingerprint}"
+                    last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minute ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
                 else:
-                    last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minutes ago \nDistance: {distance:.2f} units\nFingerprint: {fingerprint}"
+                    last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minutes ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
             self.ax.plot(x_coord, y_coord, marker='o', markersize=5, label=f"Device {idx + 1}: {last_update_text}")  # Plot the dot
 
         self.ax.set_xlabel('X')
