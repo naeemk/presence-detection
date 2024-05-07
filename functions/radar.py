@@ -187,7 +187,8 @@ def radar_main(devicesparameter, sniffercords, sniffercordsready):
     global devices
     devices = devicesparameter
     sniffercords[0] = input_coordinates
-    sniffercordsready.set()
+    if sniffercordsready != None:
+        sniffercordsready.set()
 
     if input_coordinates:
         print(input_coordinates)
