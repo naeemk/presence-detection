@@ -34,7 +34,7 @@ def run():
             break
         elif run_radar == 'n':
             while True:
-                coordinates = input("Please enter two numbers in coordinates (in the format 'a b'): ")
+                coordinates = input("Please enter sniffer coordinates (in the format: a b): ")
                 # Split the input string into two numbers
                 nums = coordinates.split()
                 if len(nums) != 2:
