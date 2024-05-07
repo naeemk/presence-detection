@@ -85,7 +85,7 @@ def run():
         sniffercords_ready = threading.Event()
     else:
         sniffercords_ready = None
-        sniffercords = {'x': x, 'y': y}
+        sniffercords[0] = {'x': x, 'y': y}
     lock = threading.Lock()
 
     interface = "wlan1"
