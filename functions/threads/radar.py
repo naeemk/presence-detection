@@ -68,9 +68,16 @@ class Radar:
     def update_map(self):
         # Update the map based on global data
         # Extract coordinates from the global objects
-        coordinates = []
-        for el in devices:
-            coordinates.append(devices.coordinates)
+        coordinates = devices
+
+        coordinates = devices
+        print(f"[Radar] Received list of devices")
+        print(f"[Radar] Printing distance of each device")
+
+        for device in coordinates:
+            print(f"{device.coordinates}")
+
+        print(f"[Radar] Updating map based on list above")
 
         # Clear the existing plot
         self.ax.clear()
@@ -80,9 +87,25 @@ class Radar:
 
         # Plot the new data
         legend_data = {}
-        for x, y in coordinates:
-            plot = self.ax.plot(x, y, 'ro')  # 'ro' for red dots
-            legend_data[plot[0]] = f"({x}, {y})"  # Store the plot and its corresponding value
+        for idx, obj in enumerate(coordinates):
+            x_coord = obj.coordinates[0]
+            y_coord = obj.coordinates[1]
+            fingerprint = obj.fingerprint
+            distance = math.sqrt((x_coord - input_coordinates['x']) ** 2 + (y_coord - input_coordinates['y']) ** 2)
+            last_update_time = obj.check_last_modified()  # Get last update time for object
+            if last_update_time is None:
+                last_update_text = "Never updated"
+            else:
+                print(f"[update map]   last update time is {last_update_time}")
+                time_elapsed = int(last_update_time)  # Time elapsed in seconds
+                print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
+                if time_elapsed < 60:
+                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {distance:.2f} units\nFingerprint: {fingerprint}"
+                elif last_update_time < 120:
+                    last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minute ago \nDistance: {distance:.2f} units\nFingerprint: {fingerprint}"
+                else:
+                    last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minutes ago \nDistance: {distance:.2f} units\nFingerprint: {fingerprint}"
+            self.ax.plot(x_coord, y_coord, marker='o', markersize=5, label=f"Device {idx + 1}: {last_update_text}")  # Plot the dot
 
         self.ax.set_xlabel('X')
         self.ax.set_ylabel('Y')
@@ -92,8 +115,12 @@ class Radar:
         self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
         self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
 
-        # Add legend
-        self.ax.legend(legend_data.values(), loc='upper right')
+        # Add legend outside of the radar plot
+        legend = self.ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+
+        # Adjust figure size to fit legend
+        self.fig.tight_layout()
+
 
         # Redraw the canvas
         self.canvas.draw()

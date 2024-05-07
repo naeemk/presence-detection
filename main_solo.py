@@ -6,10 +6,11 @@ import subprocess
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
 from functions.threads import radar
-from functions.update_solo import update_solo
+from functions.threads.packet_sniffer import packet_sniffer
+from functions.threads.update_solo import update_solo
 from objects.proberequest import ProbeRequest
 from objects.device import Device
-from functions import extract_vendor_specific, process_packet, setup_interface, packet_sniffer, process_burst
+from functions import extract_vendor_specific, process_packet, setup_interface, process_burst
 from functions.threads import radar
 
 def run_solo():
@@ -31,24 +32,7 @@ def run_solo():
     update_solo_thread.start()
     radar.radar_main(devices, sniffercords, sniffercords_ready)
 
-def run():
-    probelist = []
-    local_queue = []
-    devices = []
-    sniffercords = [None]
-    sniffercords_ready = threading.Event()
-    interface = "wlan0"
-    lock = threading.Lock()
-    monitor_interface = setup_interface.setup_interface(interface)
 
-    sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer,
-                                     args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready), daemon=True)
-    update_solo_thread = threading.Thread(target=update_solo,
-                                    args=(probelist, devices, lock), daemon=True)
-    
-    sniff_thread.start()
-    update_solo_thread.start()
-    radar.radar_main(devices, sniffercords, sniffercords_ready)
 
 
 if __name__ == "__main__":

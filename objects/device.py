@@ -16,7 +16,7 @@ class Device:
         if isinstance(new_coordinates, tuple) and len(new_coordinates) == 2 and all(isinstance(coord, (int, float)) for coord in new_coordinates):
             self.coordinates = new_coordinates
         elif isinstance(new_coordinates, (int, float)):
-            self.coordinates = new_coordinates
+            self.coordinates = (new_coordinates, new_coordinates)
         else:
             raise ValueError("Coordinates must be a number or a tuple of two numbers.")
 
