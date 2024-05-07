@@ -6,14 +6,15 @@ import subprocess
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
 from functions.configure_socket import configure_socket
-from functions.update_solo import update_solo
-from functions.update import update
-from functions.communication import send_data, receive_data
-from functions.sync_probes import sync_probes
+
+from functions.threads.communication import receive_data, send_data
+from functions.threads import radar
+from functions.threads.sync_probes import sync_probes
+from functions.threads.update import update
 from objects.proberequest import ProbeRequest
 from objects.device import Device
-from functions import configure_adhoc_network, extract_vendor_specific, process_packet, setup_interface, radar, packet_sniffer, process_burst
-from functions import radar
+from functions import configure_adhoc_network, extract_vendor_specific, process_packet, setup_interface, packet_sniffer, process_burst
+from functions.threads import radar
 
 
 

@@ -5,11 +5,12 @@ import random
 import subprocess
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
+from functions.threads import radar
 from functions.update_solo import update_solo
 from objects.proberequest import ProbeRequest
 from objects.device import Device
-from functions import extract_vendor_specific, process_packet, setup_interface, radar, packet_sniffer, process_burst
-from functions import radar
+from functions import extract_vendor_specific, process_packet, setup_interface, packet_sniffer, process_burst
+from functions.threads import radar
 
 def run_solo():
     probelist = []

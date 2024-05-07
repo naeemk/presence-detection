@@ -2,7 +2,7 @@ import threading
 import time
 from scapy.all import Dot11ProbeReq, RadioTap, Dot11, Dot11Elt
 from random import randint
-from functions import radar
+from functions.threads import radar
 from functions.update_solo import update_solo
 
 import sys
