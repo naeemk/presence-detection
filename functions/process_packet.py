@@ -6,10 +6,10 @@ from objects.proberequest import ProbeRequest
 
 # processes packets, creates proberequest objects of all received probes and populates list
 # which is then filtered by process_burst
-def process_packet(packet, probelist, sniffercords, lock):
-    print(f"Executing process_packet with arguments packet = {packet} probelist={probelist}, sniffercords={sniffercords}, lock={lock}")
+def process_packet(packet, probelist, sniffercords, measured_power, n, lock):
+    print(f"[process_packet]\tReceived packet: Executing process_packet with arguments packet = {packet} probelist={probelist}, sniffercords={sniffercords}, lock={lock}")
     if packet.haslayer(Dot11ProbeReq):
-        print("\n[process_packet] Probe Request Detected:")
+        print(f"\n[process_packet]\tPacket is a probe request")
 
         # Extract the MAC address of the device
         mac_address = packet.addr2
@@ -43,6 +43,6 @@ def process_packet(packet, probelist, sniffercords, lock):
 
         # Create probe object and append to list
         with lock:
-            probelist.append(ProbeRequest(mac_address, rssi_to_distance(rssi), fingerprint, sequence_number, sniffercords[0]))
+            probelist.append(ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0]))
         print(f"Probelist length: {len(probelist)}")
         print()

@@ -20,7 +20,7 @@ from functions import radar
 def run():
     while True:
         try:
-            to_run = int(input("Please enter a number between 1 and 5: "))
+            to_run = int(input("How many threads to run (1-5): "))
             if 1 <= to_run <= 5:
                 break  # Exit the loop if the number is valid
             else:
@@ -33,12 +33,45 @@ def run():
         if run_radar == 'y':
             break
         elif run_radar == 'n':
+            while True:
+                coordinates = input("Please enter two numbers in coordinates (in the format 'a b'): ")
+                # Split the input string into two numbers
+                nums = coordinates.split()
+                if len(nums) != 2:
+                    print("Invalid input. Please enter two numbers separated by a space.")
+                    continue
+                try:
+                    x, y = map(int, nums)
+                    print("Coordinates entered:", (x, y))
+                    break
+                except ValueError:
+                    print("Invalid input. Please enter valid integers for coordinates.")
             break
         else:
             print("Invalid input. Please enter 'y' or 'n'.")
 
     
-    mon_interface = input("Please enter the network interface for monitor mode: ")
+    while True:
+        try:
+            measured_power = float(input("Please enter the measured power (e.g. 40)"))
+            if not 10 <= measured_power <= 120:
+                print("Bad value")
+                continue
+            break
+        except ValueError:
+            print("Invalid input. Please enter a valid number for measured power.")
+
+    while True:
+        try:
+            n = int(input("Please enter a number for n (e.g. 2): "))
+            if not 1 <= n <= 4:
+                print("n must be between 1 and 4.")
+                continue
+            break
+        except ValueError:
+            print("Invalid input. Please enter a valid integer for n.")
+
+    mon_interface = input("Please enter the network interface for monitor mode: (e.g. wlan1mon) ")
        
 
 
@@ -51,6 +84,7 @@ def run():
         sniffercords_ready = threading.Event()
     else:
         sniffercords_ready = None
+        sniffercords = {'x': x, 'y': y}
     lock = threading.Lock()
 
     interface = "wlan1"
