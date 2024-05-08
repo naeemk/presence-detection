@@ -39,8 +39,9 @@ def send_data(sock, network_ips, probelist):
                 probe_request_bytes = probe_request_json.encode()
                 for ip in network_ips:
                     sock.sendto(probe_request_bytes, (ip, 12345))
-                counter+=1
                 print(f"[send_data]\tSent this probe request {probelist[counter].macaddress}")
+                counter+=1
+                
         time.sleep(0.1)
 
  

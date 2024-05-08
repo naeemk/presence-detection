@@ -101,21 +101,21 @@ def run():
 
 
     sniff_thread = threading.Thread(target=packet_sniffer,
-                                     args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready, measured_power, n), daemon=True)
+                                     args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready, measured_power, n), daemon=False)
     
     
     broadcast_probes_thread = threading.Thread(target=send_data,
-                                     args=(sock, network_ips, probelist), daemon=True)
+                                     args=(sock, network_ips, probelist), daemon=False)
     
     
     receive_probes_thread = threading.Thread(target=receive_data,
-                                     args=(sock, all_received_probes), daemon=True)
+                                     args=(sock, all_received_probes), daemon=False)
     
     sync_probes_thread = threading.Thread(target=sync_probes,
-                                     args=(probelist, all_received_probes, common_queue, lock), daemon=True)
+                                     args=(probelist, all_received_probes, common_queue, lock), daemon=False)
 
     update_thread = threading.Thread(target=update,
-                                    args=(common_queue, devices, lock), daemon=True)
+                                    args=(common_queue, devices, lock), daemon=False)
     if to_run > 0:   
         sniff_thread.start()
     if to_run > 1:
