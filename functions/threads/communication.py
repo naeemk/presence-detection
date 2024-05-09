@@ -39,7 +39,7 @@ def send_data(sock, network_ips, probelist):
                 probe_request_bytes = probe_request_json.encode()
                 for ip in network_ips:
                     sock.sendto(probe_request_bytes, (ip, 12345))
-                print(f"[send_data]\tSent this probe request {probelist[counter].macaddress}")
+                print(f"[send_data]\tSent this probe request {probe_request_json}")
                 counter+=1
                 
         time.sleep(0.1)
@@ -70,7 +70,7 @@ def receive_data(sock, all_received_probes):
             print("Error decoding JSON:", e)
             continue
         
-        print(f"[receive_probes] Received This Probe)")
+        print(f"[receive_probes]\tReceived This Probe)")
         print(f"\n \tMac: {probe.macaddress}\tSN: {probe.sequencenumber}\tSniffercords: {probe.sniffercords}")
            
         # print("All Probe Requests Received:", all_received_probes)  # Print all received ProbeRequest objects
