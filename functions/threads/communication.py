@@ -57,15 +57,14 @@ def receive_data(sock, all_received_probes):
         # Parse JSON data and create ProbeRequest objects
         try:
             decoded_data = json.loads(data_str)
-            for item in decoded_data:
-                probe = ProbeRequest(
-                    item.get("macaddress"),
-                    item.get("distance"),
-                    item.get("fingerprint"),
-                    item.get("sequencenumber"),
-                    item.get("sniffercords")
-                )
-                all_received_probes.append(probe)
+            probe = ProbeRequest(
+                decoded_data.get("macaddress"),
+                decoded_data.get("distance"),
+                decoded_data.get("fingerprint"),
+                decoded_data.get("sequencenumber"),
+                decoded_data.get("sniffercords")
+            )
+            all_received_probes.append(probe)
         except json.JSONDecodeError as e:
             print("Error decoding JSON:", e)
             continue
