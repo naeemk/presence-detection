@@ -1,16 +1,17 @@
+
 import math
 import random
-import sys
 import tkinter as tk
 from tkinter import ttk, messagebox
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import threading
 import time
-
+import sys
 sys.path.append('../localization')
 from objects.device import Device
 
+from functions.utils.coordinate_difference import coordinate_difference
 
 
 # Global variable for run solo option
@@ -32,23 +33,29 @@ class RadarInputWindow:
         self.entry_long = ttk.Entry(master)
         self.entry_long.pack()
 
+        # Checkbox for running solo or not
+        self.run_solo_var = tk.BooleanVar(value=False)  # Default is unticked
+        self.checkbox_solo = ttk.Checkbutton(master, text="Run Solo", variable=self.run_solo_var)
+        self.checkbox_solo.pack()
+
         self.submit_button = ttk.Button(master, text="Submit", command=self.submit_coordinates)
         self.submit_button.pack()
 
     def submit_coordinates(self):
+        global run_solo  # Access the global variable
         x = self.entry_lat.get()
         y = self.entry_long.get()
         if x and y:
             try:
                 x = float(x)
                 y = float(y)
+                run_solo = self.run_solo_var.get()  # Get the value of the checkbox
                 self.coordinates = {'x': x, 'y': y}
                 self.master.destroy()  # Close the input window
             except ValueError:
                 messagebox.showerror("Error", "Invalid input. Please enter numeric values for coordinates.")
         else:
             messagebox.showerror("Error", "Please enter both x and y coordinates.")
-
 
 
 class Radar:
@@ -83,8 +90,10 @@ class Radar:
         self.ax.clear()
 
 
-        max_abs_x = 5 + max(abs(device.coordinates[0]) for device in coordinates)
-        max_abs_y = 5 + max(abs(device.coordinates[1]) for device in coordinates)
+        increase_factor = 0.1
+        max_abs_x = max(abs(coordinate_difference((input_coordinates['x'], 0), (device.coordinates[0], 0))[0]) for device in coordinates) * (1 + increase_factor)
+        max_abs_y = max(abs(coordinate_difference((0, input_coordinates['y']), (0, device.coordinates[1]))[1]) for device in coordinates) * (1 + increase_factor)
+
         max_abs = max(max_abs_x, max_abs_y)
 
         # Set x and y limits centered at (0, 0)
@@ -101,6 +110,7 @@ class Radar:
             y_coord = obj.coordinates[1]
             fingerprint = obj.fingerprint
             distance = math.sqrt((x_coord - input_coordinates['x']) ** 2 + (y_coord - input_coordinates['y']) ** 2)
+            relative_coord_x, relative_coord_x = coordinate_difference((input_coordinates['x'], input_coordinates['y']), (x_coord, y_coord)) 
             last_update_time = obj.check_last_modified()  # Get last update time for object
             if last_update_time is None:
                 last_update_text = "Never updated"
@@ -114,7 +124,7 @@ class Radar:
                     last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minute ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
                 else:
                     last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minutes ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
-            self.ax.plot(x_coord, y_coord, marker='o', markersize=5, label=f"Device {idx + 1}: {last_update_text}")  # Plot the dot
+            self.ax.plot(relative_coord_x, relative_coord_x, marker='o', markersize=5, label=f"Device {idx + 1}: {last_update_text}")  # Plot the dot
 
         self.ax.set_xlabel('X')
         self.ax.set_ylabel('Y')
@@ -208,7 +218,6 @@ class RadarSolo:
 
         # Schedule the next update
         self.master.after(1000, self.update_map)
-
 
 
 

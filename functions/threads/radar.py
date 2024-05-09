@@ -7,6 +7,8 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import threading
 import time
 
+from functions.utils.coordinate_difference import coordinate_difference
+
 # Global variable for run solo option
 run_solo = False
 
@@ -83,8 +85,10 @@ class Radar:
         self.ax.clear()
 
 
-        max_abs_x = 5 + max(abs(device.coordinates[0]) for device in coordinates)
-        max_abs_y = 5 + max(abs(device.coordinates[1]) for device in coordinates)
+        increase_factor = 0.1
+        max_abs_x = max(abs(coordinate_difference((input_coordinates['x'], 0), (device.coordinates[0], 0))[0]) for device in coordinates) * (1 + increase_factor)
+        max_abs_y = max(abs(coordinate_difference((0, input_coordinates['y']), (0, device.coordinates[1]))[1]) for device in coordinates) * (1 + increase_factor)
+
         max_abs = max(max_abs_x, max_abs_y)
 
         # Set x and y limits centered at (0, 0)
@@ -101,6 +105,7 @@ class Radar:
             y_coord = obj.coordinates[1]
             fingerprint = obj.fingerprint
             distance = math.sqrt((x_coord - input_coordinates['x']) ** 2 + (y_coord - input_coordinates['y']) ** 2)
+            relative_coord_x, relative_coord_x = coordinate_difference((input_coordinates['x'], input_coordinates['y']), (x_coord, y_coord)) 
             last_update_time = obj.check_last_modified()  # Get last update time for object
             if last_update_time is None:
                 last_update_text = "Never updated"
@@ -114,7 +119,7 @@ class Radar:
                     last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minute ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
                 else:
                     last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minutes ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
-            self.ax.plot(x_coord, y_coord, marker='o', markersize=5, label=f"Device {idx + 1}: {last_update_text}")  # Plot the dot
+            self.ax.plot(relative_coord_x, relative_coord_x, marker='o', markersize=5, label=f"Device {idx + 1}: {last_update_text}")  # Plot the dot
 
         self.ax.set_xlabel('X')
         self.ax.set_ylabel('Y')
