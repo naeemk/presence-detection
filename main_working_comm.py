@@ -5,7 +5,6 @@ import random
 import subprocess
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
-from functions.configure_socket import configure_socket
 from functions.threads.communication import receive_data, send_data
 from functions.threads import radar
 from functions.threads.packet_sniffer import packet_sniffer
@@ -13,7 +12,7 @@ from functions.threads.sync_probes import sync_probes
 from functions.threads.update import update
 from objects.proberequest import ProbeRequest
 from objects.device import Device
-from functions import configure_adhoc_network, extract_vendor_specific, setup_interface
+from functions import extract_vendor_specific, setup_interface
 from functions.threads import radar
 
 
@@ -92,8 +91,82 @@ def run():
     monitor_interface = setup_interface.setup_interface(interface, mon_interface)
     
 
+
+    def get_unique_ip(base):
+
+        # Get the MAC address of wlan0 to generate a unique IP
+
+        result = subprocess.run(['cat', '/sys/class/net/wlan0/address'], stdout=subprocess.PIPE)
+
+        mac = result.stdout.decode('utf-8').strip()
+
+        unique_suffix = int(mac.split(':')[-1], 16) % 254 + 1  # Using last byte of MAC address for uniqueness
+
+        return f"{base}{unique_suffix}"
+
+ 
+
+    def configure_adhoc_network():
+
+        # Stop interfering services
+
+        os.system('sudo systemctl stop NetworkManager')
+
+        os.system('sudo systemctl stop wpa_supplicant')
+
+        os.system('sudo ifconfig wlan0 down')
+
+        os.system('sudo iwconfig wlan0 mode ad-hoc')
+
+        os.system('sudo iwconfig wlan0 essid "YourAdHocSSID"')
+
+        os.system('sudo iwconfig wlan0 channel 1')
+
+        # Assign unique IP based on MAC address
+
+        unique_ip = get_unique_ip('10.192.200.')
+
+        os.system(f'sudo ifconfig wlan0 {unique_ip} netmask 255.255.0.0')
+
+        os.system('sudo ifconfig wlan0 up')
+
+        return unique_ip
+
     
-    my_ip = configure_adhoc_network.configure_adhoc_network()
+
+    def configure_socket(interface_ip):
+
+        # Bind a socket to the interface IP and a specific port for UDP communication
+
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+        sock.bind((interface_ip, 12345))
+
+        return sock
+
+    
+
+    def send_data(sock, network_ips):
+        while True:
+            random_value = random.randint(1000, 9999)
+            for ip in network_ips:
+                sock.sendto(f"Random value {random_value}".encode(), (ip, 12345))
+            time.sleep(5)
+
+    
+
+    def receive_data(sock):
+
+        while True:
+
+            data, addr = sock.recvfrom(1024)
+
+            print(f"These values {data.decode()} are from {addr[0]}")
+
+
+
+    
+    my_ip = configure_adhoc_network()
 
     sock = configure_socket(my_ip)
 
@@ -104,12 +177,10 @@ def run():
                                      args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready, measured_power, n), daemon=False)
     
     
-    broadcast_probes_thread = threading.Thread(target=send_data,
-                                     args=(sock, network_ips, probelist), daemon=False)
+    receive_data_thread = threading.Thread(target=receive_data, args=(sock,), daemon=True)
     
     
-    receive_probes_thread = threading.Thread(target=receive_data,
-                                     args=(sock, all_received_probes), daemon=False)
+    send_thread = threading.Thread(target=send_data, args=(sock, network_ips), daemon=True)
     
     sync_probes_thread = threading.Thread(target=sync_probes,
                                      args=(probelist, all_received_probes, common_queue, lock), daemon=False)
@@ -120,10 +191,10 @@ def run():
         sniff_thread.start()
     if to_run > 1:
         print(f"[main]\tStarting broadcast thread with args: sock={sock}, network_ips={network_ips}, probelist={probelist}, ")
-        broadcast_probes_thread.start()
+        send_thread.start()
     if to_run > 2:
         print(f"[main]\tStarting receive_probes_thread with args: sock={sock}, all_received_probes={all_received_probes}")
-        receive_probes_thread.start()
+        receive_data_thread.start()
     if to_run > 3:
         print(f"[main]\tStarting sync_probes_thread with args: probelist={probelist}, all_received_probes={all_received_probes}, 
               common_queue={common_queue}, lock={lock}")
@@ -135,6 +206,10 @@ def run():
     if run_radar == "y":    
         print(f"[main]\tStarting radar  with args: devices={devices}, sniffercords={sniffercords}, sniffercords_ready={sniffercords_ready}, ")
         radar.radar_main(devices, sniffercords, sniffercords_ready)
+
+
+
+
 
 
 if __name__ == "__main__":

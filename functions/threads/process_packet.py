@@ -7,7 +7,7 @@ from objects.proberequest import ProbeRequest
 # processes packets, creates proberequest objects of all received probes and populates list
 # which is then filtered by process_burst
 def process_packet(packet, probelist, sniffercords, measured_power, n, lock):
-    print(f"[process_packet]\tReceived packet: Executing process_packet with arguments packet = {packet} probelist={probelist}, sniffercords={sniffercords}, lock={lock}")
+    print(f"[process_packet]\tReceived packet: Executing process_packet with arguments packet = {packet} probelist(length)={len(probelist)}, sniffercords={sniffercords}, lock={lock}")
     if packet.haslayer(Dot11ProbeReq):
         print(f"\n[process_packet]\tPacket is a probe request")
 
