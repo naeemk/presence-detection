@@ -94,7 +94,7 @@ def run():
 
     
     my_ip = configure_adhoc_network.configure_adhoc_network()
-
+    print(f"[startup]\tMy ip is: {my_ip}")
     sock = configure_socket(my_ip)
 
     network_ips = [f"10.192.200.{i}" for i in range(1, 255) if f"10.192.200.{i}" != my_ip]
