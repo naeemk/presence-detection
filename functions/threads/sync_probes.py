@@ -25,6 +25,6 @@ def sync_probes(list1, list2, common_queue, lock):
                     # Add the elements to the queue
                     common_data = {'element1': item1, 'element2': corresponding_elements[0], 'element3': corresponding_elements[1]}
                     print(f"[sync_probes]\tFound common data: {common_data}")
-                    common_queue.put(common_data)
+                    common_queue.append(common_data)
 
 
