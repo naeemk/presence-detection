@@ -67,7 +67,7 @@ def update(common_queue, devices, lock):
                 print("[update] Coordinates of each device")
                 for device in devices:
                     print(device.coordinates)
-
+            counter += 1
 
 
 
