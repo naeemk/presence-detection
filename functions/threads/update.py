@@ -13,7 +13,7 @@ def update(common_queue, devices, lock):
         time.sleep(0.5)
 
         
-        while counter > len(common_queue):
+        while counter < len(common_queue):
             with lock:
                 three_elements = common_queue[counter]
                 print(f"[update]\tReceived common data")
