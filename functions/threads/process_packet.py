@@ -10,7 +10,7 @@ from objects.proberequest import ProbeRequest
 
 # processes packets, creates proberequest objects of all received probes and populates list
 # which is then filtered by process_burst
-def process_packet(packet, probe, sniffercords, measured_power, n, socket, network_ips, lock):
+def process_packet(packet, probelist, sniffercords, measured_power, n, socket, network_ips, lock):
     if packet.haslayer(Dot11ProbeReq):
         print(f"\n[process_packet] Captured probe", end="\n")
 
@@ -47,9 +47,9 @@ def process_packet(packet, probe, sniffercords, measured_power, n, socket, netwo
         # Create probe object and append to list
         probe = ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0])
         with lock:
-            probe.append(probe)
-            write_probe_to_csv("probelist.csv", ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0]))
-        print(f"Probelist length: {len(probe)}")
+            probelist.append(probelist)
+            write_probe_to_csv("probelist.csv", probe)
+        print(f"Probelist length: {len(probelist)}")
         print()
 
         probe_request_json = json.dumps({
