@@ -212,7 +212,7 @@ if __name__ == "__main__":
     print("[Main] Starting program")
 
     run_solo = input("Do you want to run solo? (y/n): ").lower()
-    if run_solo:
+    if run_solo == 'y':
         main_run_solo()
     else:
         main_run()
