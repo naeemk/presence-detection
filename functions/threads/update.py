@@ -5,17 +5,15 @@ from objects.device import Device
 from objects.proberequest import ProbeRequest
 import time
 
-def update(common_queue, devices, lock):
+def update(common_probes, devices, lock):
     counter = 0
     max_distance = 1000
-    print(f"[update]\tStarting update thread")
+    print(f"\n[update]\tStarting update thread")
     while True:
-        time.sleep(0.5)
-
-        
-        while counter < len(common_queue):
+        time.sleep(0.2)
+        while counter < len(common_probes):
             with lock:
-                three_elements = common_queue[counter]
+                three_elements = common_probes[counter]
                 print(f"[update]\tReceived common data")
                 fingerprint = three_elements['element1'].fingerprint
                 x1 = three_elements['element1'].sniffercords['x']

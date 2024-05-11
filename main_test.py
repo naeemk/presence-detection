@@ -78,7 +78,7 @@ def run():
 
     probelist = []
     all_received_probes = []
-    common_queue = []
+    common_probes = []
     devices = []
     sniffercords = [None]
     if run_radar == "y":
@@ -112,10 +112,10 @@ def run():
                                      args=(sock, all_received_probes), daemon=False)
     
     sync_probes_thread = threading.Thread(target=sync_probes,
-                                     args=(probelist, all_received_probes, common_queue, lock), daemon=False)
+                                     args=(probelist, all_received_probes, common_probes, lock), daemon=False)
 
     update_thread = threading.Thread(target=update,
-                                    args=(common_queue, devices, lock), daemon=False)
+                                    args=(common_probes, devices, lock), daemon=False)
     if to_run > 0:   
         sniff_thread.start()
     if to_run > 1:
@@ -125,12 +125,10 @@ def run():
         print(f"[main]\tStarting receive_probes_thread with args: sock={sock}, all_received_probes={all_received_probes}")
         receive_probes_thread.start()
     if to_run > 3:
-        print(f"[main]\tStarting sync_probes_thread with args: probelist={probelist}, all_received_probes={all_received_probes}, 
-              common_queue={common_queue}, lock={lock}")
+        print(f"[main]\tStarting sync_probes_thread with args: probelist={probelist}, all_received_probes={all_received_probes}, common_queue={common_probes}, lock={lock}")
         sync_probes_thread.start()
     if to_run > 4:
-        print(f"[main]\tStarting update_thread with args: common_queue={common_queue}, devices={devices}, 
-              lock={lock}")
+        print(f"[main]\tStarting update_thread with args: common_probes={common_probes}, devices={devices}, lock={lock}")
         update_thread.start()
     if run_radar == "y":    
         print(f"[main]\tStarting radar  with args: devices={devices}, sniffercords={sniffercords}, sniffercords_ready={sniffercords_ready}, ")
