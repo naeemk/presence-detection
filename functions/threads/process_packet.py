@@ -47,7 +47,7 @@ def process_packet(packet, probelist, sniffercords, measured_power, n, socket, n
         # Create probe object and append to list
         probe = ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0])
         with lock:
-            probelist.append(probelist)
+            probelist.append(probe)
             write_probe_to_csv("probelist.csv", probe)
         print(f"Probelist length: {len(probelist)}")
         print()
