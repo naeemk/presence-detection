@@ -6,7 +6,7 @@ import subprocess
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
 from functions.configure_socket import configure_socket
-from functions.threads.communication import receive_data, send_data
+from functions.threads.receive_data import receive_data
 from functions.threads import radar
 from functions.threads.packet_sniffer import packet_sniffer
 from functions.threads.sync_probes import sync_probes
@@ -14,7 +14,7 @@ from functions.threads.update import update
 from functions.utils.delete_csv_files import delete_csv_files
 from objects.proberequest import ProbeRequest
 from objects.device import Device
-from functions import configure_adhoc_network, extract_vendor_specific, setup_interface
+from functions import configure_adhoc_network, setup_interface
 from functions.threads import radar
 
 
@@ -104,21 +104,19 @@ def run():
 
 
     sniff_thread = threading.Thread(target=packet_sniffer,
-                                     args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready, measured_power, n, sock, network_ips), daemon=False)
+                                     args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready, measured_power, n, sock, network_ips, my_ip), daemon=False)
     
     
-    broadcast_probes_thread = threading.Thread(target=send_data,
-                                     args=(sock, network_ips, probelist), daemon=False)
+    
     
     
     receive_probes_thread = threading.Thread(target=receive_data,
                                      args=(sock, all_received_probes), daemon=False)
     
-    sync_probes_thread = threading.Thread(target=sync_probes,
-                                     args=(probelist, all_received_probes, common_probes, lock), daemon=False)
+
 
     update_thread = threading.Thread(target=update,
-                                    args=(common_probes, devices, lock), daemon=False)
+                                    args=(probelist, all_received_probes, devices, lock), daemon=False)
     if to_run > 0:   
         sniff_thread.start()
     if to_run > 1:
@@ -129,8 +127,9 @@ def run():
         print(f"[main]\tStarting receive_probes_thread with args: sock={sock}, all_received_probes={all_received_probes}")
         receive_probes_thread.start()
     if to_run > 3:
-        print(f"[main]\tStarting sync_probes_thread with args: probelist={probelist}, all_received_probes={all_received_probes}, common_queue={common_probes}, lock={lock}")
-        sync_probes_thread.start()
+        #print(f"[main]\tStarting sync_probes_thread with args: probelist={probelist}, all_received_probes={all_received_probes}, common_queue={common_probes}, lock={lock}")
+        #sync_probes_thread.start()
+        pass
     if to_run > 4:
         print(f"[main]\tStarting update_thread with args: common_probes={common_probes}, devices={devices}, lock={lock}")
         update_thread.start()

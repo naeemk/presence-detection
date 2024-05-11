@@ -1,83 +1,56 @@
+import sys
+
+from functions.utils.write_to_csv import write_to_csv
+sys.path.append(".")
+from functions.utils.find_last_probes import find_last_probes
 from functions.utils.rssi_to_distance import rssi_to_distance
 from functions.utils.trilaterate import trilaterate
-from functions.utils.write_to_file import write_to_csv
 from objects.device import Device
 from objects.proberequest import ProbeRequest
 import time
 
-def update(common_probes, devices, lock):
+def update(probelist, all_received_probes, devices, lock):
     counter = 0
     max_distance = 1000
     print(f"\n[update]\tStarting update thread")
     while True:
-        time.sleep(0.2)
-        while counter < len(common_probes):
-            with lock:
-                three_elements = common_probes[counter]
-                print(f"[update]\tReceived common data")
-                fingerprint = three_elements['element1'].fingerprint
-                x1 = three_elements['element1'].sniffercords['x']
-                y1 = three_elements['element1'].sniffercords['y']
-                d1 = three_elements['element1'].distance
+        time.sleep(1)
+        last_3_probes_by_fingerprint = find_last_probes(probelist, all_received_probes)
+        sniffercoords_list = []
+        distance_list = []
+        for fingerprint, probes in last_3_probes_by_fingerprint.items():
+            for probe in probes:
+                sniffercoords_list.append(probe.sniffercords)
+                distance_list.append(probe.distance)
+            x1 = sniffercoords_list[0]['x']
+            y1 = sniffercoords_list[0]['y']
+            d1 = distance_list[0]
 
-                x2 = three_elements['element2'].sniffercords['x']
-                y2 = three_elements['element2'].sniffercords['y']
-                d2 = three_elements['element2'].distance
+            x2 = sniffercoords_list[1]['x']
+            y2 = sniffercoords_list[1]['y']
+            d2 = distance_list[1]
 
-                x3 = three_elements['element3'].sniffercords['x']
-                y3 = three_elements['element3'].sniffercords['y']
-                d3 = three_elements['element3'].distance
-                
-            device_coordinates = trilaterate(x1, x2, x3, y1, y2, y3, d1, d2, d3) # dict with keys "x" "y"
-            print(f"[update]\tResult of trilateration: {device_coordinates}")
+            x3 = sniffercoords_list[2]['x']
+            y3 = sniffercoords_list[2]['y']
+            d3 = distance_list[2]
+            device_coordinates = trilaterate(x1, x2, x3, y1, y2, y3, d1, d2, d3)
             coordinates_tuple = (device_coordinates['x'], device_coordinates['y'])
             new_device = Device(fingerprint, coordinates_tuple)
-
 
             should_append = True
             with lock:
                 for index, device in enumerate(devices):
                     if device.fingerprint == new_device.fingerprint:
-
-
-
-                        write_to_csv('test.csv', index, new_device.coordinates)
-                        
-                        
-                        
+                        write_to_csv('test.csv', new_device.fingerprint, new_device.coordinates)
                         print(f"[update] Found device with similar fingerprint at index {index}")
                         print(f"[update Updating distance from {device.coordinates} to {new_device.coordinates}")
                         device.update(new_device.coordinates)
                         should_append = False
                     
-
                 if should_append:
                     print(f"[update] Did not recognize fingerprint, appending device to list")
                     devices.append(new_device)
-
-
-
-                    write_to_csv('test.csv', len(devices), new_device.coordinates)
-
-
-
-                
-                print("[update] Coordinates of each device")
-                for device in devices:
-                    print(device.coordinates)
-            counter += 1
-
-
-
-
-
-    #for each element in common queue
-    # get its fingerprint, which should be the same on all 3
-    # get its rssi's of all 3
-    # get sniffercords of all 3
-    # perform trilateration to calculate coords
-    # create device object with fingerprint and coords that was just calculated
-    # check devices whether to update or add new device
+                    write_to_csv('test.csv', new_device.fingerprint, new_device.coordinates)
 
 
     

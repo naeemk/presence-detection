@@ -3,7 +3,7 @@ def write_probe_to_csv(filename, probe):
     import os
     
     # Define the field names for the CSV file
-    fieldnames = ['macaddress', 'distance', 'fingerprint', 'sequencenumber', 'sniffercords']
+    fieldnames = ['macaddress', 'distance', 'fingerprint', 'sequencenumber', 'sniffercords', 'sniffer_ip']
     
     # Check if the file exists
     file_exists = os.path.exists(filename)
@@ -23,5 +23,6 @@ def write_probe_to_csv(filename, probe):
             'distance': probe.distance,
             'fingerprint': probe.fingerprint,
             'sequencenumber': probe.sequencenumber,
-            'sniffercords': probe.sniffercords
+            'sniffercords': probe.sniffercords,
+            'sniffer_ip': probe.sniffer_ip
         })

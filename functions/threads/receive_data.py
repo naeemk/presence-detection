@@ -19,38 +19,7 @@ from functions.utils.rssi_to_distance import rssi_to_distance
 from functions.utils.write_probe_to_csv import write_probe_to_csv
 from objects.proberequest import ProbeRequest
 
- 
- 
-
-
- 
-
-def send_data(sock, network_ips, probelist):
-    print(f"[send_data]\tExecuting send_data thread")
-    counter = 0  
-    while True:
-        print("executing send data thread")
-        #print(f"[send_data]\tchecking if probelist: {len(probelist)} >= 1")
-        if len(probelist) >= 1:
-            #print(f"[send_data]\tchecking if counter: {counter} < probelist: {len(probelist)}")
-            while counter < len(probelist):
-                probe_request_json = json.dumps({
-                    "macaddress": probelist[counter].macaddress,
-                    "distance": probelist[counter].distance,
-                    "fingerprint": probelist[counter].fingerprint,
-                    "sequencenumber": probelist[counter].sequencenumber,
-                    "sniffercords": probelist[counter].sniffercords
-                })
-                probe_request_bytes = probe_request_json.encode()
-                for ip in network_ips:
-                    sock.sendto(probe_request_bytes, (ip, 12345))
-                print(f"[send_data]\Broadcasted this probe request Mac: {probelist[counter].macaddress} SN: {probelist[counter].sequencenumber}")
-                write_probe_to_csv("broadcasted_probes.csv", probelist[counter])
-                counter+=1
-                print(f"length of broadcasted probes: {len(counter)}")
-        #time.sleep(0.1)
-
- 
+        
 
 def receive_data(sock, all_received_probes):
     print(f"[receive_data]\tExecuting receive_data thread")
@@ -67,7 +36,8 @@ def receive_data(sock, all_received_probes):
                 decoded_data.get("distance"),
                 decoded_data.get("fingerprint"),
                 decoded_data.get("sequencenumber"),
-                decoded_data.get("sniffercords")
+                decoded_data.get("sniffercords"),
+                decoded_data.get("sniffer_ip")
             )
             all_received_probes.append(probe)
         except json.JSONDecodeError as e:

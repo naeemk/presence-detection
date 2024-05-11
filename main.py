@@ -7,7 +7,7 @@ from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
 from functions.configure_socket import configure_socket
 
-from functions.threads.communication import receive_data, send_data
+from functions.threads.receive_data import receive_data
 from functions.threads import radar
 from functions.threads.sync_probes import sync_probes
 from functions.threads.update import update
@@ -43,9 +43,6 @@ def run():
                                      args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready), daemon=True)
     
     print(f"[main]\tStarting broadcast thread with args: sock={sock}, network_ips={network_ips}, probelist={probelist}, ")
-    broadcast_probes_thread = threading.Thread(target=send_data,
-                                     args=(sock, network_ips, probelist), daemon=True)
-    
     print(f"[main]\tStarting broadcast thread with args: sock={sock}, all_received_probes={network_ips}")
     receive_probes_thread = threading.Thread(target=receive_data,
                                      args=(sock, all_received_probes), daemon=True)

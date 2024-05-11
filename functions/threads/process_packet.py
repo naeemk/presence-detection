@@ -10,7 +10,7 @@ from objects.proberequest import ProbeRequest
 
 # processes packets, creates proberequest objects of all received probes and populates list
 # which is then filtered by process_burst
-def process_packet(packet, probelist, sniffercords, measured_power, n, socket, network_ips, lock):
+def process_packet(packet, probelist, sniffercords, measured_power, n, socket, network_ips, my_ip, lock):
     if packet.haslayer(Dot11ProbeReq):
         print(f"\n[process_packet] Captured probe", end="\n")
 
@@ -45,7 +45,7 @@ def process_packet(packet, probelist, sniffercords, measured_power, n, socket, n
         #print(f"Fingerprint: {fingerprint}")
 
         # Create probe object and append to list
-        probe = ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0])
+        probe = ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0], my_ip)
         with lock:
             probelist.append(probe)
             write_probe_to_csv("probelist.csv", probe)
@@ -57,7 +57,8 @@ def process_packet(packet, probelist, sniffercords, measured_power, n, socket, n
             "distance": probe.distance,
             "fingerprint": probe.fingerprint,
             "sequencenumber": probe.sequencenumber,
-            "sniffercords": probe.sniffercords
+            "sniffercords": probe.sniffercords,
+            "sniffer_ip": probe.sniffer_ip,
         })
         probe_request_bytes = probe_request_json.encode()
         for ip in network_ips:

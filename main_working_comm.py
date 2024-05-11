@@ -5,7 +5,7 @@ import random
 import subprocess
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
-from functions.threads.communication import receive_data, send_data
+from functions.threads.receive_data import receive_data, send_data
 from functions.threads import radar
 from functions.threads.packet_sniffer import packet_sniffer
 from functions.threads.sync_probes import sync_probes
