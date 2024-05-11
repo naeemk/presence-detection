@@ -8,7 +8,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import threading
 import time
 import sys
-sys.path.append('../localization')
+sys.path.append('.')
 from objects.device import Device
 
 from functions.utils.coordinate_difference import coordinate_difference

@@ -1,6 +1,9 @@
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
+import sys
 
+from functions.utils.write_probe_to_csv import write_probe_to_csv
+sys.path.append('.')
 from functions.utils.rssi_to_distance import rssi_to_distance
 from objects.proberequest import ProbeRequest
 
@@ -43,5 +46,6 @@ def process_packet(packet, probelist, sniffercords, measured_power, n, lock):
         # Create probe object and append to list
         with lock:
             probelist.append(ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0]))
+            write_probe_to_csv("probelist.csv", ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0]))
         print(f"Probelist length: {len(probelist)}")
         print()

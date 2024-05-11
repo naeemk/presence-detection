@@ -12,7 +12,11 @@ import random
 
 import threading
 
+import sys
+sys.path.append('.')
+
 from functions.utils.rssi_to_distance import rssi_to_distance
+from functions.utils.write_probe_to_csv import write_probe_to_csv
 from objects.proberequest import ProbeRequest
 
  
@@ -40,9 +44,10 @@ def send_data(sock, network_ips, probelist):
                 for ip in network_ips:
                     sock.sendto(probe_request_bytes, (ip, 12345))
                 print(f"[send_data]\Broadcasted this probe request Mac: {probelist[counter].macaddress} SN: {probelist[counter].sequencenumber}")
+                write_probe_to_csv("broadcasted_probes.csv", probelist[counter])
                 counter+=1
-                
-        time.sleep(0.1)
+                print(f"length of broadcasted probes: {len(counter)}")
+        #time.sleep(0.1)
 
  
 
@@ -72,5 +77,6 @@ def receive_data(sock, all_received_probes):
         print(f"[receive_probes]\tReceived This Probe)", end=" ")
         print(f"Mac: {probe.macaddress} SN: {probe.sequencenumber}")
         print(f"Length of all_received_probes = {len(all_received_probes)}")
+        write_probe_to_csv("all_received_probes.csv", probe)
            
         # print("All Probe Requests Received:", all_received_probes)  # Print all received ProbeRequest objects
