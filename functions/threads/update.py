@@ -16,9 +16,9 @@ def update(probelist, all_received_probes, devices, lock):
     while True:
         time.sleep(1)
         last_3_probes_by_fingerprint = find_last_probes(probelist, all_received_probes)
-        sniffercoords_list = []
-        distance_list = []
         for fingerprint, probes in last_3_probes_by_fingerprint.items():
+            sniffercoords_list = []
+            distance_list = []
             for probe in probes:
                 sniffercoords_list.append(probe.sniffercords)
                 distance_list.append(probe.distance)
