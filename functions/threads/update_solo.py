@@ -13,6 +13,7 @@ def update_solo(probelist, devices, lock):
         time.sleep(0.5)
         with lock:
             while counter < len(probelist):
+                counter+=1
                 distance = probelist[counter].distance
                 if distance > max_distance:
                     counter+=1
