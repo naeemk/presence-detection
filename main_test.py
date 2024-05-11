@@ -11,6 +11,7 @@ from functions.threads import radar
 from functions.threads.packet_sniffer import packet_sniffer
 from functions.threads.sync_probes import sync_probes
 from functions.threads.update import update
+from functions.utils.delete_csv_files import delete_csv_files
 from objects.proberequest import ProbeRequest
 from objects.device import Device
 from functions import configure_adhoc_network, extract_vendor_specific, setup_interface
@@ -75,6 +76,8 @@ def run():
     mon_interface = input("Please enter the network interface for monitor mode: (e.g. wlan1mon) ")
        
 
+
+    delete_csv_files("probelist.csv", "broadcasted_probes.csv", "all_received_probes.csv")
 
     probelist = []
     all_received_probes = []
