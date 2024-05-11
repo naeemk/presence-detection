@@ -15,18 +15,18 @@ from functions.threads import radar
 
 def run_solo():
     probelist = []
-    local_queue = []
     devices = []
     sniffercords = [None]
     sniffercords_ready = threading.Event()
-    interface = "wlan0"
+    interface = "wlan1"
+    mon_interface = input("Please enter the network interface for monitor mode: (e.g. wlan1mon) ")
     lock = threading.Lock()
-    monitor_interface = setup_interface.setup_interface(interface)
+    monitor_interface = setup_interface.setup_interface(interface, mon_interface)
     
     sniff_thread = threading.Thread(target=packet_sniffer.packet_sniffer,
-                                     args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready), daemon=True)
+                                     args=(monitor_interface, probelist, sniffercords, lock, sniffercords_ready), daemon=False)
     update_solo_thread = threading.Thread(target=update_solo,
-                                    args=(probelist, devices, lock), daemon=True)
+                                    args=(probelist, devices, lock), daemon=False)
     
     sniff_thread.start()
     update_solo_thread.start()

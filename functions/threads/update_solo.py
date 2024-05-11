@@ -1,7 +1,7 @@
 from functions.utils.rssi_to_distance import rssi_to_distance
+from functions.utils.write_to_csv import write_to_csv
 from objects.device import Device
 from objects.proberequest import ProbeRequest
-from functions.utils.write_to_file import write_to_csv
 import time
 
 
@@ -38,7 +38,7 @@ def update_solo(probelist, devices, lock):
 
 
 
-                        write_to_csv('test.csv', index, new_device.coordinates)
+                        write_to_csv('test.csv', new_device.fingerprint, new_device.coordinates)
                         
                         
                         
@@ -55,7 +55,7 @@ def update_solo(probelist, devices, lock):
 
 
 
-                    write_to_csv('test.csv', len(devices), new_device.coordinates)
+                    write_to_csv('test.csv', new_device.fingerprint, new_device.coordinates)
 
 
 

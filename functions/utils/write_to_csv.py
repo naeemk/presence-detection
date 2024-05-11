@@ -11,4 +11,4 @@ def write_to_csv(file_name, *args):
         print(f"Error occurred while writing row to CSV: {e}")
 
 # Example usage:
-write_to_csv("example.csv", "Column1Value", "Column2Value", "Column3Value")
+# write_to_csv("example.csv", "Column1Value", "Column2Value", "Column3Value")

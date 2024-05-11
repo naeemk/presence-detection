@@ -28,29 +28,23 @@ class RadarInputWindow:
         self.entry_long = ttk.Entry(master)
         self.entry_long.pack()
 
-        # Checkbox for running solo or not
-        self.run_solo_var = tk.BooleanVar(value=False)  # Default is unticked
-        self.checkbox_solo = ttk.Checkbutton(master, text="Run Solo", variable=self.run_solo_var)
-        self.checkbox_solo.pack()
-
         self.submit_button = ttk.Button(master, text="Submit", command=self.submit_coordinates)
         self.submit_button.pack()
 
     def submit_coordinates(self):
-        global run_solo  # Access the global variable
         x = self.entry_lat.get()
         y = self.entry_long.get()
         if x and y:
             try:
                 x = float(x)
                 y = float(y)
-                run_solo = self.run_solo_var.get()  # Get the value of the checkbox
                 self.coordinates = {'x': x, 'y': y}
                 self.master.destroy()  # Close the input window
             except ValueError:
                 messagebox.showerror("Error", "Invalid input. Please enter numeric values for coordinates.")
         else:
             messagebox.showerror("Error", "Please enter both x and y coordinates.")
+
 
 
 class Radar:
@@ -219,7 +213,7 @@ class RadarSolo:
 
 
 
-def radar_main(devicesparameter, sniffercords, sniffercordsready):
+def radar_main(devicesparameter, sniffercords, sniffercordsready, run_solo):
     input_root = tk.Tk()
     coordinates_input_window = RadarInputWindow(input_root)
     input_root.mainloop()
