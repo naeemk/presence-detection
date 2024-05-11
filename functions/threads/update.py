@@ -16,7 +16,7 @@ def update(probelist, all_received_probes, devices, lock):
     print(f"\n[update]\tStarting update thread")
     while True:
         time.sleep(1)
-        if all_received_probes > 0:
+        if len(all_received_probes) > 0:
             if has_different_sniffer_ips(all_received_probes):
                 last_3_probes_by_fingerprint = find_last_probes(probelist, all_received_probes)
                 for fingerprint, probes in last_3_probes_by_fingerprint.items():
