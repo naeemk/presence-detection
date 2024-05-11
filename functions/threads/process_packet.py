@@ -1,3 +1,4 @@
+import json
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Elt
 import sys
@@ -9,7 +10,7 @@ from objects.proberequest import ProbeRequest
 
 # processes packets, creates proberequest objects of all received probes and populates list
 # which is then filtered by process_burst
-def process_packet(packet, probelist, sniffercords, measured_power, n, lock):
+def process_packet(packet, probe, sniffercords, measured_power, n, socket, network_ips, lock):
     if packet.haslayer(Dot11ProbeReq):
         print(f"\n[process_packet] Captured probe", end="\n")
 
@@ -44,8 +45,24 @@ def process_packet(packet, probelist, sniffercords, measured_power, n, lock):
         #print(f"Fingerprint: {fingerprint}")
 
         # Create probe object and append to list
+        probe = ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0])
         with lock:
-            probelist.append(ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0]))
+            probe.append(probe)
             write_probe_to_csv("probelist.csv", ProbeRequest(mac_address, rssi_to_distance(rssi, measured_power, n), fingerprint, sequence_number, sniffercords[0]))
-        print(f"Probelist length: {len(probelist)}")
+        print(f"Probelist length: {len(probe)}")
         print()
+
+        probe_request_json = json.dumps({
+            "macaddress": probe.macaddress,
+            "distance": probe.distance,
+            "fingerprint": probe.fingerprint,
+            "sequencenumber": probe.sequencenumber,
+            "sniffercords": probe.sniffercords
+        })
+        probe_request_bytes = probe_request_json.encode()
+        for ip in network_ips:
+            socket.sendto(probe_request_bytes, (ip, 12345))
+        print(f"[send_data]\Broadcasted this probe request Mac: {probe.macaddress} SN: {probe.sequencenumber}")
+        write_probe_to_csv("broadcasted_probes.csv", probe)
+        counter+=1
+        print(f"length of broadcasted probes: {len(counter)}")
