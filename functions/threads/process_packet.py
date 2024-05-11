@@ -64,5 +64,3 @@ def process_packet(packet, probelist, sniffercords, measured_power, n, socket, n
             socket.sendto(probe_request_bytes, (ip, 12345))
         print(f"[send_data]\Broadcasted this probe request Mac: {probe.macaddress} SN: {probe.sequencenumber}")
         write_probe_to_csv("broadcasted_probes.csv", probe)
-        counter+=1
-        print(f"length of broadcasted probes: {len(counter)}")
