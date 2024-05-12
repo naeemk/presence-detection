@@ -19,10 +19,14 @@ def update(probelist, all_received_probes, devices, lock):
         if len(all_received_probes) > 0:
             if has_different_sniffer_ips(all_received_probes):
                 last_3_probes_by_fingerprint = find_last_probes(probelist, all_received_probes)
+                print(f"last_3_probes_by_fingerprint: \n \t{last_3_probes_by_fingerprint}")
                 for fingerprint, probes in last_3_probes_by_fingerprint.items():
+                    print(f"fingerprint: {fingerprint}")
+                    print(f"probes: {probes}")
                     sniffercoords_list = []
                     distance_list = []
                     for probe in probes:
+                        print(f"probe = {probe}\t probe.distance = {probe.distance}\t probe.sniffer_ip = {probe.sniffer_ip}\t probe.sniffercoords = {probe.sniffercoords}")
                         sniffercoords_list.append(probe.sniffercords)
                         distance_list.append(probe.distance)
                     x1 = sniffercoords_list[0]['x']
@@ -36,6 +40,7 @@ def update(probelist, all_received_probes, devices, lock):
                     x3 = sniffercoords_list[2]['x']
                     y3 = sniffercoords_list[2]['y']
                     d3 = distance_list[2]
+                    print(f"trilaterate({x1}, {x2}, {x3}, {y1}, {y2}, {y3}, {d1}, {d2}, {d3})")
                     device_coordinates = trilaterate(x1, x2, x3, y1, y2, y3, d1, d2, d3)
                     coordinates_tuple = (device_coordinates['x'], device_coordinates['y'])
                     new_device = Device(fingerprint, coordinates_tuple)

@@ -29,7 +29,7 @@ def trilaterate(x1, x2, x3, y1, y2, y3, d1, d2, d3):
     return result
 
 # example: should return 55,45
-# trilaterate(40, 30, 80, 30, 70, 50, 21, 35, 25) 
+# trilaterate(1, 400, -430, 1, 750, -435, 21, 35, 25) 
 """
 Result of matrix multiplication:
 {'x': 55.08888888888889, 'y': 45.22222222222222}
