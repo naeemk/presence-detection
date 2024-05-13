@@ -29,7 +29,7 @@ def update(probelist, all_received_probes, devices, lock):
                             sniffercoords_list = []
                             distance_list = []
                             for probe in probes:
-                                print(f"probe = {probe}\t probe.distance = {probe.distance}\t probe.sniffer_ip = {probe.sniffer_ip}\t probe.sniffercoords = {probe.sniffercoords}")
+                                print(f"probe = {probe}\t probe.distance = {probe.distance}\t probe.sniffer_ip = {probe.sniffer_ip}\t probe.sniffercords = {probe.sniffercords}")
                                 sniffercoords_list.append(probe.sniffercords)
                                 distance_list.append(probe.distance)
                             x1 = sniffercoords_list[0]['x']
@@ -68,7 +68,7 @@ def update(probelist, all_received_probes, devices, lock):
                         sniffercoords_list = []
                         distance_list = []
                         for probe in probes:
-                            print(f"probe = {probe}\t probe.distance = {probe.distance}\t probe.sniffer_ip = {probe.sniffer_ip}\t probe.sniffercoords = {probe.sniffercoords}")
+                            print(f"probe = {probe}\t probe.distance = {probe.distance}\t probe.sniffer_ip = {probe.sniffer_ip}\t probe.sniffercords = {probe.sniffercords}")
                             sniffercoords_list.append(probe.sniffercords)
                             distance_list.append(probe.distance)
                         x1 = sniffercoords_list[0]['x']
