@@ -11,7 +11,7 @@ from objects.proberequest import ProbeRequest
 import time
 
 def update(probelist, all_received_probes, devices, lock):
-    should_filter = [False, 'Fingerprint here']
+    should_filter = [True, '02040b162d001bffff0000000000000000000000000000000000000000000c1218243048606c00904c0408bf0c3278910ffaff0000faff00000000480000400040c0210a']
     counter = 0
     max_distance = 1000
     print(f"\n[update]\tStarting update thread")
