@@ -29,6 +29,7 @@ def update_solo(probelist, devices, lock):
                         if new_device.fingerprint == should_filter[1]:
                             devices[0].update(new_device.coordinates)
                             write_to_csv('test.csv', 0, new_device.coordinates)
+                    counter += 1
                     continue
 
 

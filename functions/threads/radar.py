@@ -178,11 +178,11 @@ class RadarSolo:
                 time_elapsed = int(last_update_time) # Time elapsed in seconds
                 print(f"[update map]   time_elapsed in minutes calculated is {time_elapsed}")
                 if time_elapsed < 60:
-                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {radius} \nFingerprint: {fingerprint}"
+                    last_update_text = f"\nLast detected: {time_elapsed} seconds ago \nDistance: {radius}"
                 elif last_update_time < 120:
-                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minute ago \nDistance: {radius} \nFingerprint: {fingerprint}"
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minute ago \nDistance: {radius}"
                 else:
-                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minutes ago \nDistance: {radius} \nFingerprint: {fingerprint}"
+                    last_update_text = f"\nLast detected: {int(time_elapsed/60)} minutes ago \nDistance: {radius}"
             theta = [i * (2 * math.pi / 360) for i in range(0, 361)]  # Generate angles from 0 to 360 degrees
             x = [radius * math.cos(angle) for angle in theta]  # Calculate x coordinates
             y = [radius * math.sin(angle) for angle in theta]  # Calculate y coordinates
