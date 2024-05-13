@@ -141,6 +141,7 @@ def main_run():
 
 
 def main_run_solo():
+    delete_csv_files("test.csv")
     probelist = []
     devices = []
     sniffercords = [None]
@@ -205,7 +206,8 @@ def main_run_solo():
     
     sniff_thread.start()
     update_solo_thread.start()
-    radar.radar_main(devices, sniffercords, sniffercords_ready, True)
+    if run_radar == "y":
+        radar.radar_main(devices, sniffercords, sniffercords_ready, True)
 
 if __name__ == "__main__":
 
