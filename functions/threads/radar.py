@@ -116,26 +116,26 @@ class Radar:
                         last_update_text = f"\nLast detected: {int(time_elapsed / 60)} minutes ago \nDistance: {distance:.2f} meters\nFingerprint: {fingerprint}"
                 self.ax.plot(relative_coord_x, relative_coord_x, marker='o', markersize=5, label=f"Device {idx + 1}: {last_update_text}")  # Plot the dot
 
-            self.ax.set_xlabel('X')
-            self.ax.set_ylabel('Y')
-            self.ax.set_title('Estimated position of devices')
+        self.ax.set_xlabel('X')
+        self.ax.set_ylabel('Y')
+        self.ax.set_title('Estimated position of devices')
 
-            # Draw a cross intersecting at (0, 0)
-            self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
-            self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
+        # Draw a cross intersecting at (0, 0)
+        self.ax.axhline(0, color='k', linestyle='--', alpha=0.5)  # Horizontal line
+        self.ax.axvline(0, color='k', linestyle='--', alpha=0.5)  # Vertical line
 
-            # Add legend outside of the radar plot
-            legend = self.ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+        # Add legend outside of the radar plot
+        legend = self.ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
 
-            # Adjust figure size to fit legend
-            self.fig.tight_layout()
+        # Adjust figure size to fit legend
+        self.fig.tight_layout()
 
 
-            # Redraw the canvas
-            self.canvas.draw()
+        # Redraw the canvas
+        self.canvas.draw()
 
-            # Schedule the next update
-            self.master.after(1000, self.update_map)
+        # Schedule the next update
+        self.master.after(1000, self.update_map)
 
 
 class RadarSolo:
