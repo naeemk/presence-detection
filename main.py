@@ -22,7 +22,7 @@ from functions.threads import radar
 
 
 def main_run():
-    while True: #remove the whole while loop and remove the conditions on to_run when done testing
+    while True: 
         try:
             to_run = int(input("How many threads to run (1-5): "))
             if 1 <= to_run <= 5:
