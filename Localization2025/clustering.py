@@ -9,6 +9,8 @@ def load_config(filename="config.json"):
 config = load_config()
 
 TIME_WINDOW = config["general"]["time_window"]
+datafile2 = config["jsonfiles"]["probe_request_results_clustered"]
+
 
 def cluster_data(data):
     clustered_results = []
@@ -66,7 +68,7 @@ def cluster_data(data):
         })
 
     # Output the clustered results to a JSON file
-    with open("probe_request_results_clustered.json", "w") as outfile:
-        json.dump(clustered_results, outfile, indent=4)
+    with open(datafile2+".json", "w") as json_file:
+        json.dump(clustered_results, json_file, indent=4)
 
     return clustered_results

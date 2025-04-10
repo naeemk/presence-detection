@@ -26,23 +26,14 @@
     pip install -r requirements.txt
     ```
 
-5. **Copy the `.env.example` to `.env` and update the values**:
-
-    ```bash
-    cp .env.example .env
-    ```
-
-6. **Run your project**:
+5. **Run your project**:
 
     ```bash
     python yourscript.py
+    sudo myenv/bin/python3 main.py # Linux
     ```
 
 ---
-
-### 5. **Handling `.env` in a Virtual Environment**
-
-The `.env` file is used for local configuration, such as secret keys, passwords, etc. Ensure that it is not tracked by Git (as mentioned earlier, use `.gitignore`).
 
 ```bash
 # .gitignore
