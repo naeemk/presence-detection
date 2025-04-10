@@ -96,57 +96,31 @@ def get_device_name(device_signature, ssid_match_priority=True):
         # Print the number of SSIDs in the semi_devices list for the current MAC
         print(f"MAC: {mac} - Semi SSIDs: {len(semi_devices[mac])}")
 
-        # Now, proceed with the semi-device comparison
-        for stored_device in semi_devices[mac]:
-            stored_ssids = [d[0] for d in stored_device]  # Extract all SSIDs for comparison
-            temp_ssids = [d[0] for d in temp_devices[mac]]
+        # Now, proceed with comparing Batch 2 (semi_devices) with Batch 3 (device_signatures)
+    for stored_device in semi_devices[mac]:
+        stored_ssids = [d[0] for d in stored_device]  # Extract all SSIDs for comparison
 
-            ssid_match_percentage = calculate_ssid_match_percentage(stored_ssids, temp_ssids)
-            common_ssids = set(stored_ssids).intersection(set(temp_ssids))
-            
-            if len(common_ssids) >= MIN_SSID_MATCH_COUNT:
-                print(f"Found sufficient SSID matches: {len(common_ssids)} >= {MIN_SSID_MATCH_COUNT}")
-                return stored_device[0][1]  # Return the first device name
-
-        # Improved fallback: check SSID match first, then features if SSID match is low
+        # Compare Batch 2 (semi_devices) against Batch 3 (device_signatures)
         for existing_signature, existing_device_name in device_signatures.items():
             existing_ssid, existing_mac, existing_features = existing_signature
 
-            if mac == existing_mac:
-                # Calculate dynamic required matches based on current device's features
-                required_matches_dynamic = calculate_required_matches(features)
-                
-                # Prioritize SSID match, then check features if needed
-                existing_features = existing_features.split(", ")
-                match_count = sum(1 for f in existing_features if f in features)
-                print(f"Comparing features for MAC: {mac} -> Match count: {match_count}, required: {required_matches_dynamic}")
-                
-                if match_count >= required_matches_dynamic:
-                    print(f"Features match successful for MAC: {mac}. Device name: {existing_device_name}")
-                    return existing_device_name
-                else:
-                    print(f"Features match failed for MAC: {mac}. Match count: {match_count} < {required_matches_dynamic}")
+            ssid_match_percentage = calculate_ssid_match_percentage(stored_ssids, [existing_ssid])
+            print(f"SSID match percentage for {stored_ssids} vs {existing_ssid}: {ssid_match_percentage}")
 
-    # After SSID match check, fallback to batch comparison by checking features
-    # Check against existing devices (Batch 3)
-    for existing_signature, existing_device_name in device_signatures.items():
-        existing_ssid, existing_mac, existing_features = existing_signature
+            if ssid_match_percentage >= SSID_MATCH_THRESHOLD:
+                print(f"SSID match threshold met for MAC: {mac}. Returning device name: {existing_device_name}")
+                return existing_device_name
 
-        ssid_match_percentage = calculate_ssid_match_percentage([ssid], [existing_ssid])
-        print(f"SSID match percentage for {ssid} vs {existing_ssid}: {ssid_match_percentage}")
+            # Now compare features for Batch 2 (semi_devices) vs Batch 3 (device_signatures)
+            existing_feature_list = existing_features.split(", ") if existing_features else []
+            existing_match_count = sum(1 for f in existing_feature_list if f in stored_device[0][1])  # Compare features
 
-        if ssid_match_percentage >= SSID_MATCH_THRESHOLD:
-            print(f"SSID match threshold met for MAC: {mac}. Returning device name: {existing_device_name}")
-            return existing_device_name
+            print(f"Existing feature match count for MAC {mac}: {existing_match_count} / {len(existing_feature_list)}")
 
-        # Extract and count features for the existing device
-        existing_feature_list = existing_features.split(", ") if existing_features else []
-        existing_match_count = sum(1 for f in existing_feature_list if f in features)
-        print(f"Existing feature match count for MAC {mac}: {existing_match_count} / {len(existing_feature_list)}")
-
-        if existing_match_count >= required_matches_dynamic:
-            print(f"Feature match threshold met for MAC: {mac}. Returning device name: {existing_device_name}")
-            return existing_device_name
+            required_matches_dynamic = calculate_required_matches(stored_device[0][1])
+            if existing_match_count >= required_matches_dynamic:
+                print(f"Feature match threshold met for MAC: {mac}. Returning device name: {existing_device_name}")
+                return existing_device_name
 
     # No match found, assign a new device name
     device_name = f"Device {device_counter}"
