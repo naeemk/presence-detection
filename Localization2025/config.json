@@ -24,7 +24,7 @@
     "jsonfiles": {
       "probe_request_results": "data/probe_request_results",
       "probe_request_results_clustered": "data/probe_request_results_clustered",
-      "plotted_data": "plotted_data.json"
+      "plotted_data": "data/plotted_data.json"
     },
     "misc": {
     }
