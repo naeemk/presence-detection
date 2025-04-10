@@ -21,6 +21,7 @@ device_time_stamps = {}  # Time of last capture for each device
 
 # SSID matching threshold (70% similarity)
 SSID_MATCH_THRESHOLD = 0.7
+MIN_SSID_MATCH_COUNT = 3  # Minimum SSID matches to consider a device a match
 
 # Helper functions
 def calculate_ssid_match_percentage(ssids_a, ssids_b):
@@ -63,8 +64,10 @@ def get_device_name(device_signature, ssid_match_priority=True):
             temp_ssids = [d[0] for d in temp_devices[mac]]
 
             ssid_match_percentage = calculate_ssid_match_percentage(stored_ssids, temp_ssids)
-            if ssid_match_percentage >= SSID_MATCH_THRESHOLD:
-                # If SSID match is sufficient, prioritize SSID match
+            common_ssids = set(stored_ssids).intersection(set(temp_ssids))
+            
+            if len(common_ssids) >= MIN_SSID_MATCH_COUNT:
+                # If the number of common SSIDs meets the threshold
                 return stored_device[0][1]  # Return the first device name
 
         # Fallback to features comparison if SSID match is too low
