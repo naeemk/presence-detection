@@ -46,6 +46,9 @@ def get_device_name(device_signature, ssid_match_priority=True):
     # Add the current device signature to the temporary list (Batch 1)
     temp_devices[mac].append((ssid, features))
 
+    # Print the number of SSIDs in the temp_devices list for the current MAC
+    print(f"MAC: {mac} - Temp SSIDs: {len(temp_devices[mac])}")
+
     # Process Batch 2 (semi-stored devices) after a specific time window
     if device_age(mac) > time_window:
         # Move to Batch 2 after the time window expires
@@ -57,6 +60,9 @@ def get_device_name(device_signature, ssid_match_priority=True):
         
         # Clear temporary list in Batch 1 for this MAC address
         temp_devices[mac] = []
+
+        # Print the number of SSIDs in the semi_devices list for the current MAC
+        print(f"MAC: {mac} - Semi SSIDs: {len(semi_devices[mac])}")
 
         # Now, proceed with the semi-device comparison
         for stored_device in semi_devices[mac]:
