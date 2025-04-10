@@ -3,8 +3,8 @@
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/yourusername/yourproject.git
-    cd yourproject
+    git clone git@github.com:naeemk/presence-detection.git    
+    cd presence-detection/Localization2025
     ```
 
 2. **Create a virtual environment** (if they don’t have one):
