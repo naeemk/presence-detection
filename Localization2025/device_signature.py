@@ -47,6 +47,9 @@ def calculate_required_matches(features_list, min_required=MIN_FEATURE_MATCH_COU
     :param min_required: Minimum required features for matching.
     :return: The number of required matches.
     """
+    if not features_list:  # If no features are provided
+        return 0
+    
     total_features = len(features_list)
     required_matches = max(min_required, total_features // 2)  # Ensure at least half of the features need to match
     print(f"Required matches for {total_features} features: {required_matches}")
@@ -59,6 +62,10 @@ def get_device_name(device_signature, ssid_match_priority=True):
     device_time_stamps[mac] = time.time()  # Update last seen time for the device
     print(f"Processing device signature: {device_signature} (MAC: {mac})")
 
+    # Ensure features is a list (in case it's a string, we split by commas)
+    if isinstance(features, str):
+        features = [f.strip() for f in features.split(",")]
+    
     # Handle Temporary Devices in Batch 1 - Continuously add data to the same MAC address list
     if mac not in temp_devices:
         temp_devices[mac] = []  # Initialize an empty list for this MAC address
@@ -107,16 +114,18 @@ def get_device_name(device_signature, ssid_match_priority=True):
 
             if mac == existing_mac:
                 # Calculate dynamic required matches based on current device's features
-                required_matches_dynamic = calculate_required_matches(features.split(", "))
+                required_matches_dynamic = calculate_required_matches(features)
                 
                 # Prioritize SSID match, then check features if needed
                 existing_features = existing_features.split(", ")
-                match_count = sum(1 for f in existing_features if f in features.split(", "))
+                match_count = sum(1 for f in existing_features if f in features)
                 print(f"Comparing features for MAC: {mac} -> Match count: {match_count}, required: {required_matches_dynamic}")
                 
                 if match_count >= required_matches_dynamic:
                     print(f"Features match successful for MAC: {mac}. Device name: {existing_device_name}")
                     return existing_device_name
+                else:
+                    print(f"Features match failed for MAC: {mac}. Match count: {match_count} < {required_matches_dynamic}")
 
     # After SSID match check, fallback to batch comparison by checking features
     # Check against existing devices (Batch 3)
@@ -132,7 +141,7 @@ def get_device_name(device_signature, ssid_match_priority=True):
 
         # Extract and count features for the existing device
         existing_feature_list = existing_features.split(", ") if existing_features else []
-        existing_match_count = sum(1 for f in existing_feature_list if f in features.split(", "))
+        existing_match_count = sum(1 for f in existing_feature_list if f in features)
         print(f"Existing feature match count for MAC {mac}: {existing_match_count} / {len(existing_feature_list)}")
 
         if existing_match_count >= required_matches_dynamic:
