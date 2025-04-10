@@ -1,0 +1,16 @@
+List of dependencies:
+scapy 
+tkinter
+npcap
+matplotlib
+pandas
+scikit-learn
+numpy
+
+Activate virtual environment:
+source ~/DATBAC/myenv/bin/activate
+
+To run program in Linux, type;
+sudo ~/DATBAC/myenv/bin/python3 main.py
+
+

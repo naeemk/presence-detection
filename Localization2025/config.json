@@ -1,0 +1,32 @@
+{
+    "general": {
+      "interface": "wlan0",
+      "time_window": 60,
+      "duration_of_sniffing": 10
+    },
+    "distance_calculation": {
+      "rssi_1_meter": -22,
+      "path_loss_exponent": 3,
+      "shadowing_effect": 0,
+      "reference_distance": 1,
+      "environmental_correction_constant": 0
+    },
+    "device_signature": {
+      "required_matches": 7,
+      "time_window": 60
+    },
+    "plot": {
+      "max_distance": 100,
+      "max_alpha": 0.3,
+      "min_alpha": 0.05,
+      "fade_time": 500
+    },
+    "jsonfiles": {
+      "probe_request_results": "probe_request_results",
+      "probe_request_results_clustered": "probe_request_results_clustered",
+      "plotted_data": "plotted_data.json"
+    },
+    "misc": {
+    }
+  }
+  
