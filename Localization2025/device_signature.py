@@ -22,6 +22,7 @@ device_time_stamps = {}  # Time of last capture for each device
 # SSID matching threshold (70% similarity)
 SSID_MATCH_THRESHOLD = 0.7
 MIN_SSID_MATCH_COUNT = 3  # Minimum SSID matches to consider a device a match
+MIN_FEATURE_MATCH_COUNT = 2  # Minimum number of required feature matches
 
 # Helper functions
 def calculate_ssid_match_percentage(ssids_a, ssids_b):
@@ -36,6 +37,20 @@ def device_age(mac):
     age = time.time() - device_time_stamps.get(mac, 0)
     print(f"Device {mac} age: {age} seconds")
     return age
+
+def calculate_required_matches(features_list, min_required=MIN_FEATURE_MATCH_COUNT):
+    """
+    Calculate the required number of feature matches based on the total features in a device signature.
+    If the device has fewer features, apply the minimum required threshold.
+    
+    :param features_list: List of features of the current device.
+    :param min_required: Minimum required features for matching.
+    :return: The number of required matches.
+    """
+    total_features = len(features_list)
+    required_matches = max(min_required, total_features // 2)  # Ensure at least half of the features need to match
+    print(f"Required matches for {total_features} features: {required_matches}")
+    return required_matches
 
 def get_device_name(device_signature, ssid_match_priority=True):
     global device_counter
@@ -86,17 +101,20 @@ def get_device_name(device_signature, ssid_match_priority=True):
                 print(f"Found sufficient SSID matches: {len(common_ssids)} >= {MIN_SSID_MATCH_COUNT}")
                 return stored_device[0][1]  # Return the first device name
 
-        # Fallback to features comparison if SSID match is too low
+        # Improved fallback: check SSID match first, then features if SSID match is low
         for existing_signature, existing_device_name in device_signatures.items():
             existing_ssid, existing_mac, existing_features = existing_signature
 
             if mac == existing_mac:
+                # Calculate dynamic required matches based on current device's features
+                required_matches_dynamic = calculate_required_matches(features.split(", "))
+                
                 # Prioritize SSID match, then check features if needed
                 existing_features = existing_features.split(", ")
                 match_count = sum(1 for f in existing_features if f in features.split(", "))
-                print(f"Comparing features for MAC: {mac} -> Match count: {match_count}, required: {required_matches_config}")
+                print(f"Comparing features for MAC: {mac} -> Match count: {match_count}, required: {required_matches_dynamic}")
                 
-                if match_count >= required_matches_config:
+                if match_count >= required_matches_dynamic:
                     print(f"Features match successful for MAC: {mac}. Device name: {existing_device_name}")
                     return existing_device_name
 
@@ -117,7 +135,7 @@ def get_device_name(device_signature, ssid_match_priority=True):
         existing_match_count = sum(1 for f in existing_feature_list if f in features.split(", "))
         print(f"Existing feature match count for MAC {mac}: {existing_match_count} / {len(existing_feature_list)}")
 
-        if existing_match_count >= required_matches_config:
+        if existing_match_count >= required_matches_dynamic:
             print(f"Feature match threshold met for MAC: {mac}. Returning device name: {existing_device_name}")
             return existing_device_name
 
