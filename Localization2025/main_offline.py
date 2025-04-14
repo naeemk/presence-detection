@@ -7,7 +7,7 @@ import keyboard
 import matplotlib.pyplot as plt
 
 from anomaly_detection import detect_anomalies
-from capture import start_sniffing, probe_data
+from capture import offline_packets, probe_data
 from clustering import cluster_data
 from device_signature import get_device_name
 from feature_extraction import extract_features
@@ -116,7 +116,7 @@ async def main():
     plt.show()
 
     # Step 1: Start sniffing and capture probe requests until you press 'esc'
-    task1 = asyncio.create_task(start_sniffing(interface))  # Replace with your Wi-Fi interface
+    task1 = asyncio.create_task(offline_packets())  # Replace with your Wi-Fi interface
     time.sleep(3)
     task2 = asyncio.create_task(save_packets())
     print("[*] Capturing data...")

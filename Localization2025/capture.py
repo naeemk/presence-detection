@@ -2,11 +2,9 @@ import asyncio
 import json
 import time
 
-from scapy.all import Dot11, Dot11Elt, Dot11ProbeReq, sniff, wrpcap
-from scapy.all import getmacbyip
-from netaddr import EUI, AddrFormatError, NotRegisteredError
-from scapy.all import rdpcap
+from scapy.all import Dot11, Dot11Elt, Dot11ProbeReq, sniff, wrpcap, rdpcap
 
+from netaddr import EUI, AddrFormatError, NotRegisteredError
 
 def load_config(filename="config.json"):
     with open(filename, "r") as file:
@@ -16,6 +14,7 @@ config = load_config()
 interface = config["general"]["interface"]
 duration = config["general"]["duration_of_sniffing"]
 fake_seconds = config["general"]["fake_seconds"]
+pcap_file = config["jsonfiles"]["pcap_file"]
 
 def get_vendor_name(oui_bytes: bytes) -> str:
     if len(oui_bytes) != 3:
@@ -44,7 +43,7 @@ unsorted_probe_data = []
 def handle_probe_request(packet):
     if packet.haslayer(Dot11ProbeReq):
 
-        #wrpcap("captured_packets.pcap", [packet], append=True)
+        #wrpcap("data/captured_packets.pcap", [packet], append=True)
 
         mac = packet.addr2  # Source MAC (even if randomized)
         ssid = packet.info.decode(errors="ignore") if packet.info else "<Hidden SSID>"
@@ -120,15 +119,18 @@ def handle_probe_request(packet):
 
 async def start_sniffing(interface):
     while True:
+        print("[*] Listening for Wi-Fi probe requests...")
+        sniff(iface=interface, prn=handle_probe_request, store=0, filter="type mgt subtype probe-req", timeout=duration)
+        await asyncio.sleep(2)
+
+async def offline_packets():
+    while True:
         print(f"[*] Faking Wi-Fi probe requests with {fake_seconds} second(s) interval...")
-        pcap_file = "/data/captured_packets_20_03_2025.pcap"
         packets = rdpcap(pcap_file)
         print(f"[*] Loaded {len(packets)} packets from '{pcap_file}'")
-        for i, packet in enumerate(packets, start=1):
+
+        for packet in packets:
             handle_probe_request(packet)
-            print(f"[*] Handled packet {i}/{len(packets)}")
-            await asyncio.sleep({fake_seconds})  # Delay between packets
+            await asyncio.sleep(fake_seconds)
 
-
-        #sniff(iface=interface, prn=handle_probe_request, store=0, filter="type mgt subtype probe-req", timeout=duration)
         await asyncio.sleep(2)
