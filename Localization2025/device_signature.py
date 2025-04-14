@@ -55,77 +55,68 @@ def calculate_required_matches(features_list, min_required=MIN_FEATURE_MATCH_COU
     print(f"Required matches for {total_features} features: {required_matches}")
     return required_matches
 
+
 def get_device_name(device_signature, ssid_match_priority=True):
     global device_counter
 
     ssid, mac, features = device_signature
-    device_time_stamps[mac] = time.time()  # Update last seen time for the device
-    print(f"Processing device signature: {device_signature} (MAC: {mac})")
+    device_time_stamps[mac] = time.time()  # Update last seen time
 
-    # Ensure features is a list (in case it's a string, we split by commas)
+    # Ensure features is a list
     if isinstance(features, str):
         features = [f.strip() for f in features.split(",")]
-    
-    # Handle Temporary Devices in Batch 1 - Continuously add data to the same MAC address list
-    if mac not in temp_devices:
-        temp_devices[mac] = []  # Initialize an empty list for this MAC address
-        print(f"Initialized new entry for MAC: {mac} in temp_devices")
-    
-    # Add the current device signature to the temporary list (Batch 1)
+
+    print(f"Processing device: MAC={mac}, SSID={ssid}, Features={features}")
+
+    # Batch 1: collect all SSIDs/features for the same MAC
     temp_devices[mac].append((ssid, features))
-    print(f"Added device with SSID: {ssid} to temp_devices for MAC: {mac}. Total SSIDs: {len(temp_devices[mac])}")
+    print(f"[Batch 1] Added SSID to temp_devices[{mac}]. Total collected: {len(temp_devices[mac])}")
 
-    # Print the number of SSIDs in the temp_devices list for the current MAC
-    print(f"MAC: {mac} - Temp SSIDs: {len(temp_devices[mac])}")
+    # If device hasn't aged enough, return None (no decision yet)
+    if device_age(mac) < time_window:
+        print(f"[Batch 1] Device {mac} still within time window. Waiting for more data.")
+        return None
 
-    # Process Batch 2 (semi-stored devices) after a specific time window
-    if device_age(mac) > time_window:
-        # Move to Batch 2 after the time window expires
-        if mac not in semi_devices:
-            semi_devices[mac] = []  # Initialize if not already present in semi_devices
-            print(f"Initialized new entry for MAC: {mac} in semi_devices")
+    # Batch 2: move aged-out device to semi_devices
+    print(f"[Batch 2] Time window expired for {mac}. Moving data to semi_devices.")
+    semi_devices[mac].extend(temp_devices[mac])
+    temp_devices[mac] = []  # clear temp list
 
-        # Add the accumulated device signatures from Batch 1 to Batch 2
-        semi_devices[mac].extend(temp_devices[mac])
-        print(f"Moved {len(temp_devices[mac])} SSID entries from temp_devices to semi_devices for MAC: {mac}")
-        
-        # Clear temporary list in Batch 1 for this MAC address
-        temp_devices[mac] = []
-        print(f"Cleared temp_devices for MAC: {mac} after moving to semi_devices.")
+    # Extract collected SSIDs and features from semi_devices
+    collected_ssids = [entry[0] for entry in semi_devices[mac]]
+    collected_features = []
+    for entry in semi_devices[mac]:
+        collected_features.extend(entry[1])
+    collected_features = list(set(collected_features))  # remove duplicates
 
-        # Print the number of SSIDs in the semi_devices list for the current MAC
-        print(f"MAC: {mac} - Semi SSIDs: {len(semi_devices[mac])}")
+    print(f"[Batch 2] Total SSIDs: {len(collected_ssids)}, Total unique features: {len(collected_features)}")
 
-        # Now, proceed with comparing Batch 2 (semi_devices) with Batch 3 (device_signatures)
-    for stored_device in semi_devices[mac]:
-        stored_ssids = [d[0] for d in stored_device]  # Extract all SSIDs for comparison
+    # Batch 3: compare against known devices
+    for existing_signature, device_name in device_signatures.items():
+        existing_ssid, _, existing_features = existing_signature
 
-        # Compare Batch 2 (semi_devices) against Batch 3 (device_signatures)
-        for existing_signature, existing_device_name in device_signatures.items():
-            existing_ssid, existing_mac, existing_features = existing_signature
+        # SSID match
+        ssid_match = calculate_ssid_match_percentage(collected_ssids, [existing_ssid]) >= SSID_MATCH_THRESHOLD
+        # Feature match
+        if isinstance(existing_features, str):
+            existing_features = [f.strip() for f in existing_features.split(",")]
+        feature_match_count = sum(1 for f in existing_features if f in collected_features)
+        required_feature_matches = calculate_required_matches(existing_features)
 
-            ssid_match_percentage = calculate_ssid_match_percentage(stored_ssids, [existing_ssid])
-            print(f"SSID match percentage for {stored_ssids} vs {existing_ssid}: {ssid_match_percentage}")
+        print(f"[Batch 3] Comparing with {device_name}: SSID match={ssid_match}, Feature matches={feature_match_count}/{required_feature_matches}")
 
-            if ssid_match_percentage >= SSID_MATCH_THRESHOLD:
-                print(f"SSID match threshold met for MAC: {mac}. Returning device name: {existing_device_name}")
-                return existing_device_name
+        if ssid_match or feature_match_count >= required_feature_matches:
+            print(f"[Match] MAC {mac} matches {device_name}")
+            return device_name
 
-            # Now compare features for Batch 2 (semi_devices) vs Batch 3 (device_signatures)
-            existing_feature_list = existing_features.split(", ") if existing_features else []
-            existing_match_count = sum(1 for f in existing_feature_list if f in stored_device[0][1])  # Compare features
-
-            print(f"Existing feature match count for MAC {mac}: {existing_match_count} / {len(existing_feature_list)}")
-
-            required_matches_dynamic = calculate_required_matches(stored_device[0][1])
-            if existing_match_count >= required_matches_dynamic:
-                print(f"Feature match threshold met for MAC: {mac}. Returning device name: {existing_device_name}")
-                return existing_device_name
-
-    # No match found, assign a new device name
+    # No match found — assign new device name
     device_name = f"Device {device_counter}"
-    device_signatures[device_signature] = device_name
     device_counter += 1
-    print(f"No match found. Assigning new device name: {device_name}")
 
+    # Use latest known data as the representative signature
+    representative_ssid = collected_ssids[0] if collected_ssids else "<Unknown>"
+    representative_features = ", ".join(collected_features)
+    device_signatures[(representative_ssid, mac, representative_features)] = device_name
+
+    print(f"[New Device] No match found. Assigning new name: {device_name}")
     return device_name
