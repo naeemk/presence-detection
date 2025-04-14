@@ -1,236 +1,106 @@
 [
     {
-        "Device_Name": "Device 19",
+        "Device_Name": "Device 10",
         "MAC": [
-            "70:32:17:b6:99:3c"
-        ],
-        "SSID": [
-            "uisemp"
-        ],
-        "Average_RSSI": -52.0,
-        "First_Timestamp": 1744302452.8355067,
-        "Last_Timestamp": 1744302452.8355067,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-    },
-    {
-        "Device_Name": "Device 20",
-        "MAC": [
-            "70:32:17:b6:99:3c"
-        ],
-        "SSID": [
-            "uisemp"
-        ],
-        "Average_RSSI": -52.0,
-        "First_Timestamp": 1744302452.9523115,
-        "Last_Timestamp": 1744302452.9523115,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-    },
-    {
-        "Device_Name": "Device 21",
-        "MAC": [
-            "70:32:17:b6:99:3c"
-        ],
-        "SSID": [
-            "uisemp"
-        ],
-        "Average_RSSI": -48.0,
-        "First_Timestamp": 1744302452.953289,
-        "Last_Timestamp": 1744302452.953289,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-    },
-    {
-        "Device_Name": "Device 22",
-        "MAC": [
-            "70:32:17:b6:99:3c"
+            "a2:18:c3:b7:37:64"
         ],
         "SSID": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -58.0,
-        "First_Timestamp": 1744302458.3043745,
-        "Last_Timestamp": 1744302458.3043745,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+        "Average_RSSI": -83.0,
+        "First_Timestamp": 1744647563.3232489,
+        "Last_Timestamp": 1744647563.3232489,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     },
     {
-        "Device_Name": "Device 23",
+        "Device_Name": "Device 11",
         "MAC": [
-            "70:32:17:b6:99:3c"
+            "36:26:1b:49:26:be"
         ],
         "SSID": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -56.0,
-        "First_Timestamp": 1744302458.3173296,
-        "Last_Timestamp": 1744302458.3173296,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+        "Average_RSSI": -78.0,
+        "First_Timestamp": 1744647567.6795642,
+        "Last_Timestamp": 1744647567.6795642,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     },
     {
-        "Device_Name": "Device 24",
+        "Device_Name": "Device 12",
         "MAC": [
-            "70:32:17:b6:99:3c"
+            "36:26:1b:49:26:be"
         ],
         "SSID": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -58.0,
-        "First_Timestamp": 1744302458.3348327,
-        "Last_Timestamp": 1744302458.3348327,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+        "Average_RSSI": -81.0,
+        "First_Timestamp": 1744647567.7399142,
+        "Last_Timestamp": 1744647567.7399142,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     },
     {
-        "Device_Name": "Device 25",
+        "Device_Name": "Device 13",
         "MAC": [
-            "14:13:33:17:d8:67"
+            "42:de:ad:60:d7:9c"
         ],
         "SSID": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -20.0,
-        "First_Timestamp": 1744302460.7000463,
-        "Last_Timestamp": 1744302460.7000463,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+        "Average_RSSI": -75.0,
+        "First_Timestamp": 1744647569.276412,
+        "Last_Timestamp": 1744647569.276412,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     },
     {
-        "Device_Name": "Device 26",
+        "Device_Name": "Device 14",
         "MAC": [
-            "14:13:33:17:d8:67"
+            "42:de:ad:60:d7:9c"
         ],
         "SSID": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -20.0,
-        "First_Timestamp": 1744302460.702418,
-        "Last_Timestamp": 1744302460.702418,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+        "Average_RSSI": -74.0,
+        "First_Timestamp": 1744647569.3166478,
+        "Last_Timestamp": 1744647569.3166478,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     },
     {
-        "Device_Name": "Device 27",
+        "Device_Name": "Device 15",
         "MAC": [
-            "14:13:33:17:d8:67"
+            "da:6c:c6:da:36:93"
         ],
         "SSID": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -18.0,
-        "First_Timestamp": 1744302460.7875988,
-        "Last_Timestamp": 1744302460.7875988,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+        "Average_RSSI": -77.0,
+        "First_Timestamp": 1744647569.865772,
+        "Last_Timestamp": 1744647569.865772,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     },
     {
-        "Device_Name": "Device 28",
+        "Device_Name": "Device 16",
         "MAC": [
-            "14:13:33:17:d8:67"
+            "ca:aa:f8:27:10:b1"
         ],
         "SSID": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -18.0,
-        "First_Timestamp": 1744302460.7884276,
-        "Last_Timestamp": 1744302460.7884276,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+        "Average_RSSI": -71.0,
+        "First_Timestamp": 1744647570.479285,
+        "Last_Timestamp": 1744647570.479285,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     },
     {
-        "Device_Name": "Device 29",
+        "Device_Name": "Device 9",
         "MAC": [
-            "14:13:33:17:d8:67"
+            "a2:18:c3:b7:37:64"
         ],
         "SSID": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -22.0,
-        "First_Timestamp": 1744302460.8831615,
-        "Last_Timestamp": 1744302460.8831615,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-    },
-    {
-        "Device_Name": "Device 30",
-        "MAC": [
-            "14:13:33:17:d8:67"
-        ],
-        "SSID": [
-            "<Hidden SSID>"
-        ],
-        "Average_RSSI": -22.0,
-        "First_Timestamp": 1744302460.88509,
-        "Last_Timestamp": 1744302460.88509,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-    },
-    {
-        "Device_Name": "Device 31",
-        "MAC": [
-            "14:13:33:17:d8:67"
-        ],
-        "SSID": [
-            "<Hidden SSID>"
-        ],
-        "Average_RSSI": -16.0,
-        "First_Timestamp": 1744302461.1395998,
-        "Last_Timestamp": 1744302461.1395998,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-    },
-    {
-        "Device_Name": "Device 32",
-        "MAC": [
-            "14:13:33:17:d8:67"
-        ],
-        "SSID": [
-            "<Hidden SSID>"
-        ],
-        "Average_RSSI": -16.0,
-        "First_Timestamp": 1744302461.1422787,
-        "Last_Timestamp": 1744302461.1422787,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-    },
-    {
-        "Device_Name": "Device 33",
-        "MAC": [
-            "14:13:33:17:d8:67"
-        ],
-        "SSID": [
-            "<Hidden SSID>"
-        ],
-        "Average_RSSI": -18.0,
-        "First_Timestamp": 1744302461.2277653,
-        "Last_Timestamp": 1744302461.2277653,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-    },
-    {
-        "Device_Name": "Device 34",
-        "MAC": [
-            "14:13:33:17:d8:67"
-        ],
-        "SSID": [
-            "<Hidden SSID>"
-        ],
-        "Average_RSSI": -18.0,
-        "First_Timestamp": 1744302461.2303314,
-        "Last_Timestamp": 1744302461.2303314,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-    },
-    {
-        "Device_Name": "Device 35",
-        "MAC": [
-            "14:13:33:17:d8:67"
-        ],
-        "SSID": [
-            "<Hidden SSID>"
-        ],
-        "Average_RSSI": -20.0,
-        "First_Timestamp": 1744302461.318359,
-        "Last_Timestamp": 1744302461.318359,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-    },
-    {
-        "Device_Name": "Device 36",
-        "MAC": [
-            "14:13:33:17:d8:67"
-        ],
-        "SSID": [
-            "<Hidden SSID>"
-        ],
-        "Average_RSSI": -20.0,
-        "First_Timestamp": 1744302461.3204188,
-        "Last_Timestamp": 1744302461.3204188,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+        "Average_RSSI": -84.0,
+        "First_Timestamp": 1744647563.2687652,
+        "Last_Timestamp": 1744647563.2687652,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]

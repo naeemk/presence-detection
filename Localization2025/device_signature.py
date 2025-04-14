@@ -8,6 +8,7 @@ def load_config(filename="config.json"):
         return json.load(file)
 
 config = load_config()
+time_limit = 2
 
 # Accessing values from the config
 required_matches_config = config["device_signature"]["required_matches"]
@@ -73,7 +74,7 @@ def get_device_name(device_signature, ssid_match_priority=True):
     print(f"[Batch 1] Added SSID to temp_devices[{mac}]. Total collected: {len(temp_devices[mac])}")
 
     # If device hasn't aged enough, return None (no decision yet)
-    if device_age(mac) < time_window:
+    if device_age(mac) < time_limit:
         print(f"[Batch 1] Device {mac} still within time window. Waiting for more data.")
         return None
 

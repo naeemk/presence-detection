@@ -2,7 +2,8 @@
     "general": {
       "interface": "wlan0",
       "time_window": 60,
-      "duration_of_sniffing": 10
+      "duration_of_sniffing": 10,
+      "fake_seconds": 1
     },
     "distance_calculation": {
       "rssi_1_meter": -22,
@@ -13,7 +14,7 @@
     },
     "device_signature": {
       "required_matches": 7,
-      "time_window": 8
+      "time_window": 1
     },
     "plot": {
       "max_distance": 100,
