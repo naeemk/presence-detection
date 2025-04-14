@@ -8,6 +8,7 @@ def load_config(filename="config.json"):
         return json.load(file)
 
 config = load_config()
+TIME_LIMIT = 1
 
 # Accessing values from the config
 required_matches_config = config["device_signature"]["required_matches"]
@@ -55,7 +56,6 @@ def calculate_required_matches(features_list, min_required=MIN_FEATURE_MATCH_COU
     print(f"Required matches for {total_features} features: {required_matches}")
     return required_matches
 
-
 def get_device_name(device_signature, ssid_match_priority=True):
     global device_counter
 
@@ -72,10 +72,10 @@ def get_device_name(device_signature, ssid_match_priority=True):
     temp_devices[mac].append((ssid, features))
     print(f"[Batch 1] Added SSID to temp_devices[{mac}]. Total collected: {len(temp_devices[mac])}")
 
-    # If device hasn't aged enough, return None (no decision yet)
-    if device_age(mac) < time_window:
-        print(f"[Batch 1] Device {mac} still within time window. Waiting for more data.")
-        return None
+    if device_age(mac) >= TIME_LIMIT:
+        print(f"[Batch 2] Time window expired for {mac}. Moving data to semi_devices.")
+        semi_devices[mac].extend(temp_devices[mac])
+        temp_devices[mac] = []  # clear temp list
 
     # Batch 2: move aged-out device to semi_devices
     print(f"[Batch 2] Time window expired for {mac}. Moving data to semi_devices.")
