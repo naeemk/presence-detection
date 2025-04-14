@@ -13,7 +13,7 @@
     },
     "device_signature": {
       "required_matches": 7,
-      "time_window": 60
+      "time_window": 8
     },
     "plot": {
       "max_distance": 100,
