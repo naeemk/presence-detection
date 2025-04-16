@@ -15,7 +15,8 @@
     "fingerprint": {
       "required_matches": 7,
       "time_window": 1,
-      "threshold_ratio": 0.3
+      "threshold_ratio": 0.3,
+      "ssid_threshold": 5
     },
     "plot": {
       "max_distance": 100,

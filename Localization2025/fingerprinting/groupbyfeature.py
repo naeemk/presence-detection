@@ -17,5 +17,5 @@ TIME_LIMIT = 1
 
 def groupbyFeature(ssid_data):
     feature_data = defaultdict(list)
-
+    
     return feature_data
