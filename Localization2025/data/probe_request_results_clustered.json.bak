@@ -2,26 +2,30 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "66:bd:26:33:66:74",
-            "4a:fa:1b:25:97:21",
-            "46:7c:fc:19:04:92",
-            "9a:61:5b:e3:9f:d3",
-            "82:f6:56:ab:a9:ea",
-            "10:bd:3a:60:d2:1b",
-            "9e:69:df:42:c1:5b",
-            "f6:4e:79:49:bb:24",
-            "12:e4:ab:e3:dd:60",
-            "36:d5:fb:d9:3d:f2"
+            "0e:99:a3:ae:26:be",
+            "2e:01:c0:53:64:cc",
+            "82:c9:30:d3:a9:b8",
+            "b0:dc:ef:a3:5f:84",
+            "8a:ab:d0:e2:d6:ea",
+            "c6:23:1e:f2:80:6c",
+            "f6:f3:51:af:c5:a8",
+            "6e:00:24:f7:e9:29",
+            "a0:f4:59:8c:22:a9",
+            "ba:09:f0:cb:90:5c",
+            "16:62:6a:ec:ca:cc",
+            "1a:c2:b9:d7:f7:75",
+            "06:e5:f6:ef:a3:5a",
+            "1a:f6:c4:c0:d5:5c",
+            "3c:06:30:01:44:ea"
         ],
         "SSID": [
-            "eduroam",
             "<Hidden SSID>",
-            "ArneJohannesen-guest",
-            "McD-Guest"
+            "uis-gjestenett",
+            "eduroam"
         ],
-        "Average_RSSI": -80.4,
-        "First_Timestamp": 1744653023.9113054,
-        "Last_Timestamp": 1744653069.808165,
-        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001300, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        "Average_RSSI": -54.80952380952381,
+        "First_Timestamp": 1744717373.7803726,
+        "Last_Timestamp": 1744717383.431135,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]
