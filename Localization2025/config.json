@@ -12,7 +12,7 @@
       "reference_distance": 1,
       "environmental_correction_constant": 0
     },
-    "device_signature": {
+    "fingerprint": {
       "required_matches": 7,
       "time_window": 1
     },

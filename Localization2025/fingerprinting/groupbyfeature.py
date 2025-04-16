@@ -11,8 +11,8 @@ config = load_config()
 TIME_LIMIT = 1
 
 # Accessing values from the config
-required_matches_config = config["device_signature"]["required_matches"]
-time_window = config["device_signature"]["time_window"]  # Time window in seconds
+#required_matches_config = config["fingerprint"]["required_matches"]
+#time_window = config["fingerprint"]["time_window"]  # Time window in seconds
 
 
 def groupbyFeature(ssid_data):

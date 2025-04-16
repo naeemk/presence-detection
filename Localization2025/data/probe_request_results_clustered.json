@@ -1,54 +1,38 @@
-<<<<<<< HEAD
 [
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "a0:f4:59:8c:22:a9",
-            "96:b5:c0:48:ed:a9",
-            "0a:01:77:70:bb:5a",
-            "26:f4:d6:7c:b2:3c",
-            "26:7e:df:b1:c2:77",
-            "62:3d:8c:1d:0e:a1",
-            "ca:03:a2:2f:1e:08",
-            "5a:d7:bc:0a:d6:79",
-            "1e:37:68:d5:1c:1a",
-            "1a:68:88:26:04:99",
-            "4e:83:a8:e6:a2:c9",
-            "ba:bb:42:63:05:1e",
-            "e6:42:bb:d3:d4:11",
+            "da:a1:19:2a:96:d1",
+            "da:a1:19:a0:6c:b3",
+            "62:71:fd:b0:66:11",
+            "1e:5e:c6:4a:cf:a8",
+            "ce:48:67:20:e9:57",
+            "2e:e4:a1:17:70:2d",
+            "ae:eb:5f:d1:e2:ad",
+            "7a:7e:62:12:64:30",
+            "66:bd:26:33:66:74",
+            "3e:a3:c3:b5:cd:d5",
             "12:e4:ab:e3:dd:60",
-            "36:59:8c:b0:49:db",
-            "f4:6a:dd:8b:7d:f1",
-            "4e:a4:35:ea:cd:56",
-            "d4:12:43:dd:a6:36",
-            "ea:73:e5:b2:25:47",
-            "6e:16:44:ad:57:6a",
-            "8e:f1:3f:cd:46:56",
-            "8e:51:b0:c3:94:99",
-            "36:49:5d:23:b8:7b",
-            "ae:bb:d3:d5:ce:f1",
-            "fa:60:c7:5d:6f:55",
-            "1a:f8:26:df:a5:c8",
-            "86:bb:df:71:fa:2c",
-            "cc:08:fa:82:0b:98",
-            "9e:de:53:47:88:6d",
-            "42:5c:49:bf:b6:09",
-            "06:3c:84:d2:18:36",
-            "4a:53:0a:ea:08:71",
-            "e6:71:43:2d:5a:9c"
+            "e6:88:b0:1d:fa:11",
+            "52:77:00:bc:21:2b",
+            "1e:48:ec:55:bb:fd",
+            "da:a1:19:ae:9a:94",
+            "da:a1:19:cb:4d:cb",
+            "da:a1:19:e3:f1:24",
+            "f6:8e:b4:0b:5c:a8",
+            "16:28:7b:93:e6:96",
+            "66:75:b3:9b:0e:4f",
+            "72:6f:80:74:76:6e",
+            "a2:50:b6:5e:69:aa",
+            "d2:24:3a:40:05:5b"
         ],
         "SSID": [
             "<Hidden SSID>",
-            "eduroam",
-            "wold",
-            "uis-gjestenett"
+            "eduroam"
         ],
-        "Average_RSSI": -46.35820895522388,
-        "First_Timestamp": 1744814652.4415243,
-        "Last_Timestamp": 1744814685.6192663,
+        "Average_RSSI": -50.205882352941174,
+        "First_Timestamp": 1744816621.7844632,
+        "Last_Timestamp": 1744816635.0000372,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]
-=======
-[]
->>>>>>> refs/remotes/origin/main
