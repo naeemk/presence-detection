@@ -1,27 +1,28 @@
 [
     {
-        "Device_Name": "Device 1",
+        "Device_Name": "Device 2",
         "MAC": [
-            "66:bd:26:33:66:74",
-            "4a:fa:1b:25:97:21",
-            "46:7c:fc:19:04:92",
-            "9a:61:5b:e3:9f:d3",
-            "82:f6:56:ab:a9:ea",
-            "10:bd:3a:60:d2:1b",
-            "9e:69:df:42:c1:5b",
-            "f6:4e:79:49:bb:24",
-            "12:e4:ab:e3:dd:60",
-            "36:d5:fb:d9:3d:f2"
+            "de:a3:50:69:5a:20"
         ],
         "SSID": [
-            "eduroam",
-            "<Hidden SSID>",
-            "ArneJohannesen-guest",
-            "McD-Guest"
+            "eduroam"
         ],
-        "Average_RSSI": -80.4,
-        "First_Timestamp": 1744653023.9113054,
-        "Last_Timestamp": 1744653069.808165,
-        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001300, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        "Average_RSSI": -80.0,
+        "First_Timestamp": 1744653962.407863,
+        "Last_Timestamp": 1744653962.407863,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": [
+            "de:a3:50:69:5a:20"
+        ],
+        "SSID": [
+            "eduroam"
+        ],
+        "Average_RSSI": -82.0,
+        "First_Timestamp": 1744653963.462064,
+        "Last_Timestamp": 1744653963.462064,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
     }
 ]

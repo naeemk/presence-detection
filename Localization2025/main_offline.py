@@ -102,14 +102,18 @@ async def save_packets():
 async def main():
     # Check if the file exists
     if os.path.exists(datafile1 + ".json"):
-        # Rename the existing file to .bak
-        os.rename(datafile1 + ".json", datafile1 + ".json.bak")
-        print("[*] Existing '" + datafile1 +".json' renamed to '" + datafile1 +".json.bak'")
+        backup_file1 = datafile1 + ".json.bak"
+        if os.path.exists(backup_file1):
+            os.remove(backup_file1)
+        os.rename(datafile1 + ".json", backup_file1)
+        print(f"[*] Existing '{datafile1}.json' renamed to '{backup_file1}'")
 
     if os.path.exists(datafile2 + ".json"):
-        # Rename the existing file to .bak
-        os.rename(datafile2 + ".json", datafile2 + ".json.bak")
-        print("[*] Existing '" + datafile2 +".json' renamed to '" + datafile2 +".json.bak'")
+        backup_file2 = datafile2 + ".json.bak"
+        if os.path.exists(backup_file2):
+            os.remove(backup_file2)
+        os.rename(datafile2 + ".json", backup_file2)
+        print(f"[*] Existing '{datafile2}.json' renamed to '{backup_file2}'")
 
     plt.ion()
     plt.draw()

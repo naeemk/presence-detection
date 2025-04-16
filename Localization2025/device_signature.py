@@ -77,11 +77,6 @@ def get_device_name(device_signature, ssid_match_priority=True):
         semi_devices[mac].extend(temp_devices[mac])
         temp_devices[mac] = []  # clear temp list
 
-    # Batch 2: move aged-out device to semi_devices
-    print(f"[Batch 2] Time window expired for {mac}. Moving data to semi_devices.")
-    semi_devices[mac].extend(temp_devices[mac])
-    temp_devices[mac] = []  # clear temp list
-
     # Extract collected SSIDs and features from semi_devices
     collected_ssids = [entry[0] for entry in semi_devices[mac]]
     collected_features = []

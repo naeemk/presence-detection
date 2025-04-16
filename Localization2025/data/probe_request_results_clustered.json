@@ -1,18 +1,28 @@
 [
     {
-        "Device_Name": "Device 1",
+        "Device_Name": "Device 2",
         "MAC": [
-            "de:a3:50:69:5a:20",
-            "a0:29:42:b7:39:e1",
-            "26:e7:a5:b4:6b:f6"
+            "de:a3:50:69:5a:20"
         ],
         "SSID": [
-            "eduroam",
-            "<Hidden SSID>"
+            "eduroam"
         ],
-        "Average_RSSI": -69.42857142857143,
-        "First_Timestamp": 1744653432.2847757,
-        "Last_Timestamp": 1744653440.9050243,
+        "Average_RSSI": -80.0,
+        "First_Timestamp": 1744653986.0815675,
+        "Last_Timestamp": 1744653986.0815675,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": [
+            "de:a3:50:69:5a:20"
+        ],
+        "SSID": [
+            "eduroam"
+        ],
+        "Average_RSSI": -82.0,
+        "First_Timestamp": 1744653987.1358743,
+        "Last_Timestamp": 1744653987.1358743,
         "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
     }
 ]
