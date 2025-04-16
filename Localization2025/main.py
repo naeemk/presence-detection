@@ -13,6 +13,7 @@ from device_signature import get_device_name
 from feature_extraction import extract_features
 #from radar import visualize_radar  # Import radar visualization function
 from plot import visualize_plot
+from fingerprinting import fingerprint
 
 def load_config(filename="config.json"):
     with open(filename, "r") as file:
@@ -51,6 +52,7 @@ async def save_packets():
         
         # Structure the data into a list of dictionaries suitable for JSON
         json_data = []
+        
 
         for entry in probe_data:
             # Create a device signature based on SSID and other features like RSSI, Probe Interval, etc.
@@ -97,6 +99,7 @@ async def save_packets():
         visualize_plot(clustered_results)
         print("[*] Plot visualization updated")
         
+        #fingerprint(probe_data)
         await asyncio.sleep(1)
 
 async def main():
@@ -114,6 +117,7 @@ async def main():
     plt.ion()
     plt.draw()
     plt.show()
+
 
     # Step 1: Start sniffing and capture probe requests until you press 'esc'
     task1 = asyncio.create_task(start_sniffing(interface))  # Replace with your Wi-Fi interface

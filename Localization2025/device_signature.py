@@ -83,6 +83,17 @@ def get_device_name(device_signature, ssid_match_priority=True):
     for entry in semi_devices[mac]:
         collected_features.extend(entry[1])
     collected_features = list(set(collected_features))  # remove duplicates
+    collected_ssids = list(set(collected_ssids))  # remove duplicates
+    
+    print("--------------------------")
+    print("---------------------------")
+    print(collected_ssids)
+    print(collected_features)
+    print("--------------------------")
+    print("---------------------------")
+
+
+
 
     print(f"[Batch 2] Total SSIDs: {len(collected_ssids)}, Total unique features: {len(collected_features)}")
 
