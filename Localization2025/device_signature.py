@@ -11,8 +11,8 @@ config = load_config()
 TIME_LIMIT = 1
 
 # Accessing values from the config
-required_matches_config = config["device_signature"]["required_matches"]
-time_window = config["device_signature"]["time_window"]  # Time window in seconds
+required_matches_config = config["fingerprint"]["required_matches"]
+time_window = config["fingerprint"]["time_window"]  # Time window in seconds
 
 device_signatures = {}  # Existing devices
 device_counter = 1  # To assign new device IDs
@@ -76,6 +76,11 @@ def get_device_name(device_signature, ssid_match_priority=True):
         print(f"[Batch 2] Time window expired for {mac}. Moving data to semi_devices.")
         semi_devices[mac].extend(temp_devices[mac])
         temp_devices[mac] = []  # clear temp list
+
+    # Batch 2: move aged-out device to semi_devices
+    print(f"[Batch 2] Time window expired for {mac}. Moving data to semi_devices.")
+    semi_devices[mac].extend(temp_devices[mac])
+    temp_devices[mac] = []  # clear temp list
 
     # Extract collected SSIDs and features from semi_devices
     collected_ssids = [entry[0] for entry in semi_devices[mac]]

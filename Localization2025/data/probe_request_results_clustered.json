@@ -1,1 +1,38 @@
-[]
+[
+    {
+        "Device_Name": "Device 1",
+        "MAC": [
+            "da:a1:19:2a:96:d1",
+            "da:a1:19:a0:6c:b3",
+            "62:71:fd:b0:66:11",
+            "1e:5e:c6:4a:cf:a8",
+            "ce:48:67:20:e9:57",
+            "2e:e4:a1:17:70:2d",
+            "ae:eb:5f:d1:e2:ad",
+            "7a:7e:62:12:64:30",
+            "66:bd:26:33:66:74",
+            "3e:a3:c3:b5:cd:d5",
+            "12:e4:ab:e3:dd:60",
+            "e6:88:b0:1d:fa:11",
+            "52:77:00:bc:21:2b",
+            "1e:48:ec:55:bb:fd",
+            "da:a1:19:ae:9a:94",
+            "da:a1:19:cb:4d:cb",
+            "da:a1:19:e3:f1:24",
+            "f6:8e:b4:0b:5c:a8",
+            "16:28:7b:93:e6:96",
+            "66:75:b3:9b:0e:4f",
+            "72:6f:80:74:76:6e",
+            "a2:50:b6:5e:69:aa",
+            "d2:24:3a:40:05:5b"
+        ],
+        "SSID": [
+            "<Hidden SSID>",
+            "eduroam"
+        ],
+        "Average_RSSI": -50.205882352941174,
+        "First_Timestamp": 1744816621.7844632,
+        "Last_Timestamp": 1744816635.0000372,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    }
+]
