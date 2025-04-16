@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
     {
         "Device_Name": "Device 1",
@@ -48,3 +49,6 @@
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]
+=======
+[]
+>>>>>>> refs/remotes/origin/main
