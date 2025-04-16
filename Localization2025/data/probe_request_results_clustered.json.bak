@@ -2,30 +2,37 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "0e:99:a3:ae:26:be",
-            "2e:01:c0:53:64:cc",
-            "82:c9:30:d3:a9:b8",
-            "b0:dc:ef:a3:5f:84",
-            "8a:ab:d0:e2:d6:ea",
-            "c6:23:1e:f2:80:6c",
-            "f6:f3:51:af:c5:a8",
-            "6e:00:24:f7:e9:29",
+            "16:85:94:27:c5:1a",
+            "46:35:5a:e6:68:20",
+            "aa:d6:e7:a2:c4:a0",
+            "36:59:8c:b0:49:db",
+            "1a:0c:fc:cc:f7:53",
+            "3e:89:44:8b:07:cb",
+            "f2:d2:d7:03:c1:85",
+            "fe:1b:ad:d0:4a:44",
+            "36:da:7f:dc:d4:fa",
+            "6a:b8:79:a4:0f:4f",
+            "ce:08:a6:87:41:8d",
             "a0:f4:59:8c:22:a9",
-            "ba:09:f0:cb:90:5c",
-            "16:62:6a:ec:ca:cc",
-            "1a:c2:b9:d7:f7:75",
-            "06:e5:f6:ef:a3:5a",
-            "1a:f6:c4:c0:d5:5c",
-            "3c:06:30:01:44:ea"
+            "1a:a1:12:6d:1a:7c",
+            "22:d4:da:27:83:69",
+            "f4:6a:dd:8b:7d:f1",
+            "5e:a0:7f:f2:8a:51",
+            "ba:fe:b5:cf:d9:b2",
+            "a6:4b:e8:a7:97:72",
+            "1e:b4:79:8f:3a:24",
+            "32:a0:14:68:88:03",
+            "7a:a8:0b:00:ec:94",
+            "0e:ca:2b:6a:f3:92"
         ],
         "SSID": [
             "<Hidden SSID>",
-            "uis-gjestenett",
-            "eduroam"
+            "eduroam",
+            "mahabad"
         ],
-        "Average_RSSI": -54.80952380952381,
-        "First_Timestamp": 1744717373.7803726,
-        "Last_Timestamp": 1744717383.431135,
-        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+        "Average_RSSI": -48.65625,
+        "First_Timestamp": 1744814330.4638631,
+        "Last_Timestamp": 1744814339.7352085,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]

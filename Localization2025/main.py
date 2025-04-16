@@ -13,7 +13,7 @@ from device_signature import get_device_name
 from feature_extraction import extract_features
 #from radar import visualize_radar  # Import radar visualization function
 from plot import visualize_plot
-from fingerprinting import fingerprint
+from fingerprinting.fingerprinting import fingerprint
 
 def load_config(filename="config.json"):
     with open(filename, "r") as file:
@@ -99,7 +99,7 @@ async def save_packets():
         visualize_plot(clustered_results)
         print("[*] Plot visualization updated")
         
-        #fingerprint(probe_data)
+        fingerprint(probe_data)
         await asyncio.sleep(1)
 
 async def main():
