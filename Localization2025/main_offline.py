@@ -13,6 +13,9 @@ from device_signature import get_device_name
 from feature_extraction import extract_features
 #from radar import visualize_radar  # Import radar visualization function
 from plot import visualize_plot
+from scapy.all import rdpcap
+from fingerprinting.fingerprinting import fingerprint
+from capture import handle_probe_request
 
 def load_config(filename="config.json"):
     with open(filename, "r") as file:
@@ -20,6 +23,8 @@ def load_config(filename="config.json"):
 config = load_config()
 
 interface = config["general"]["interface"]
+fake_seconds = config["general"]["fake_seconds"]
+pcap_file = config["jsonfiles"]["pcap_file"]
 datafile1 = config["jsonfiles"]["probe_request_results"]
 datafile2 = config["jsonfiles"]["probe_request_results_clustered"]
 
@@ -29,6 +34,17 @@ clustered_results_all = []
 def on_click(event):
     print(f"Clicked at ({event.x}, {event.y})")
 
+async def offline_packets():
+    while True:
+        print(f"[*] Faking Wi-Fi probe requests with {fake_seconds} second(s) interval...")
+        packets = rdpcap(pcap_file)
+        print(f"[*] Loaded {len(packets)} packets from '{pcap_file}'")
+
+        for packet in packets:
+            handle_probe_request(packet)
+            await asyncio.sleep(fake_seconds)
+
+        await asyncio.sleep(2)
 
 async def save_packets():
     while True:

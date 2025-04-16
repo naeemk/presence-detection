@@ -122,15 +122,3 @@ async def start_sniffing(interface):
         print("[*] Listening for Wi-Fi probe requests...")
         sniff(iface=interface, prn=handle_probe_request, store=0, filter="type mgt subtype probe-req", timeout=duration)
         await asyncio.sleep(2)
-
-async def offline_packets():
-    while True:
-        print(f"[*] Faking Wi-Fi probe requests with {fake_seconds} second(s) interval...")
-        packets = rdpcap(pcap_file)
-        print(f"[*] Loaded {len(packets)} packets from '{pcap_file}'")
-
-        for packet in packets:
-            handle_probe_request(packet)
-            await asyncio.sleep(fake_seconds)
-
-        await asyncio.sleep(2)

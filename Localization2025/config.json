@@ -14,7 +14,8 @@
     },
     "fingerprint": {
       "required_matches": 7,
-      "time_window": 1
+      "time_window": 1,
+      "threshold_ratio": 0.3
     },
     "plot": {
       "max_distance": 100,
