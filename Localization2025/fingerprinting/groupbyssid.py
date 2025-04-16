@@ -17,5 +17,13 @@ time_window = config["device_signature"]["time_window"]  # Time window in second
 
 def groupbySSID(mac_data):
     ssid_data = defaultdict(list)
-    
+    for entry in mac_data:
+        ssid = entry["SSID"]
+        if ssid:
+            ssid_data[ssid].append(entry)
+    print("=============================================")
+    for ssid, entries in ssid_data.items():
+        print(f"SSID Address: {ssid}, Entries: {entries}")
+    print("=============================================")
     return ssid_data
+        
