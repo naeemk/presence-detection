@@ -17,6 +17,7 @@ config = load_config()
 required_matches_config = config["fingerprint"]["required_matches"]
 time_window = config["fingerprint"]["time_window"]  # Time window in seconds
 threshold_ratio = config["fingerprint"]["threshold_ratio"]  # Threshold ratio for common SSIDs
+ssid_threshold = config["fingerprint"]["ssid_threshold"]  # Threshold for SSID similarity
 
 previous_list = []
 
@@ -50,7 +51,7 @@ def fingerprint(probe_data):
 
     mac_data = groupbyMAC(probe_data)
 
-    ssid_data = groupbySSID(mac_data)
+    ssid_data = groupbySSID(mac_data, ssid_threshold)
 
     feature_data = groupbyFeature(ssid_data)
     
