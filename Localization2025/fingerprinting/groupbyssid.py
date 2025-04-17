@@ -19,6 +19,12 @@ def groupbySSID(mac_data, ssid_threshold, common_ssids):
     print("DEBUG")
     print("==============================================")
     grouped_ssid = extract_ssid(mac_data)
+
+    # Filter out common SSIDs from each MAC’s SSID list
+    for mac in grouped_ssid:
+        grouped_ssid[mac] = [ssid for ssid in grouped_ssid[mac] if ssid not in common_ssids]
+
+    print("Filtered SSID data (common removed):")
     print(grouped_ssid)
 
     # Build initial groups: one per MAC
