@@ -100,6 +100,7 @@ async def save_packets():
         # Load JSON data
         #with open("probe_request_results.json", "r") as file:
         #   data = json.load(file)
+        fingerprint(probe_data)
         
         # Perform clustering
         print("[*] Clustering data...")

@@ -35,12 +35,17 @@
             "36:e5:81:f3:eb:f9"
         ],
         "SSID": [
+<<<<<<< HEAD
             "<Hidden SSID>",
             "eduroam",
             "TP-Link_9252_5G",
             "Altibox046454_5G",
             "BK-GJEST",
             "Soria Moria Guest"
+=======
+            "eduroam",
+            "<Hidden SSID>"
+>>>>>>> refs/remotes/origin/main
         ],
         "Average_RSSI": -51.26315789473684,
         "First_Timestamp": 1744907093.134736,
