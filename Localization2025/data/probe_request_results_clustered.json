@@ -2,38 +2,40 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "a0:f4:59:8c:22:a9",
-            "72:89:70:92:ab:33",
-            "36:e0:0b:4a:45:a9",
-            "da:18:43:5c:6d:6b",
-            "2a:78:61:ed:cb:1d",
-            "96:b5:c0:48:ed:a9",
-            "20:2b:20:5e:57:a5",
-            "2e:9b:0d:b1:97:fd",
-            "c2:4c:13:e2:11:b0",
-            "36:4b:4b:a1:8a:5f",
-            "86:fb:a9:f2:6f:08",
-            "a6:33:b0:7c:46:a0",
-            "7e:02:c1:66:25:c6",
-            "92:f2:1d:25:b1:5e",
-            "a2:14:05:cb:9c:22",
-            "86:3a:c9:c3:cb:06",
-            "76:fd:7f:ea:6d:61",
-            "c4:3d:1a:65:5a:b3",
-            "dc:03:98:95:61:3c",
-            "aa:65:6d:56:e2:9c",
-            "e2:95:d3:57:3a:55",
-            "2a:63:27:ff:0c:28",
-            "1e:52:9c:c4:53:cd",
-            "12:f2:cf:40:a4:d4"
+            "36:d5:fb:d9:3d:f2",
+            "de:a3:50:69:5a:20",
+            "e0:c2:64:9a:1f:a5",
+            "00:25:ca:4b:22:4d"
         ],
         "SSID": [
-            "<Hidden SSID>",
-            "eduroam"
+            "eduroam",
+            "<Hidden SSID>"
         ],
-        "Average_RSSI": -57.56,
-        "First_Timestamp": 1744822799.6601455,
-        "Last_Timestamp": 1744822819.2307823,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+        "Average_RSSI": -55.0,
+        "First_Timestamp": 1744905337.9788914,
+        "Last_Timestamp": 1744905374.6594386,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": [
+            "a6:f2:37:8e:93:11",
+            "3a:bb:66:ce:61:d4",
+            "72:00:a0:08:e0:a8",
+            "c6:43:f6:e5:4a:b8",
+            "3e:05:f2:28:52:8a",
+            "aa:8b:48:5d:e7:96",
+            "4e:77:f2:87:f6:af",
+            "dc:03:98:95:61:3c",
+            "a0:f4:59:8c:22:a9",
+            "26:07:13:57:ab:88"
+        ],
+        "SSID": [
+            "<Hidden SSID>"
+        ],
+        "Average_RSSI": -58.13793103448276,
+        "First_Timestamp": 1744905316.7228708,
+        "Last_Timestamp": 1744905372.7577507,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]
