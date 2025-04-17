@@ -25,8 +25,7 @@ def groupbyFeature(ssid_data):
 
     for ssid_group_id, group_info in ssid_data.items():
         entries = group_info["entries"]
-
-        subgroups = []
+        
         assigned = [False] * len(entries)
 
         for i in range(len(entries)):
