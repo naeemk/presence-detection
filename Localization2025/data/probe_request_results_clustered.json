@@ -2,54 +2,31 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "5a:da:53:11:35:82",
-            "ba:0b:a5:fc:a7:85",
-            "36:08:6b:6f:b1:4c",
-            "ae:23:37:2d:a4:72",
-            "62:83:0d:07:ef:15",
+            "4e:1d:8c:f9:49:20",
+            "b2:50:1b:21:78:cb",
+            "d2:f5:f2:9f:10:16",
             "a0:f4:59:8c:22:a9",
-            "9a:2d:53:9a:31:80",
-            "66:1d:43:23:74:05",
-            "82:e5:37:c7:78:c0",
-            "ba:a5:53:2c:5c:ee",
-            "2a:5e:2e:70:63:3d",
-            "94:f6:d6:1f:49:68",
-            "62:8b:ce:62:32:a4",
-            "14:7d:da:65:b4:b0",
-            "0e:65:79:bc:e6:19",
-            "ea:63:71:c3:04:7e",
-            "96:37:8a:6d:7e:f7",
-            "4a:a3:f5:0e:78:cc",
-            "aa:87:75:b1:db:77",
-            "be:58:d6:f0:2d:e8",
-            "b6:01:85:44:e8:8e",
-            "b6:f6:4a:6c:01:84",
-            "fe:e2:49:35:3b:ff",
-            "da:b1:1b:78:7c:b1",
-            "06:28:12:6b:97:5b",
-            "2e:88:7f:04:60:cc",
-            "26:f9:bd:89:6b:c0",
-            "ce:92:f8:51:22:b7",
-            "c2:35:48:7f:2d:f0",
-            "22:a8:8f:f4:68:1c",
-            "36:e5:81:f3:eb:f9"
+            "62:83:0d:07:ef:15",
+            "72:bb:c5:cb:f1:d4",
+            "5e:fc:07:a3:6d:5b",
+            "8e:4c:98:ed:be:d4",
+            "ae:36:98:49:09:d5",
+            "4a:06:d9:7b:07:fd",
+            "dc:03:98:95:61:3c",
+            "52:1c:72:d7:9a:0c",
+            "9a:6a:d4:ad:33:8e",
+            "f2:5f:c5:03:49:91",
+            "2e:2b:d5:6c:8c:c6",
+            "2e:14:ef:53:dc:21",
+            "66:bd:26:33:66:74"
         ],
         "SSID": [
-<<<<<<< HEAD
             "<Hidden SSID>",
-            "eduroam",
-            "TP-Link_9252_5G",
-            "Altibox046454_5G",
-            "BK-GJEST",
-            "Soria Moria Guest"
-=======
-            "eduroam",
-            "<Hidden SSID>"
->>>>>>> refs/remotes/origin/main
+            "eduroam"
         ],
-        "Average_RSSI": -51.26315789473684,
-        "First_Timestamp": 1744907093.134736,
-        "Last_Timestamp": 1744907146.3456483,
+        "Average_RSSI": -56.94736842105263,
+        "First_Timestamp": 1744908474.2695475,
+        "Last_Timestamp": 1744908532.0754979,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]

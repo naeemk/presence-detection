@@ -14,7 +14,7 @@ config = load_config()
 #required_matches_config = config["fingerprint"]["required_matches"]
 #time_window = config["fingerprint"]["time_window"]  # Time window in seconds
 
-def groupbySSID(mac_data, ssid_threshold):
+def groupbySSID(mac_data, ssid_threshold, common_ssids):
     print("=============================================")
     print("DEBUG")
     print("==============================================")
@@ -30,12 +30,15 @@ def groupbySSID(mac_data, ssid_threshold):
         changed = False
         mac_list = list(grouped_macs.keys())
         n = len(mac_list)
+        print(n)
         print("DEBUG 1")
         for i in range(n):
+            print(i)
             mac1 = mac_list[i]
             ssids1 = set(grouped_ssid.get(mac1, []))
             print("DEBUG 2")
             for j in range(i + 1, n):
+                print(j)
                 mac2 = mac_list[j]
                 ssids2 = set(grouped_ssid.get(mac2, []))
                 print("DEBUG 3")
@@ -75,7 +78,7 @@ def groupbySSID(mac_data, ssid_threshold):
     # Optional: print the grouped info
     print("======= Final MAC Groups Based on SSID Similarity =======")
     for group in final_groups:
-        print(f"Group {group['group_id']}: MACs = {group['macs']}, Entries = {len(group['entries'])} records")
+        print(f"Group {group['group_id']}: MACs = {group['macs']}, Entries = {group['entries']} records")
     print("=========================================================")
 
     return final_groups

@@ -51,7 +51,7 @@ def fingerprint(probe_data):
 
     mac_data = groupbyMAC(probe_data)
 
-    ssid_data = groupbySSID(mac_data, ssid_threshold)
+    ssid_data = groupbySSID(mac_data, ssid_threshold, common_ssids)
 
     feature_data = groupbyFeature(ssid_data)
     
