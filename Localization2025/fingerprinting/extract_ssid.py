@@ -20,6 +20,7 @@ def extract_ssid(mac_data):
             if ssid:
                 ssid_set.add(ssid)
         grouped_ssid[mac] = list(ssid_set)
+    
 
-    return grouped_ssid
+        return grouped_ssid
 
