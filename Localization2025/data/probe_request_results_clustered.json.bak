@@ -2,39 +2,21 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "36:d5:fb:d9:3d:f2",
-            "de:a3:50:69:5a:20",
-            "e0:c2:64:9a:1f:a5",
-            "00:25:ca:4b:22:4d"
+            "14:18:c3:6b:1c:96",
+            "36:1f:93:b7:12:58",
+            "3e:d2:a1:94:bc:8d",
+            "f2:4c:24:2a:df:1d",
+            "46:72:09:d6:33:5b",
+            "76:3e:c7:30:34:1e",
+            "6e:1e:75:c2:53:10"
         ],
         "SSID": [
             "eduroam",
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -55.0,
-        "First_Timestamp": 1744905090.2100985,
-        "Last_Timestamp": 1744905126.532963,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": [
-            "3a:bb:66:ce:61:d4",
-            "72:00:a0:08:e0:a8",
-            "c6:43:f6:e5:4a:b8",
-            "3e:05:f2:28:52:8a",
-            "aa:8b:48:5d:e7:96",
-            "4e:77:f2:87:f6:af",
-            "dc:03:98:95:61:3c",
-            "a0:f4:59:8c:22:a9",
-            "26:07:13:57:ab:88"
-        ],
-        "SSID": [
-            "<Hidden SSID>"
-        ],
-        "Average_RSSI": -59.6551724137931,
-        "First_Timestamp": 1744905072.7044415,
-        "Last_Timestamp": 1744905130.2097003,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+        "Average_RSSI": -55.38461538461539,
+        "First_Timestamp": 1744906014.7713494,
+        "Last_Timestamp": 1744906022.1483433,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
     }
 ]
