@@ -2,40 +2,35 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "36:d5:fb:d9:3d:f2",
-            "de:a3:50:69:5a:20",
-            "e0:c2:64:9a:1f:a5",
-            "00:25:ca:4b:22:4d"
+            "56:b3:76:11:e4:4d",
+            "a0:f4:59:8c:22:a9",
+            "9e:28:c7:cb:4d:91",
+            "f6:41:2a:9e:fc:41",
+            "46:09:f2:33:cc:54",
+            "66:bf:21:63:80:af",
+            "e6:4b:37:2b:78:68",
+            "62:83:0d:07:ef:15",
+            "2a:5e:2e:70:63:3d",
+            "ea:fd:51:c8:3d:2e",
+            "d2:c8:f8:b8:70:d7",
+            "b2:1c:54:e2:60:5d",
+            "ca:bb:3f:03:de:56",
+            "be:8e:97:23:04:7a",
+            "6a:20:43:2e:ff:66",
+            "52:10:85:75:95:a8",
+            "14:18:c3:6b:1c:96",
+            "26:99:e4:6f:7f:a7",
+            "ae:00:18:31:86:01",
+            "1e:c9:a2:eb:ad:3d",
+            "72:27:e4:30:43:64"
         ],
         "SSID": [
             "eduroam",
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -55.0,
-        "First_Timestamp": 1744905337.9788914,
-        "Last_Timestamp": 1744905374.6594386,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": [
-            "a6:f2:37:8e:93:11",
-            "3a:bb:66:ce:61:d4",
-            "72:00:a0:08:e0:a8",
-            "c6:43:f6:e5:4a:b8",
-            "3e:05:f2:28:52:8a",
-            "aa:8b:48:5d:e7:96",
-            "4e:77:f2:87:f6:af",
-            "dc:03:98:95:61:3c",
-            "a0:f4:59:8c:22:a9",
-            "26:07:13:57:ab:88"
-        ],
-        "SSID": [
-            "<Hidden SSID>"
-        ],
-        "Average_RSSI": -58.13793103448276,
-        "First_Timestamp": 1744905316.7228708,
-        "Last_Timestamp": 1744905372.7577507,
+        "Average_RSSI": -54.775,
+        "First_Timestamp": 1744906331.8331487,
+        "Last_Timestamp": 1744906378.6892195,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]

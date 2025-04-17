@@ -21,9 +21,9 @@ def groupbyMAC(probe_data):
         mac = entry["MAC"]
         if mac:
             mac_data[mac].append(entry)
-    print("=============================================")
-    print(mac_data)
-    for mac, entries in mac_data.items():
-        print(f"MAC Address: {mac}, Entries: {entries}")
-    print("=============================================")
+    #print("=============================================")
+    #print(mac_data)
+    #for mac, entries in mac_data.items():
+    #    print(f"MAC Address: {mac}, Entries: {entries}")
+    #print("=============================================")
     return mac_data
