@@ -2,16 +2,21 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "6e:b9:d7:2e:c3:d1",
-            "3a:d6:e5:18:d1:66"
+            "14:18:c3:6b:1c:96",
+            "36:1f:93:b7:12:58",
+            "3e:d2:a1:94:bc:8d",
+            "f2:4c:24:2a:df:1d",
+            "46:72:09:d6:33:5b",
+            "76:3e:c7:30:34:1e",
+            "6e:1e:75:c2:53:10"
         ],
         "SSID": [
-            "mahabad",
+            "eduroam",
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -71.0,
-        "First_Timestamp": 1744822668.7486384,
-        "Last_Timestamp": 1744822668.7493975,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+        "Average_RSSI": -55.38461538461539,
+        "First_Timestamp": 1744906014.7713494,
+        "Last_Timestamp": 1744906022.1483433,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
     }
 ]

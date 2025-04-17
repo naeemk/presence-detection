@@ -4,6 +4,7 @@ from collections import defaultdict, Counter
 from .groupbymac import groupbyMAC
 from .groupbyssid import groupbySSID
 from .groupbyfeature import groupbyFeature
+from .match_and_sort_clusters import match_and_sort_fuzzy
 
 
 # Load configuration
@@ -14,7 +15,6 @@ def load_config(filename="./config.json"):
 config = load_config()
 
 # Accessing values from the config
-required_matches_config = config["fingerprint"]["required_matches"]
 time_window = config["fingerprint"]["time_window"]  # Time window in seconds
 threshold_ratio = config["fingerprint"]["threshold_ratio"]  # Threshold ratio for common SSIDs
 ssid_threshold = config["fingerprint"]["ssid_threshold"]  # Threshold for SSID similarity
@@ -55,15 +55,20 @@ def fingerprint(probe_data):
 
     feature_data = groupbyFeature(ssid_data)
     
+    print("=======================1======================")
+    #print(previous_list)
+    print("=============================================")
 
+    print("===================2==========================")
+    #print(feature_data)
+    print("=============================================")
 
-    print(time_window)
+    #new_list = match_and_sort_fuzzy(feature_data, previous_list)  
 
-    # Create a list to store the new data
-    new_list = []
+    print("====================3=========================")
+    #print(new_list)
+    print("=============================================")
+    #previous_list = new_list
 
-    
-
-    previous_list = new_list
-    return new_list
+    return None
 
