@@ -7,7 +7,7 @@ import keyboard
 import matplotlib.pyplot as plt
 
 from anomaly_detection import detect_anomalies
-from capture import offline_packets, probe_data
+from capture import probe_data
 from clustering import cluster_data
 from device_signature import get_device_name
 from feature_extraction import extract_features
@@ -100,6 +100,7 @@ async def save_packets():
         # Load JSON data
         #with open("probe_request_results.json", "r") as file:
         #   data = json.load(file)
+        fingerprint(probe_data)
         
         # Perform clustering
         print("[*] Clustering data...")
