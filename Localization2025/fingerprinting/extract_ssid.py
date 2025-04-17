@@ -11,10 +11,10 @@ config = load_config()
 TIME_LIMIT = 1
 
 def extract_ssid(mac_data):
-    grouped_ssid = []
-    
+    grouped_ssid = {}
     for mac, entries in mac_data.items():
-        ssid_set = []
+        ssid_set = set()
+
         for entry in entries:
             ssid = entry["SSID"]
             if ssid:

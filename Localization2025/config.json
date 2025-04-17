@@ -16,7 +16,7 @@
       "required_matches": 7,
       "time_window": 1,
       "threshold_ratio": 0.3,
-      "ssid_threshold": 5
+      "ssid_threshold": 0.8
     },
     "plot": {
       "max_distance": 100,
