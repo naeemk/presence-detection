@@ -84,8 +84,7 @@ def handle_probe_request(packet):
                     elif elt.ID == 42:
                         wifi_features.append(f"HT Capabilities: {elt.info.hex()}")
                     elif elt.ID == 50:  # Extended Supported Rates
-                        rates = [f"{(b & 0x7F) / 2} Mbps" for b in elt.info]
-                        wifi_features.append(f"Extended Supported Rates: {', '.join(rates)}")
+                        wifi_features.append(f"Extended Supported Rates: {elt.info.hex()}")
                     elif elt.ID == 48:
                         try:
                             version = int.from_bytes(elt.info[0:2], byteorder='little')

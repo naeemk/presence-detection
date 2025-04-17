@@ -21,6 +21,49 @@ ssid_threshold = config["fingerprint"]["ssid_threshold"]  # Threshold for SSID s
 
 previous_list = []
 
+oldtestdata = [
+    {
+        "device_name": "Device 1",
+        "macs": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
+        "ssids": ["mahabad", "<Hidden SSID>"],
+        "avg_rssi": -71.0,
+        "first_seen": 1744822668.7486384,
+        "last_seen": 1744822668.7493975,
+        "features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    },
+    {
+        "device_name": "Device 2",
+        "macs": ["6e:b9:d7:2e:c3:d2", "3a:d6:e5:18:d1:67"],
+        "ssids": ["Airport Wifi", "<Hidden SSID>"],
+        "avg_rssi": -50.0,
+        "first_seen": 1744822669.7486384,
+        "last_seen": 1744822671.7493975,
+        "features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    }
+]
+
+testdata = [
+    {
+        "device_name": "Device 2",
+        "macs": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
+        "ssids": ["mahabad", "<Hidden SSID>"],
+        "avg_rssi": -71.0,
+        "first_seen": 1744822668.7486384,
+        "last_seen": 1744822668.7493975,
+        "features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    },
+    {
+        "device_name": "Device 1",
+        "macs": ["6e:b9:d7:2e:c3:d2", "3a:d6:e5:18:d1:67"],
+        "ssids": ["Airport Wifi", "<Hidden SSID>"],
+        "avg_rssi": -50.0,
+        "first_seen": 1744822669.7486384,
+        "last_seen": 1744822671.7493975,
+        "features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    }
+]
+
+
 def get_common_ssids(probe_data, threshold_ratio):
     """
     Given a list of probe_data (each item is a dict containing 'ssid'), 
@@ -38,10 +81,10 @@ def get_common_ssids(probe_data, threshold_ratio):
             ssid_counts[ssid] += 1
 
     total_entries = len(probe_data)
-    too_common_ssids = {ssid for ssid, count in ssid_counts.items() 
+    common_ssids = {ssid for ssid, count in ssid_counts.items() 
                         if count / total_entries >= threshold_ratio}
 
-    return too_common_ssids
+    return common_ssids
 
 def fingerprint(probe_data):
     common_ssids = get_common_ssids(probe_data, threshold_ratio)
@@ -63,7 +106,7 @@ def fingerprint(probe_data):
     #print(feature_data)
     print("=============================================")
 
-    #new_list = match_and_sort_fuzzy(feature_data, previous_list)  
+    #new_list = match_and_sort_fuzzy(oldtestdata, testdata)  
 
     print("====================3=========================")
     #print(new_list)

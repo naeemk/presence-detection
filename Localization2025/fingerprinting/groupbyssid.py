@@ -69,22 +69,24 @@ def groupbySSID(mac_data, ssid_threshold, common_ssids):
         unique_groups[frozenset(group)] = group
 
     # Format the result with full probe entries
-    final_groups = []
+    ssid_data = defaultdict(list)
     for idx, group in enumerate(unique_groups.values(), start=1):
         group_entries = []
         for mac in group:
             group_entries.extend(mac_data.get(mac, []))
 
-        final_groups.append({
-            "group_id": idx,
+        ssid_data[idx] = {
             "macs": list(group),
             "entries": group_entries
-        })
+        }
 
     # Optional: print the grouped info
     print("======= Final MAC Groups Based on SSID Similarity =======")
-    for group in final_groups:
-        print(f"Group {group['group_id']}: MACs = {group['macs']}, Entries = {group['entries']} records")
+    for group_id, group_data in final_groups.items():
+        print(f"Group {group_id}: MACs = {group_data['macs']}, Entries = {len(group_data['entries'])} records")
+        for entry in group_data['entries']:
+            print(f"  SSIDs: {entry.get('SSID', [])}")
+        for entry in group_data['entries']:
+            print(f"  Features: {entry.get('Features', [])}") 
     print("=========================================================")
-
-    return final_groups
+    return ssid_data
