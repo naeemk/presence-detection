@@ -2,21 +2,35 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
+            "56:b3:76:11:e4:4d",
+            "a0:f4:59:8c:22:a9",
+            "9e:28:c7:cb:4d:91",
+            "f6:41:2a:9e:fc:41",
+            "46:09:f2:33:cc:54",
+            "66:bf:21:63:80:af",
+            "e6:4b:37:2b:78:68",
+            "62:83:0d:07:ef:15",
+            "2a:5e:2e:70:63:3d",
+            "ea:fd:51:c8:3d:2e",
+            "d2:c8:f8:b8:70:d7",
+            "b2:1c:54:e2:60:5d",
+            "ca:bb:3f:03:de:56",
+            "be:8e:97:23:04:7a",
+            "6a:20:43:2e:ff:66",
+            "52:10:85:75:95:a8",
             "14:18:c3:6b:1c:96",
-            "36:1f:93:b7:12:58",
-            "3e:d2:a1:94:bc:8d",
-            "f2:4c:24:2a:df:1d",
-            "46:72:09:d6:33:5b",
-            "76:3e:c7:30:34:1e",
-            "6e:1e:75:c2:53:10"
+            "26:99:e4:6f:7f:a7",
+            "ae:00:18:31:86:01",
+            "1e:c9:a2:eb:ad:3d",
+            "72:27:e4:30:43:64"
         ],
         "SSID": [
-            "eduroam",
-            "<Hidden SSID>"
+            "<Hidden SSID>",
+            "eduroam"
         ],
-        "Average_RSSI": -55.38461538461539,
-        "First_Timestamp": 1744906014.7713494,
-        "Last_Timestamp": 1744906022.1483433,
-        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
+        "Average_RSSI": -54.775,
+        "First_Timestamp": 1744906331.8331487,
+        "Last_Timestamp": 1744906378.6892195,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]
