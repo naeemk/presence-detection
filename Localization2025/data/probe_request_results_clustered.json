@@ -2,37 +2,40 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "9a:84:f4:cc:19:04",
-            "e2:3d:0a:1b:5a:7d",
-            "76:4d:fc:88:18:b9",
-            "c2:d7:b6:50:6b:08",
-            "8a:5d:75:2e:77:6f",
-            "ae:58:13:06:e2:fa",
-            "ce:70:17:96:6e:f7",
+            "fc:31:5d:79:ef:0c",
             "36:d5:fb:d9:3d:f2",
-            "ca:33:60:a8:91:b9",
-            "c8:58:c0:ec:8c:9f",
-            "32:de:34:e2:21:ef",
-            "be:0b:9a:ed:03:2c",
-            "3e:42:70:d1:21:27",
-            "0e:25:7c:5e:95:6a",
-            "1e:ac:84:12:b4:36",
-            "4a:48:3b:a0:ee:b0",
-            "2e:0f:00:6d:7b:58",
-            "9e:48:1a:54:d9:48",
-            "c2:c7:e5:e7:6c:ea",
-            "ea:d7:73:e1:47:69",
-            "d2:59:e1:9b:0c:7e"
+            "de:a3:50:69:5a:20",
+            "e0:c2:64:9a:1f:a5"
         ],
         "SSID": [
-            "<Hidden SSID>",
-            "Letisha1216",
-            "Samsung Galaxy Note8",
             "eduroam"
         ],
-        "Average_RSSI": -45.64705882352941,
-        "First_Timestamp": 1744984862.795704,
-        "Last_Timestamp": 1744984872.1680806,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+        "Average_RSSI": -47.5,
+        "First_Timestamp": 1744985926.4746644,
+        "Last_Timestamp": 1744985979.5159287,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": [
+            "a0:f4:59:8c:22:a9",
+            "96:b7:0b:ce:b4:75",
+            "a6:f2:37:8e:93:11",
+            "3a:bb:66:ce:61:d4",
+            "72:00:a0:08:e0:a8",
+            "c6:43:f6:e5:4a:b8",
+            "3e:05:f2:28:52:8a",
+            "aa:8b:48:5d:e7:96",
+            "4e:77:f2:87:f6:af",
+            "dc:03:98:95:61:3c",
+            "26:07:13:57:ab:88"
+        ],
+        "SSID": [
+            "<Hidden SSID>"
+        ],
+        "Average_RSSI": -58.38709677419355,
+        "First_Timestamp": 1744985928.138333,
+        "Last_Timestamp": 1744985984.76397,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
     }
 ]
