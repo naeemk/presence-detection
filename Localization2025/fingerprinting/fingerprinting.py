@@ -5,6 +5,7 @@ from .groupbymac import groupbyMAC
 from .groupbyssid import groupbySSID
 from .groupbyfeature import groupbyFeature
 from .match_and_sort_clusters import match_and_sort_fuzzy
+from .process_feature_groups import process_feature_groups
 
 
 # Load configuration
@@ -23,43 +24,61 @@ previous_list = []
 
 oldtestdata = [
     {
-        "device_name": "Device 1",
-        "macs": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
-        "ssids": ["mahabad", "<Hidden SSID>"],
-        "avg_rssi": -71.0,
-        "first_seen": 1744822668.7486384,
-        "last_seen": 1744822668.7493975,
-        "features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+        "Device_Name": "Device 1",
+        "MAC": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
+        "SSID": ["mahabad", "<Hidden SSID>"],
+        "Average_RSSI": -71.0,
+        "First_Timestamp": 1744822668.7486384,
+        "Last_Timestamp": 1744822668.7493975,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     },
     {
-        "device_name": "Device 2",
-        "macs": ["6e:b9:d7:2e:c3:d2", "3a:d6:e5:18:d1:67"],
-        "ssids": ["Airport Wifi", "<Hidden SSID>"],
-        "avg_rssi": -50.0,
-        "first_seen": 1744822669.7486384,
-        "last_seen": 1744822671.7493975,
-        "features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+        "Device_Name": "Device 2",
+        "MAC": ["6e:b9:d7:2e:c3:d2", "3a:d6:e5:18:d1:67"],
+        "SSID": ["Airport Wifi", "<Hidden SSID>"],
+        "Average_RSSI": -50.0,
+        "First_Timestamp": 1744822669.7486384,
+        "Last_Timestamp": 1744822671.7493975,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": ["6e:b9:d7:2e:c3:d3", "3a:d6:e5:18:d1:68"],
+        "SSID": ["Hotel Wifi", "<Hidden SSID>"],
+        "Average_RSSI": -40.0,
+        "First_Timestamp": 1744822670.7486384,
+        "Last_Timestamp": 1744822672.7493975,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]
 
 testdata = [
     {
-        "device_name": "Device 2",
-        "macs": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
-        "ssids": ["mahabad", "<Hidden SSID>"],
-        "avg_rssi": -71.0,
-        "first_seen": 1744822668.7486384,
-        "last_seen": 1744822668.7493975,
-        "features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+        "Device_Name": "Device 1",
+        "MAC": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
+        "SSID": ["mahabad", "<Hidden SSID>"],
+        "Average_RSSI": -70.0,
+        "First_Timestamp": 1744822668.7486384,
+        "Last_Timestamp": 1744822668.7493975,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     },
     {
-        "device_name": "Device 1",
-        "macs": ["6e:b9:d7:2e:c3:d2", "3a:d6:e5:18:d1:67"],
-        "ssids": ["Airport Wifi", "<Hidden SSID>"],
-        "avg_rssi": -50.0,
-        "first_seen": 1744822669.7486384,
-        "last_seen": 1744822671.7493975,
-        "features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+        "Device_Name": "Device 2",
+        "MAC": ["6e:b9:d7:2e:c3:d3", "3a:d6:e5:18:d1:68"],
+        "SSID": ["Hotel Wifi", "<Hidden SSID>", "Test SSID"],
+        "Average_RSSI": -43.0,
+        "First_Timestamp": 1744822670.7486384,
+        "Last_Timestamp": 1744822672.7493975,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": ["6e:b9:d7:2e:c3:d2", "3a:d6:e5:18:d1:67"],
+        "SSID": ["Airport Wifi", "<Hidden SSID>"],
+        "Average_RSSI": -55.0,
+        "First_Timestamp": 1744822669.7486384,
+        "Last_Timestamp": 1744822671.7493975,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
     }
 ]
 
@@ -98,6 +117,8 @@ def fingerprint(probe_data):
 
     feature_data = groupbyFeature(ssid_data)
     
+    finaldevicegroup = process_feature_groups(feature_data)
+
     print("=======================1======================")
     #print(previous_list)
     print("=============================================")
@@ -106,7 +127,7 @@ def fingerprint(probe_data):
     #print(feature_data)
     print("=============================================")
 
-    #new_list = match_and_sort_fuzzy(oldtestdata, testdata)  
+    new_list = match_and_sort_fuzzy(oldtestdata, testdata)  
 
     print("====================3=========================")
     #print(new_list)

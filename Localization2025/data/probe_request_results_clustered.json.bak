@@ -33,9 +33,13 @@
         "SSID": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -58.38709677419355,
-        "First_Timestamp": 1744985928.138333,
-        "Last_Timestamp": 1744985984.76397,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+        "Average_RSSI": -43.63636363636363,
+        "First_Timestamp": 1744984765.7721274,
+        "Last_Timestamp": 1744984775.5851839,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+        "Average_RSSI": -56.41379310344828,
+        "First_Timestamp": 1744985750.7548099,
+        "Last_Timestamp": 1744985805.443267,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
     }
 ]
