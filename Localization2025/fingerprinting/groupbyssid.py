@@ -81,12 +81,12 @@ def groupbySSID(mac_data, ssid_threshold, common_ssids):
         }
 
     # Optional: print the grouped info
-    print("======= Final MAC Groups Based on SSID Similarity =======")
-    for group_id, group_data in ssid_data.items():
-        print(f"Group {group_id}: MACs = {group_data['macs']}, Entries = {len(group_data['entries'])} records")
-        for entry in group_data['entries']:
-            print(f"  SSIDs: {entry.get('SSID', [])}")
-        for entry in group_data['entries']:
-            print(f"  Features: {entry.get('Features', [])}") 
-    print("=========================================================")
+    #print("======= Final MAC Groups Based on SSID Similarity =======")
+    #for group_id, group_data in ssid_data.items():
+    #    print(f"Group {group_id}: MACs = {group_data['macs']}, Entries = {len(group_data['entries'])} records")
+    #    for entry in group_data['entries']:
+    #        print(f"  SSIDs: {entry.get('SSID', [])}")
+    #    for entry in group_data['entries']:
+    #        print(f"  Features: {entry.get('Features', [])}") 
+    #print("=========================================================")
     return ssid_data

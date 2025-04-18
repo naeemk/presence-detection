@@ -2,29 +2,37 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "26:1b:34:1b:92:ec",
-            "5a:c5:12:66:bb:b6",
-            "d6:ef:b8:05:de:84",
-            "3e:59:39:20:0e:eb",
-            "ae:24:d5:7a:5d:70",
-            "6e:c0:f9:41:58:93",
-            "9a:77:e9:2f:e5:a1",
-            "42:2d:a5:71:7f:20",
-            "32:f7:9f:78:d6:a5",
-            "a2:c4:cf:9e:2f:39",
-            "68:ca:c4:a7:40:4f",
-            "a0:f4:59:8c:22:a9",
-            "00:25:ca:4b:22:33",
-            "52:1c:72:d7:9a:0c",
-            "f6:47:eb:1e:ae:23"
+            "9a:84:f4:cc:19:04",
+            "e2:3d:0a:1b:5a:7d",
+            "76:4d:fc:88:18:b9",
+            "c2:d7:b6:50:6b:08",
+            "8a:5d:75:2e:77:6f",
+            "ae:58:13:06:e2:fa",
+            "ce:70:17:96:6e:f7",
+            "36:d5:fb:d9:3d:f2",
+            "ca:33:60:a8:91:b9",
+            "c8:58:c0:ec:8c:9f",
+            "32:de:34:e2:21:ef",
+            "be:0b:9a:ed:03:2c",
+            "3e:42:70:d1:21:27",
+            "0e:25:7c:5e:95:6a",
+            "1e:ac:84:12:b4:36",
+            "4a:48:3b:a0:ee:b0",
+            "2e:0f:00:6d:7b:58",
+            "9e:48:1a:54:d9:48",
+            "c2:c7:e5:e7:6c:ea",
+            "ea:d7:73:e1:47:69",
+            "d2:59:e1:9b:0c:7e"
         ],
         "SSID": [
             "<Hidden SSID>",
+            "Letisha1216",
+            "Samsung Galaxy Note8",
             "eduroam"
         ],
-        "Average_RSSI": -64.03225806451613,
-        "First_Timestamp": 1744911552.2810693,
-        "Last_Timestamp": 1744911602.0396376,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        "Average_RSSI": -45.64705882352941,
+        "First_Timestamp": 1744984862.795704,
+        "Last_Timestamp": 1744984872.1680806,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     }
 ]

@@ -14,7 +14,7 @@ def normalize_features(feature_string):
     # Normalize features string for comparison (strip, lowercase, remove spacing issues)
     return feature_string.strip().lower().replace(" ", "")
 
-def are_features_similar(f1, f2, threshold=0.8):
+def are_features_similar(f1, f2, threshold=0.95):
     # Simple string similarity comparison — tweak as needed
     from difflib import SequenceMatcher
     return SequenceMatcher(None, f1, f2).ratio() >= threshold

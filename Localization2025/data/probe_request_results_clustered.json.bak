@@ -2,56 +2,29 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "62:a0:c6:2b:04:e7"
-        ],
-        "SSID": [
-            "<Hidden SSID>"
-        ],
-        "Average_RSSI": -69.0,
-        "First_Timestamp": 1744911007.3435757,
-        "Last_Timestamp": 1744911007.3435757,
-        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": [
-            "fa:66:41:0f:52:61",
-            "b2:f5:65:3d:e0:f1",
-            "c6:ad:91:40:a2:ab",
-            "5e:ce:2f:cd:64:db",
-            "56:f4:0d:cc:61:a3",
-            "4e:30:8d:b0:be:df",
-            "a0:f4:59:8c:22:a9",
-            "72:a4:b1:ae:e0:d3",
-            "42:36:a4:7b:e5:84",
-            "5e:c2:43:16:b5:bc",
-            "32:c1:40:af:ba:2a",
-            "d2:54:a3:b1:39:62",
-            "da:13:5b:27:32:65",
-            "2e:0c:43:be:8f:39",
-            "6e:59:d1:fc:38:c5",
-            "00:25:ca:4b:22:33",
-            "e6:ad:bc:0e:15:11",
-            "42:b4:a0:0f:e5:d4",
-            "32:2c:51:8d:dc:82",
-            "ee:b2:bb:fa:01:22",
-            "70:f7:54:bc:56:a3",
-            "32:61:82:b3:ec:d3",
-            "7a:e3:65:22:09:72",
-            "c6:bc:b6:9e:c0:b2",
-            "e6:2f:23:4b:52:2d",
-            "62:be:1a:9e:52:00",
-            "2a:24:1b:a6:0f:fc",
-            "c6:11:9d:d3:51:a8",
-            "6e:0d:d8:20:3d:aa"
+            "3e:63:86:44:a4:38",
+            "2e:89:0a:af:78:ee",
+            "96:1a:58:9b:fb:1a",
+            "f0:77:c3:52:50:94",
+            "3a:f0:b5:2a:34:cc",
+            "5a:fc:99:48:9a:c6",
+            "2a:15:97:85:98:01",
+            "9e:3b:16:f8:e2:c6",
+            "e2:99:78:02:05:9e",
+            "de:26:03:e6:95:b1",
+            "be:0b:9a:ed:03:2c",
+            "6a:5e:33:6e:b5:f5",
+            "56:1a:a5:88:07:34",
+            "ea:d7:73:e1:47:69",
+            "ea:cb:bf:39:9e:25"
         ],
         "SSID": [
             "<Hidden SSID>",
             "eduroam"
         ],
-        "Average_RSSI": -57.14754098360656,
-        "First_Timestamp": 1744910992.3498154,
-        "Last_Timestamp": 1744911048.4222326,
+        "Average_RSSI": -43.63636363636363,
+        "First_Timestamp": 1744984765.7721274,
+        "Last_Timestamp": 1744984775.5851839,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     }
 ]
