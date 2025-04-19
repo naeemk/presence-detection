@@ -2,46 +2,38 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
-            "1e:a4:b4:bd:2a:45",
-            "0e:60:a8:55:25:a0",
-            "b2:bd:67:e4:0a:54",
-            "da:ad:fe:f1:6b:70",
-            "76:f6:b5:77:32:ae",
-            "92:60:d7:b8:1b:03",
-            "ca:cf:2f:80:f3:87",
-            "2e:17:a6:a8:c2:e8",
-            "a2:fc:cb:bb:04:82",
-            "4a:9b:75:3f:91:a8",
-            "36:97:f2:cb:1f:42",
+            "de:a3:50:69:5a:20",
+            "a0:29:42:b7:39:e1",
+            "f0:77:c3:4e:7d:9d",
+            "fc:31:5d:79:ef:0c"
+        ],
+        "SSID": [
+            "eduroam",
+            "<Hidden SSID>"
+        ],
+        "Average_RSSI": -73.125,
+        "First_Timestamp": 1745075335.1197488,
+        "Last_Timestamp": 1745075360.6502619,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": [
+            "26:e7:a5:b4:6b:f6",
             "a0:f4:59:8c:22:a9",
-            "f2:f0:bf:8f:bb:88",
-            "3a:f5:00:80:9e:af",
-            "3a:ce:40:57:12:00",
-            "aa:cc:20:d8:fe:4c",
-            "f2:47:ce:d9:40:0c",
-            "ae:5e:08:1a:99:e5",
-            "76:c0:e3:28:d2:a6",
-            "0a:11:87:e8:63:cf",
-            "da:00:61:0b:91:07",
-            "9a:b6:2f:08:ab:46",
-            "4a:38:ee:25:26:29",
-            "12:4c:c3:8e:f7:76",
-            "9e:21:c9:c9:5c:e8",
-            "ce:0a:dd:5c:9e:f7",
-            "1e:48:ec:55:bb:fd",
-            "fa:01:94:60:42:3e",
-            "3e:1d:e4:97:f3:f6",
-            "2e:95:ba:a4:c7:82",
-            "ee:93:09:58:bc:0d"
+            "96:b7:0b:ce:b4:75",
+            "a6:f2:37:8e:93:11",
+            "3a:bb:66:ce:61:d4",
+            "72:00:a0:08:e0:a8",
+            "c6:43:f6:e5:4a:b8"
         ],
         "SSID": [
             "<Hidden SSID>",
-            "eduroam",
-            "uis-gjestenett"
+            "eduroam"
         ],
-        "Average_RSSI": -47.602739726027394,
-        "First_Timestamp": 1745069538.8591092,
-        "Last_Timestamp": 1745069594.8352857,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+        "Average_RSSI": -52.333333333333336,
+        "First_Timestamp": 1745075340.6362855,
+        "Last_Timestamp": 1745075376.092352,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c7670800ffeff0000feff0020, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
     }
 ]
