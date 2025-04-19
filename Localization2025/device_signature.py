@@ -30,13 +30,11 @@ def calculate_ssid_match_percentage(ssids_a, ssids_b):
     """ Calculate the percentage of SSIDs that match between two sets of SSIDs. """
     common_ssids = set(ssids_a).intersection(set(ssids_b))
     match_percentage = len(common_ssids) / len(set(ssids_a)) if ssids_a else 0
-    print(f"Calculating SSID match: {ssids_a} vs {ssids_b} -> {len(common_ssids)} common, match percentage = {match_percentage}")
     return match_percentage
 
 def device_age(mac):
     """ Return the time difference between the current time and the last seen time of the device. """
     age = time.time() - device_time_stamps.get(mac, 0)
-    print(f"Device {mac} age: {age} seconds")
     return age
 
 def calculate_required_matches(features_list, min_required=MIN_FEATURE_MATCH_COUNT):
@@ -53,7 +51,6 @@ def calculate_required_matches(features_list, min_required=MIN_FEATURE_MATCH_COU
     
     total_features = len(features_list)
     required_matches = max(min_required, total_features // 2)  # Ensure at least half of the features need to match
-    print(f"Required matches for {total_features} features: {required_matches}")
     return required_matches
 
 def get_device_name(device_signature, ssid_match_priority=True):
@@ -66,19 +63,15 @@ def get_device_name(device_signature, ssid_match_priority=True):
     if isinstance(features, str):
         features = [f.strip() for f in features.split(",")]
 
-    print(f"Processing device: MAC={mac}, SSID={ssid}, Features={features}")
 
     # Batch 1: collect all SSIDs/features for the same MAC
     temp_devices[mac].append((ssid, features))
-    print(f"[Batch 1] Added SSID to temp_devices[{mac}]. Total collected: {len(temp_devices[mac])}")
 
     if device_age(mac) >= TIME_LIMIT:
-        print(f"[Batch 2] Time window expired for {mac}. Moving data to semi_devices.")
         semi_devices[mac].extend(temp_devices[mac])
         temp_devices[mac] = []  # clear temp list
 
     # Batch 2: move aged-out device to semi_devices
-    print(f"[Batch 2] Time window expired for {mac}. Moving data to semi_devices.")
     semi_devices[mac].extend(temp_devices[mac])
     temp_devices[mac] = []  # clear temp list
 
@@ -100,7 +93,6 @@ def get_device_name(device_signature, ssid_match_priority=True):
 
 
 
-    print(f"[Batch 2] Total SSIDs: {len(collected_ssids)}, Total unique features: {len(collected_features)}")
 
     # Batch 3: compare against known devices
     for existing_signature, device_name in device_signatures.items():
@@ -114,10 +106,8 @@ def get_device_name(device_signature, ssid_match_priority=True):
         feature_match_count = sum(1 for f in existing_features if f in collected_features)
         required_feature_matches = calculate_required_matches(existing_features)
 
-        print(f"[Batch 3] Comparing with {device_name}: SSID match={ssid_match}, Feature matches={feature_match_count}/{required_feature_matches}")
 
         if ssid_match or feature_match_count >= required_feature_matches:
-            print(f"[Match] MAC {mac} matches {device_name}")
             return device_name
 
     # No match found — assign new device name
@@ -129,5 +119,4 @@ def get_device_name(device_signature, ssid_match_priority=True):
     representative_features = ", ".join(collected_features)
     device_signatures[(representative_ssid, mac, representative_features)] = device_name
 
-    print(f"[New Device] No match found. Assigning new name: {device_name}")
     return device_name
