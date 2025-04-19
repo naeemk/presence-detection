@@ -54,5 +54,31 @@
         "First_Timestamp": 1745066456.6594582,
         "Last_Timestamp": 1745066514.328348,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+            "de:a3:50:69:5a:20",
+            "a0:29:42:b7:39:e1",
+            "f0:77:c3:4e:7d:9d"
+        ],
+        "SSID": [
+            "eduroam",
+            "<Hidden SSID>"
+        ],
+        "Average_RSSI": -84.2,
+        "First_Timestamp": 1744987870.3489373,
+        "Last_Timestamp": 1744987882.582858,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": [
+            "26:e7:a5:b4:6b:f6"
+        ],
+        "SSID": [
+            "<Hidden SSID>",
+            "eduroam"
+        ],
+        "Average_RSSI": -51.0,
+        "First_Timestamp": 1744987875.9290802,
+        "Last_Timestamp": 1744987880.9203196,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c7670800ffeff0000feff0020, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
     }
 ]
