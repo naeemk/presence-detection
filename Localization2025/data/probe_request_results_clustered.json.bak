@@ -2,6 +2,7 @@
     {
         "Device_Name": "Device 1",
         "MAC": [
+<<<<<<< HEAD
             "de:a3:50:69:5a:20",
             "a0:29:42:b7:39:e1",
             "f0:77:c3:4e:7d:9d",
@@ -35,5 +36,30 @@
         "First_Timestamp": 1745075340.6362855,
         "Last_Timestamp": 1745075376.092352,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c7670800ffeff0000feff0020, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+=======
+            "f2:c6:61:eb:8b:fb",
+            "8a:f5:d8:e7:00:dc",
+            "82:63:1a:56:74:13",
+            "fe:59:28:f0:15:ef",
+            "ce:85:41:43:56:76",
+            "be:d5:84:0d:c7:03",
+            "0e:cb:69:a5:b3:64",
+            "ce:53:bf:c8:b1:d9",
+            "1a:74:ce:03:12:97",
+            "92:0f:73:09:7b:2e",
+            "42:5a:d5:cd:eb:95",
+            "56:8d:72:c4:00:5b",
+            "a0:f4:59:8c:22:a9"
+        ],
+        "SSID": [
+            "eduroam",
+            "Kragero Resort Hotel",
+            "<Hidden SSID>"
+        ],
+        "Average_RSSI": -53.36842105263158,
+        "First_Timestamp": 1745070797.967766,
+        "Last_Timestamp": 1745070800.0910609,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+>>>>>>> 74269b8b548d4eaf4eacb0331ae7e643476e06ed
     }
 ]

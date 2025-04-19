@@ -35,6 +35,7 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
     changed = True
 
     while changed:
+        print("Test 2")
         changed = False
         group_ids = list(group_map.keys())
 
@@ -70,11 +71,13 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
     # Step 3: Deduplicate merged clusters
     unique_groups = {}
     for group in group_map.values():
+        print("Test 3")
         unique_groups[frozenset(group)] = group
 
     # Step 4: Build merged output
     feature_data = defaultdict(dict)
     for idx, group_ids in enumerate(unique_groups.values(), start=1):
+        print("Test 4")
         merged_macs = []
         merged_entries = []
         for gid in group_ids:
