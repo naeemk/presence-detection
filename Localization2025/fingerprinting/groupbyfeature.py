@@ -10,75 +10,82 @@ def load_config(filename="config.json"):
 config = load_config()
 TIME_LIMIT = 1
 
-def normalize_features(feature_string):
-    return feature_string.strip().lower().replace(" ", "")
+def groupbyFeature(ssid_data, feature_threshold):
+    """
+    Further groups SSID-based MAC groups based on similarity in Features (dict keys).
 
-def average_feature_similarity(candidate_feat, feature_pool):
-    if not feature_pool:
-        return 0.0
-    return sum(
-        SequenceMatcher(None, candidate_feat, pool_feat).ratio()
-        for pool_feat in feature_pool
-    ) / len(feature_pool)
+    Args:
+        ssid_data (dict): Output from groupbySSID.
+        feature_threshold (int): Minimum number of shared feature keys to merge groups.
 
-def groupbyFeature(ssid_data, similarity_threshold=0.5):
-    feature_data = {}
-    current_group_id = 1
-
-    print("======= Grouping Devices by Comparing Feature Pools =======")
-
-    for ssid_group_id, group_info in ssid_data.items():
-        entries = group_info["entries"]
-        groups = []
-
-        for entry in entries:
-            mac = entry['MAC']
-            feat = normalize_features(entry.get("Features", ""))
-            ssids = entry.get("SSID", [])
-            matched_group = None
-
-            for group in groups:
-                sim = average_feature_similarity(feat, group["feature_pool"])
-                if sim >= similarity_threshold:
-                    matched_group = group
-                    break
-
-            if matched_group:
-                matched_group["entries"].append(entry)
-                matched_group["macs"].add(mac)
-                matched_group["feature_pool"].append(feat)
-                if isinstance(ssids, list):
-                    matched_group["ssid_pool"].update(ssids)
-                else:
-                    matched_group["ssid_pool"].add(ssids)
-            else:
-                groups.append({
-                    "ssid_group": ssid_group_id,
-                    "entries": [entry],
-                    "macs": {mac},
-                    "feature_pool": [feat],
-                    "ssid_pool": set(ssids) if isinstance(ssids, list) else {ssids}
-                })
-
-        # Convert internal group structure into final output format
-        for group in groups:
-            feature_data[current_group_id] = {
-                "ssid_group": group["ssid_group"],
-                "entries": group["entries"],
-                "macs": list(group["macs"]),
-                "ssid_count": len(group["ssid_pool"])
-            }
-            current_group_id += 1
-
-    # Debug output
-    print("======= Final Device Groups Based on Feature Pool Similarity =======")
-    for group_id, group_info in feature_data.items():
-        print(f"Group {group_id} (from SSID group {group_info['ssid_group']}): {len(group_info['entries'])} entries")
-        print(f"  SSID Count: {group_info['ssid_count']}")
+    Returns:
+        dict: Final grouped data based on feature similarity.
+    """
+    # Step 1: Extract set of feature keys per group
+    group_features = {}
+    for group_id, group_info in ssid_data.items():
+        feature_keys = set()
         for entry in group_info["entries"]:
-            print(f"  MAC: {entry['MAC']}")
-            print(f"    SSIDs: {entry.get('SSID', [])}")
-            print(f"    Features: {entry.get('Features', [])}")
-    print("=====================================================================")
+            entry_features = entry.get("Features", {})
+            feature_keys.update(entry_features.keys())
+        group_features[group_id] = feature_keys
 
-    return feature_data
+    # Step 2: Initialize each group ID as its own cluster
+    group_map = {gid: {gid} for gid in ssid_data}
+
+    changed = True
+    while changed:
+        changed = False
+        group_ids = list(group_map.keys())
+
+        for i in range(len(group_ids)):
+            gid1 = group_ids[i]
+            f1 = group_features.get(gid1, set())
+
+            for j in range(i + 1, len(group_ids)):
+                gid2 = group_ids[j]
+                f2 = group_features.get(gid2, set())
+
+                # Skip if already in same group
+                if group_map[gid1] == group_map[gid2]:
+                    continue
+
+                shared_keys = f1 & f2
+                if len(shared_keys) >= feature_threshold:
+                    # Merge group clusters
+                    merged = group_map[gid1] | group_map[gid2]
+                    for gid in merged:
+                        group_map[gid] = merged
+                    changed = True
+
+    # Step 3: De-duplicate merged groupings
+    unique_groups = {}
+    for group in group_map.values():
+        unique_groups[frozenset(group)] = group
+
+    # Step 4: Build final merged output
+    feature_grouped = defaultdict(dict)
+    for idx, group_ids in enumerate(unique_groups.values(), start=1):
+        merged_macs = []
+        merged_entries = []
+        for gid in group_ids:
+            merged_macs.extend(ssid_data[gid]["macs"])
+            merged_entries.extend(ssid_data[gid]["entries"])
+
+        feature_grouped[idx] = {
+            "macs": merged_macs,
+            "entries": merged_entries
+        }
+
+    # Final printout
+    print("======= Final MAC Groups Based on Feature Similarity =======")
+    for group_id, group_data in feature_grouped.items():
+        print(f"\nGroup {group_id}:")
+        print(f"  MACs: {group_data['macs']}")
+        print(f"  Total Entries: {len(group_data['entries'])}")
+        for entry in group_data['entries']:
+            print(f"    SSID: {entry.get('SSID', '')}")
+            print(f"    Features: {entry.get('Features', {})}")
+        print("-----------------------------------------------------------")
+
+    return feature_grouped
