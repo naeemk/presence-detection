@@ -32,21 +32,21 @@ def cluster_data(data):
         if device_name not in device_clusters:
             device_clusters[device_name] = {
                 "Device_Name": device_name,
-                "MAC": [],
-                "SSID": [],
-                "RSSI": [],
+                "MACs": [],
+                "SSIDs": [],
+                "RSSIs": [],
                 "First_Timestamp": timestamp,
                 "Last_Timestamp": timestamp,
                 "Features": entry["Features"]
             }
 
         # Add the MAC address if it doesn't already exist in the list
-        if entry["MAC"] not in device_clusters[device_name]["MAC"]:
-            device_clusters[device_name]["MAC"].append(entry["MAC"])
+        if entry["MAC"] not in device_clusters[device_name]["MACs"]:
+            device_clusters[device_name]["MACs"].append(entry["MAC"])
 
         # Add the SSID if it doesn't already exist in the list
-        if entry["SSID"] not in device_clusters[device_name]["SSID"]:
-            device_clusters[device_name]["SSID"].append(entry["SSID"])
+        if entry["SSID"] not in device_clusters[device_name]["SSIDs"]:
+            device_clusters[device_name]["SSIDs"].append(entry["SSID"])
 
         # Update the timestamps
         device_clusters[device_name]["Last_Timestamp"] = max(device_clusters[device_name]["Last_Timestamp"], timestamp)
@@ -59,8 +59,8 @@ def cluster_data(data):
 
         clustered_results.append({
             "Device_Name": cluster["Device_Name"],
-            "MAC": cluster["MAC"],
-            "SSID": cluster["SSID"],
+            "MACs": cluster["MACs"],
+            "SSIDs": cluster["SSIDs"],
             "Average_RSSI": avg_rssi,
             "First_Timestamp": cluster["First_Timestamp"],
             "Last_Timestamp": cluster["Last_Timestamp"],

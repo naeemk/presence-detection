@@ -23,8 +23,8 @@ def compute_similarity_score(old, new):
             return 1.0
         return len(set1 & set2) / len(set1 | set2)
     print("Jaccard Similarity 1")
-    mac_similarity = jaccard_similarity(old["MAC"], new["MAC"])
-    ssid_similarity = jaccard_similarity(old["SSID"], new["SSID"])
+    mac_similarity = jaccard_similarity(old["MACs"], new["MACs"])
+    ssid_similarity = jaccard_similarity(old["SSIDs"], new["SSIDs"])
 
     feature_similarity = SequenceMatcher(None, old["Features"], new["Features"]).ratio()
     print("Jaccard Similarity 3")

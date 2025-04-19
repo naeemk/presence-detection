@@ -11,7 +11,7 @@ config = load_config()
 
 time_window = config["general"]["time_window"]  # Time window in seconds
 
-def process_feature_groups(feature_data, time_window=60):
+def process_feature_groups(feature_data):
     current_time = time.time()
     devices = []
 
@@ -35,12 +35,20 @@ def process_feature_groups(feature_data, time_window=60):
 
         if not rssi_values or not timestamps:
             continue
+        
+        weights = [1 / (current_time - ts + 1) for ts in timestamps]
+        weighted_sum = sum(rssi * weight for rssi, weight in zip(rssi_values, weights))
+        total_weight = sum(weights)
+        average_rssi = round(weighted_sum / total_weight, 1)
+
+
+        #average_rssi = round(sum(rssi_values) / len(rssi_values), 1)
 
         device = {
             "Device_Name": f"Device {idx}",
-            "MAC": list(macs),
-            "SSID": list(ssids),
-            "Average_RSSI": round(sum(rssi_values) / len(rssi_values), 1),
+            "MACs": list(macs),
+            "SSIDs": list(ssids),
+            "Average_RSSI": average_rssi,
             "First_Timestamp": min(timestamps),
             "Last_Timestamp": max(timestamps),
             "Features": ", ".join(sorted(set(filter(None, features))))
