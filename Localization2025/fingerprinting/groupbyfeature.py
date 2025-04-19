@@ -10,7 +10,7 @@ def load_config(filename="config.json"):
 config = load_config()
 TIME_LIMIT = 1
 
-def groupbyFeature(ssid_data, feature_threshold):
+def groupbyFeature(ssid_data, feature_threshold=0.8):
     """
     Further groups SSID-based MAC groups based on similarity in Features (dict keys).
 
@@ -24,6 +24,7 @@ def groupbyFeature(ssid_data, feature_threshold):
     # Step 1: Extract set of feature keys per group
     group_features = {}
     for group_id, group_info in ssid_data.items():
+        print("Test 1")
         feature_keys = set()
         for entry in group_info["entries"]:
             entry_features = entry.get("Features", {})
@@ -35,6 +36,7 @@ def groupbyFeature(ssid_data, feature_threshold):
 
     changed = True
     while changed:
+        print("Test 2")
         changed = False
         group_ids = list(group_map.keys())
 
@@ -61,25 +63,27 @@ def groupbyFeature(ssid_data, feature_threshold):
     # Step 3: De-duplicate merged groupings
     unique_groups = {}
     for group in group_map.values():
+        print("Test 3")
         unique_groups[frozenset(group)] = group
 
     # Step 4: Build final merged output
-    feature_grouped = defaultdict(dict)
+    feature_data = defaultdict(dict)
     for idx, group_ids in enumerate(unique_groups.values(), start=1):
+        print("Test 4")
         merged_macs = []
         merged_entries = []
         for gid in group_ids:
             merged_macs.extend(ssid_data[gid]["macs"])
             merged_entries.extend(ssid_data[gid]["entries"])
 
-        feature_grouped[idx] = {
+        feature_data[idx] = {
             "macs": merged_macs,
             "entries": merged_entries
         }
 
     # Final printout
     print("======= Final MAC Groups Based on Feature Similarity =======")
-    for group_id, group_data in feature_grouped.items():
+    for group_id, group_data in feature_data.items():
         print(f"\nGroup {group_id}:")
         print(f"  MACs: {group_data['macs']}")
         print(f"  Total Entries: {len(group_data['entries'])}")
@@ -88,4 +92,4 @@ def groupbyFeature(ssid_data, feature_threshold):
             print(f"    Features: {entry.get('Features', {})}")
         print("-----------------------------------------------------------")
 
-    return feature_grouped
+    return feature_data

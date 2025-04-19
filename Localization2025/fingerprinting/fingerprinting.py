@@ -126,7 +126,7 @@ def fingerprint(probe_data):
         print("  Entries:")
         for entry in group_info["entries"]:
             print(f"    MAC: {entry['MAC']}")
-            print(f"    SSID: {', '.join(entry['SSID'])}")
+            print(f"    SSID: {entry['SSID']}")
             print(f"    RSSI: {entry['RSSI']}")
             print(f"    Timestamp: {entry['Timestamp']}")
             print(f"    Features: {entry['Features']}")
