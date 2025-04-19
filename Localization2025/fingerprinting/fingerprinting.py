@@ -115,23 +115,44 @@ def fingerprint(probe_data):
 
     ssid_data = groupbySSID(mac_data, ssid_threshold, common_ssids)
 
+    print("=======================1======================")
+    print(ssid_data)
+
+    # Display ssid_data in a readable format
+    print("SSID Data (Grouped by Unique Groups):")
+    for group_id, group_info in ssid_data.items():
+        print(f"Group {group_id}:")
+        print(f"  MACs: {', '.join(group_info['macs'])}")
+        print("  Entries:")
+        for entry in group_info["entries"]:
+            print(f"    MAC: {entry['MAC']}")
+            print(f"    SSID: {', '.join(entry['SSID'])}")
+            print(f"    RSSI: {entry['RSSI']}")
+            print(f"    Timestamp: {entry['Timestamp']}")
+            print(f"    Features: {entry['Features']}")
+            print("    -------------------")
+    
+
     feature_data = groupbyFeature(ssid_data)
+
+    print("===================2==========================")
+    print(feature_data)
     
     #finaldevicegroup = process_feature_groups(feature_data)
 
-    print("=======================1======================")
+    #print("=======================1======================")
     #print(previous_list)
-    print("=============================================")
+    #print("=============================================")
 
-    print("===================2==========================")
+    #print("===================2==========================")
     #print(feature_data)
-    print("=============================================")
+    #print("=============================================")
 
     #new_list = match_and_sort_fuzzy(oldtestdata, testdata)  
 
-    print("====================3=========================")
+    #print("====================3=========================")
     #print(new_list)
-    print("=============================================")
+    #print("=============================================")
     #previous_list = new_list
 
     return None
