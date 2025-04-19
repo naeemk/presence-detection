@@ -16,11 +16,10 @@ def normalize_features(feature_string):
 def average_feature_similarity(candidate_feat, feature_pool):
     if not feature_pool:
         return 0.0
-    scores = [
+    return sum(
         SequenceMatcher(None, candidate_feat, pool_feat).ratio()
         for pool_feat in feature_pool
-    ]
-    return sum(scores) / len(scores)
+    ) / len(feature_pool)
 
 def groupbyFeature(ssid_data, similarity_threshold=0.5):
     feature_data = {}
@@ -36,23 +35,23 @@ def groupbyFeature(ssid_data, similarity_threshold=0.5):
             mac = entry['MAC']
             feat = normalize_features(entry.get("Features", ""))
             ssids = entry.get("SSID", [])
-            matched = False
+            matched_group = None
 
             for group in groups:
-                avg_sim = average_feature_similarity(feat, group["feature_pool"])
-                if avg_sim >= similarity_threshold:
-                    group["entries"].append(entry)
-                    group["macs"].add(mac)
-                    group["feature_pool"].append(feat)
-                    if isinstance(ssids, list):
-                        group["ssid_pool"].update(ssids)
-                    else:
-                        group["ssid_pool"].add(ssids)
-                    matched = True
+                sim = average_feature_similarity(feat, group["feature_pool"])
+                if sim >= similarity_threshold:
+                    matched_group = group
                     break
 
-            if not matched:
-                # Create a new group
+            if matched_group:
+                matched_group["entries"].append(entry)
+                matched_group["macs"].add(mac)
+                matched_group["feature_pool"].append(feat)
+                if isinstance(ssids, list):
+                    matched_group["ssid_pool"].update(ssids)
+                else:
+                    matched_group["ssid_pool"].add(ssids)
+            else:
                 groups.append({
                     "ssid_group": ssid_group_id,
                     "entries": [entry],
@@ -61,7 +60,7 @@ def groupbyFeature(ssid_data, similarity_threshold=0.5):
                     "ssid_pool": set(ssids) if isinstance(ssids, list) else {ssids}
                 })
 
-        # Convert group structure into final output
+        # Convert internal group structure into final output format
         for group in groups:
             feature_data[current_group_id] = {
                 "ssid_group": group["ssid_group"],
