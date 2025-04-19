@@ -20,22 +20,22 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
         dict: Final grouped data based on feature similarity.
     """
     # Step 1: Parse and collect full feature sets per group
-
     group_features = {}
     for group_id, group_info in ssid_data.items():
-        all_features = set()  # Will hold features for this group
+        all_features = set()
         for entry in group_info["entries"]:
-            # Assuming 'Features' is a key in each entry and it's a list of features
-            all_features.update(entry.get("Features", []))
+            features = entry.get("Features", [])
+            if isinstance(features, str):
+                all_features.add(features)
+            else:
+                all_features.update(features)
         group_features[group_id] = all_features
-
 
     # Step 2: Create group clusters
     group_map = {gid: {gid} for gid in ssid_data}
     changed = True
 
     while changed:
-        print("Test 2")
         changed = False
         group_ids = list(group_map.keys())
 
@@ -71,13 +71,11 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
     # Step 3: Deduplicate merged clusters
     unique_groups = {}
     for group in group_map.values():
-        print("Test 3")
         unique_groups[frozenset(group)] = group
 
     # Step 4: Build merged output
     feature_data = defaultdict(dict)
     for idx, group_ids in enumerate(unique_groups.values(), start=1):
-        print("Test 4")
         merged_macs = []
         merged_entries = []
         for gid in group_ids:
@@ -93,14 +91,22 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
     print("======= Final MAC Groups Based on Feature Similarity =======")
     for group_id, group_data in feature_data.items():
         print(f" Group {group_id}:")
-        print(f"  MACs: {group_data['macs']}")
+        print(f"  MACs: {', '.join(group_data['macs'])}")
         print(f"  Total Entries: {len(group_data['entries'])}")
-                # ➕ New section: Collect unique SSIDs
-        unique_ssids = sorted(set(entry.get("SSID", "<Unknown SSID>") for entry in group_data["entries"]))
-        print(f"  Unique SSIDs in Group: {unique_ssids}")
+        
+        ssids = set()
         for entry in group_data['entries']:
+            ssids.add(entry.get("SSID", ""))
+        
+        print(f"  Unique SSIDs: {', '.join(sorted(ssids))}")
+        print("  Entries:")
+        for entry in group_data['entries']:
+            print(f"    MAC: {entry.get('MAC', '')}")
             print(f"    SSID: {entry.get('SSID', '')}")
+            print(f"    RSSI: {entry.get('RSSI', '')}")
+            print(f"    Timestamp: {entry.get('Timestamp', '')}")
             print(f"    Features: {entry.get('Features', '')}")
+            print("    -------------------")
         print("-----------------------------------------------------------")
 
     return feature_data

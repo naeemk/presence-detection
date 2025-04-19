@@ -89,4 +89,26 @@ def groupbySSID(mac_data, ssid_threshold, common_ssids):
     #    for entry in group_data['entries']:
     #        print(f"  Features: {entry.get('Features', [])}") 
     #print("=========================================================")
+
+        # Printing the grouped info with a clear layout for features
+    print("======= Final MAC Groups Based on SSID Similarity =======")
+    for group_id, group_data in ssid_data.items():
+        print(f"\nGroup {group_id}:")
+        print(f"  MACs: {group_data['macs']}")
+        print(f"  Total Entries: {len(group_data['entries'])} records")
+        for entry in group_data['entries']:
+            print(f"  SSID: {entry.get('SSID', 'Unknown')}")
+            print(f"  RSSI: {entry.get('RSSI', 'Unknown')}")
+            print(f"  Timestamp: {entry.get('Timestamp', 'Unknown')}")
+            features = entry.get('Features', [])
+            if features:
+                print("  Features:")
+                for feature in features.split(","):
+                    # Split features based on commas and make them more readable
+                    feature = feature.strip()  # Clean up extra spaces
+                    print(f"    - {feature}")
+            else:
+                print("  No features available.")
+        print("-----------------------------------------------------------")
+    print("=========================================================")
     return ssid_data
