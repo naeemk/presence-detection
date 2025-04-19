@@ -22,7 +22,7 @@ def average_feature_similarity(candidate_feat, feature_pool):
     ]
     return sum(scores) / len(scores)
 
-def groupbyFeature(ssid_data, similarity_threshold=0.8):
+def groupbyFeature(ssid_data, similarity_threshold=0.5):
     feature_data = {}
     current_group_id = 1
 

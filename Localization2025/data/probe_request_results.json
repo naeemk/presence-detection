@@ -1,375 +1,1226 @@
 [
     {
         "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -62,
+        "Timestamp": 1745068024.2768922,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "3c:a6:f6:05:f9:ac",
+        "SSID": "eduroam",
+        "RSSI": -54,
+        "Timestamp": 1745068025.4230804,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "3c:a6:f6:05:f9:ac",
+        "SSID": "eduroam",
+        "RSSI": -54,
+        "Timestamp": 1745068025.56057,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": 1745068026.3195558,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+    },
+    {
+        "Device_Name": "Device 1",
         "MAC": "1e:48:ec:55:bb:fd",
         "SSID": "eduroam",
-        "RSSI": -64,
-        "Timestamp": 1745067447.8148708,
+        "RSSI": -60,
+        "Timestamp": 1745068026.5968728,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "82:32:5b:73:7a:68",
+        "MAC": "de:4d:c3:72:84:30",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745068026.9192245,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "06:61:61:3b:93:ae",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745068027.263792,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "6e:53:9a:6c:42:07",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745068027.5889668,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -60,
+        "Timestamp": 1745068029.3210955,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -60,
+        "Timestamp": 1745068029.3622937,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -62,
+        "Timestamp": 1745068029.3701344,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "8e:b8:3e:0d:ed:5c",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -46,
+        "Timestamp": 1745068029.9462788,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "8e:b8:3e:0d:ed:5c",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -46,
+        "Timestamp": 1745068029.967488,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "36:cb:01:b8:dc:bb",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": 1745068030.8798277,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "36:cb:01:b8:dc:bb",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": 1745068030.8879905,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "5e:08:80:54:da:0a",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -52,
+        "Timestamp": 1745068034.1028385,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "fe:89:18:cb:7e:13",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -80,
+        "Timestamp": 1745068038.4464595,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "ee:51:25:64:6f:40",
         "SSID": "<Hidden SSID>",
         "RSSI": -50,
-        "Timestamp": 1745067448.8260322,
+        "Timestamp": 1745068046.4196086,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
-        "Device_Name": "Device 1",
-        "MAC": "ea:67:b9:dd:11:53",
+        "Device_Name": "Device 2",
+        "MAC": "9e:e5:09:71:62:46",
         "SSID": "<Hidden SSID>",
-        "RSSI": -52,
-        "Timestamp": 1745067451.248548,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001000, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        "RSSI": -68,
+        "Timestamp": 1745068046.527925,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
-        "Device_Name": "Device 1",
-        "MAC": "ea:67:b9:dd:11:53",
+        "Device_Name": "Device 2",
+        "MAC": "ce:82:5b:81:63:ab",
         "SSID": "<Hidden SSID>",
         "RSSI": -54,
-        "Timestamp": 1745067451.2782018,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001000, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        "Timestamp": 1745068047.0809395,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
-        "Device_Name": "Device 1",
-        "MAC": "ea:67:b9:dd:11:53",
+        "Device_Name": "Device 2",
+        "MAC": "06:e2:bb:fa:34:58",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -50,
+        "Timestamp": 1745068047.1820426,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "dc:53:92:6b:82:a5",
         "SSID": "<Hidden SSID>",
         "RSSI": -56,
-        "Timestamp": 1745067451.2986631,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001000, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        "Timestamp": 1745068047.555976,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "96:ce:35:a6:4a:e9",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -40,
+        "Timestamp": 1745068048.5519934,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -40,
+        "Timestamp": 1745068048.5554423,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -40,
+        "Timestamp": 1745068048.5575871,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -40,
+        "Timestamp": 1745068048.5594583,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -40,
+        "Timestamp": 1745068048.5606816,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -40,
+        "Timestamp": 1745068048.6045663,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -40,
+        "Timestamp": 1745068048.6067123,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -46,
+        "Timestamp": 1745068048.69252,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -46,
+        "Timestamp": 1745068048.6940844,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -46,
+        "Timestamp": 1745068048.6957755,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -46,
+        "Timestamp": 1745068048.6970282,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -44,
+        "Timestamp": 1745068048.6983929,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -40,
+        "Timestamp": 1745068048.7562408,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -40,
+        "Timestamp": 1745068048.7597778,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -40,
+        "Timestamp": 1745068048.7620819,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -40,
+        "Timestamp": 1745068048.7644682,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -36,
+        "Timestamp": 1745068048.8163614,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -36,
+        "Timestamp": 1745068048.818279,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -36,
+        "Timestamp": 1745068048.8196447,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -38,
+        "Timestamp": 1745068048.820854,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -40,
+        "Timestamp": 1745068048.878713,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -38,
+        "Timestamp": 1745068048.8809738,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -42,
+        "Timestamp": 1745068048.882509,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "eduroam",
+        "RSSI": -42,
+        "Timestamp": 1745068048.8838668,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "48:e7:da:ac:2d:01",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -38,
+        "Timestamp": 1745068048.8847337,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "1e:d9:9f:50:4e:08",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745068049.2008197,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "86:0c:d3:90:1b:6c",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": 1745068060.8122816,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "b2:18:f0:bd:22:7b",
         "SSID": "<Hidden SSID>",
         "RSSI": -52,
-        "Timestamp": 1745067451.5128126,
+        "Timestamp": 1745068061.0272088,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "96:ce:35:a6:4a:e9",
+        "MAC": "42:32:2f:e3:96:62",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -56,
+        "Timestamp": 1745068061.6395493,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "42:32:2f:e3:96:62",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -58,
+        "Timestamp": 1745068061.651884,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "72:af:27:de:f8:a7",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -46,
+        "Timestamp": 1745068062.500761,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "72:af:27:de:f8:a7",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -46,
+        "Timestamp": 1745068062.5217671,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "6e:4a:fe:25:fa:87",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -52,
+        "Timestamp": 1745068062.5933924,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "d2:e2:02:4f:5a:dd",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -50,
+        "Timestamp": 1745068062.6358037,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "d2:e2:02:4f:5a:dd",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745068062.6562862,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "76:05:95:a1:7a:ea",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -52,
+        "Timestamp": 1745068063.1277633,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "0a:c0:4b:15:ad:c2",
         "SSID": "<Hidden SSID>",
         "RSSI": -54,
-        "Timestamp": 1745067451.5354307,
+        "Timestamp": 1745068063.2162971,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "1e:48:ec:55:bb:fd",
+        "SSID": "eduroam",
+        "RSSI": -58,
+        "Timestamp": 1745068063.5598505,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "1e:48:ec:55:bb:fd",
+        "SSID": "eduroam",
+        "RSSI": -58,
+        "Timestamp": 1745068063.613267,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ee:b2:bb:fa:01:22",
+        "SSID": "eduroam",
+        "RSSI": -48,
+        "Timestamp": 1745068064.1816247,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -60,
+        "Timestamp": 1745068064.3891506,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -62,
+        "Timestamp": 1745068064.3916347,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "22:d6:cc:be:86:7b",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -46,
+        "Timestamp": 1745068073.4770796,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "22:d6:cc:be:86:7b",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745068073.4874368,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "92:b8:51:ef:7b:67",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -42,
+        "Timestamp": 1745068074.1090038,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "92:b8:51:ef:7b:67",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -46,
+        "Timestamp": 1745068074.1265192,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "0a:9e:d1:36:f0:1a",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -40,
+        "Timestamp": 1745068074.198478,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "0a:9e:d1:36:f0:1a",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -40,
+        "Timestamp": 1745068074.216258,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "26:71:0c:d1:fe:77",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -44,
+        "Timestamp": 1745068074.2402003,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "26:71:0c:d1:fe:77",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -42,
+        "Timestamp": 1745068074.2754881,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "36:04:85:4a:26:5c",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -42,
+        "Timestamp": 1745068074.4789104,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "36:04:85:4a:26:5c",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -40,
+        "Timestamp": 1745068074.5018115,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "3e:87:d6:b8:78:76",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -44,
+        "Timestamp": 1745068074.5131855,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "3e:87:d6:b8:78:76",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -46,
+        "Timestamp": 1745068074.530342,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "9a:53:c6:90:2b:54",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -46,
+        "Timestamp": 1745068074.7156968,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "3a:20:8c:17:3f:bb",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -30,
+        "Timestamp": 1745068075.2417421,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "3a:20:8c:17:3f:bb",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -30,
+        "Timestamp": 1745068075.2627687,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -60,
+        "Timestamp": 1745068075.5517745,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "16:d7:af:53:31:27",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745068075.5578635,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -64,
+        "Timestamp": 1745068075.5628889,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ce:0a:dd:5c:9e:f7",
+        "SSID": "eduroam",
+        "RSSI": -20,
+        "Timestamp": 1745068075.5651171,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "16:d7:af:53:31:27",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745068075.584762,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ce:0a:dd:5c:9e:f7",
+        "SSID": "eduroam",
+        "RSSI": -20,
+        "Timestamp": 1745068075.5865834,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745068077.4547286,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745068077.6646612,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
     },
     {
         "Device_Name": "Device 2",
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -70,
-        "Timestamp": 1745067452.1833296,
+        "Timestamp": 1745068077.7541604,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
     },
     {
         "Device_Name": "Device 2",
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
-        "RSSI": -68,
-        "Timestamp": 1745067452.2835288,
+        "RSSI": -70,
+        "Timestamp": 1745068077.7550151,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "a0:f4:59:8c:22:a9",
+        "MAC": "4c:d5:77:6c:d7:af",
         "SSID": "<Hidden SSID>",
-        "RSSI": -68,
-        "Timestamp": 1745067452.2848575,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+        "RSSI": -58,
+        "Timestamp": 1745068078.0568056,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "7a:3e:f1:9a:80:de",
+        "MAC": "4c:d5:77:6c:d7:af",
         "SSID": "<Hidden SSID>",
         "RSSI": -52,
-        "Timestamp": 1745067453.1275141,
+        "Timestamp": 1745068078.229463,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -60,
+        "Timestamp": 1745068078.4522805,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "dc:53:92:6b:82:a5",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -60,
+        "Timestamp": 1745068088.6592453,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "aa:ff:ac:2c:f1:82",
+        "MAC": "7a:86:f9:94:71:b2",
         "SSID": "<Hidden SSID>",
-        "RSSI": -68,
-        "Timestamp": 1745067454.9402423,
-        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001300, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        "RSSI": -42,
+        "Timestamp": 1745068089.5267315,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "aa:ff:ac:2c:f1:82",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -66,
-        "Timestamp": 1745067454.9615536,
-        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001300, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
-    },
-    {
-        "Device_Name": "Device 1",
-        "MAC": "52:c8:74:f5:df:57",
-        "SSID": "uis-gjestenett",
-        "RSSI": -54,
-        "Timestamp": 1745067461.3366444,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
-    },
-    {
-        "Device_Name": "Device 1",
-        "MAC": "52:c8:74:f5:df:57",
-        "SSID": "uis-gjestenett",
-        "RSSI": -52,
-        "Timestamp": 1745067461.3807194,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "26:39:2c:ae:ee:87",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -48,
-        "Timestamp": 1745067461.8645308,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "de:19:18:95:58:32",
+        "MAC": "7a:86:f9:94:71:b2",
         "SSID": "<Hidden SSID>",
         "RSSI": -44,
-        "Timestamp": 1745067461.8661277,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "dc:53:92:6b:82:a5",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -54,
-        "Timestamp": 1745067461.9486408,
+        "Timestamp": 1745068089.548609,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "dc:53:92:6b:82:a5",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -54,
-        "Timestamp": 1745067461.9682143,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "dc:53:92:6b:82:a5",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -56,
-        "Timestamp": 1745067462.1548877,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "dc:53:92:6b:82:a5",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -56,
-        "Timestamp": 1745067462.1757534,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "dc:53:92:6b:82:a5",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -56,
-        "Timestamp": 1745067462.20411,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "dc:53:92:6b:82:a5",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -58,
-        "Timestamp": 1745067462.2294452,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "36:ba:bc:49:aa:e6",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -48,
-        "Timestamp": 1745067462.3918488,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "42:5b:96:b9:c6:10",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -48,
-        "Timestamp": 1745067462.4383185,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "12:67:46:49:60:7b",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -64,
-        "Timestamp": 1745067462.6601796,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "12:67:46:49:60:7b",
+        "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -66,
-        "Timestamp": 1745067462.6749814,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "76:f6:da:d1:d0:de",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -46,
-        "Timestamp": 1745067462.7391813,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "76:f6:da:d1:d0:de",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -46,
-        "Timestamp": 1745067462.7558188,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "d2:bd:eb:b7:86:34",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -58,
-        "Timestamp": 1745067462.7606874,
+        "Timestamp": 1745068089.7924495,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "42:ff:ad:88:b7:b1",
+        "MAC": "dc:53:92:6b:82:a5",
         "SSID": "<Hidden SSID>",
         "RSSI": -58,
-        "Timestamp": 1745067462.7614317,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "36:ba:bc:49:aa:e6",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -56,
-        "Timestamp": 1745067462.7963686,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "3a:51:c0:66:fd:27",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -62,
-        "Timestamp": 1745067463.452851,
+        "Timestamp": 1745068089.828228,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "3a:51:c0:66:fd:27",
+        "MAC": "1e:a5:7b:c8:05:aa",
         "SSID": "<Hidden SSID>",
-        "RSSI": -62,
-        "Timestamp": 1745067463.4732413,
+        "RSSI": -42,
+        "Timestamp": 1745068089.994749,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "06:ce:9b:33:20:f6",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -48,
-        "Timestamp": 1745067463.6558142,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "06:ce:9b:33:20:f6",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -48,
-        "Timestamp": 1745067463.6748333,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 1",
-        "MAC": "ea:67:b9:dd:11:53",
+        "MAC": "dc:53:92:6b:82:a5",
         "SSID": "<Hidden SSID>",
         "RSSI": -58,
-        "Timestamp": 1745067465.5414417,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001000, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "22:47:a3:84:09:4a",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -46,
-        "Timestamp": 1745067465.6319351,
+        "Timestamp": 1745068090.9970288,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "22:47:a3:84:09:4a",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -48,
-        "Timestamp": 1745067465.6524444,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "32:ed:15:9b:e3:7b",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -58,
-        "Timestamp": 1745067466.7105017,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "32:ed:15:9b:e3:7b",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -58,
-        "Timestamp": 1745067466.7316477,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "32:dd:9e:10:e1:6f",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -56,
-        "Timestamp": 1745067467.1836371,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-    },
-    {
-        "Device_Name": "Device 1",
-        "MAC": "5a:3b:b4:8e:f8:d7",
+        "MAC": "dc:53:92:6b:82:a5",
         "SSID": "<Hidden SSID>",
         "RSSI": -50,
-        "Timestamp": 1745067467.4732728,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200"
+        "Timestamp": 1745068091.0229552,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "fa:10:4a:53:dc:b6",
+        "MAC": "dc:53:92:6b:82:a5",
         "SSID": "<Hidden SSID>",
+        "RSSI": -50,
+        "Timestamp": 1745068091.0427656,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "dc:53:92:6b:82:a5",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -52,
+        "Timestamp": 1745068091.0737946,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -60,
+        "Timestamp": 1745068091.1017168,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "b6:f9:80:92:7f:ad",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745068091.2893257,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "9e:c3:38:80:f4:3d",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -56,
+        "Timestamp": 1745068091.4035728,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "9e:c3:38:80:f4:3d",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745068091.4607334,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "dc:53:92:6b:82:a5",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745068091.6777859,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "dc:53:92:6b:82:a5",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -52,
+        "Timestamp": 1745068091.7948923,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "dc:53:92:6b:82:a5",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745068091.8505337,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "dc:53:92:6b:82:a5",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -52,
+        "Timestamp": 1745068091.9181156,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "dc:53:92:6b:82:a5",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -52,
+        "Timestamp": 1745068091.9713671,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "14:f6:d8:15:a0:4a",
+        "SSID": "eduroam",
+        "RSSI": -75,
+        "Timestamp": 1745068098.099951,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "42:6e:7c:6e:be:6e",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -86,
+        "Timestamp": 1745068101.7197788,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ee:b2:bb:fa:01:22",
+        "SSID": "eduroam",
+        "RSSI": -56,
+        "Timestamp": 1745068101.8714144,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001400, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ee:b2:bb:fa:01:22",
+        "SSID": "eduroam",
+        "RSSI": -57,
+        "Timestamp": 1745068101.889353,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001400, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ca:44:9b:e9:f5:26",
+        "SSID": "eduroam",
+        "RSSI": -60,
+        "Timestamp": 1745068103.895966,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "5a:ef:50:d1:d0:62",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -50,
+        "Timestamp": 1745068105.2050502,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "5a:ef:50:d1:d0:62",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745068105.2407117,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "c2:aa:9e:37:ab:a1",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -70,
+        "Timestamp": 1745068105.888178,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "c2:aa:9e:37:ab:a1",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745068105.8937364,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "7e:f7:de:9e:c4:e6",
+        "SSID": "eduroam",
         "RSSI": -58,
-        "Timestamp": 1745067468.2440202,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+        "Timestamp": 1745068106.1009314,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "7e:f7:de:9e:c4:e6",
+        "SSID": "eduroam",
+        "RSSI": -58,
+        "Timestamp": 1745068106.1227376,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "ea:48:0f:5a:cf:65",
+        "MAC": "6e:2e:43:ed:00:5e",
         "SSID": "<Hidden SSID>",
-        "RSSI": -64,
-        "Timestamp": 1745067468.5254266,
+        "RSSI": -56,
+        "Timestamp": 1745068109.7483685,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     },
     {
         "Device_Name": "Device 2",
-        "MAC": "ea:48:0f:5a:cf:65",
+        "MAC": "82:32:7d:15:76:7c",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745068109.910928,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "84:94:37:d9:35:7d",
+        "SSID": "eduroam",
+        "RSSI": -87,
+        "Timestamp": 1745068110.3167694,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000a00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "84:94:37:d9:35:7d",
+        "SSID": "eduroam",
+        "RSSI": -89,
+        "Timestamp": 1745068110.3275194,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000a00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745068121.8963866,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745068121.925291,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -70,
+        "Timestamp": 1745068122.0985124,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "da:4b:73:a6:71:a7",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -67,
+        "Timestamp": 1745068124.7590172,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000e00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "da:4b:73:a6:71:a7",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745068124.7798126,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000e00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a6:46:12:e4:15:dd",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -86,
+        "Timestamp": 1745068130.513117,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a6:46:12:e4:15:dd",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -86,
+        "Timestamp": 1745068130.529837,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -70,
+        "Timestamp": 1745068133.7244184,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "2e:c0:80:5f:87:94",
         "SSID": "<Hidden SSID>",
         "RSSI": -66,
-        "Timestamp": 1745067468.58411,
+        "Timestamp": 1745068134.0677965,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
-        "MAC": "de:a3:50:69:5a:20",
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "f2:75:ab:d6:9c:9f",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -60,
+        "Timestamp": 1745068134.2828114,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "f2:75:ab:d6:9c:9f",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -60,
+        "Timestamp": 1745068134.292554,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "6e:c2:ac:bd:26:f3",
         "SSID": "eduroam",
-        "RSSI": -80,
-        "Timestamp": 1744988021.338849,
-        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
+        "RSSI": -60,
+        "Timestamp": 1745068134.408593,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "6e:c2:ac:bd:26:f3",
+        "SSID": "eduroam",
+        "RSSI": -60,
+        "Timestamp": 1745068135.3471231,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "6e:c2:ac:bd:26:f3",
+        "SSID": "eduroam",
+        "RSSI": -60,
+        "Timestamp": 1745068135.3660398,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "de:4d:c3:72:84:30",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745068136.0437486,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "de:4d:c3:72:84:30",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": 1745068136.6133144,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "b6:ad:8c:1c:c0:05",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -50,
+        "Timestamp": 1745068136.6554182,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "6e:e6:3e:f3:91:5a",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -50,
+        "Timestamp": 1745068136.8141584,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "1a:6c:1f:93:cc:8c",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -58,
+        "Timestamp": 1745068136.9896271,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "d6:3f:ed:33:90:38",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -60,
+        "Timestamp": 1745068137.0442603,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "de:4d:c3:72:84:30",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -70,
+        "Timestamp": 1745068137.9155805,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "84:94:37:de:ff:25",
+        "SSID": "eduroam",
+        "RSSI": -68,
+        "Timestamp": 1745068138.6852717,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "84:94:37:de:ff:25",
+        "SSID": "eduroam",
+        "RSSI": -66,
+        "Timestamp": 1745068138.7109342,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -58,
+        "Timestamp": 1745068140.7394,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -66,
+        "Timestamp": 1745068140.849507,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745068140.9377952,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "1e:70:81:83:22:cb",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745068142.5048857,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     }
 ]
