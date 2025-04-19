@@ -94,12 +94,16 @@ def get_common_ssids(probe_data, threshold_ratio):
     """
     ssid_counts = Counter()
 
+    total_entries = len(probe_data)
+
+    if total_entries <= 15:
+        return set()
+
     for entry in probe_data:
         ssid = entry.get('SSID')
         if ssid:
             ssid_counts[ssid] += 1
 
-    total_entries = len(probe_data)
     common_ssids = {ssid for ssid, count in ssid_counts.items() 
                         if count / total_entries >= threshold_ratio}
 
