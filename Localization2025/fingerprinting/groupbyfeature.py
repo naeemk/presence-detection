@@ -1,37 +1,44 @@
 import json
 from collections import defaultdict
-from difflib import SequenceMatcher
 
-# Load configuration
+# Optional: load config if needed
 def load_config(filename="config.json"):
     with open(filename, "r") as file:
         return json.load(file)
 
-config = load_config()
-TIME_LIMIT = 1
+# Helper: Extract feature tokens from feature string
+def parse_feature_string(feature_str):
+    if not feature_str:
+        return set()
 
+    # Split by comma, strip whitespace, remove duplicates
+    parts = [p.strip() for p in feature_str.split(",") if p.strip()]
+    return set(parts)
+
+# Main function: Group by feature similarity between groups
 def groupbyFeature(ssid_data, feature_threshold=0.8):
     """
-    Further groups SSID-based MAC groups based on similarity in Features (dict keys).
-
+    Further groups SSID-based MAC groups based on similarity in Features (parsed strings).
+    
     Args:
         ssid_data (dict): Output from groupbySSID.
-        feature_threshold (int): Minimum number of shared feature keys to merge groups.
+        feature_threshold (int): Minimum number of shared feature tokens to merge groups.
 
     Returns:
         dict: Final grouped data based on feature similarity.
     """
-    # Step 1: Extract set of feature keys per group
+    # Step 1: Build a feature set for each group
     group_features = {}
     for group_id, group_info in ssid_data.items():
-        print("Test 1")
-        feature_keys = set()
+        feature_set = set()
         for entry in group_info["entries"]:
-            entry_features = entry.get("Features", {})
-            feature_keys.update(entry_features.keys())
-        group_features[group_id] = feature_keys
+            feature_str = entry.get("Features", "")
+            feature_tokens = parse_feature_string(feature_str)
+            feature_set.update(feature_tokens)
+        group_features[group_id] = feature_set
 
-    # Step 2: Initialize each group ID as its own cluster
+
+    # Step 2: Initialize each group as its own cluster
     group_map = {gid: {gid} for gid in ssid_data}
 
     changed = True
@@ -42,31 +49,31 @@ def groupbyFeature(ssid_data, feature_threshold=0.8):
 
         for i in range(len(group_ids)):
             gid1 = group_ids[i]
-            f1 = group_features.get(gid1, set())
+            features1 = group_features.get(gid1, set())
 
             for j in range(i + 1, len(group_ids)):
                 gid2 = group_ids[j]
-                f2 = group_features.get(gid2, set())
+                features2 = group_features.get(gid2, set())
 
-                # Skip if already in same group
+                # Skip if already in the same group
                 if group_map[gid1] == group_map[gid2]:
                     continue
 
-                shared_keys = f1 & f2
-                if len(shared_keys) >= feature_threshold:
-                    # Merge group clusters
+                shared = features1 & features2
+                if len(shared) >= feature_threshold:
+                    # Merge groups
                     merged = group_map[gid1] | group_map[gid2]
                     for gid in merged:
                         group_map[gid] = merged
                     changed = True
 
-    # Step 3: De-duplicate merged groupings
+    # Step 3: Remove duplicates
     unique_groups = {}
     for group in group_map.values():
         print("Test 3")
         unique_groups[frozenset(group)] = group
 
-    # Step 4: Build final merged output
+    # Step 4: Format final output
     feature_data = defaultdict(dict)
     for idx, group_ids in enumerate(unique_groups.values(), start=1):
         print("Test 4")
@@ -84,12 +91,12 @@ def groupbyFeature(ssid_data, feature_threshold=0.8):
     # Final printout
     print("======= Final MAC Groups Based on Feature Similarity =======")
     for group_id, group_data in feature_data.items():
-        print(f"\nGroup {group_id}:")
+        print(f"  Group {group_id}:")
         print(f"  MACs: {group_data['macs']}")
         print(f"  Total Entries: {len(group_data['entries'])}")
-        for entry in group_data['entries']:
+        for entry in group_data["entries"]:
             print(f"    SSID: {entry.get('SSID', '')}")
-            print(f"    Features: {entry.get('Features', {})}")
-        print("-----------------------------------------------------------")
+            print(f"    Features: {entry.get('Features', '')}")
+        print("------------------------------------------------------------")
 
     return feature_data

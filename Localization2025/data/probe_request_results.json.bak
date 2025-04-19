@@ -1,8 +1,87 @@
 [
     {
         "Device_Name": "Device 1",
+<<<<<<< HEAD
         "MAC": "f2:c6:61:eb:8b:fb",
         "SSID": "eduroam",
+=======
+<<<<<<< HEAD
+=======
+        "MAC": "06:cf:73:d7:3a:8d",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -58,
+        "Timestamp": 1745069457.5046244,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "ea:45:cc:8d:87:af",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": 1745069458.0940094,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "46:54:db:60:94:9d",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": 1745069458.1610441,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "32:31:b0:0e:74:5b",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -58,
+        "Timestamp": 1745069458.7025723,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "d2:fe:a0:e0:da:ab",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -44,
+        "Timestamp": 1745069459.3501496,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "8a:1f:25:42:b9:78",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -44,
+        "Timestamp": 1745069459.393084,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "8a:1f:25:42:b9:78",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -44,
+        "Timestamp": 1745069459.4140337,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "f6:49:d9:61:80:ec",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745069459.5298262,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "f6:49:d9:61:80:ec",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745069459.5650644,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "1e:b7:be:50:a4:f4",
+        "SSID": "<Hidden SSID>",
+>>>>>>> refs/remotes/origin/main
         "RSSI": -70,
         "Timestamp": 1745070797.967766,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
@@ -144,11 +223,32 @@
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
     },
     {
+<<<<<<< HEAD
         "Device_Name": "Device 1",
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -68,
         "Timestamp": 1745070800.0910609,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: b048606c"
+=======
+        "Device_Name": "Device 2",
+        "MAC": "ce:0a:dd:5c:9e:f7",
+        "SSID": "eduroam",
+        "RSSI": -24,
+        "Timestamp": 1745067941.2285905,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+=======
+>>>>>>> 2006a818aae3c21dd83f720d93229b6fea4beacb
+        "MAC": "de:a3:50:69:5a:20",
+        "SSID": "eduroam",
+        "RSSI": -80,
+        "Timestamp": 1745072086.2211044,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
+>>>>>>> 2006a818aae3c21dd83f720d93229b6fea4beacb
+>>>>>>> refs/remotes/origin/main
     }
 ]
