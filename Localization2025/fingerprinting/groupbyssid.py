@@ -111,4 +111,7 @@ def groupbySSID(mac_data, ssid_threshold, common_ssids):
                 print("  No features available.")
         print("-----------------------------------------------------------")
     print("=========================================================")
+
+    with open("data/ssid_data.json", "w") as json_file:
+        json.dump(ssid_data, json_file, indent=4)
     return ssid_data

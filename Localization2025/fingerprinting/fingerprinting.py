@@ -139,25 +139,23 @@ def fingerprint(probe_data):
 
     feature_data = groupbyFeature(ssid_data)
 
-    print("===================2==========================")
-    print(feature_data)
-    
-    #finaldevicegroup = process_feature_groups(feature_data)
+    #print("===================2==========================")    
+    finaldevicegroup = process_feature_groups(feature_data)
 
     #print("=======================1======================")
     #print(previous_list)
     #print("=============================================")
 
-    #print("===================2==========================")
-    #print(feature_data)
-    #print("=============================================")
+    print("===================3==========================")
+    print(finaldevicegroup)
+    print("=============================================")
 
     #new_list = match_and_sort_fuzzy(oldtestdata, testdata)  
 
-    #print("====================3=========================")
+    #print("====================4=========================")
     #print(new_list)
     #print("=============================================")
     #previous_list = new_list
 
-    return None
+    return finaldevicegroup
 
