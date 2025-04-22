@@ -2,6 +2,7 @@
     {
         "Device_Name": "Device 1",
         "MACs": [
+<<<<<<< HEAD
             "da:c8:37:a2:1b:97",
             "d2:48:e1:bf:34:be",
             "e6:12:36:0b:bb:47",
@@ -39,6 +40,37 @@
             "9a:ba:89:1c:43:61",
             "d2:38:f2:28:db:76",
             "12:99:90:32:b9:15"
+=======
+            "de:a3:50:69:5a:20",
+            "a0:29:42:b7:39:e1",
+            "f0:77:c3:4e:7d:9d",
+            "fc:31:5d:79:ef:0c",
+            "36:d5:fb:d9:3d:f2"
+        ],
+        "SSIDs": [
+            "eduroam",
+            "<Hidden SSID>"
+        ],
+        "Average_RSSI": -68.55555555555556,
+        "First_Timestamp": 1745082071.1792061,
+        "Last_Timestamp": 1745082127.2795033,
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MACs": [
+            "26:e7:a5:b4:6b:f6",
+            "a0:f4:59:8c:22:a9",
+            "96:b7:0b:ce:b4:75",
+            "a6:f2:37:8e:93:11",
+            "3a:bb:66:ce:61:d4",
+            "72:00:a0:08:e0:a8",
+            "c6:43:f6:e5:4a:b8",
+            "3e:05:f2:28:52:8a",
+            "aa:8b:48:5d:e7:96",
+            "4e:77:f2:87:f6:af",
+            "dc:03:98:95:61:3c"
+>>>>>>> refs/remotes/origin/main
         ],
         "SSIDs": [
             "<Hidden SSID>",
@@ -46,9 +78,16 @@
             "Q[&\"UCWj^-D2rBT490^R;7XYl&LC^",
             "eduroam\u0000\u001c"
         ],
+<<<<<<< HEAD
         "Average_RSSI": -35.56666666666667,
         "First_Timestamp": 1745321641.9100232,
         "Last_Timestamp": 1745321699.3774457,
         "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
+=======
+        "Average_RSSI": -53.38461538461539,
+        "First_Timestamp": 1745082075.7280588,
+        "Last_Timestamp": 1745082129.055484,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c7670800ffeff0000feff0020, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+>>>>>>> refs/remotes/origin/main
     }
 ]
