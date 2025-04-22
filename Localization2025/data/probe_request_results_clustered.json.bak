@@ -2,38 +2,53 @@
     {
         "Device_Name": "Device 1",
         "MACs": [
-            "d6:95:fb:a5:fc:2f",
-            "72:b0:68:91:d6:06",
-            "fe:7f:78:b7:95:13",
-            "0e:b4:65:1a:76:87",
-            "b2:1d:4b:fb:39:d1",
-            "52:ea:c7:cd:4e:7e",
-            "36:5f:c3:c4:c9:6f",
-            "82:9c:42:25:bf:1f",
-            "9e:65:f5:95:2e:d6",
-            "86:28:8b:f3:67:49",
-            "d0:39:57:dd:41:e3"
+            "da:c8:37:a2:1b:97",
+            "d2:48:e1:bf:34:be",
+            "e6:12:36:0b:bb:47",
+            "1e:98:4c:58:bf:eb",
+            "c2:16:73:07:2f:76",
+            "ca:eb:f5:b3:44:4f",
+            "b6:bf:82:0d:0c:c5",
+            "8a:3f:5b:b4:84:0a",
+            "66:97:d8:76:8a:b4",
+            "0a:96:1c:b8:46:1f",
+            "ee:08:1f:f9:e1:38",
+            "d0:39:57:b3:f1:b1",
+            "9a:0b:ab:bc:b0:76",
+            "9a:cf:5e:88:42:33",
+            "4a:cf:bf:dd:55:93",
+            "c6:de:a2:c3:bb:4b",
+            "16:58:66:b3:9e:f7",
+            "0e:3c:cf:4d:94:74",
+            "26:db:f2:08:db:84",
+            "9e:3f:de:3b:9c:69",
+            "f6:9c:17:9a:bc:0d",
+            "1e:1a:af:0a:1f:2e",
+            "e2:bf:7c:f8:76:9a",
+            "6e:56:65:f8:ed:6d",
+            "e6:42:c7:59:97:02",
+            "a6:fb:53:c9:97:b4",
+            "dc:45:46:c9:da:10",
+            "b2:e6:d7:6b:50:e3",
+            "2e:2b:0a:24:40:a8",
+            "46:11:ae:f9:da:ca",
+            "4e:79:cb:1c:c8:80",
+            "62:55:a1:be:5e:37",
+            "5e:fb:ef:80:15:f1",
+            "5a:dc:1a:f3:0a:4d",
+            "9a:ba:89:1c:43:61",
+            "d2:38:f2:28:db:76",
+            "12:99:90:32:b9:15"
         ],
         "SSIDs": [
             "<Hidden SSID>",
-            "eduroam"
+            "eduroam",
+            "Q[&\"UCWj^-D2rBT490^R;7XYl&LC^",
+            "eduroam\u0000\u001c"
         ],
-        "Average_RSSI": -47.45454545454545,
-        "First_Timestamp": 1745320907.1917672,
-        "Last_Timestamp": 1745320928.8687842,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000e00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-    },
-    {
-        "Device_Name": "Device 2",
-        "MACs": [
-            "d0:39:57:dd:41:e3"
-        ],
-        "SSIDs": [
-            "eduroam"
-        ],
-        "Average_RSSI": -68.0,
-        "First_Timestamp": 1745320928.872736,
-        "Last_Timestamp": 1745320928.872736,
-        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+        "Average_RSSI": -35.56666666666667,
+        "First_Timestamp": 1745321641.9100232,
+        "Last_Timestamp": 1745321699.3774457,
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c"
     }
 ]
