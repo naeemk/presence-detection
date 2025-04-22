@@ -26,10 +26,10 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
         for entry in group_info["entries"]:
             features = entry.get("Features", [])
             if isinstance(features, str):
-                all_features.add(features)
+                all_features.update(f.strip() for f in features.split(","))
             else:
                 all_features.update(features)
-        group_features[group_id] = all_features
+
 
     # Step 2: Create group clusters
     group_map = {gid: {gid} for gid in ssid_data}
