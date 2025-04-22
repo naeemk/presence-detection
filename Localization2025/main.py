@@ -67,7 +67,6 @@ async def save_packets():
         visualize_plot(devices)
         print("[*] Plot visualization updated")
         
-        fingerprint(probe_data)
         await asyncio.sleep(1)
 
 async def main():
