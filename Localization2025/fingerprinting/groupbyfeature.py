@@ -11,14 +11,9 @@ TIME_LIMIT = 1
 
 
 def groupbyFeature(ssid_data, similarity_threshold=0.8):
-    """
-    Further groups SSID-based MAC groups based on similarity in Features.
-    Args:
-        ssid_data (dict): Output from groupbySSID.
-        similarity_threshold (float): Jaccard similarity threshold (0 to 1).
-    Returns:
-        dict: Final grouped data based on feature similarity.
-    """
+    from collections import defaultdict
+    import json
+
     # Step 1: Parse and collect full feature sets per group
     group_features = {}
     for group_id, group_info in ssid_data.items():
@@ -29,9 +24,9 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
                 all_features.update(f.strip() for f in features.split(","))
             else:
                 all_features.update(features)
+        group_features[group_id] = all_features
 
-
-    # Step 2: Create group clusters
+    # Step 2: Create group clusters using Jaccard similarity
     group_map = {gid: {gid} for gid in ssid_data}
     changed = True
 
@@ -52,28 +47,44 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
 
                 union = f1 | f2
                 if not union:
-                    continue  # avoid division by zero
+                    continue
 
                 similarity = len(f1 & f2) / len(union)
 
                 if similarity >= similarity_threshold:
-                    print(f"\n🔗 Merging Group {gid1} & {gid2}")
-                    print(f"  Shared Features ({len(f1 & f2)}): {f1 & f2}")
-                    print(f"  Jaccard Similarity: {similarity:.2f}")
-                    print(f"  Group {gid1} Features: {f1}")
-                    print(f"  Group {gid2} Features: {f2}")
-
                     merged = group_map[gid1] | group_map[gid2]
                     for gid in merged:
                         group_map[gid] = merged
                     changed = True
 
-    # Step 3: Deduplicate merged clusters
+    # 🔁 Step 3: Merge single-entry MACs with exact feature match
+    single_groups = {gid for gid, info in ssid_data.items() if len(info["entries"]) == 1}
+    merged_single_groups = set()
+
+    for gid_single in single_groups:
+        if gid_single in merged_single_groups:
+            continue
+
+        f_single = group_features.get(gid_single, set())
+
+        for gid_other, f_other in group_features.items():
+            if gid_single == gid_other or gid_other in single_groups:
+                continue
+
+            if f_single == f_other:
+                merged = group_map[gid_single] | group_map[gid_other]
+                for gid in merged:
+                    group_map[gid] = merged
+                merged_single_groups.add(gid_single)
+                print(f"\n🔍 Exact Match: Merging single-entry group {gid_single} into group {gid_other}")
+                break
+
+    # Step 4: Deduplicate merged clusters
     unique_groups = {}
     for group in group_map.values():
         unique_groups[frozenset(group)] = group
 
-    # Step 4: Build merged output
+    # Step 5: Build merged output
     feature_data = defaultdict(dict)
     for idx, group_ids in enumerate(unique_groups.values(), start=1):
         merged_macs = []
@@ -87,17 +98,14 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
             "entries": merged_entries
         }
 
-    # Step 5: Print final groups
+    # Step 6: Logging
     print("======= Final MAC Groups Based on Feature Similarity =======")
     for group_id, group_data in feature_data.items():
         print(f" Group {group_id}:")
         print(f"  MACs: {', '.join(group_data['macs'])}")
         print(f"  Total Entries: {len(group_data['entries'])}")
-        
-        ssids = set()
-        for entry in group_data['entries']:
-            ssids.add(entry.get("SSID", ""))
-        
+
+        ssids = set(entry.get("SSID", "") for entry in group_data['entries'])
         print(f"  Unique SSIDs: {', '.join(sorted(ssids))}")
         print("  Entries:")
         for entry in group_data['entries']:
@@ -108,7 +116,7 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
             print(f"    Features: {entry.get('Features', '')}")
             print("    -------------------")
         print("-----------------------------------------------------------")
-    
+
     with open("data/feature_data.json", "w") as json_file:
         json.dump(feature_data, json_file, indent=4)
 
