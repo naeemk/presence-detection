@@ -12,40 +12,52 @@ config = load_config()
 time_window = config["general"]["time_window"]  # Time window in seconds
 
 def process_feature_groups(feature_data):
-    current_time = time.time()
     devices = []
+    device_counter = 1
+    time_window = 60  # in seconds
 
-    for idx, (group_key, probes) in enumerate(feature_data.items(), start=1):
-        macs = set()
+    for group in feature_data.values():
+        macs = set(group.get("macs", []))
         ssids = set()
-        rssi_values = []
+        rssis = []
         timestamps = []
-        features = set()
+        features = []
 
-        for probe in probes:
-            ts = probe.get("Timestamp", 0)
-            if current_time - time_window <= ts <= current_time:
-                macs.add(probe.get("Source", ""))
-                ssids.add(probe.get("SSID", "<Unknown SSID>"))
-                rssi = probe.get("RSSI")
-                if rssi is not None:
-                    rssi_values.append(rssi)
-                timestamps.append(ts)
-                features.add(probe.get("Features", ""))
-
-        if not rssi_values or not timestamps:
+        entries = group.get("entries", [])
+        if not entries:
             continue
-        
-        weights = [1 / (current_time - ts + 1) for ts in timestamps]
-        weighted_sum = sum(rssi * weight for rssi, weight in zip(rssi_values, weights))
-        total_weight = sum(weights)
-        average_rssi = round(weighted_sum / total_weight, 1)
 
+        # Use the first timestamp as the reference point
+        reference_ts = entries[0].get("Timestamp")
+        if reference_ts is None:
+            continue
 
-        #average_rssi = round(sum(rssi_values) / len(rssi_values), 1)
+        for entry in entries:
+            timestamp = entry.get("Timestamp")
+            if timestamp is None or abs(timestamp - reference_ts) > time_window:
+                continue  # Skip entries outside the time window
+
+            ssids.add(entry.get("SSID", ""))
+            rssi = entry.get("RSSI")
+            feature_str = entry.get("Features", "")
+
+            if rssi is not None:
+                rssis.append(rssi)
+            timestamps.append(timestamp)
+            if feature_str:
+                features.extend([f.strip() for f in feature_str.split(",")])
+
+        if not rssis or not timestamps:
+            continue  # Skip this group if missing required data
+
+        #weights = [1 / (current_time - ts + 1) for ts in timestamps]
+        #weighted_sum = sum(rssi * weight for rssi, weight in zip(rssi_values, weights))
+        #total_weight = sum(weights)
+        #average_rssi = round(weighted_sum / total_weight, 1)
+        average_rssi = sum(rssis) / len(rssis)
 
         device = {
-            "Device_Name": f"Device {idx}",
+            "Device_Name": f"Device {device_counter}",
             "MACs": list(macs),
             "SSIDs": list(ssids),
             "Average_RSSI": average_rssi,
@@ -53,6 +65,10 @@ def process_feature_groups(feature_data):
             "Last_Timestamp": max(timestamps),
             "Features": ", ".join(sorted(set(filter(None, features))))
         }
-        devices.append(device)
 
+        devices.append(device)
+        device_counter += 1
+    
+    with open("data/devices.json", "w") as json_file:
+        json.dump(devices, json_file, indent=4)
     return devices

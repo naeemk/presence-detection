@@ -96,7 +96,9 @@ async def save_packets():
         print(clustered_results)
         #visualize_radar(clustered_results, ax)
         #print("[*] Radar visualization updated")
-        visualize_plot(clustered_results)
+        devices = fingerprint(probe_data)
+
+        visualize_plot(devices)
         print("[*] Plot visualization updated")
         
         fingerprint(probe_data)

@@ -108,5 +108,8 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
             print(f"    Features: {entry.get('Features', '')}")
             print("    -------------------")
         print("-----------------------------------------------------------")
+    
+    with open("data/feature_data.json", "w") as json_file:
+        json.dump(feature_data, json_file, indent=4)
 
     return feature_data

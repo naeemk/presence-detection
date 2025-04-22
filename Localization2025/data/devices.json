@@ -1,0 +1,26 @@
+[
+    {
+        "Device_Name": "Device 1",
+        "MACs": [
+            "52:ea:c7:cd:4e:7e",
+            "72:b0:68:91:d6:06",
+            "0e:b4:65:1a:76:87",
+            "b2:1d:4b:fb:39:d1",
+            "d0:39:57:dd:41:e3",
+            "9e:65:f5:95:2e:d6",
+            "fe:7f:78:b7:95:13",
+            "36:5f:c3:c4:c9:6f",
+            "82:9c:42:25:bf:1f",
+            "86:28:8b:f3:67:49",
+            "d6:95:fb:a5:fc:2f"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>",
+            "eduroam"
+        ],
+        "Average_RSSI": -49.166666666666664,
+        "First_Timestamp": 1745320907.1917672,
+        "Last_Timestamp": 1745320928.872736,
+        "Features": "11.0 Mbps, 12.0 Mbps, 18.0 Mbps, 2.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 5.5 Mbps, 54.0 Mbps, 6.0 Mbps, 9.0 Mbps, Extended Supported Rates: 0c1218243048606c, Extended Supported Rates: 3048606c, Inc.), Supported Rates: 1.0 Mbps, Supported Rates: 6.0 Mbps, Vendor Info: 02000010000002, Vendor Info: 02010010000000, Vendor Info: 02010010000002, Vendor Info: 0407, Vendor Info: 08000e00, Vendor Info: 08001100, Vendor Info: 08001200, Vendor Info: 0a00010400000000, Vendor Info: 16030103, Vendor: 00:10:18 (Broadcom), Vendor: 00:17:F2 (Apple, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor: 00:90:4C (Epigram, Vendor: 50:6F:9A (Wi-Fi Alliance)"
+    }
+]
