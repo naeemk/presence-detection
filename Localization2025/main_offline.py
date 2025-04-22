@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 
 from anomaly_detection import detect_anomalies
 from capture import probe_data
-from clustering import cluster_data
-from device_signature import get_device_name
+from tempbackup.clustering import cluster_data
+from tempbackup.device_signature import get_device_name
 from feature_extraction import extract_features
 #from radar import visualize_radar  # Import radar visualization function
 from plot import visualize_plot
