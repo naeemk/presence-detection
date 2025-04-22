@@ -2,6 +2,7 @@ import asyncio
 import json
 import os
 import time
+import copy
 
 import keyboard
 import matplotlib.pyplot as plt
@@ -44,6 +45,21 @@ async def save_packets():
         # Step 3: Anomaly detection
         print("[*] Detecting anomalies in the captured data...")
         detect_anomalies(X, df)
+
+        # Sort probe_data by Timestamp
+        sorted_probe_data = sorted(
+            [copy.deepcopy(probe) for probe in probe_data],
+            key=lambda x: x.get('Timestamp', 0)
+            ) 
+
+        # Convert Timestamps to a readable format
+        for probe in sorted_probe_data:
+            if 'Timestamp' in probe:
+                probe['Timestamp'] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(probe['Timestamp']))
+
+        with open("data/sorted_probe_data.json", "w") as json_file:
+            json.dump(sorted_probe_data, json_file, indent=4)
+
 
         #print("[*] Radar visualization updated")
         devices = fingerprint(probe_data)

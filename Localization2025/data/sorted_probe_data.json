@@ -1,0 +1,212 @@
+[
+    {
+        "MAC": "5a:21:10:a0:9d:61",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -66,
+        "Timestamp": "2025-04-22 08:36:45",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08002200, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "5a:21:10:a0:9d:61",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": "2025-04-22 08:36:45",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08002200, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "5a:21:10:a0:9d:61",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": "2025-04-22 08:36:45",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08002200, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "7e:a2:47:71:ce:83",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -70,
+        "Timestamp": "2025-04-22 08:36:48",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08002a00, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "96:69:42:88:8c:e7",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -66,
+        "Timestamp": "2025-04-22 08:36:49",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "MAC": "2e:34:ff:a2:31:84",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": "2025-04-22 08:36:50",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c3278910ffaff0000faff0000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000000, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030102650101"
+    },
+    {
+        "MAC": "2e:34:ff:a2:31:84",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": "2025-04-22 08:36:50",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c3278910ffaff0000faff0000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000000, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030102650101"
+    },
+    {
+        "MAC": "2e:34:ff:a2:31:84",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": "2025-04-22 08:36:50",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c3278910ffaff0000faff0000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000000, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030102650101"
+    },
+    {
+        "MAC": "2e:34:ff:a2:31:84",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": "2025-04-22 08:36:50",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c3278910ffaff0000faff0000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000000, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030102650101"
+    },
+    {
+        "MAC": "56:6a:6e:ae:a5:dc",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -66,
+        "Timestamp": "2025-04-22 08:36:51",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "MAC": "9a:fd:0c:07:7b:6b",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -88,
+        "Timestamp": "2025-04-22 08:36:55",
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps"
+    },
+    {
+        "MAC": "08:5b:d6:9d:e8:d3",
+        "SSID": "eduroam",
+        "RSSI": -85,
+        "Timestamp": "2025-04-22 08:36:55",
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
+    },
+    {
+        "MAC": "08:5b:d6:9d:e8:d3",
+        "SSID": "eduroam",
+        "RSSI": -68,
+        "Timestamp": "2025-04-22 08:36:58",
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
+    },
+    {
+        "MAC": "08:5b:d6:9d:e8:d3",
+        "SSID": "eduroam",
+        "RSSI": -72,
+        "Timestamp": "2025-04-22 08:36:58",
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
+    },
+    {
+        "MAC": "66:d8:2c:07:87:8b",
+        "SSID": "eduroam",
+        "RSSI": -86,
+        "Timestamp": "2025-04-22 08:36:58",
+        "Features": "Supported Rates: 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "MAC": "7e:a2:47:71:ce:83",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": "2025-04-22 08:37:03",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08002a00, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "7e:a2:47:71:ce:83",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": "2025-04-22 08:37:03",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08002a00, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "dc:46:28:8e:0d:87",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -66,
+        "Timestamp": "2025-04-22 08:37:03",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
+    },
+    {
+        "MAC": "92:2f:2c:23:b7:4d",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": "2025-04-22 08:37:04",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "MAC": "7e:a2:47:71:ce:83",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": "2025-04-22 08:37:08",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08002a00, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "f8:96:fe:8d:31:54",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": "2025-04-22 08:37:10",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c3211900ffeff0000feff0000, Vendor: 00:10:18 (Broadcom), Vendor Info: 020000100000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 5c02010a000807000f0000000000010a010107000f0000000000"
+    },
+    {
+        "MAC": "f8:96:fe:8d:31:54",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": "2025-04-22 08:37:10",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c3211900ffeff0000feff0000, Vendor: 00:10:18 (Broadcom), Vendor Info: 020000100000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 5c02010a000807000f0000000000010a010107000f0000000000"
+    },
+    {
+        "MAC": "7e:a2:47:71:ce:83",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": "2025-04-22 08:37:13",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08002a00, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "7e:a2:47:71:ce:83",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": "2025-04-22 08:37:13",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08002a00, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "1a:43:61:51:70:b0",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": "2025-04-22 08:37:14",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+    },
+    {
+        "MAC": "e0:c2:64:c0:78:3a",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -52,
+        "Timestamp": "2025-04-22 08:37:15",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
+    },
+    {
+        "MAC": "56:87:d2:72:59:c7",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -56,
+        "Timestamp": "2025-04-22 08:37:16",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001e00, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "56:87:d2:72:59:c7",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": "2025-04-22 08:37:16",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001e00, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "56:87:d2:72:59:c7",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -56,
+        "Timestamp": "2025-04-22 08:37:16",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001e00, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    },
+    {
+        "MAC": "56:87:d2:72:59:c7",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": "2025-04-22 08:37:16",
+        "Features": "Supported Rates: 1.0 Mbps, 2.0 Mbps, 5.5 Mbps, 11.0 Mbps, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001e00, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101650101, Vendor: 8C:FD:F0 (Qualcomm Inc.), Vendor Info: 0101020100"
+    }
+]
