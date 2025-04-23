@@ -10,9 +10,9 @@ def load_config(filename="config.json"):
 config = load_config()
 TIME_LIMIT = 1
 
-def extract_ssid(mac_data):
+def extract_ssid(sequence_data):
     grouped_ssid = {}
-    for mac, entries in mac_data.items():
+    for mac, entries in sequence_data.items():
         ssid_set = set()
 
         for entry in entries:

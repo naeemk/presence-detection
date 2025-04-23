@@ -14,11 +14,13 @@ config = load_config()
 #required_matches_config = config["fingerprint"]["required_matches"]
 #time_window = config["fingerprint"]["time_window"]  # Time window in seconds
 
-def groupbySSID(mac_data, ssid_threshold, common_ssids):
+def groupbySSID(sequence_data, ssid_threshold, common_ssids):
     print("=============================================")
     print("DEBUG")
     print("==============================================")
-    grouped_ssid = extract_ssid(mac_data)
+    grouped_ssid = extract_ssid(sequence_data)
+
+
 
     # Filter out common SSIDs from each MAC’s SSID list
     for mac in grouped_ssid:
@@ -73,7 +75,7 @@ def groupbySSID(mac_data, ssid_threshold, common_ssids):
     for idx, group in enumerate(unique_groups.values(), start=1):
         group_entries = []
         for mac in group:
-            group_entries.extend(mac_data.get(mac, []))
+            group_entries.extend(sequence_data.get(mac, []))
 
         ssid_data[idx] = {
             "macs": list(group),
