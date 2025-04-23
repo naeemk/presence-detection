@@ -19,11 +19,70 @@
             "a0:29:42:b7:39:e1"
         ],
         "SSIDs": [
-            "<Hidden SSID>"
+            "<Hidden SSID>",
+            "uisemp"
         ],
+<<<<<<< HEAD
         "Average_RSSI": -76.0,
         "First_Timestamp": 1745418212.5856657,
         "Last_Timestamp": 1745418216.1132019,
         "Features": "11.0 Mbps, 12.0 Mbps, 18.0 Mbps, 2.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 5.5 Mbps, 54.0 Mbps, 9.0 Mbps, Extended Supported Rates: 0c1218243048606c, Inc.), Supported Rates: 1.0 Mbps, Supported Rates: 6.0 Mbps, Vendor Info: 02010010000002, Vendor Info: 0408bf0c7670800ffeff0000feff0020, Vendor Info: 08001200, Vendor Info: 0a00010400000000, Vendor Info: 16030103, Vendor: 00:10:18 (Broadcom), Vendor: 00:17:F2 (Apple, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor: 00:90:4C (Epigram, Vendor: 50:6F:9A (Wi-Fi Alliance)"
+=======
+        "Average_RSSI": -86.0,
+        "First_Timestamp": 1745417774.109959,
+        "Last_Timestamp": 1745417775.7265139,
+        "Features": "12.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps, 9.0 Mbps, Supported Rates: 6.0 Mbps, Vendor Info: 16030103, Vendor: 50:6F:9A (Wi-Fi Alliance)"
+    },
+    {
+        "Device_Name": "Device 3",
+        "MACs": [
+            "a0:f4:59:8c:22:a9",
+            "dc:03:98:95:61:3c"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Average_RSSI": -65.57142857142857,
+        "First_Timestamp": 1745417790.491195,
+        "Last_Timestamp": 1745417849.9188998,
+        "Features": "11.0 Mbps, 12.0 Mbps, 18.0 Mbps, 2.0 Mbps, 5.5 Mbps, 6.0 Mbps, 9.0 Mbps, Extended Supported Rates: 3048606c, Extended Supported Rates: b048606c, Supported Rates: 1.0 Mbps"
+    },
+    {
+        "Device_Name": "Device 4",
+        "MACs": [
+            "c6:43:f6:e5:4a:b8",
+            "96:b7:0b:ce:b4:75",
+            "56:ed:1a:6b:b5:73",
+            "a6:f2:37:8e:93:11",
+            "72:00:a0:08:e0:a8",
+            "aa:8b:48:5d:e7:96",
+            "ba:55:68:49:b3:2b",
+            "3e:05:f2:28:52:8a",
+            "26:07:13:57:ab:88",
+            "4e:77:f2:87:f6:af",
+            "3a:bb:66:ce:61:d4"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Average_RSSI": -50.4,
+        "First_Timestamp": 1745417800.9000087,
+        "Last_Timestamp": 1745417838.8154855,
+        "Features": "11.0 Mbps, 2.0 Mbps, 5.5 Mbps, Extended Supported Rates: 0c1218243048606c, Supported Rates: 1.0 Mbps"
+    },
+    {
+        "Device_Name": "Device 5",
+        "MACs": [
+            "00:25:ca:4b:22:4d"
+        ],
+        "SSIDs": [
+            "vip",
+            "<Hidden SSID>"
+        ],
+        "Average_RSSI": -74.0,
+        "First_Timestamp": 1745417861.3492687,
+        "Last_Timestamp": 1745417861.3492687,
+        "Features": "11.0 Mbps, 2.0 Mbps, 5.5 Mbps, Extended Supported Rates: 0c1218243048606c, Supported Rates: 1.0 Mbps, Vendor Info: 020010000000, Vendor: 00:10:18 (Broadcom)"
+>>>>>>> a8563795539bd848627e916b60af31a34fa5e13d
     }
 ]
