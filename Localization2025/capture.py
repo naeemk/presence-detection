@@ -48,6 +48,8 @@ def handle_probe_request(packet):
         mac = packet.addr2  # Source MAC (even if randomized)
         ssid = packet.info.decode(errors="ignore") if packet.info else "<Hidden SSID>"
         
+        seq_num = (packet[Dot11].SC >> 4)  # Extract sequence number from SC field
+        
         # Filter only for "HUAWEI-5G-9Ysz" or hidden SSID
         #if ssid != "HUAWEI-5G-9Ysz" and mac !="de:0f:c5:13:d9:ec":
          #   return  # Ignore packets that don't match the filter
@@ -69,9 +71,12 @@ def handle_probe_request(packet):
                 elt = packet.getlayer(Dot11Elt)
                 while elt:
                     if elt.ID == 1:  # Supported Rates
-                        rates = [f"{(b & 0x7F) / 2} Mbps" for b in elt.info]
-                        wifi_features.append(f"Supported Rates: {', '.join(rates)}")
-                    elif elt.ID == 221:
+                        wifi_features.append(f"Supported Rates: {elt.info.hex()}")
+                    elif elt.ID == 42: # High Throughput Capabilities
+                        wifi_features.append(f"HT Capabilities: {elt.info.hex()}")
+                    elif elt.ID == 50:  # Extended Supported Rates
+                        wifi_features.append(f"Extended Supported Rates: {elt.info.hex()}")
+                    elif elt.ID == 221: # Vendor Specific
                         if len(elt.info) >= 3:
                             vendor_oui = elt.info[:3]
                             vendor_oui_str = ':'.join(f'{b:02X}' for b in vendor_oui)
@@ -81,17 +86,6 @@ def handle_probe_request(packet):
                             wifi_features.append(f"Vendor Info: {vendor_info.hex()}")
                         else:
                             wifi_features.append("Vendor Element Malformed")
-                    elif elt.ID == 42:
-                        wifi_features.append(f"HT Capabilities: {elt.info.hex()}")
-                    elif elt.ID == 50:  # Extended Supported Rates
-                        wifi_features.append(f"Extended Supported Rates: {elt.info.hex()}")
-                    elif elt.ID == 48:
-                        try:
-                            version = int.from_bytes(elt.info[0:2], byteorder='little')
-                            wifi_features.append(f"RSN Version: {version}")
-                            # You can go further and parse cipher suites, AKM etc if needed
-                        except:
-                            wifi_features.append(f"RSN: Malformed ({elt.info.hex()})")
 
                     # Move to the next Dot11Elt layer
                     elt = elt.payload.getlayer(Dot11Elt)
@@ -107,6 +101,7 @@ def handle_probe_request(packet):
             "SSID": ssid,
             "RSSI": rssi,
             "Timestamp": timestamp,
+            "Sequence Number": seq_num,
             "Features": ", ".join(wifi_features)
         })
         
