@@ -20,8 +20,6 @@ def groupbySSID(sequence_data, ssid_threshold, common_ssids):
     print("==============================================")
     grouped_ssid = extract_ssid(sequence_data)
 
-
-
     # Filter out common SSIDs from each MAC’s SSID list
     for mac in grouped_ssid:
         grouped_ssid[mac] = [ssid for ssid in grouped_ssid[mac] if ssid not in common_ssids]
@@ -81,38 +79,6 @@ def groupbySSID(sequence_data, ssid_threshold, common_ssids):
             "macs": list(group),
             "entries": group_entries
         }
-
-    # Optional: print the grouped info
-    #print("======= Final MAC Groups Based on SSID Similarity =======")
-    #for group_id, group_data in ssid_data.items():
-    #    print(f"Group {group_id}: MACs = {group_data['macs']}, Entries = {len(group_data['entries'])} records")
-    #    for entry in group_data['entries']:
-    #        print(f"  SSIDs: {entry.get('SSID', [])}")
-    #    for entry in group_data['entries']:
-    #        print(f"  Features: {entry.get('Features', [])}") 
-    #print("=========================================================")
-
-        # Printing the grouped info with a clear layout for features
-    print("======= Final MAC Groups Based on SSID Similarity =======")
-    for group_id, group_data in ssid_data.items():
-        print(f"\nGroup {group_id}:")
-        print(f"  MACs: {group_data['macs']}")
-        print(f"  Total Entries: {len(group_data['entries'])} records")
-        for entry in group_data['entries']:
-            print(f"  SSID: {entry.get('SSID', 'Unknown')}")
-            print(f"  RSSI: {entry.get('RSSI', 'Unknown')}")
-            print(f"  Timestamp: {entry.get('Timestamp', 'Unknown')}")
-            features = entry.get('Features', [])
-            if features:
-                print("  Features:")
-                for feature in features.split(","):
-                    # Split features based on commas and make them more readable
-                    feature = feature.strip()  # Clean up extra spaces
-                    print(f"    - {feature}")
-            else:
-                print("  No features available.")
-        print("-----------------------------------------------------------")
-    print("=========================================================")
 
     with open("data/ssid_data.json", "w") as json_file:
         json.dump(ssid_data, json_file, indent=4)

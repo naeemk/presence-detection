@@ -4,6 +4,7 @@ from collections import defaultdict, Counter
 from .groupbymac import groupbyMAC
 from .groupbyssid import groupbySSID
 from .groupbyfeature import groupbyFeature
+from .groupbysequence import groupbySequence
 from .match_and_sort_clusters import match_and_sort_fuzzy
 from .process_feature_groups import process_feature_groups
 
@@ -25,8 +26,8 @@ previous_list = []
 oldtestdata = [
     {
         "Device_Name": "Device 1",
-        "MAC": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
-        "SSID": ["mahabad", "<Hidden SSID>"],
+        "MACs": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
+        "SSIDs ": ["mahabad", "<Hidden SSID>"],
         "Average_RSSI": -71.0,
         "First_Timestamp": 1744822668.7486384,
         "Last_Timestamp": 1744822668.7493975,
@@ -34,8 +35,8 @@ oldtestdata = [
     },
     {
         "Device_Name": "Device 2",
-        "MAC": ["6e:b9:d7:2e:c3:d2", "3a:d6:e5:18:d1:67"],
-        "SSID": ["Airport Wifi", "<Hidden SSID>"],
+        "MACs": ["6e:b9:d7:2e:c3:d2", "3a:d6:e5:18:d1:67"],
+        "SSIDs": ["Airport Wifi", "<Hidden SSID>"],
         "Average_RSSI": -50.0,
         "First_Timestamp": 1744822669.7486384,
         "Last_Timestamp": 1744822671.7493975,
@@ -43,8 +44,8 @@ oldtestdata = [
     },
     {
         "Device_Name": "Device 3",
-        "MAC": ["6e:b9:d7:2e:c3:d3", "3a:d6:e5:18:d1:68"],
-        "SSID": ["Hotel Wifi", "<Hidden SSID>"],
+        "MACs": ["6e:b9:d7:2e:c3:d3", "3a:d6:e5:18:d1:68"],
+        "SSIDs": ["Hotel Wifi", "<Hidden SSID>"],
         "Average_RSSI": -40.0,
         "First_Timestamp": 1744822670.7486384,
         "Last_Timestamp": 1744822672.7493975,
@@ -55,8 +56,8 @@ oldtestdata = [
 testdata = [
     {
         "Device_Name": "Device 1",
-        "MAC": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
-        "SSID": ["mahabad", "<Hidden SSID>"],
+        "MACs": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
+        "SSIDs": ["mahabad", "<Hidden SSID>"],
         "Average_RSSI": -70.0,
         "First_Timestamp": 1744822668.7486384,
         "Last_Timestamp": 1744822668.7493975,
@@ -64,8 +65,8 @@ testdata = [
     },
     {
         "Device_Name": "Device 2",
-        "MAC": ["6e:b9:d7:2e:c3:d3", "3a:d6:e5:18:d1:68"],
-        "SSID": ["Hotel Wifi", "<Hidden SSID>", "Test SSID"],
+        "MACs": ["6e:b9:d7:2e:c3:d3", "3a:d6:e5:18:d1:68"],
+        "SSIDs": ["Hotel Wifi", "<Hidden SSID>", "Test SSID"],
         "Average_RSSI": -43.0,
         "First_Timestamp": 1744822670.7486384,
         "Last_Timestamp": 1744822672.7493975,
@@ -73,8 +74,8 @@ testdata = [
     },
     {
         "Device_Name": "Device 3",
-        "MAC": ["6e:b9:d7:2e:c3:d2", "3a:d6:e5:18:d1:67"],
-        "SSID": ["Airport Wifi", "<Hidden SSID>"],
+        "MACs": ["6e:b9:d7:2e:c3:d2", "3a:d6:e5:18:d1:67"],
+        "SSIDs": ["Airport Wifi", "<Hidden SSID>"],
         "Average_RSSI": -55.0,
         "First_Timestamp": 1744822669.7486384,
         "Last_Timestamp": 1744822671.7493975,
@@ -112,34 +113,16 @@ def get_common_ssids(probe_data, threshold_ratio):
 def fingerprint(probe_data):
     common_ssids = get_common_ssids(probe_data, threshold_ratio)
     print("Common SSIDs (to ignore):")
-    print(common_ssids)  # Output: {"<Hidden >", "eduroam"}
-
+    print(common_ssids)  # Output: {"<Hidden >", "eduroam"})
 
     mac_data = groupbyMAC(probe_data)
 
+    #sequence_data = groupbySequence(mac_data)
+
     ssid_data = groupbySSID(mac_data, ssid_threshold, common_ssids)
 
-    print("=======================1======================")
-    print(ssid_data)
-
-    # Display ssid_data in a readable format
-    print("SSID Data (Grouped by Unique Groups):")
-    for group_id, group_info in ssid_data.items():
-        print(f"Group {group_id}:")
-        print(f"  MACs: {', '.join(group_info['macs'])}")
-        print("  Entries:")
-        for entry in group_info["entries"]:
-            print(f"    MAC: {entry['MAC']}")
-            print(f"    SSID: {entry['SSID']}")
-            print(f"    RSSI: {entry['RSSI']}")
-            print(f"    Timestamp: {entry['Timestamp']}")
-            print(f"    Features: {entry['Features']}")
-            print("    -------------------")
-    
-
     feature_data = groupbyFeature(ssid_data)
-
-    #print("===================2==========================")    
+   
     finaldevicegroup = process_feature_groups(feature_data)
 
     #print("=======================1======================")
@@ -150,10 +133,10 @@ def fingerprint(probe_data):
     print(finaldevicegroup)
     print("=============================================")
 
-    #new_list = match_and_sort_fuzzy(oldtestdata, testdata)  
+    new_list = match_and_sort_fuzzy(oldtestdata, testdata)  
 
     #print("====================4=========================")
-    #print(new_list)
+    print(new_list)
     #print("=============================================")
     #previous_list = new_list
 

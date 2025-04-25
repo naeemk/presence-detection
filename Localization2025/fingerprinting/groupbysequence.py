@@ -1,10 +1,11 @@
 from collections import defaultdict
+import json
 
 SEQUENCE_THRESHOLD = 10
 TIME_WINDOW = 5  # seconds
 
 
-def groupbysequence(mac_data):
+def groupbySequence(mac_data):
     """
     Takes mac_data from groupbyMAC and groups entries for each MAC into bursts
     based on sequence number similarity and timestamp proximity.
@@ -15,18 +16,20 @@ def groupbysequence(mac_data):
     sequence_data = defaultdict(list)
 
     for mac, entries in mac_data.items():
+        print("Sequence 1")
         sorted_entries = sorted(entries, key=lambda x: x["Timestamp"])
         current_burst = []
 
         for entry in sorted_entries:
-            seq = entry.get("Seq")
+            print("Sequence 2")
+            seq = entry.get("Sequence Number")
             ts = entry.get("Timestamp")
 
             if not current_burst:
                 current_burst.append(entry)
                 continue
 
-            last_seq = current_burst[-1].get("Seq")
+            last_seq = current_burst[-1].get("Sequence Number")
             last_ts = current_burst[-1].get("Timestamp")
 
             if (
@@ -41,5 +44,8 @@ def groupbysequence(mac_data):
 
         if current_burst:
             sequence_data[mac].append(current_burst)
+
+    with open("data/sequence_data.json", "w") as json_file:
+        json.dump(sequence_data, json_file, indent=4)
 
     return sequence_data
