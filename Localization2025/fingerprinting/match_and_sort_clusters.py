@@ -1,4 +1,5 @@
 import json
+from difflib import SequenceMatcher
 
 # Load configuration
 def load_config(filename="config.json"):
@@ -10,24 +11,26 @@ config = load_config()
 #required_matches_config = config["fingerprint"]["required_matches"]
 #time_window = config["fingerprint"]["time_window"]  # Time window in seconds   
 
-from difflib import SequenceMatcher
+def jaccard_similarity(list1, list2):
+    set1, set2 = set(list1), set(list2)
+
+    if not set1 and not set2:
+        return 1.0
+    
+    return len(set1 & set2) / len(set1 | set2)
 
 def compute_similarity_score(old, new):
-    def jaccard_similarity(list1, list2):
-        set1, set2 = set(list1), set(list2)
-        print("Jaccard Similarity 2")
 
-        if not set1 and not set2:
-            print("Jaccard Similarity 3")
-
-            return 1.0
-        return len(set1 & set2) / len(set1 | set2)
     print("Jaccard Similarity 1")
     mac_similarity = jaccard_similarity(old["MACs"], new["MACs"])
+    print(mac_similarity)
+    print("Jaccard Similarity 2")
     ssid_similarity = jaccard_similarity(old["SSIDs"], new["SSIDs"])
-
-    feature_similarity = SequenceMatcher(None, old["Features"], new["Features"]).ratio()
+    print(ssid_similarity)
     print("Jaccard Similarity 3")
+    feature_similarity = SequenceMatcher(None, old["Features"], new["Features"]).ratio()
+    print("Jaccard Similarity 4")
+    print(feature_similarity)
 
     # Weighted sum (you can tweak weights here)
     score = (
@@ -35,11 +38,18 @@ def compute_similarity_score(old, new):
         0.4 * ssid_similarity +
         0.2 * feature_similarity
     )
+    print("Similarity Score:")
     print(score)
     return score
 
 
 def match_and_sort_fuzzy(previous, current, threshold=0.7):
+
+    print("Old Data")
+    print(previous)
+    print("New Data")
+    print(current)
+
     matched = []
     unmatched = current.copy()
     used_new = set()
@@ -76,5 +86,10 @@ def match_and_sort_fuzzy(previous, current, threshold=0.7):
         new["Device_Name"] = f"Device {next_id}"
         matched.append(new)
         next_id += 1
+    print("====================================")
+    print("Old Data")
+    print(previous)
+    print("New List")
     print(matched)
+    print("====================================")
     return matched

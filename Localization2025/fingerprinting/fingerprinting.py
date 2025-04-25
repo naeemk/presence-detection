@@ -4,7 +4,6 @@ from collections import defaultdict, Counter
 from .groupbymac import groupbyMAC
 from .groupbyssid import groupbySSID
 from .groupbyfeature import groupbyFeature
-from .groupbysequence import groupbySequence
 from .match_and_sort_clusters import match_and_sort_fuzzy
 from .process_feature_groups import process_feature_groups
 
@@ -27,7 +26,7 @@ oldtestdata = [
     {
         "Device_Name": "Device 1",
         "MACs": ["6e:b9:d7:2e:c3:d1", "3a:d6:e5:18:d1:66"],
-        "SSIDs ": ["mahabad", "<Hidden SSID>"],
+        "SSIDs": ["mahabad", "<Hidden SSID>"],
         "Average_RSSI": -71.0,
         "First_Timestamp": 1744822668.7486384,
         "Last_Timestamp": 1744822668.7493975,
@@ -117,8 +116,6 @@ def fingerprint(probe_data):
 
     mac_data = groupbyMAC(probe_data)
 
-    #sequence_data = groupbySequence(mac_data)
-
     ssid_data = groupbySSID(mac_data, ssid_threshold, common_ssids)
 
     feature_data = groupbyFeature(ssid_data)
@@ -136,7 +133,7 @@ def fingerprint(probe_data):
     new_list = match_and_sort_fuzzy(oldtestdata, testdata)  
 
     #print("====================4=========================")
-    print(new_list)
+    #print(new_list)
     #print("=============================================")
     #previous_list = new_list
 
