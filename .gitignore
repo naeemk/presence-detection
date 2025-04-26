@@ -2,7 +2,11 @@
 
 __pycache__/
 Localization2025/myenv/
-Localization2025/data/probe_request_results_clustered.json
-Localization2025/data/probe_request_results_clustered.json.bak
-Localization2025/data/probe_request_results.json
-Localization2025/data/probe_request_results.json.bak
+Localization2025/data/mac_data.json
+Localization2025/data/ssid_data.json
+Localization2025/data/feature_data.json
+Localization2025/data/devices.json
+Localization2025/data/mac_data.json.bak
+Localization2025/data/ssid_data.json.bak
+Localization2025/data/feature_data.json.bak
+Localization2025/data/devices.json.bak
