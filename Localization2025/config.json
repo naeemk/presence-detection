@@ -26,8 +26,10 @@
     },
     "jsonfiles": {
       "pcap_file": "data/captured_packets_14_04_2025.pcap",
-      "probe_request_results": "data/probe_request_results",
-      "probe_request_results_clustered": "data/probe_request_results_clustered",
+      "mac_data": "data/mac_data",
+      "ssid_data": "data/ssid_data",
+      "feature_data": "data/feature_data",
+      "devices": "data/devices",
       "plotted_data": "data/plotted_data.json"
     },
     "misc": {

@@ -20,8 +20,10 @@ def load_config(filename="config.json"):
 config = load_config()
 
 interface = config["general"]["interface"]
-datafile1 = config["jsonfiles"]["probe_request_results"]
-datafile2 = config["jsonfiles"]["probe_request_results_clustered"]
+datafile1 = config["jsonfiles"]["mac_data"]
+datafile2 = config["jsonfiles"]["ssid_data"]
+datafile3 = config["jsonfiles"]["feature_data"]
+datafile4 = config["jsonfiles"]["devices"]
 
 # List to store all clustered results
 clustered_results_all = []
@@ -70,16 +72,23 @@ async def save_packets():
         await asyncio.sleep(1)
 
 async def main():
-    # Check if the file exists
+    
+    # Renaming the existing files to .bak
     if os.path.exists(datafile1 + ".json"):
-        # Rename the existing file to .bak
         os.rename(datafile1 + ".json", datafile1 + ".json.bak")
         print("[*] Existing '" + datafile1 +".json' renamed to '" + datafile1 +".json.bak'")
 
     if os.path.exists(datafile2 + ".json"):
-        # Rename the existing file to .bak
         os.rename(datafile2 + ".json", datafile2 + ".json.bak")
         print("[*] Existing '" + datafile2 +".json' renamed to '" + datafile2 +".json.bak'")
+
+    if os.path.exists(datafile3 + ".json"):
+        os.rename(datafile3 + ".json", datafile3 + ".json.bak")
+        print("[*] Existing '" + datafile3 +".json' renamed to '" + datafile3 +".json.bak'")
+
+    if os.path.exists(datafile4 + ".json"):
+        os.rename(datafile4 + ".json", datafile4 + ".json.bak")
+        print("[*] Existing '" + datafile4 +".json' renamed to '" + datafile4 +".json.bak'")
 
     plt.ion()
     plt.draw()

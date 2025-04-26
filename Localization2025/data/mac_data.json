@@ -1,2190 +1,990 @@
 {
-    "e4:aa:ea:c2:1b:8d": [
+    "66:d1:73:77:93:20": [
         {
-            "MAC": "e4:aa:ea:c2:1b:8d",
-            "SSID": "OPPO Reno2 Z",
-            "RSSI": -48,
-            "Timestamp": 1745589205.683868,
-            "Sequence Number": 843,
-            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "e4:aa:ea:c2:1b:8d",
-            "SSID": "OPPO Reno2 Z",
-            "RSSI": -44,
-            "Timestamp": 1745589206.1534932,
-            "Sequence Number": 852,
-            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "e4:aa:ea:c2:1b:8d",
+            "MAC": "66:d1:73:77:93:20",
             "SSID": "<Hidden SSID>",
             "RSSI": -44,
-            "Timestamp": 1745589211.4176958,
-            "Sequence Number": 868,
-            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "e4:aa:ea:c2:1b:8d",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -48,
-            "Timestamp": 1745589257.1797073,
-            "Sequence Number": 1053,
-            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "e4:aa:ea:c2:1b:8d",
-            "SSID": "OPPO Reno2 Z",
-            "RSSI": -50,
-            "Timestamp": 1745589259.7161777,
-            "Sequence Number": 256,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "e4:aa:ea:c2:1b:8d",
-            "SSID": "OPPO Reno2 Z",
-            "RSSI": -48,
-            "Timestamp": 1745589259.7182927,
-            "Sequence Number": 256,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        }
-    ],
-    "48:e7:da:31:6d:13": [
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -14,
-            "Timestamp": 1745589205.9083514,
-            "Sequence Number": 3557,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -16,
-            "Timestamp": 1745589205.9093564,
-            "Sequence Number": 3558,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -14,
-            "Timestamp": 1745589205.9538026,
-            "Sequence Number": 3559,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -16,
-            "Timestamp": 1745589205.9545667,
-            "Sequence Number": 3560,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -18,
-            "Timestamp": 1745589206.0124133,
-            "Sequence Number": 3561,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -18,
-            "Timestamp": 1745589206.013302,
-            "Sequence Number": 3562,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589208.5034082,
-            "Sequence Number": 3613,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589208.504786,
-            "Sequence Number": 3614,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -16,
-            "Timestamp": 1745589208.561294,
-            "Sequence Number": 3615,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -16,
-            "Timestamp": 1745589208.5623312,
-            "Sequence Number": 3616,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589208.618199,
-            "Sequence Number": 3617,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589208.619376,
-            "Sequence Number": 3618,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589211.1003659,
-            "Sequence Number": 3669,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589211.101126,
-            "Sequence Number": 3670,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589211.1631012,
-            "Sequence Number": 3672,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -16,
-            "Timestamp": 1745589211.2419417,
-            "Sequence Number": 3673,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -16,
-            "Timestamp": 1745589211.2428317,
-            "Sequence Number": 3674,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589213.7001781,
-            "Sequence Number": 3725,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589213.7011876,
-            "Sequence Number": 3726,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -14,
-            "Timestamp": 1745589213.7574856,
-            "Sequence Number": 3727,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -14,
-            "Timestamp": 1745589213.7610993,
-            "Sequence Number": 3728,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -16,
-            "Timestamp": 1745589213.8162086,
-            "Sequence Number": 3729,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -16,
-            "Timestamp": 1745589213.8170788,
-            "Sequence Number": 3730,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589218.883493,
-            "Sequence Number": 3835,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589218.8842628,
-            "Sequence Number": 3836,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -18,
-            "Timestamp": 1745589218.950175,
-            "Sequence Number": 3837,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -18,
-            "Timestamp": 1745589218.9516368,
-            "Sequence Number": 3838,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589218.9999957,
-            "Sequence Number": 3839,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589219.0008898,
-            "Sequence Number": 3840,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589221.4825842,
-            "Sequence Number": 3891,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589221.4850523,
-            "Sequence Number": 3892,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589221.532094,
-            "Sequence Number": 3893,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589221.5332904,
-            "Sequence Number": 3894,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589221.588068,
-            "Sequence Number": 3895,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589221.5890834,
-            "Sequence Number": 3896,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589224.08035,
-            "Sequence Number": 3949,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589224.0820637,
-            "Sequence Number": 3950,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -18,
-            "Timestamp": 1745589224.1588311,
-            "Sequence Number": 3951,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -18,
-            "Timestamp": 1745589224.1602955,
-            "Sequence Number": 3952,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589224.206124,
-            "Sequence Number": 3953,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589224.2074928,
-            "Sequence Number": 3954,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589226.6900015,
-            "Sequence Number": 4005,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589226.6915557,
-            "Sequence Number": 4006,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589226.7515223,
-            "Sequence Number": 4007,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589226.754562,
-            "Sequence Number": 4008,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589226.7980237,
-            "Sequence Number": 4009,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589226.8020866,
-            "Sequence Number": 4010,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -58,
-            "Timestamp": 1745589229.297685,
-            "Sequence Number": 4065,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589229.2987013,
-            "Sequence Number": 4066,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589229.4126046,
-            "Sequence Number": 4069,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589229.413389,
-            "Sequence Number": 4070,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589231.9078755,
-            "Sequence Number": 29,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589231.9090505,
-            "Sequence Number": 30,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -18,
-            "Timestamp": 1745589231.9663286,
-            "Sequence Number": 31,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -18,
-            "Timestamp": 1745589231.968332,
-            "Sequence Number": 32,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589232.0434756,
-            "Sequence Number": 33,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589232.0442173,
-            "Sequence Number": 34,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589234.5246181,
-            "Sequence Number": 87,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589234.5274148,
-            "Sequence Number": 88,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589234.5902636,
-            "Sequence Number": 89,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589234.5912282,
-            "Sequence Number": 90,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589234.640655,
-            "Sequence Number": 91,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589234.641975,
-            "Sequence Number": 92,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589239.8968954,
-            "Sequence Number": 210,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589239.960811,
-            "Sequence Number": 211,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589239.9617674,
-            "Sequence Number": 212,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589240.014176,
-            "Sequence Number": 214,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589240.1087058,
-            "Sequence Number": 215,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589240.110898,
-            "Sequence Number": 216,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589240.1720636,
-            "Sequence Number": 217,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589240.173187,
-            "Sequence Number": 218,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589240.2315195,
-            "Sequence Number": 219,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589240.2323039,
-            "Sequence Number": 220,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589242.834884,
-            "Sequence Number": 277,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589242.8359911,
-            "Sequence Number": 278,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589242.8927512,
-            "Sequence Number": 279,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589242.8935301,
-            "Sequence Number": 280,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589242.9400835,
-            "Sequence Number": 281,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589242.9408512,
-            "Sequence Number": 282,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589243.0397623,
-            "Sequence Number": 284,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589243.0897343,
-            "Sequence Number": 285,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589243.0910232,
-            "Sequence Number": 286,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -33,
-            "Timestamp": 1745589245.892471,
-            "Sequence Number": 353,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -34,
-            "Timestamp": 1745589245.8933196,
-            "Sequence Number": 354,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589255.2924392,
-            "Sequence Number": 551,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589255.293469,
-            "Sequence Number": 552,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589255.3673728,
-            "Sequence Number": 553,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589255.368267,
-            "Sequence Number": 554,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589255.415475,
-            "Sequence Number": 555,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589255.4164233,
-            "Sequence Number": 556,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589258.1368628,
-            "Sequence Number": 615,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589258.1377058,
-            "Sequence Number": 616,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589258.2178326,
-            "Sequence Number": 617,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589258.2186172,
-            "Sequence Number": 618,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589258.3148718,
-            "Sequence Number": 619,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589258.3158457,
-            "Sequence Number": 620,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589258.369416,
-            "Sequence Number": 621,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589258.3703468,
-            "Sequence Number": 622,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589258.4292724,
-            "Sequence Number": 624,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589258.4747334,
-            "Sequence Number": 625,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589258.4755461,
-            "Sequence Number": 626,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589268.3560588,
-            "Sequence Number": 900,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589268.4321077,
-            "Sequence Number": 901,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589268.4333012,
-            "Sequence Number": 902,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589268.5116563,
-            "Sequence Number": 903,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589268.5125554,
-            "Sequence Number": 904,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -35,
-            "Timestamp": 1745589277.0945537,
-            "Sequence Number": 1053,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -35,
-            "Timestamp": 1745589277.0955458,
-            "Sequence Number": 1054,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589283.7313607,
-            "Sequence Number": 1197,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589283.732361,
-            "Sequence Number": 1198,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589283.777212,
-            "Sequence Number": 1199,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589283.778005,
-            "Sequence Number": 1200,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589283.837143,
-            "Sequence Number": 1201,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589283.8379588,
-            "Sequence Number": 1202,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589283.9160368,
-            "Sequence Number": 1203,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589283.9173524,
-            "Sequence Number": 1204,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589283.9633985,
-            "Sequence Number": 1205,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589283.9642696,
-            "Sequence Number": 1206,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589284.0612044,
-            "Sequence Number": 1207,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589296.675701,
-            "Sequence Number": 1485,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589296.6766834,
-            "Sequence Number": 1486,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589296.7541075,
-            "Sequence Number": 1487,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589296.755023,
-            "Sequence Number": 1488,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -16,
-            "Timestamp": 1745589296.833325,
-            "Sequence Number": 1489,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -18,
-            "Timestamp": 1745589296.8340728,
-            "Sequence Number": 1490,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589296.8794706,
-            "Sequence Number": 1491,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -20,
-            "Timestamp": 1745589296.8804111,
-            "Sequence Number": 1492,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589296.937468,
-            "Sequence Number": 1493,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589296.939378,
-            "Sequence Number": 1494,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589297.0155933,
-            "Sequence Number": 1495,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "48:e7:da:31:6d:13",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589297.0174942,
-            "Sequence Number": 1496,
-            "Features": "Supported Rates: 82848b960c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        }
-    ],
-    "f6:f0:43:0e:09:5e": [
-        {
-            "MAC": "f6:f0:43:0e:09:5e",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -44,
-            "Timestamp": 1745589208.3908603,
-            "Sequence Number": 1324,
+            "Timestamp": 1745668667.041044,
+            "Sequence Number": 2658,
             "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
+        }
+    ],
+    "92:1d:2d:8a:0a:4e": [
         {
-            "MAC": "f6:f0:43:0e:09:5e",
+            "MAC": "92:1d:2d:8a:0a:4e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -46,
+            "Timestamp": 1745668668.2186403,
+            "Sequence Number": 2186,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001000, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        }
+    ],
+    "9e:a4:02:0a:c7:67": [
+        {
+            "MAC": "9e:a4:02:0a:c7:67",
             "SSID": "<Hidden SSID>",
             "RSSI": -40,
-            "Timestamp": 1745589208.4130025,
-            "Sequence Number": 1325,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "b8:1e:a4:3e:71:7d": [
-        {
-            "MAC": "b8:1e:a4:3e:71:7d",
-            "SSID": "eduroam",
-            "RSSI": -64,
-            "Timestamp": 1745589209.1221743,
-            "Sequence Number": 370,
-            "Features": "Supported Rates: 8c129824b048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+            "Timestamp": 1745668671.7625313,
+            "Sequence Number": 3035,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
         },
         {
-            "MAC": "b8:1e:a4:3e:71:7d",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -59,
-            "Timestamp": 1745589211.2380528,
-            "Sequence Number": 444,
-            "Features": "Supported Rates: 8c129824b048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "b8:1e:a4:3e:71:7d",
-            "SSID": "eduroam",
-            "RSSI": -59,
-            "Timestamp": 1745589211.2395952,
-            "Sequence Number": 445,
-            "Features": "Supported Rates: 8c129824b048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "b8:1e:a4:3e:71:7d",
-            "SSID": "eduroam",
-            "RSSI": -60,
-            "Timestamp": 1745589211.240909,
-            "Sequence Number": 446,
-            "Features": "Supported Rates: 8c129824b048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        }
-    ],
-    "dc:4b:a1:2f:dd:c6": [
-        {
-            "MAC": "dc:4b:a1:2f:dd:c6",
-            "SSID": "eduroam",
-            "RSSI": -64,
-            "Timestamp": 1745589209.6168942,
-            "Sequence Number": 573,
-            "Features": "Supported Rates: 8c129824b048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        },
-        {
-            "MAC": "dc:4b:a1:2f:dd:c6",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -61,
-            "Timestamp": 1745589209.6179636,
-            "Sequence Number": 574,
-            "Features": "Supported Rates: 8c129824b048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        }
-    ],
-    "6a:5b:36:ef:6a:67": [
-        {
-            "MAC": "6a:5b:36:ef:6a:67",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -32,
-            "Timestamp": 1745589210.5616193,
-            "Sequence Number": 1398,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "d4:f3:2d:fd:6b:19": [
-        {
-            "MAC": "d4:f3:2d:fd:6b:19",
-            "SSID": "eduroam",
-            "RSSI": -46,
-            "Timestamp": 1745589210.832286,
-            "Sequence Number": 642,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
-        }
-    ],
-    "7e:1d:7e:23:37:07": [
-        {
-            "MAC": "7e:1d:7e:23:37:07",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -54,
-            "Timestamp": 1745589211.7307048,
-            "Sequence Number": 2700,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
-        }
-    ],
-    "26:db:79:13:63:8f": [
-        {
-            "MAC": "26:db:79:13:63:8f",
-            "SSID": "eduroam",
-            "RSSI": -46,
-            "Timestamp": 1745589212.7956994,
-            "Sequence Number": 2344,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001300, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
-        },
-        {
-            "MAC": "26:db:79:13:63:8f",
-            "SSID": "eduroam",
-            "RSSI": -38,
-            "Timestamp": 1745589212.8428664,
-            "Sequence Number": 2346,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
-        },
-        {
-            "MAC": "26:db:79:13:63:8f",
-            "SSID": "eduroam",
-            "RSSI": -42,
-            "Timestamp": 1745589212.868384,
-            "Sequence Number": 2347,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000000"
-        }
-    ],
-    "6e:1d:aa:1a:5a:89": [
-        {
-            "MAC": "6e:1d:aa:1a:5a:89",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -54,
-            "Timestamp": 1745589212.931412,
-            "Sequence Number": 90,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "fe:90:e7:4d:a0:c0": [
-        {
-            "MAC": "fe:90:e7:4d:a0:c0",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -38,
-            "Timestamp": 1745589213.3946824,
-            "Sequence Number": 3243,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "fe:90:e7:4d:a0:c0",
+            "MAC": "9e:a4:02:0a:c7:67",
             "SSID": "<Hidden SSID>",
             "RSSI": -42,
-            "Timestamp": 1745589213.5159905,
-            "Sequence Number": 3245,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "fe:90:e7:4d:a0:c0",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -40,
-            "Timestamp": 1745589213.981906,
-            "Sequence Number": 3254,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "fe:90:e7:4d:a0:c0",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -36,
-            "Timestamp": 1745589214.0751882,
-            "Sequence Number": 3255,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "fe:90:e7:4d:a0:c0",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -40,
-            "Timestamp": 1745589214.300682,
-            "Sequence Number": 3257,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "fe:90:e7:4d:a0:c0",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -44,
-            "Timestamp": 1745589214.4374828,
-            "Sequence Number": 3258,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+            "Timestamp": 1745668671.8178391,
+            "Sequence Number": 3294,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
         }
     ],
-    "a2:66:dc:16:8f:f6": [
+    "3a:db:f1:02:c0:8f": [
         {
-            "MAC": "a2:66:dc:16:8f:f6",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589213.628278,
-            "Sequence Number": 2432,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "a2:66:dc:16:8f:f6",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589213.642539,
-            "Sequence Number": 2433,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "5a:48:9e:15:2b:e6": [
-        {
-            "MAC": "5a:48:9e:15:2b:e6",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -46,
-            "Timestamp": 1745589214.029515,
-            "Sequence Number": 311,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200"
-        },
-        {
-            "MAC": "5a:48:9e:15:2b:e6",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -46,
-            "Timestamp": 1745589214.1111033,
-            "Sequence Number": 313,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200"
-        },
-        {
-            "MAC": "5a:48:9e:15:2b:e6",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -46,
-            "Timestamp": 1745589214.1870468,
-            "Sequence Number": 314,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030101, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200"
-        }
-    ],
-    "8e:0b:68:8c:de:05": [
-        {
-            "MAC": "8e:0b:68:8c:de:05",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -48,
-            "Timestamp": 1745589214.4959934,
-            "Sequence Number": 3142,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "36:6a:5b:cd:ab:1e": [
-        {
-            "MAC": "36:6a:5b:cd:ab:1e",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589214.558818,
-            "Sequence Number": 559,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "36:6a:5b:cd:ab:1e",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589214.5790074,
-            "Sequence Number": 560,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "a6:89:b5:22:6c:b4": [
-        {
-            "MAC": "a6:89:b5:22:6c:b4",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589217.1014817,
-            "Sequence Number": 2861,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
-        },
-        {
-            "MAC": "a6:89:b5:22:6c:b4",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589217.1139023,
-            "Sequence Number": 2862,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
-        }
-    ],
-    "2a:d6:88:5f:78:3c": [
-        {
-            "MAC": "2a:d6:88:5f:78:3c",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589217.3234677,
-            "Sequence Number": 3627,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "2a:d6:88:5f:78:3c",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589217.3812246,
-            "Sequence Number": 1280,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "ba:74:3e:20:6f:d9": [
-        {
-            "MAC": "ba:74:3e:20:6f:d9",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -38,
-            "Timestamp": 1745589218.3324232,
-            "Sequence Number": 1393,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "ba:74:3e:20:6f:d9",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -38,
-            "Timestamp": 1745589218.339744,
-            "Sequence Number": 1394,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "46:6f:66:7f:66:61": [
-        {
-            "MAC": "46:6f:66:7f:66:61",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -48,
-            "Timestamp": 1745589218.5764396,
-            "Sequence Number": 1987,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "02:4e:82:2b:54:0b": [
-        {
-            "MAC": "02:4e:82:2b:54:0b",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -42,
-            "Timestamp": 1745589220.5298142,
-            "Sequence Number": 3257,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "32:79:95:1d:b4:91": [
-        {
-            "MAC": "32:79:95:1d:b4:91",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -42,
-            "Timestamp": 1745589222.619642,
-            "Sequence Number": 1978,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "76:d6:09:6d:83:36": [
-        {
-            "MAC": "76:d6:09:6d:83:36",
+            "MAC": "3a:db:f1:02:c0:8f",
             "SSID": "<Hidden SSID>",
             "RSSI": -50,
-            "Timestamp": 1745589222.9117436,
-            "Sequence Number": 1076,
+            "Timestamp": 1745668671.9738803,
+            "Sequence Number": 170,
             "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         }
     ],
-    "3a:c6:1b:cc:14:df": [
+    "4a:f7:32:b0:2b:69": [
         {
-            "MAC": "3a:c6:1b:cc:14:df",
-            "SSID": "SiraKvinaGjest",
-            "RSSI": -50,
-            "Timestamp": 1745589223.1998699,
-            "Sequence Number": 3908,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "22:da:98:c3:e1:77": [
-        {
-            "MAC": "22:da:98:c3:e1:77",
-            "SSID": "Telenor1574fly",
-            "RSSI": -54,
-            "Timestamp": 1745589223.2006114,
-            "Sequence Number": 3909,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "32:ca:6a:f9:c4:cf": [
-        {
-            "MAC": "32:ca:6a:f9:c4:cf",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -64,
-            "Timestamp": 1745589223.8494754,
-            "Sequence Number": 3920,
-            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "d6:11:2b:52:a2:0f": [
-        {
-            "MAC": "d6:11:2b:52:a2:0f",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -52,
-            "Timestamp": 1745589225.042519,
-            "Sequence Number": 1432,
-            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "b2:c2:ca:29:91:78": [
-        {
-            "MAC": "b2:c2:ca:29:91:78",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -62,
-            "Timestamp": 1745589225.7249172,
-            "Sequence Number": 1156,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "22:fd:68:2e:8c:91": [
-        {
-            "MAC": "22:fd:68:2e:8c:91",
+            "MAC": "4a:f7:32:b0:2b:69",
             "SSID": "<Hidden SSID>",
             "RSSI": -50,
-            "Timestamp": 1745589229.6902826,
-            "Sequence Number": 2733,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+            "Timestamp": 1745668673.3909113,
+            "Sequence Number": 3773,
+            "Features": "Supported Rates: 82848b968c129824, Extended Supported Rates: b048606c"
         }
     ],
-    "e4:a7:a0:cd:b8:9c": [
+    "5e:56:86:6f:52:b2": [
         {
-            "MAC": "e4:a7:a0:cd:b8:9c",
+            "MAC": "5e:56:86:6f:52:b2",
             "SSID": "<Hidden SSID>",
-            "RSSI": -66,
-            "Timestamp": 1745589229.7070189,
-            "Sequence Number": 753,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c"
-        }
-    ],
-    "e4:0d:36:56:d0:65": [
-        {
-            "MAC": "e4:0d:36:56:d0:65",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -58,
-            "Timestamp": 1745589229.927218,
-            "Sequence Number": 393,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
-        }
-    ],
-    "d4:61:9d:23:f5:d0": [
-        {
-            "MAC": "d4:61:9d:23:f5:d0",
-            "SSID": "iPhone",
             "RSSI": -56,
-            "Timestamp": 1745589230.954442,
-            "Sequence Number": 100,
-            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 33ad4917ffff000000000000000000000000000000000000000000"
+            "Timestamp": 1745668673.3955371,
+            "Sequence Number": 3968,
+            "Features": "Supported Rates: 82848b968c129824, Extended Supported Rates: b048606c"
         }
     ],
-    "7e:38:6b:f7:80:35": [
+    "86:39:69:8c:5a:c5": [
         {
-            "MAC": "7e:38:6b:f7:80:35",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589231.7507463,
-            "Sequence Number": 3806,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "7e:38:6b:f7:80:35",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589231.7677495,
-            "Sequence Number": 3807,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "1e:64:7e:8e:14:bd": [
-        {
-            "MAC": "1e:64:7e:8e:14:bd",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589231.840143,
-            "Sequence Number": 3916,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "1e:64:7e:8e:14:bd",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589231.8609564,
-            "Sequence Number": 3917,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "f2:9c:34:a7:26:16": [
-        {
-            "MAC": "f2:9c:34:a7:26:16",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -36,
-            "Timestamp": 1745589232.6072023,
-            "Sequence Number": 1552,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "f2:9c:34:a7:26:16",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -36,
-            "Timestamp": 1745589232.6278453,
-            "Sequence Number": 1553,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "7c:b5:66:5d:9e:2c": [
-        {
-            "MAC": "7c:b5:66:5d:9e:2c",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -44,
-            "Timestamp": 1745589233.67046,
-            "Sequence Number": 595,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
-        },
-        {
-            "MAC": "7c:b5:66:5d:9e:2c",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -68,
-            "Timestamp": 1745589267.2302005,
-            "Sequence Number": 642,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
-        },
-        {
-            "MAC": "7c:b5:66:5d:9e:2c",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -68,
-            "Timestamp": 1745589267.2441905,
-            "Sequence Number": 643,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
-        },
-        {
-            "MAC": "7c:b5:66:5d:9e:2c",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -42,
-            "Timestamp": 1745589299.1825998,
-            "Sequence Number": 693,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
-        }
-    ],
-    "92:f2:78:78:0e:38": [
-        {
-            "MAC": "92:f2:78:78:0e:38",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -50,
-            "Timestamp": 1745589239.1143305,
-            "Sequence Number": 965,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "0a:1f:af:16:92:c4": [
-        {
-            "MAC": "0a:1f:af:16:92:c4",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589240.2080271,
-            "Sequence Number": 2699,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "ae:ea:c2:7a:e8:46": [
-        {
-            "MAC": "ae:ea:c2:7a:e8:46",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589240.259409,
-            "Sequence Number": 3298,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "a2:d4:d1:22:6a:01": [
-        {
-            "MAC": "a2:d4:d1:22:6a:01",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -36,
-            "Timestamp": 1745589240.4502175,
-            "Sequence Number": 3322,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "d6:71:7b:34:36:f2": [
-        {
-            "MAC": "d6:71:7b:34:36:f2",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -36,
-            "Timestamp": 1745589240.931312,
-            "Sequence Number": 3228,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "d6:71:7b:34:36:f2",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -36,
-            "Timestamp": 1745589240.9513628,
-            "Sequence Number": 3229,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "d6:ce:1d:84:ba:0a": [
-        {
-            "MAC": "d6:ce:1d:84:ba:0a",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589242.61691,
-            "Sequence Number": 3277,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "d6:ce:1d:84:ba:0a",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589242.6329584,
-            "Sequence Number": 3278,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "4e:62:d7:97:ba:bd": [
-        {
-            "MAC": "4e:62:d7:97:ba:bd",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -48,
-            "Timestamp": 1745589243.307482,
-            "Sequence Number": 1557,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "5e:59:c0:c2:fb:47": [
-        {
-            "MAC": "5e:59:c0:c2:fb:47",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -83,
-            "Timestamp": 1745589247.208458,
-            "Sequence Number": 2975,
-            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
-        },
-        {
-            "MAC": "5e:59:c0:c2:fb:47",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -83,
-            "Timestamp": 1745589247.221225,
-            "Sequence Number": 2976,
-            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
-        }
-    ],
-    "f6:54:88:81:13:9e": [
-        {
-            "MAC": "f6:54:88:81:13:9e",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -36,
-            "Timestamp": 1745589253.093117,
-            "Sequence Number": 1583,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "a2:4e:43:21:f5:e0": [
-        {
-            "MAC": "a2:4e:43:21:f5:e0",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589253.295134,
-            "Sequence Number": 3247,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "a2:4e:43:21:f5:e0",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589253.3247404,
-            "Sequence Number": 370,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "42:2b:8a:d4:10:14": [
-        {
-            "MAC": "42:2b:8a:d4:10:14",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -50,
-            "Timestamp": 1745589258.5797381,
-            "Sequence Number": 3203,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c"
-        }
-    ],
-    "34:c9:3d:b0:42:7b": [
-        {
-            "MAC": "34:c9:3d:b0:42:7b",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -86,
-            "Timestamp": 1745589266.966835,
-            "Sequence Number": 1813,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
-        }
-    ],
-    "3a:29:2e:40:8f:30": [
-        {
-            "MAC": "3a:29:2e:40:8f:30",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589268.0905616,
-            "Sequence Number": 3474,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "4a:af:0c:37:83:c8": [
-        {
-            "MAC": "4a:af:0c:37:83:c8",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -34,
-            "Timestamp": 1745589268.169066,
-            "Sequence Number": 2245,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "4a:af:0c:37:83:c8",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -34,
-            "Timestamp": 1745589268.175009,
-            "Sequence Number": 2246,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "0a:cf:cf:3a:1b:ad": [
-        {
-            "MAC": "0a:cf:cf:3a:1b:ad",
+            "MAC": "86:39:69:8c:5a:c5",
             "SSID": "<Hidden SSID>",
             "RSSI": -38,
-            "Timestamp": 1745589268.189391,
-            "Sequence Number": 2461,
+            "Timestamp": 1745668678.8230088,
+            "Sequence Number": 3613,
             "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         },
         {
-            "MAC": "0a:cf:cf:3a:1b:ad",
+            "MAC": "86:39:69:8c:5a:c5",
             "SSID": "<Hidden SSID>",
-            "RSSI": -40,
-            "Timestamp": 1745589268.2006106,
-            "Sequence Number": 2462,
+            "RSSI": -36,
+            "Timestamp": 1745668678.853002,
+            "Sequence Number": 3614,
             "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         }
     ],
-    "e0:c2:64:04:f7:90": [
+    "ba:cb:20:23:8c:be": [
         {
-            "MAC": "e0:c2:64:04:f7:90",
-            "SSID": "eduroam",
-            "RSSI": -26,
-            "Timestamp": 1745589269.3011756,
-            "Sequence Number": 13,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+            "MAC": "ba:cb:20:23:8c:be",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -34,
+            "Timestamp": 1745668679.9824727,
+            "Sequence Number": 2204,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         },
         {
-            "MAC": "e0:c2:64:04:f7:90",
-            "SSID": "eduroam",
-            "RSSI": -24,
-            "Timestamp": 1745589269.5051122,
-            "Sequence Number": 16,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+            "MAC": "ba:cb:20:23:8c:be",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -34,
+            "Timestamp": 1745668680.0032427,
+            "Sequence Number": 2205,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         }
     ],
-    "26:ce:34:dd:16:16": [
+    "26:a5:32:ba:f6:19": [
         {
-            "MAC": "26:ce:34:dd:16:16",
-            "SSID": "<Hidden SSID>",
+            "MAC": "26:a5:32:ba:f6:19",
+            "SSID": "eduroam",
             "RSSI": -46,
-            "Timestamp": 1745589273.184388,
-            "Sequence Number": 1616,
+            "Timestamp": 1745668683.3584533,
+            "Sequence Number": 3848,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001000, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        }
+    ],
+    "0a:f9:56:99:17:c3": [
+        {
+            "MAC": "0a:f9:56:99:17:c3",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745668688.3811944,
+            "Sequence Number": 3728,
             "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         }
     ],
-    "9a:3d:1d:64:74:b5": [
+    "ce:38:1c:ba:0a:84": [
         {
-            "MAC": "9a:3d:1d:64:74:b5",
+            "MAC": "ce:38:1c:ba:0a:84",
             "SSID": "<Hidden SSID>",
-            "RSSI": -50,
-            "Timestamp": 1745589273.5796392,
-            "Sequence Number": 3163,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+            "RSSI": -84,
+            "Timestamp": 1745668690.9020908,
+            "Sequence Number": 899,
+            "Features": "Supported Rates: 8c129824b048606c"
+        }
+    ],
+    "52:88:dc:0b:a0:07": [
+        {
+            "MAC": "52:88:dc:0b:a0:07",
+            "SSID": "eduroam",
+            "RSSI": -70,
+            "Timestamp": 1745668691.011105,
+            "Sequence Number": 182,
+            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001300, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
         },
         {
-            "MAC": "9a:3d:1d:64:74:b5",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -50,
-            "Timestamp": 1745589273.5998435,
-            "Sequence Number": 3165,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "4e:cd:93:f6:41:47": [
+            "MAC": "52:88:dc:0b:a0:07",
+            "SSID": "eduroam",
+            "RSSI": -52,
+            "Timestamp": 1745668714.9133751,
+            "Sequence Number": 2824,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        },
         {
-            "MAC": "4e:cd:93:f6:41:47",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589273.6193955,
-            "Sequence Number": 1381,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "86:7a:39:22:44:05": [
+            "MAC": "52:88:dc:0b:a0:07",
+            "SSID": "eduroam",
+            "RSSI": -52,
+            "Timestamp": 1745668715.2742007,
+            "Sequence Number": 2849,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        },
         {
-            "MAC": "86:7a:39:22:44:05",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589273.6674027,
-            "Sequence Number": 983,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "32:86:e3:1c:44:27": [
-        {
-            "MAC": "32:86:e3:1c:44:27",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589273.7226098,
-            "Sequence Number": 3693,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "0e:2a:ec:c0:67:81": [
-        {
-            "MAC": "0e:2a:ec:c0:67:81",
+            "MAC": "52:88:dc:0b:a0:07",
             "SSID": "eduroam",
             "RSSI": -73,
-            "Timestamp": 1745589277.7237217,
-            "Sequence Number": 3364,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000d0000, Vendor: 00:10:18 (Broadcom), Vendor Info: 020000100000"
+            "Timestamp": 1745668736.235417,
+            "Sequence Number": 580,
+            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001300, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
         },
         {
-            "MAC": "0e:2a:ec:c0:67:81",
+            "MAC": "52:88:dc:0b:a0:07",
             "SSID": "eduroam",
-            "RSSI": -76,
-            "Timestamp": 1745589277.7496183,
-            "Sequence Number": 3365,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000d0000, Vendor: 00:10:18 (Broadcom), Vendor Info: 020000100000"
+            "RSSI": -74,
+            "Timestamp": 1745668736.2667377,
+            "Sequence Number": 581,
+            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001300, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
         }
     ],
-    "70:d8:23:30:29:15": [
+    "92:95:7b:1a:cc:43": [
         {
-            "MAC": "70:d8:23:30:29:15",
-            "SSID": "Inger sin iPhone",
-            "RSSI": -76,
-            "Timestamp": 1745589280.4540136,
-            "Sequence Number": 886,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
-        }
-    ],
-    "0a:a5:bb:f7:6b:86": [
-        {
-            "MAC": "0a:a5:bb:f7:6b:86",
+            "MAC": "92:95:7b:1a:cc:43",
             "SSID": "<Hidden SSID>",
-            "RSSI": -34,
-            "Timestamp": 1745589281.8996935,
-            "Sequence Number": 1354,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "5e:de:9f:bd:a8:a0": [
-        {
-            "MAC": "5e:de:9f:bd:a8:a0",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -32,
-            "Timestamp": 1745589281.9983454,
-            "Sequence Number": 3081,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+            "RSSI": -67,
+            "Timestamp": 1745668691.6879215,
+            "Sequence Number": 1063,
+            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001300, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
         },
         {
-            "MAC": "5e:de:9f:bd:a8:a0",
+            "MAC": "92:95:7b:1a:cc:43",
             "SSID": "<Hidden SSID>",
-            "RSSI": -34,
-            "Timestamp": 1745589282.018401,
-            "Sequence Number": 3895,
+            "RSSI": -65,
+            "Timestamp": 1745668691.711491,
+            "Sequence Number": 1065,
+            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001300, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        }
+    ],
+    "6e:83:c8:17:b4:89": [
+        {
+            "MAC": "6e:83:c8:17:b4:89",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -72,
+            "Timestamp": 1745668693.0398116,
+            "Sequence Number": 2783,
+            "Features": "Supported Rates: 8c129824b048606c"
+        }
+    ],
+    "62:2b:66:91:57:ae": [
+        {
+            "MAC": "62:2b:66:91:57:ae",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -88,
+            "Timestamp": 1745668693.1185987,
+            "Sequence Number": 3796,
+            "Features": "Supported Rates: 8c129824b048606c"
+        }
+    ],
+    "02:6b:15:2f:43:90": [
+        {
+            "MAC": "02:6b:15:2f:43:90",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745668700.4199026,
+            "Sequence Number": 4041,
             "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         }
     ],
-    "02:c0:bc:3d:65:33": [
+    "9e:ff:9b:bb:67:04": [
         {
-            "MAC": "02:c0:bc:3d:65:33",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -34,
-            "Timestamp": 1745589282.0453944,
-            "Sequence Number": 2769,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "22:66:27:40:12:c1": [
-        {
-            "MAC": "22:66:27:40:12:c1",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -36,
-            "Timestamp": 1745589282.5159729,
-            "Sequence Number": 1054,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "22:66:27:40:12:c1",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -36,
-            "Timestamp": 1745589282.5365899,
-            "Sequence Number": 1055,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "c6:04:ef:08:c4:5d": [
-        {
-            "MAC": "c6:04:ef:08:c4:5d",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589283.4558296,
-            "Sequence Number": 1686,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        },
-        {
-            "MAC": "c6:04:ef:08:c4:5d",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -32,
-            "Timestamp": 1745589283.4767773,
-            "Sequence Number": 1687,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "8a:77:57:25:cb:54": [
-        {
-            "MAC": "8a:77:57:25:cb:54",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -26,
-            "Timestamp": 1745589283.531289,
-            "Sequence Number": 4026,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "e2:a6:f7:4d:16:8e": [
-        {
-            "MAC": "e2:a6:f7:4d:16:8e",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -32,
-            "Timestamp": 1745589284.548879,
-            "Sequence Number": 2354,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "ee:22:44:20:e5:5d": [
-        {
-            "MAC": "ee:22:44:20:e5:5d",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -32,
-            "Timestamp": 1745589284.596831,
-            "Sequence Number": 1326,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "3e:3b:bd:8b:98:a1": [
-        {
-            "MAC": "3e:3b:bd:8b:98:a1",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589284.6699305,
-            "Sequence Number": 2256,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "56:1c:d7:1d:29:7c": [
-        {
-            "MAC": "56:1c:d7:1d:29:7c",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -34,
-            "Timestamp": 1745589284.776013,
-            "Sequence Number": 3655,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "de:84:9c:94:ae:cd": [
-        {
-            "MAC": "de:84:9c:94:ae:cd",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -30,
-            "Timestamp": 1745589284.8019667,
-            "Sequence Number": 1627,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "ae:e1:1e:50:1a:f8": [
-        {
-            "MAC": "ae:e1:1e:50:1a:f8",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -54,
-            "Timestamp": 1745589284.8294764,
-            "Sequence Number": 1562,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "4e:c1:de:fc:70:5b": [
-        {
-            "MAC": "4e:c1:de:fc:70:5b",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -54,
-            "Timestamp": 1745589285.4019186,
-            "Sequence Number": 1298,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
-        }
-    ],
-    "aa:7f:88:77:30:0c": [
-        {
-            "MAC": "aa:7f:88:77:30:0c",
+            "MAC": "9e:ff:9b:bb:67:04",
             "SSID": "<Hidden SSID>",
             "RSSI": -48,
-            "Timestamp": 1745589286.5036929,
-            "Sequence Number": 167,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030102, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200"
-        },
+            "Timestamp": 1745668700.626996,
+            "Sequence Number": 2581,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "4a:2c:7e:64:9d:76": [
         {
-            "MAC": "aa:7f:88:77:30:0c",
+            "MAC": "4a:2c:7e:64:9d:76",
             "SSID": "<Hidden SSID>",
             "RSSI": -46,
-            "Timestamp": 1745589298.0401256,
-            "Sequence Number": 267,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030102, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200"
+            "Timestamp": 1745668702.0683434,
+            "Sequence Number": 798,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "a0:f4:59:8c:22:a9": [
+        {
+            "MAC": "a0:f4:59:8c:22:a9",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -62,
+            "Timestamp": 1745668702.7399678,
+            "Sequence Number": 2580,
+            "Features": "Supported Rates: 82848b968c129824, Extended Supported Rates: b048606c"
         },
         {
-            "MAC": "aa:7f:88:77:30:0c",
+            "MAC": "a0:f4:59:8c:22:a9",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -64,
+            "Timestamp": 1745668702.7406192,
+            "Sequence Number": 2581,
+            "Features": "Supported Rates: 82848b968c129824, Extended Supported Rates: b048606c"
+        }
+    ],
+    "44:01:bb:99:47:17": [
+        {
+            "MAC": "44:01:bb:99:47:17",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -64,
+            "Timestamp": 1745668702.7419407,
+            "Sequence Number": 3562,
+            "Features": "Supported Rates: 82848b968c129824, Extended Supported Rates: b048606c"
+        },
+        {
+            "MAC": "44:01:bb:99:47:17",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -66,
+            "Timestamp": 1745668702.7424293,
+            "Sequence Number": 3563,
+            "Features": "Supported Rates: 82848b968c129824, Extended Supported Rates: b048606c"
+        },
+        {
+            "MAC": "44:01:bb:99:47:17",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -60,
+            "Timestamp": 1745668702.9764512,
+            "Sequence Number": 3565,
+            "Features": "Supported Rates: 82848b968c129824, Extended Supported Rates: b048606c"
+        }
+    ],
+    "00:28:f8:aa:c3:82": [
+        {
+            "MAC": "00:28:f8:aa:c3:82",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -46,
+            "Timestamp": 1745668702.9113104,
+            "Sequence Number": 173,
+            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c"
+        },
+        {
+            "MAC": "00:28:f8:aa:c3:82",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -46,
+            "Timestamp": 1745668702.9859602,
+            "Sequence Number": 175,
+            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c"
+        },
+        {
+            "MAC": "00:28:f8:aa:c3:82",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -44,
+            "Timestamp": 1745668731.5822003,
+            "Sequence Number": 259,
+            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c"
+        },
+        {
+            "MAC": "00:28:f8:aa:c3:82",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -44,
+            "Timestamp": 1745668731.5975664,
+            "Sequence Number": 260,
+            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c"
+        },
+        {
+            "MAC": "00:28:f8:aa:c3:82",
             "SSID": "<Hidden SSID>",
             "RSSI": -48,
-            "Timestamp": 1745589298.1545336,
-            "Sequence Number": 269,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030102, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200"
+            "Timestamp": 1745668731.6163082,
+            "Sequence Number": 261,
+            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c"
+        }
+    ],
+    "8a:37:19:7f:47:3e": [
+        {
+            "MAC": "8a:37:19:7f:47:3e",
+            "SSID": "yes",
+            "RSSI": -58,
+            "Timestamp": 1745668702.9274824,
+            "Sequence Number": 813,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         },
         {
-            "MAC": "aa:7f:88:77:30:0c",
+            "MAC": "8a:37:19:7f:47:3e",
+            "SSID": "yes",
+            "RSSI": -62,
+            "Timestamp": 1745668702.9832351,
+            "Sequence Number": 438,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "9e:92:39:bc:95:62": [
+        {
+            "MAC": "9e:92:39:bc:95:62",
+            "SSID": "Slakteplassen 7",
+            "RSSI": -62,
+            "Timestamp": 1745668702.9368598,
+            "Sequence Number": 436,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "be:b1:3d:98:83:2d": [
+        {
+            "MAC": "be:b1:3d:98:83:2d",
             "SSID": "<Hidden SSID>",
-            "RSSI": -46,
-            "Timestamp": 1745589298.1776052,
-            "Sequence Number": 270,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030102, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200"
+            "RSSI": -60,
+            "Timestamp": 1745668702.9903367,
+            "Sequence Number": 441,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "6e:67:6c:f8:18:e7": [
+        {
+            "MAC": "6e:67:6c:f8:18:e7",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745668703.8010263,
+            "Sequence Number": 1205,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         },
         {
-            "MAC": "aa:7f:88:77:30:0c",
+            "MAC": "6e:67:6c:f8:18:e7",
             "SSID": "<Hidden SSID>",
-            "RSSI": -38,
-            "Timestamp": 1745589298.3192081,
-            "Sequence Number": 274,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030102, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200"
+            "RSSI": -52,
+            "Timestamp": 1745668703.8298674,
+            "Sequence Number": 1206,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         }
     ],
-    "14:7d:da:2e:28:c9": [
+    "9e:9f:97:77:7c:c8": [
         {
-            "MAC": "14:7d:da:2e:28:c9",
-            "SSID": "eduroam",
-            "RSSI": -87,
-            "Timestamp": 1745589291.5936656,
-            "Sequence Number": 247,
-            "Features": "Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:10:18 (Broadcom), Vendor Info: 020100100000"
-        }
-    ],
-    "e4:c7:67:21:7c:ee": [
-        {
-            "MAC": "e4:c7:67:21:7c:ee",
-            "SSID": "eduroam",
-            "RSSI": -42,
-            "Timestamp": 1745589295.0026548,
-            "Sequence Number": 3291,
-            "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
-        }
-    ],
-    "26:0a:f2:38:66:92": [
-        {
-            "MAC": "26:0a:f2:38:66:92",
+            "MAC": "9e:9f:97:77:7c:c8",
             "SSID": "<Hidden SSID>",
-            "RSSI": -28,
-            "Timestamp": 1745589295.6480916,
-            "Sequence Number": 1244,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
-        }
-    ],
-    "62:c5:73:22:26:93": [
-        {
-            "MAC": "62:c5:73:22:26:93",
-            "SSID": "<Hidden SSID>",
-            "RSSI": -24,
-            "Timestamp": 1745589295.750851,
+            "RSSI": -50,
+            "Timestamp": 1745668704.3252926,
             "Sequence Number": 2713,
-            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
         }
     ],
-    "02:11:7e:58:61:25": [
+    "c2:1e:1d:a0:58:dd": [
         {
-            "MAC": "02:11:7e:58:61:25",
+            "MAC": "c2:1e:1d:a0:58:dd",
             "SSID": "<Hidden SSID>",
-            "RSSI": -22,
-            "Timestamp": 1745589295.7746181,
-            "Sequence Number": 2536,
+            "RSSI": -75,
+            "Timestamp": 1745668705.697867,
+            "Sequence Number": 2510,
+            "Features": "Supported Rates: 8c129824b048606c"
+        },
+        {
+            "MAC": "c2:1e:1d:a0:58:dd",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -74,
+            "Timestamp": 1745668705.7073224,
+            "Sequence Number": 2511,
+            "Features": "Supported Rates: 8c129824b048606c"
+        }
+    ],
+    "52:b4:80:27:b6:34": [
+        {
+            "MAC": "52:b4:80:27:b6:34",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745668716.3262165,
+            "Sequence Number": 2229,
             "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
         }
     ],
-    "da:ce:eb:95:05:77": [
+    "b2:73:c2:dc:26:bb": [
         {
-            "MAC": "da:ce:eb:95:05:77",
+            "MAC": "b2:73:c2:dc:26:bb",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745668716.502826,
+            "Sequence Number": 1961,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "32:6e:ea:ab:f1:bf": [
+        {
+            "MAC": "32:6e:ea:ab:f1:bf",
+            "SSID": "eduroam",
+            "RSSI": -46,
+            "Timestamp": 1745668717.776602,
+            "Sequence Number": 1724,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "32:6e:ea:ab:f1:bf",
+            "SSID": "Godt Brod",
+            "RSSI": -46,
+            "Timestamp": 1745668717.8025587,
+            "Sequence Number": 1726,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "52:9f:3a:66:7d:65": [
+        {
+            "MAC": "52:9f:3a:66:7d:65",
+            "SSID": "uis-gjestenett",
+            "RSSI": -54,
+            "Timestamp": 1745668718.013155,
+            "Sequence Number": 4083,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "52:9f:3a:66:7d:65",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745668718.013824,
+            "Sequence Number": 4085,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "52:9f:3a:66:7d:65",
+            "SSID": "Godt Brod",
+            "RSSI": -50,
+            "Timestamp": 1745668718.0323246,
+            "Sequence Number": 4088,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "52:9f:3a:66:7d:65",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -50,
+            "Timestamp": 1745668718.1306763,
+            "Sequence Number": 4089,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "f6:20:81:8f:c7:7c": [
+        {
+            "MAC": "f6:20:81:8f:c7:7c",
+            "SSID": "uis-gjestenett",
+            "RSSI": -52,
+            "Timestamp": 1745668718.1314313,
+            "Sequence Number": 796,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "f6:20:81:8f:c7:7c",
+            "SSID": "Godt Brod",
+            "RSSI": -48,
+            "Timestamp": 1745668718.1321259,
+            "Sequence Number": 801,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "f6:20:81:8f:c7:7c",
+            "SSID": "eduroam",
+            "RSSI": -44,
+            "Timestamp": 1745668718.132682,
+            "Sequence Number": 803,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "f6:20:81:8f:c7:7c",
+            "SSID": "uis-gjestenett",
+            "RSSI": -44,
+            "Timestamp": 1745668718.1332326,
+            "Sequence Number": 804,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "f6:20:81:8f:c7:7c",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -48,
+            "Timestamp": 1745668718.134206,
+            "Sequence Number": 806,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "f6:20:81:8f:c7:7c",
+            "SSID": "eduroam",
+            "RSSI": -44,
+            "Timestamp": 1745668718.1367784,
+            "Sequence Number": 807,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "f6:20:81:8f:c7:7c",
+            "SSID": "Godt Brod",
+            "RSSI": -44,
+            "Timestamp": 1745668718.1399045,
+            "Sequence Number": 809,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "96:05:4a:ef:ed:9d": [
+        {
+            "MAC": "96:05:4a:ef:ed:9d",
             "SSID": "<Hidden SSID>",
             "RSSI": -40,
-            "Timestamp": 1745589297.5939336,
-            "Sequence Number": 2639,
+            "Timestamp": 1745668718.18047,
+            "Sequence Number": 968,
             "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "96:05:4a:ef:ed:9d",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -44,
+            "Timestamp": 1745668718.2003577,
+            "Sequence Number": 969,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "d2:b1:4e:c5:89:d7": [
+        {
+            "MAC": "d2:b1:4e:c5:89:d7",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -48,
+            "Timestamp": 1745668718.4659219,
+            "Sequence Number": 2862,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f0000, Vendor: 00:10:18 (Broadcom), Vendor Info: 020000100000"
+        },
+        {
+            "MAC": "d2:b1:4e:c5:89:d7",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -44,
+            "Timestamp": 1745668718.474394,
+            "Sequence Number": 2863,
+            "Features": "Supported Rates: 02040b16, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f0000, Vendor: 00:10:18 (Broadcom), Vendor Info: 020000100000"
+        }
+    ],
+    "9e:91:72:d5:7a:7c": [
+        {
+            "MAC": "9e:91:72:d5:7a:7c",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745668718.580059,
+            "Sequence Number": 1284,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        }
+    ],
+    "8a:1f:c5:cd:8d:98": [
+        {
+            "MAC": "8a:1f:c5:cd:8d:98",
+            "SSID": "eduroam",
+            "RSSI": -58,
+            "Timestamp": 1745668719.1285095,
+            "Sequence Number": 1746,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001100, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        }
+    ],
+    "76:2d:e8:22:34:ec": [
+        {
+            "MAC": "76:2d:e8:22:34:ec",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -60,
+            "Timestamp": 1745668720.155682,
+            "Sequence Number": 4071,
+            "Features": "Supported Rates: 82848b968c129824, Extended Supported Rates: b048606c"
+        }
+    ],
+    "d2:50:18:1f:d6:1c": [
+        {
+            "MAC": "d2:50:18:1f:d6:1c",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -36,
+            "Timestamp": 1745668720.5021703,
+            "Sequence Number": 3800,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        }
+    ],
+    "b2:d2:1e:d5:a6:85": [
+        {
+            "MAC": "b2:d2:1e:d5:a6:85",
+            "SSID": "eduroam",
+            "RSSI": -88,
+            "Timestamp": 1745668725.1316445,
+            "Sequence Number": 1024,
+            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001400, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        },
+        {
+            "MAC": "b2:d2:1e:d5:a6:85",
+            "SSID": "eduroam",
+            "RSSI": -87,
+            "Timestamp": 1745668725.1404936,
+            "Sequence Number": 1026,
+            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001400, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        }
+    ],
+    "ea:d0:54:be:52:fb": [
+        {
+            "MAC": "ea:d0:54:be:52:fb",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -65,
+            "Timestamp": 1745668728.9052112,
+            "Sequence Number": 2898,
+            "Features": "Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000c0000, Vendor: 00:10:18 (Broadcom), Vendor Info: 020000100000"
+        }
+    ],
+    "26:db:fa:1c:21:1b": [
+        {
+            "MAC": "26:db:fa:1c:21:1b",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -46,
+            "Timestamp": 1745668729.8166957,
+            "Sequence Number": 2163,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "26:db:fa:1c:21:1b",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -42,
+            "Timestamp": 1745668729.838868,
+            "Sequence Number": 2164,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "06:f2:78:cd:55:21": [
+        {
+            "MAC": "06:f2:78:cd:55:21",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -28,
+            "Timestamp": 1745668730.769093,
+            "Sequence Number": 3826,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "06:f2:78:cd:55:21",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -26,
+            "Timestamp": 1745668730.7908075,
+            "Sequence Number": 3827,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "96:05:29:41:ca:ad": [
+        {
+            "MAC": "96:05:29:41:ca:ad",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -48,
+            "Timestamp": 1745668731.0438716,
+            "Sequence Number": 1538,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "6e:bd:c6:16:1e:c9": [
+        {
+            "MAC": "6e:bd:c6:16:1e:c9",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -50,
+            "Timestamp": 1745668731.2387886,
+            "Sequence Number": 904,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "32:c4:07:33:f5:bf": [
+        {
+            "MAC": "32:c4:07:33:f5:bf",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -44,
+            "Timestamp": 1745668732.6184926,
+            "Sequence Number": 2481,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        }
+    ],
+    "1a:4d:46:f4:da:10": [
+        {
+            "MAC": "1a:4d:46:f4:da:10",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -44,
+            "Timestamp": 1745668732.8453734,
+            "Sequence Number": 3548,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        },
+        {
+            "MAC": "1a:4d:46:f4:da:10",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -42,
+            "Timestamp": 1745668732.876796,
+            "Sequence Number": 3550,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        }
+    ],
+    "de:39:35:74:fe:c1": [
+        {
+            "MAC": "de:39:35:74:fe:c1",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -44,
+            "Timestamp": 1745668732.9110684,
+            "Sequence Number": 1263,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000f00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02000010000002"
+        }
+    ],
+    "06:dd:09:ad:7e:30": [
+        {
+            "MAC": "06:dd:09:ad:7e:30",
+            "SSID": "eduroam",
+            "RSSI": -83,
+            "Timestamp": 1745668736.2027252,
+            "Sequence Number": 253,
+            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000a00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        }
+    ],
+    "8a:f4:61:50:bc:43": [
+        {
+            "MAC": "8a:f4:61:50:bc:43",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -86,
+            "Timestamp": 1745668736.4987888,
+            "Sequence Number": 1495,
+            "Features": "Supported Rates: 8c129824b048606c"
+        },
+        {
+            "MAC": "8a:f4:61:50:bc:43",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -86,
+            "Timestamp": 1745668736.5198066,
+            "Sequence Number": 1497,
+            "Features": "Supported Rates: 8c129824b048606c"
+        }
+    ],
+    "96:08:1f:db:8b:e9": [
+        {
+            "MAC": "96:08:1f:db:8b:e9",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -75,
+            "Timestamp": 1745668736.940618,
+            "Sequence Number": 14,
+            "Features": "Supported Rates: 8c129824b048606c"
+        },
+        {
+            "MAC": "96:08:1f:db:8b:e9",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -74,
+            "Timestamp": 1745668736.9645696,
+            "Sequence Number": 15,
+            "Features": "Supported Rates: 8c129824b048606c"
+        }
+    ],
+    "2a:6d:4d:66:22:ba": [
+        {
+            "MAC": "2a:6d:4d:66:22:ba",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -64,
+            "Timestamp": 1745668738.441737,
+            "Sequence Number": 1324,
+            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000e00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        },
+        {
+            "MAC": "2a:6d:4d:66:22:ba",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -65,
+            "Timestamp": 1745668738.4621298,
+            "Sequence Number": 1325,
+            "Features": "Supported Rates: 8c129824b048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0407, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08000e00, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+        }
+    ],
+    "0e:4c:09:82:69:88": [
+        {
+            "MAC": "0e:4c:09:82:69:88",
+            "SSID": "eduroam",
+            "RSSI": -68,
+            "Timestamp": 1745668738.4442391,
+            "Sequence Number": 2569,
+            "Features": "Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "0e:4c:09:82:69:88",
+            "SSID": "uib-guest",
+            "RSSI": -68,
+            "Timestamp": 1745668738.444793,
+            "Sequence Number": 2570,
+            "Features": "Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "0e:4c:09:82:69:88",
+            "SSID": "SK-PUBLIC",
+            "RSSI": -68,
+            "Timestamp": 1745668738.445353,
+            "Sequence Number": 2571,
+            "Features": "Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "0e:4c:09:82:69:88",
+            "SSID": "scandic_easy",
+            "RSSI": -68,
+            "Timestamp": 1745668738.4464626,
+            "Sequence Number": 2572,
+            "Features": "Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "0e:4c:09:82:69:88",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -68,
+            "Timestamp": 1745668738.4472034,
+            "Sequence Number": 2573,
+            "Features": "Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "82:fc:21:a7:96:13": [
+        {
+            "MAC": "82:fc:21:a7:96:13",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745668738.6081197,
+            "Sequence Number": 3874,
+            "Features": "Supported Rates: 8c129824b048606c"
+        },
+        {
+            "MAC": "82:fc:21:a7:96:13",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745668738.6267552,
+            "Sequence Number": 3961,
+            "Features": "Supported Rates: 8c129824b048606c"
+        }
+    ],
+    "38:f9:d3:60:1a:43": [
+        {
+            "MAC": "38:f9:d3:60:1a:43",
+            "SSID": "eduroam",
+            "RSSI": -67,
+            "Timestamp": 1745668740.1192412,
+            "Sequence Number": 2873,
+            "Features": "Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:10:18 (Broadcom), Vendor Info: 020100100000"
+        },
+        {
+            "MAC": "38:f9:d3:60:1a:43",
+            "SSID": "eduroam",
+            "RSSI": -68,
+            "Timestamp": 1745668740.1287227,
+            "Sequence Number": 2874,
+            "Features": "Supported Rates: 0c1218243048606c, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:10:18 (Broadcom), Vendor Info: 020100100000"
+        }
+    ],
+    "f2:97:90:9e:87:6e": [
+        {
+            "MAC": "f2:97:90:9e:87:6e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -59,
+            "Timestamp": 1745668740.3239765,
+            "Sequence Number": 2938,
+            "Features": "Supported Rates: 8c129824b048606c"
+        }
+    ],
+    "9a:55:dc:d6:55:a3": [
+        {
+            "MAC": "9a:55:dc:d6:55:a3",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745668744.250662,
+            "Sequence Number": 274,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "86:b4:ac:eb:8e:e7": [
+        {
+            "MAC": "86:b4:ac:eb:8e:e7",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -48,
+            "Timestamp": 1745668744.983787,
+            "Sequence Number": 4016,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "86:b4:ac:eb:8e:e7",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -48,
+            "Timestamp": 1745668745.0002105,
+            "Sequence Number": 4018,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "e2:42:93:d8:8d:b6": [
+        {
+            "MAC": "e2:42:93:d8:8d:b6",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -48,
+            "Timestamp": 1745668745.2656376,
+            "Sequence Number": 3648,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        },
+        {
+            "MAC": "e2:42:93:d8:8d:b6",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745668745.2787747,
+            "Sequence Number": 773,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "62:67:d0:c6:23:43": [
+        {
+            "MAC": "62:67:d0:c6:23:43",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -48,
+            "Timestamp": 1745668745.3698401,
+            "Sequence Number": 3650,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "46:06:76:48:68:0a": [
+        {
+            "MAC": "46:06:76:48:68:0a",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -60,
+            "Timestamp": 1745668748.7648034,
+            "Sequence Number": 3746,
+            "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c"
+        }
+    ],
+    "5e:44:36:5d:b1:ec": [
+        {
+            "MAC": "5e:44:36:5d:b1:ec",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -74,
+            "Timestamp": 1745668750.5578022,
+            "Sequence Number": 2809,
+            "Features": "Supported Rates: 8c129824b048606c"
+        },
+        {
+            "MAC": "5e:44:36:5d:b1:ec",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -72,
+            "Timestamp": 1745668750.5722075,
+            "Sequence Number": 1436,
+            "Features": "Supported Rates: 8c129824b048606c"
+        }
+    ],
+    "9e:3d:45:a8:32:70": [
+        {
+            "MAC": "9e:3d:45:a8:32:70",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -79,
+            "Timestamp": 1745668751.4070103,
+            "Sequence Number": 4036,
+            "Features": "Supported Rates: 8c129824b048606c"
         }
     ]
 }
