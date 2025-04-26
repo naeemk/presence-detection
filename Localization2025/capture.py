@@ -76,6 +76,12 @@ def handle_probe_request(packet):
                         wifi_features.append(f"HT Capabilities: {elt.info.hex()}")
                     elif elt.ID == 50:  # Extended Supported Rates
                         wifi_features.append(f"Extended Supported Rates: {elt.info.hex()}")
+                    elif elt.ID == 45:  # Extended Supported Rates
+                        wifi_features.append(f"HT Cap: {elt.info.hex()}")
+                    elif elt.ID == 127:  # Extended Supported Rates
+                        wifi_features.append(f"Extended Capabilities: {elt.info.hex()}")
+                    elif elt.ID == 191:  # Extended Supported Rates
+                        wifi_features.append(f"VHT Capabilities: {elt.info.hex()}")
                     elif elt.ID == 221: # Vendor Specific
                         if len(elt.info) >= 3:
                             vendor_oui = elt.info[:3]
