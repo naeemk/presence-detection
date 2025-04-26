@@ -2,31 +2,54 @@
     {
         "Device_Name": "Device 1",
         "MACs": [
-            "e0:c2:64:9a:1f:a5",
-            "de:a3:50:69:5a:20"
+            "fc:31:5d:79:ef:0c",
+            "36:d5:fb:d9:3d:f2",
+            "de:a3:50:69:5a:20",
+            "e0:c2:64:9a:1f:a5"
         ],
         "SSIDs": [
             "eduroam"
         ],
-        "Average_RSSI": -44.0,
-        "First_Timestamp": 1745670414.2358692,
-        "Last_Timestamp": 1745670462.3874629,
-        "Features": "Supported Rates: 02040b160c121824, Extended Supported Rates: 3048606c, HT Cap: e70917ffff000000000000000000000000000000000000000000, Extended Capabilities: 0400488000400080010000000000, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103650101"
+        "Average_RSSI": -47.6,
+        "First_Timestamp": 1745675506.5551329,
+        "Last_Timestamp": 1745675561.2650764,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0400480400000040000020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000002"
+        ]
     },
     {
         "Device_Name": "Device 2",
         "MACs": [
             "a0:f4:59:8c:22:a9",
-            "00:25:ca:4b:22:4d",
-            "56:ed:1a:6b:b5:73",
-            "ba:55:68:49:b3:2b"
+            "96:b7:0b:ce:b4:75",
+            "a6:f2:37:8e:93:11",
+            "3a:bb:66:ce:61:d4",
+            "72:00:a0:08:e0:a8",
+            "c6:43:f6:e5:4a:b8",
+            "3e:05:f2:28:52:8a",
+            "aa:8b:48:5d:e7:96",
+            "4e:77:f2:87:f6:af",
+            "dc:03:98:95:61:3c",
+            "26:07:13:57:ab:88"
         ],
         "SSIDs": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -65.24137931034483,
-        "First_Timestamp": 1745670405.0494192,
-        "Last_Timestamp": 1745670460.42176,
-        "Features": "Supported Rates: 82848b968c129824, Extended Supported Rates: b048606c"
+        "Average_RSSI": -58.2,
+        "First_Timestamp": 1745675509.7158198,
+        "Last_Timestamp": 1745675564.8587885,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
     }
 ]

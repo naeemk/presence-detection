@@ -32,7 +32,8 @@
             "2a:2d:b7:ca:ad:72"
         ],
         "SSIDs": [
-            "<Hidden SSID>"
+            "<Hidden SSID>",
+            "eduroam"
         ],
         "Average_RSSI": -41.0,
         "First_Timestamp": 1745671472.5739121,

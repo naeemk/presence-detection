@@ -40,13 +40,12 @@ async def save_packets():
             continue
 
         # Step 2: Feature extraction
-        print("[*] Extracting features from captured probe requests...")
+        #print("[*] Extracting features from captured probe requests...")
 
-        X, df = extract_features(probe_data)
+        #X, df = extract_features(probe_data)
 
         # Step 3: Anomaly detection
-        print("[*] Detecting anomalies in the captured data...")
-        detect_anomalies(X, df)
+        ##detect_anomalies(X, df)
 
         # Sort probe_data by Timestamp
         sorted_probe_data = sorted(

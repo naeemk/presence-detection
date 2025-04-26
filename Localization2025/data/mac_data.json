@@ -3204,6 +3204,7 @@
     "dc:03:98:95:61:3c": [
         {
             "MAC": "dc:03:98:95:61:3c",
+<<<<<<< HEAD
             "SSID": "eduroam",
             "RSSI": -89,
             "Timestamp": 1745671479.3729753,
@@ -7061,6 +7062,48 @@
             "Timestamp": 1745671762.898672,
             "Sequence Number": 3806,
             "Features": "Supported Rates: 82848b96, Extended Supported Rates: 0c1218243048606c, HT Cap: 2d401bff00000000000000000000000000000000000000000000, Extended Capabilities: 0000080400000040000020"
+=======
+            "SSID": "<Hidden SSID>",
+            "RSSI": -64,
+            "Timestamp": 1745675536.183702,
+            "Sequence Number": 4066,
+            "Features": [
+                "Supported Rates: 82848b960c121824",
+                "Extended Supported Rates: 3048606c"
+            ]
+        }
+    ],
+    "26:07:13:57:ab:88": [
+        {
+            "MAC": "26:07:13:57:ab:88",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745675546.7713292,
+            "Sequence Number": 42,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d001bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080000000040"
+            ]
+        }
+    ],
+    "e0:c2:64:9a:1f:a5": [
+        {
+            "MAC": "e0:c2:64:9a:1f:a5",
+            "SSID": "eduroam",
+            "RSSI": -34,
+            "Timestamp": 1745675561.2650764,
+            "Sequence Number": 831,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400488000400080010000000000",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance)",
+                "Vendor Info: 16030103650101"
+            ]
+>>>>>>> refs/remotes/origin/main
         }
     ]
 }

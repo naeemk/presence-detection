@@ -21,7 +21,7 @@ def process_feature_groups(feature_data):
         ssids = set()
         rssis = []
         timestamps = []
-        features = []
+        features = set()  # Use a set to store features to avoid duplicates
 
         entries = group.get("entries", [])
         if not entries:
@@ -39,23 +39,23 @@ def process_feature_groups(feature_data):
 
             ssids.add(entry.get("SSID", ""))
             rssi = entry.get("RSSI")
-            feature_str = entry.get("Features", "")
+            feature_list = entry.get("Features", [])
 
             if rssi is not None:
                 rssis.append(rssi)
             timestamps.append(timestamp)
-            if feature_str:
-                features.extend([f.strip() for f in feature_str.split(",")])
+            
+            if feature_list:
+                # Directly process the list of features
+                features.update(f.strip() for f in feature_list if f.strip())
 
         if not rssis or not timestamps:
             continue  # Skip this group if missing required data
 
-        #weights = [1 / (current_time - ts + 1) for ts in timestamps]
-        #weighted_sum = sum(rssi * weight for rssi, weight in zip(rssi_values, weights))
-        #total_weight = sum(weights)
-        #average_rssi = round(weighted_sum / total_weight, 1)
+        # Calculate the average RSSI
         average_rssi = sum(rssis) / len(rssis)
 
+        # Prepare device data
         device = {
             "Device_Name": f"Device {device_counter}",
             "MACs": list(macs),
@@ -63,12 +63,14 @@ def process_feature_groups(feature_data):
             "Average_RSSI": average_rssi,
             "First_Timestamp": min(timestamps),
             "Last_Timestamp": max(timestamps),
-            "Features": ", ".join(sorted(set(filter(None, features))))
+            "Features": ", ".join(sorted(features))  # Sort the features for consistency
         }
 
         devices.append(device)
         device_counter += 1
     
+    # Save the processed devices data to a JSON file
     with open("data/devices.json", "w") as json_file:
         json.dump(devices, json_file, indent=4)
+    
     return devices

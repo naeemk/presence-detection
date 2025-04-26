@@ -56,11 +56,11 @@ async def save_packets():
             await asyncio.sleep(1)
             continue
 
-        X, df = extract_features(probe_data)
+        #X, df = extract_features(probe_data)
 
         # Step 3: Anomaly detection
-        print("[*] Detecting anomalies in the captured data...")
-        detect_anomalies(X, df)
+        #print("[*] Detecting anomalies in the captured data...")
+        #detect_anomalies(X, df)
 
         # Step 4: Assign device names based on device signatures (e.g., SSID, RSSI, Probe Interval)
         print("[*] Assigning device names...")
