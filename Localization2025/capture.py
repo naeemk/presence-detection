@@ -72,9 +72,9 @@ def handle_probe_request(packet):
                 while elt:
                     if elt.ID == 1:  # Supported Rates
                         wifi_features.append(f"Supported Rates: {elt.info.hex()}")
-                    elif elt.ID == 45: # High Throughput Capabilities
+                    elif elt.ID == 42: # High Throughput Capabilities
                         wifi_features.append(f"HT Capabilities: {elt.info.hex()}")
-                    elif elt.ID == 127:  # Extended Supported Rates
+                    elif elt.ID == 50:  # Extended Supported Rates
                         wifi_features.append(f"Extended Supported Rates: {elt.info.hex()}")
                     elif elt.ID == 45:  # Extended Supported Rates
                         wifi_features.append(f"HT Cap: {elt.info.hex()}")
