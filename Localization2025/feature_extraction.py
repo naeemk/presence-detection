@@ -16,11 +16,14 @@ def extract_features(probe_data):
     df["Avg_Probe_Interval"] = df.groupby("MAC")["Timestamp_Diff"].transform("mean")
     df["Probe_Interval_Variance"] = df.groupby("MAC")["Timestamp_Diff"].transform("var").fillna(0)
 
+    # Ensure Features column is a list of strings (if it's a list, join the elements into a single string)
+    df["Features"] = df["Features"].apply(lambda x: " ".join(x) if isinstance(x, list) else x)
+
     # Encode SSIDs as numerical features using TF-IDF
     vectorizer = TfidfVectorizer()
     ssid_matrix = vectorizer.fit_transform(df["SSID"])
     
-    # Encode Wi-Fi Capabilities using TF-IDF
+    # Encode Wi-Fi Capabilities using TF-IDF (assuming "Features" is now a list of features)
     feature_vectorizer = TfidfVectorizer()
     features_matrix = feature_vectorizer.fit_transform(df["Features"])
 
@@ -30,5 +33,5 @@ def extract_features(probe_data):
 
     # Combine all feature matrices into a single feature set
     X = np.hstack([ssid_matrix.toarray(), features_matrix.toarray(), numeric_features])
-    #print (df)
+    
     return X, df

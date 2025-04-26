@@ -72,17 +72,17 @@ def handle_probe_request(packet):
                 while elt:
                     if elt.ID == 1:  # Supported Rates
                         wifi_features.append(f"Supported Rates: {elt.info.hex()}")
-                    elif elt.ID == 45: # High Throughput Capabilities
+                    elif elt.ID == 42:  # ERP Information
+                        wifi_features.append(f"ERP Information: {elt.info.hex()}")
+                    elif elt.ID == 45:  # HT Capabilities
                         wifi_features.append(f"HT Capabilities: {elt.info.hex()}")
-                    elif elt.ID == 127:  # Extended Supported Rates
+                    elif elt.ID == 50:  # Extended Supported Rates
                         wifi_features.append(f"Extended Supported Rates: {elt.info.hex()}")
-                    elif elt.ID == 45:  # Extended Supported Rates
-                        wifi_features.append(f"HT Cap: {elt.info.hex()}")
-                    elif elt.ID == 127:  # Extended Supported Rates
+                    elif elt.ID == 127:  # Extended Capabilities
                         wifi_features.append(f"Extended Capabilities: {elt.info.hex()}")
-                    elif elt.ID == 191:  # Extended Supported Rates
+                    elif elt.ID == 191:  # VHT Capabilities
                         wifi_features.append(f"VHT Capabilities: {elt.info.hex()}")
-                    elif elt.ID == 221: # Vendor Specific
+                    elif elt.ID == 221:  # Vendor Specific
                         if len(elt.info) >= 3:
                             vendor_oui = elt.info[:3]
                             vendor_oui_str = ':'.join(f'{b:02X}' for b in vendor_oui)
@@ -108,9 +108,8 @@ def handle_probe_request(packet):
             "RSSI": rssi,
             "Timestamp": timestamp,
             "Sequence Number": seq_num,
-            "Features": ", ".join(wifi_features)
+            "Features": wifi_features
         })
-        
         # Print captured details
         #print(f"\n[+] Probe Request from {mac}")
         #print(f"    - SSID: {ssid}")

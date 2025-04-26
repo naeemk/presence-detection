@@ -9,13 +9,28 @@ def load_config(filename="config.json"):
 config = load_config()
 TIME_LIMIT = 1
 
+# Define feature weights 🔥
+FEATURE_WEIGHTS = {
+    "Supported Rates": 1,
+    "Extended Supported Rates": 1,
+    "ERP Information": 0.5,
+    "HT Capabilities": 5,
+    "Extended Capabilities": 4,
+    "VHT Capabilities": 5,
+    "Vendor Specific": 3,
+}
+
+def weighted_jaccard(set1, set2, feature_weights):
+    weighted_intersection = sum(feature_weights.get(f.split(":")[0], 1) for f in set1 & set2)
+    weighted_union = sum(feature_weights.get(f.split(":")[0], 1) for f in set1 | set2)
+    if weighted_union == 0:
+        return 0
+    return weighted_intersection / weighted_union
 
 def groupbyFeature(ssid_data, similarity_threshold=0.8):
-    from collections import defaultdict
-    import json
-
-    # Step 1: Parse and collect full feature sets per group
     group_features = {}
+    
+    # Step 1: Collect features per group
     for group_id, group_info in ssid_data.items():
         all_features = set()
         for entry in group_info["entries"]:
@@ -26,7 +41,7 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
                 all_features.update(features)
         group_features[group_id] = all_features
 
-    # Step 2: Create group clusters using Jaccard similarity
+    # Step 2: Group by weighted Jaccard similarity
     group_map = {gid: {gid} for gid in ssid_data}
     changed = True
 
@@ -45,11 +60,7 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
                 if group_map[gid1] == group_map[gid2]:
                     continue
 
-                union = f1 | f2
-                if not union:
-                    continue
-
-                similarity = len(f1 & f2) / len(union)
+                similarity = weighted_jaccard(f1, f2, FEATURE_WEIGHTS)
 
                 if similarity >= similarity_threshold:
                     merged = group_map[gid1] | group_map[gid2]
@@ -57,7 +68,7 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
                         group_map[gid] = merged
                     changed = True
 
-    # 🔁 Step 3: Merge single-entry MACs with exact feature match
+    # Step 3: Merge single-entry MACs with exact feature match
     single_groups = {gid for gid, info in ssid_data.items() if len(info["entries"]) == 1}
     merged_single_groups = set()
 
@@ -99,7 +110,7 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
         }
 
     # Step 6: Logging
-    print("======= Final MAC Groups Based on Feature Similarity =======")
+    print("\n======= Final MAC Groups Based on Weighted Feature Similarity =======")
     for group_id, group_data in feature_data.items():
         print(f" Group {group_id}:")
         print(f"  MACs: {', '.join(group_data['macs'])}")
@@ -117,6 +128,7 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
             print("    -------------------")
         print("-----------------------------------------------------------")
 
+    # Step 7: Save output
     with open("data/feature_data.json", "w") as json_file:
         json.dump(feature_data, json_file, indent=4)
 

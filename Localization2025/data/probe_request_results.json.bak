@@ -1,0 +1,23 @@
+[
+    {
+        "Device_Name": "Device 1",
+        "MAC": "de:a3:50:69:5a:20",
+        "SSID": "eduroam",
+        "RSSI": -80,
+        "Timestamp": 1745674951.5061617,
+        "Features": [
+            "Supported Rates: 8c129824b048606c",
+            "HT Capabilities: 6f001bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040",
+            "VHT Capabilities: 3270810ffaff0000faff0000",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:90:4C (Epigram, Inc.)",
+            "Vendor Info: 0407",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000000"
+        ]
+    }
+]
