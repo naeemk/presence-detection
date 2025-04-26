@@ -1,0 +1,43 @@
+[
+    {
+        "Device_Name": "Device 1",
+        "MACs": [
+            "26:e7:a5:b4:6b:f6",
+            "f0:77:c3:4e:7d:9d",
+            "fc:31:5d:79:ef:0c",
+            "36:d5:fb:d9:3d:f2",
+            "de:a3:50:69:5a:20"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>",
+            "eduroam"
+        ],
+        "Average_RSSI": -55.61538461538461,
+        "First_Timestamp": 1745669595.672887,
+        "Last_Timestamp": 1745669648.1906374,
+        "Features": "Supported Rates: 82848b96, HT Capabilities: 2d401bff00000000000000000000000000000000000000000000, Extended Supported Rates: 04004804000000c0010020, Vendor: 00:17:F2 (Apple, Inc.), Vendor Info: 0a00010400000000, Vendor: 00:90:4C (Epigram, Inc.), Vendor Info: 0408bf0c7670800ffeff0000feff0020, Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor Info: 08001200, Vendor: 00:10:18 (Broadcom), Vendor Info: 02010010000002"
+    },
+    {
+        "Device_Name": "Device 2",
+        "MACs": [
+            "a0:29:42:b7:39:e1",
+            "a0:f4:59:8c:22:a9",
+            "96:b7:0b:ce:b4:75",
+            "a6:f2:37:8e:93:11",
+            "3a:bb:66:ce:61:d4",
+            "72:00:a0:08:e0:a8",
+            "c6:43:f6:e5:4a:b8",
+            "3e:05:f2:28:52:8a",
+            "aa:8b:48:5d:e7:96",
+            "4e:77:f2:87:f6:af",
+            "dc:03:98:95:61:3c"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Average_RSSI": -57.142857142857146,
+        "First_Timestamp": 1745669592.398131,
+        "Last_Timestamp": 1745669650.0213885,
+        "Features": "Supported Rates: 0c1218243048606c, HT Capabilities: e70917ffff000000000000000000000000000000000000000000, Extended Supported Rates: 0400c880014000000000, Vendor: 50:6F:9A (Wi-Fi Alliance), Vendor Info: 16030103"
+    }
+]
