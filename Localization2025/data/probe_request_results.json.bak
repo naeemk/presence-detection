@@ -4,7 +4,7 @@
         "MAC": "de:a3:50:69:5a:20",
         "SSID": "eduroam",
         "RSSI": -80,
-        "Timestamp": 1745674951.5061617,
+        "Timestamp": 1745847769.2963645,
         "Features": [
             "Supported Rates: 8c129824b048606c",
             "HT Capabilities: 6f001bff00000000000000000000000000000000000000000000",
@@ -18,6 +18,625 @@
             "Vendor Info: 08001200",
             "Vendor: 00:10:18 (Broadcom)",
             "Vendor Info: 02010010000000"
+        ]
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "de:a3:50:69:5a:20",
+        "SSID": "eduroam",
+        "RSSI": -82,
+        "Timestamp": 1745847770.3871052,
+        "Features": [
+            "Supported Rates: 8c129824b048606c",
+            "HT Capabilities: 6f001bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040",
+            "VHT Capabilities: 3270810ffaff0000faff0000",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:90:4C (Epigram, Inc.)",
+            "Vendor Info: 0407",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000000"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:29:42:b7:39:e1",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -86,
+        "Timestamp": 1745847771.5410466,
+        "Features": [
+            "Supported Rates: 0c1218243048606c",
+            "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0400c880014000000000",
+            "VHT Capabilities: f6799103faff0000faff0020",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance)",
+            "Vendor Info: 16030103"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:29:42:b7:39:e1",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -86,
+        "Timestamp": 1745847773.143111,
+        "Features": [
+            "Supported Rates: 0c1218243048606c",
+            "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0400c880014000000000",
+            "VHT Capabilities: f6799103faff0000faff0020",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance)",
+            "Vendor Info: 16030103"
+        ]
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": "26:e7:a5:b4:6b:f6",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -56,
+        "Timestamp": 1745847774.8002617,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 04004804000000c0010020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:90:4C (Epigram, Inc.)",
+            "Vendor Info: 0408bf0c7670800ffeff0000feff0020",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000002"
+        ]
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": "26:e7:a5:b4:6b:f6",
+        "SSID": "eduroam",
+        "RSSI": -46,
+        "Timestamp": 1745847776.4651413,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 04004804000000c0010020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000002"
+        ]
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": "26:e7:a5:b4:6b:f6",
+        "SSID": "eduroam",
+        "RSSI": -50,
+        "Timestamp": 1745847778.1454062,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 04004804000000c0010020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000002"
+        ]
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": "26:e7:a5:b4:6b:f6",
+        "SSID": "eduroam",
+        "RSSI": -52,
+        "Timestamp": 1745847779.8337593,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 04004804000000c0010020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000002"
+        ]
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "f0:77:c3:4e:7d:9d",
+        "SSID": "eduroam",
+        "RSSI": -87,
+        "Timestamp": 1745847781.6451082,
+        "Features": [
+            "Supported Rates: 02040b160c121824",
+            "Extended Supported Rates: 3048606c",
+            "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0400c880014000000000",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance)",
+            "Vendor Info: 16030103650101"
+        ]
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "f0:77:c3:4e:7d:9d",
+        "SSID": "eduroam",
+        "RSSI": -72,
+        "Timestamp": 1745847783.3744543,
+        "Features": [
+            "Supported Rates: 02040b160c121824",
+            "Extended Supported Rates: 3048606c",
+            "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0400c880014000000000",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance)",
+            "Vendor Info: 16030103650101"
+        ]
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": "26:e7:a5:b4:6b:f6",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745847785.1801846,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 04004804000000c0010020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02000010000002"
+        ]
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": "26:e7:a5:b4:6b:f6",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745847787.0296123,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 04004804000000c0010020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02000010000002"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -62,
+        "Timestamp": 1745847788.867135,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745847790.643688,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 3",
+        "MAC": "26:e7:a5:b4:6b:f6",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745847792.456209,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 04004804000000c0010020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02000010000002"
+        ]
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "fc:31:5d:79:ef:0c",
+        "SSID": "eduroam",
+        "RSSI": -48,
+        "Timestamp": 1745847794.2409964,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0400480400000040000020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000002"
+        ]
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "fc:31:5d:79:ef:0c",
+        "SSID": "eduroam",
+        "RSSI": -44,
+        "Timestamp": 1745847796.0396726,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0400480400000040000020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000002"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745847797.8735986,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "96:b7:0b:ce:b4:75",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -56,
+        "Timestamp": 1745847799.9202828,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d001bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080000000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a6:f2:37:8e:93:11",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -44,
+        "Timestamp": 1745847801.7619517,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a6:f2:37:8e:93:11",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -44,
+        "Timestamp": 1745847803.6716852,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "3a:bb:66:ce:61:d4",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745847805.5387309,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "3a:bb:66:ce:61:d4",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -48,
+        "Timestamp": 1745847807.4229321,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "72:00:a0:08:e0:a8",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -46,
+        "Timestamp": 1745847809.3512652,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "72:00:a0:08:e0:a8",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -44,
+        "Timestamp": 1745847811.284968,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "c6:43:f6:e5:4a:b8",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745847813.191123,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "c6:43:f6:e5:4a:b8",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745847815.295453,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "3e:05:f2:28:52:8a",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745847817.3157976,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "3e:05:f2:28:52:8a",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745847819.303537,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "aa:8b:48:5d:e7:96",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -50,
+        "Timestamp": 1745847821.3208778,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "aa:8b:48:5d:e7:96",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -50,
+        "Timestamp": 1745847823.4800618,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "36:d5:fb:d9:3d:f2",
+        "SSID": "eduroam",
+        "RSSI": -60,
+        "Timestamp": 1745847825.5741618,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040000020",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001200",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000002"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "4e:77:f2:87:f6:af",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -54,
+        "Timestamp": 1745847828.0105646,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "dc:03:98:95:61:3c",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": 1745847830.381383,
+        "Features": [
+            "Supported Rates: 82848b960c121824",
+            "Extended Supported Rates: 3048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 1",
+        "MAC": "de:a3:50:69:5a:20",
+        "SSID": "eduroam",
+        "RSSI": -52,
+        "Timestamp": 1745847832.5535493,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080400000040",
+            "Vendor: 00:17:F2 (Apple, Inc.)",
+            "Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.)",
+            "Vendor Info: 08001300",
+            "Vendor: 00:10:18 (Broadcom)",
+            "Vendor Info: 02010010000000"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -66,
+        "Timestamp": 1745847834.732157,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -66,
+        "Timestamp": 1745847836.8444216,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745847838.981523,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": 1745847841.22244,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "26:07:13:57:ab:88",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -56,
+        "Timestamp": 1745847843.630883,
+        "Features": [
+            "Supported Rates: 82848b96",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d001bff00000000000000000000000000000000000000000000",
+            "Extended Capabilities: 0000080000000040"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -66,
+        "Timestamp": 1745847846.0126219,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -68,
+        "Timestamp": 1745847848.2958786,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -64,
+        "Timestamp": 1745847850.6071453,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MAC": "a0:f4:59:8c:22:a9",
+        "SSID": "<Hidden SSID>",
+        "RSSI": -66,
+        "Timestamp": 1745847852.9889162,
+        "Features": [
+            "Supported Rates: 82848b968c129824",
+            "Extended Supported Rates: b048606c"
         ]
     }
 ]

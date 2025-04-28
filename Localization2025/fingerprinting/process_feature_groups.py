@@ -1,6 +1,7 @@
 import json
 import time
 from collections import defaultdict
+from kalman_filter import KalmanFilter  # <-- import Kalman filter
 
 # Load configuration
 def load_config(filename="config.json"):
@@ -21,41 +22,40 @@ def process_feature_groups(feature_data):
         ssids = set()
         rssis = []
         timestamps = []
-        features = set()  # Use a set to store features to avoid duplicates
+        features = set()
 
         entries = group.get("entries", [])
         if not entries:
             continue
 
-        # Use the first timestamp as the reference point
         reference_ts = entries[0].get("Timestamp")
         if reference_ts is None:
             continue
 
+        kf = KalmanFilter()  # <-- instantiate a Kalman Filter per device group
+
         for entry in entries:
             timestamp = entry.get("Timestamp")
             if timestamp is None or abs(timestamp - reference_ts) > time_window:
-                continue  # Skip entries outside the time window
+                continue
 
             ssids.add(entry.get("SSID", ""))
             rssi = entry.get("RSSI")
             feature_list = entry.get("Features", [])
 
             if rssi is not None:
-                rssis.append(rssi)
+                filtered_rssi = kf.filter(rssi)  # <-- apply Kalman filter here
+                rssis.append(filtered_rssi)
             timestamps.append(timestamp)
-            
+
             if feature_list:
-                # Directly process the list of features
                 features.update(f.strip() for f in feature_list if f.strip())
 
         if not rssis or not timestamps:
-            continue  # Skip this group if missing required data
+            continue
 
-        # Calculate the average RSSI
         average_rssi = sum(rssis) / len(rssis)
 
-        # Prepare device data
         device = {
             "Device_Name": f"Device {device_counter}",
             "MACs": list(macs),
@@ -64,14 +64,13 @@ def process_feature_groups(feature_data):
             "Average_RSSI": average_rssi,
             "First_Timestamp": min(timestamps),
             "Last_Timestamp": max(timestamps),
-            "Features": ", ".join(sorted(features))  # Sort the features for consistency
+            "Features": ", ".join(sorted(features))
         }
 
         devices.append(device)
         device_counter += 1
-    
-    # Save the processed devices data to a JSON file
+
     with open("data/devices.json", "w") as json_file:
         json.dump(devices, json_file, indent=4)
-    
+
     return devices
