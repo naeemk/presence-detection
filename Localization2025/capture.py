@@ -51,8 +51,8 @@ def handle_probe_request(packet):
         seq_num = (packet[Dot11].SC >> 4)  # Extract sequence number from SC field
         
         # Filter only for "HUAWEI-5G-9Ysz" or hidden SSID
-        #if ssid != "HUAWEI-5G-9Ysz" and mac !="de:0f:c5:13:d9:ec":
-         #   return  # Ignore packets that don't match the filter
+        #if ssid != "HUAWEI-5G-9Ysz" and mac !="ce:0a:dd:5c:9e:f7":
+           #return  # Ignore packets that don't match the filter
 
         rssi = packet.dBm_AntSignal if hasattr(packet, 'dBm_AntSignal') else None
         #print(f"Raw RSSI: {rssi}, Adjusted RSSI: {rssi - 256 if rssi > 0 else rssi}")
@@ -63,6 +63,18 @@ def handle_probe_request(packet):
         #print("split")
         #print(packet.show())     # Full packet structure
         
+
+        myvendor_oui = b'\x8C\xFD\xF0'  # Qualcomm Vendor
+
+        #if packet.haslayer(Dot11Elt):
+        #    elt = packet.getlayer(Dot11Elt)
+        #    while elt:
+        #        if elt.ID == 221 and elt.info.startswith(myvendor_oui):
+        #            break  # Found correct vendor, continue
+        #        elt = elt.payload.getlayer(Dot11Elt)
+        #    else:
+        #        return # No matching vendor found, ignore this packet
+
         
         # Extract Wi-Fi Capabilities (HT, Extended, Vendor)
         wifi_features = []
@@ -88,8 +100,7 @@ def handle_probe_request(packet):
                             vendor_oui_str = ':'.join(f'{b:02X}' for b in vendor_oui)
                             vendor_name = get_vendor_name(vendor_oui)
                             vendor_info = elt.info[3:]
-                            wifi_features.append(f"Vendor: {vendor_oui_str} ({vendor_name})")
-                            wifi_features.append(f"Vendor Info: {vendor_info.hex()}")
+                            wifi_features.append(f"Vendor: {vendor_oui_str} ({vendor_name}) Vendor Info: {vendor_info.hex()}")
                         else:
                             wifi_features.append("Vendor Element Malformed")
 

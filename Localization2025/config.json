@@ -2,6 +2,7 @@
     "general": {
       "interface": "wlan0",
       "time_window": 60,
+      "capture_delay": 30,
       "duration_of_sniffing": 10,
       "fake_seconds": 1
     },

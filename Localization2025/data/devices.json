@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
     {
         "Device_Name": "Device 1",
@@ -108,3 +109,6 @@
         "Features": "Extended Capabilities: 0000080400000040, Extended Supported Rates: 0c1218243048606c, HT Capabilities: 2d401bff00000000000000000000000000000000000000000000, Supported Rates: 82848b96"
     }
 ]
+=======
+[]
+>>>>>>> 9357f605777a2675b48021f245afa39e016b21eb

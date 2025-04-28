@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "de:a3:50:69:5a:20": [
         {
             "MAC": "de:a3:50:69:5a:20",
@@ -358,12 +359,26 @@
                 "Supported Rates: 82848b96",
                 "Extended Supported Rates: 0c1218243048606c",
                 "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+=======
+    "9a:f7:91:4e:32:5c": [
+        {
+            "MAC": "9a:f7:91:4e:32:5c",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -34,
+            "Timestamp": 1745854014.4367592,
+            "Sequence Number": 1541,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+>>>>>>> 9357f605777a2675b48021f245afa39e016b21eb
                 "Extended Capabilities: 0000080400000040"
             ]
         }
     ],
-    "3a:bb:66:ce:61:d4": [
+    "e4:c7:67:e5:69:47": [
         {
+<<<<<<< HEAD
             "MAC": "3a:bb:66:ce:61:d4",
             "SSID": "<Hidden SSID>",
             "RSSI": -48,
@@ -414,10 +429,558 @@
                 "Supported Rates: 82848b96",
                 "Extended Supported Rates: 0c1218243048606c",
                 "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+=======
+            "MAC": "e4:c7:67:e5:69:47",
+            "SSID": "eduroam",
+            "RSSI": -66,
+            "Timestamp": 1745854014.702298,
+            "Sequence Number": 736,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400488000400080010000000000",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103650101"
+            ]
+        }
+    ],
+    "9c:fc:e8:cc:d5:9e": [
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854015.023573,
+            "Sequence Number": 1592,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745854015.140387,
+            "Sequence Number": 1597,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745854015.1594677,
+            "Sequence Number": 1598,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854015.1728776,
+            "Sequence Number": 1599,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -69,
+            "Timestamp": 1745854020.2080512,
+            "Sequence Number": 1635,
+            "Features": [
+                "Supported Rates: 0c1218243048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000",
+                "VHT Capabilities: b1799103faff0000faff0000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -73,
+            "Timestamp": 1745854030.7388723,
+            "Sequence Number": 1671,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854041.4704144,
+            "Sequence Number": 1721,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -70,
+            "Timestamp": 1745854054.4858253,
+            "Sequence Number": 1793,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -72,
+            "Timestamp": 1745854057.554604,
+            "Sequence Number": 1816,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854065.0458372,
+            "Sequence Number": 1867,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854065.135919,
+            "Sequence Number": 1871,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -70,
+            "Timestamp": 1745854070.4504673,
+            "Sequence Number": 1894,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745854070.5381773,
+            "Sequence Number": 1898,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -73,
+            "Timestamp": 1745854075.771394,
+            "Sequence Number": 1942,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745854075.8631887,
+            "Sequence Number": 1946,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745854081.1875005,
+            "Sequence Number": 1969,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -73,
+            "Timestamp": 1745854083.6190443,
+            "Sequence Number": 1990,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745854083.6239114,
+            "Sequence Number": 1991,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -68,
+            "Timestamp": 1745854105.0449147,
+            "Sequence Number": 2095,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -71,
+            "Timestamp": 1745854125.9892306,
+            "Sequence Number": 2197,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854131.2570987,
+            "Sequence Number": 2218,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745854141.69724,
+            "Sequence Number": 2269,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -60,
+            "Timestamp": 1745854141.8388352,
+            "Sequence Number": 2274,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -73,
+            "Timestamp": 1745854147.0097446,
+            "Sequence Number": 2295,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -62,
+            "Timestamp": 1745854147.0207996,
+            "Sequence Number": 2296,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -60,
+            "Timestamp": 1745854147.1154442,
+            "Sequence Number": 2300,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854147.161226,
+            "Sequence Number": 2301,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745854152.3460035,
+            "Sequence Number": 2332,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854152.3631396,
+            "Sequence Number": 2333,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -78,
+            "Timestamp": 1745854157.811027,
+            "Sequence Number": 2362,
+            "Features": [
+                "Supported Rates: 0c1218243048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000",
+                "VHT Capabilities: b1799103faff0000faff0000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -82,
+            "Timestamp": 1745854167.8921223,
+            "Sequence Number": 2399,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -71,
+            "Timestamp": 1745854183.8551605,
+            "Sequence Number": 2473,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:cc:d5:9e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854183.9602077,
+            "Sequence Number": 2478,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        }
+    ],
+    "3e:0b:e0:a6:3c:c3": [
+        {
+            "MAC": "3e:0b:e0:a6:3c:c3",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -38,
+            "Timestamp": 1745854027.8447292,
+            "Sequence Number": 2707,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000088400000040"
+            ]
+        },
+        {
+            "MAC": "3e:0b:e0:a6:3c:c3",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -38,
+            "Timestamp": 1745854027.8554666,
+            "Sequence Number": 2708,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000088400000040"
+            ]
+        }
+    ],
+    "84:ef:18:1b:0b:84": [
+        {
+            "MAC": "84:ef:18:1b:0b:84",
+            "SSID": "uis-gjestenett",
+            "RSSI": -56,
+            "Timestamp": 1745854028.0802097,
+            "Sequence Number": 889,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 630917ff00000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "84:ef:18:1b:0b:84",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854028.0832698,
+            "Sequence Number": 890,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 630917ff00000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "84:ef:18:1b:0b:84",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745854065.20772,
+            "Sequence Number": 928,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 630917ff00000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "84:ef:18:1b:0b:84",
+            "SSID": "benchpress",
+            "RSSI": -58,
+            "Timestamp": 1745854065.228602,
+            "Sequence Number": 929,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 630917ff00000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "84:ef:18:1b:0b:84",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -60,
+            "Timestamp": 1745854130.623587,
+            "Sequence Number": 968,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 630917ff00000000000000000000000000000000000000000000"
+            ]
+        }
+    ],
+    "26:31:55:82:11:3c": [
+        {
+            "MAC": "26:31:55:82:11:3c",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -62,
+            "Timestamp": 1745854028.5155852,
+            "Sequence Number": 2456,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002"
+            ]
+        }
+    ],
+    "5c:5f:67:ea:1c:35": [
+        {
+            "MAC": "5c:5f:67:ea:1c:35",
+            "SSID": "eduroam",
+            "RSSI": -54,
+            "Timestamp": 1745854030.6432364,
+            "Sequence Number": 1550,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: ef0917ffff000000000000000000000000000000000000000000"
+            ]
+        }
+    ],
+    "1a:f4:31:c8:92:36": [
+        {
+            "MAC": "1a:f4:31:c8:92:36",
+            "SSID": "eduroam",
+            "RSSI": -34,
+            "Timestamp": 1745854031.928256,
+            "Sequence Number": 3014,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+>>>>>>> 9357f605777a2675b48021f245afa39e016b21eb
                 "Extended Capabilities: 0000080400000040"
             ]
         }
     ],
+<<<<<<< HEAD
     "c6:43:f6:e5:4a:b8": [
         {
             "MAC": "c6:43:f6:e5:4a:b8",
@@ -445,5 +1008,2182 @@
                 "Extended Capabilities: 0000080400000040"
             ]
         }
+=======
+    "8e:55:7c:52:5d:72": [
+        {
+            "MAC": "8e:55:7c:52:5d:72",
+            "SSID": "Eivind sin iPhone",
+            "RSSI": -34,
+            "Timestamp": 1745854031.9298723,
+            "Sequence Number": 2278,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "a2:29:17:b1:b7:7f": [
+        {
+            "MAC": "a2:29:17:b1:b7:7f",
+            "SSID": "Svive_368D30_5G",
+            "RSSI": -34,
+            "Timestamp": 1745854031.9314377,
+            "Sequence Number": 3263,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "96:ff:44:27:5a:c2": [
+        {
+            "MAC": "96:ff:44:27:5a:c2",
+            "SSID": "Svive_368D30",
+            "RSSI": -34,
+            "Timestamp": 1745854031.9327757,
+            "Sequence Number": 2270,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "3e:6e:e8:bd:79:80": [
+        {
+            "MAC": "3e:6e:e8:bd:79:80",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -34,
+            "Timestamp": 1745854031.9338589,
+            "Sequence Number": 124,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "fa:bd:63:e5:57:d0": [
+        {
+            "MAC": "fa:bd:63:e5:57:d0",
+            "SSID": "Migration_fc92daf1",
+            "RSSI": -34,
+            "Timestamp": 1745854031.9348621,
+            "Sequence Number": 3192,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "0e:44:13:93:95:6c": [
+        {
+            "MAC": "0e:44:13:93:95:6c",
+            "SSID": "ROGFK",
+            "RSSI": -34,
+            "Timestamp": 1745854031.9355364,
+            "Sequence Number": 3270,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "ba:91:45:99:64:2a": [
+        {
+            "MAC": "ba:91:45:99:64:2a",
+            "SSID": "1EFA",
+            "RSSI": -34,
+            "Timestamp": 1745854031.9363174,
+            "Sequence Number": 1082,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "02:6e:09:21:aa:ac": [
+        {
+            "MAC": "02:6e:09:21:aa:ac",
+            "SSID": "Mobile",
+            "RSSI": -34,
+            "Timestamp": 1745854031.9368865,
+            "Sequence Number": 1928,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "76:8b:7d:ef:24:a2": [
+        {
+            "MAC": "76:8b:7d:ef:24:a2",
+            "SSID": "AirLink2617C0_5G",
+            "RSSI": -34,
+            "Timestamp": 1745854031.9379761,
+            "Sequence Number": 1916,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "d2:cc:d8:06:6d:c7": [
+        {
+            "MAC": "d2:cc:d8:06:6d:c7",
+            "SSID": "ROGFK",
+            "RSSI": -40,
+            "Timestamp": 1745854032.0747685,
+            "Sequence Number": 1114,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "d2:cd:6a:23:aa:38": [
+        {
+            "MAC": "d2:cd:6a:23:aa:38",
+            "SSID": "Svive_368D30",
+            "RSSI": -38,
+            "Timestamp": 1745854032.0754104,
+            "Sequence Number": 256,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "d2:b7:39:42:c4:11": [
+        {
+            "MAC": "d2:b7:39:42:c4:11",
+            "SSID": "Mobile",
+            "RSSI": -38,
+            "Timestamp": 1745854032.0789754,
+            "Sequence Number": 156,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "9e:62:87:c5:8b:58": [
+        {
+            "MAC": "9e:62:87:c5:8b:58",
+            "SSID": "Eivind sin iPhone",
+            "RSSI": -38,
+            "Timestamp": 1745854032.080768,
+            "Sequence Number": 3084,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "26:4a:de:ba:7a:f4": [
+        {
+            "MAC": "26:4a:de:ba:7a:f4",
+            "SSID": "Migration_fc92daf1",
+            "RSSI": -40,
+            "Timestamp": 1745854032.082155,
+            "Sequence Number": 1174,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "ee:42:17:99:60:fb": [
+        {
+            "MAC": "ee:42:17:99:60:fb",
+            "SSID": "1EFA",
+            "RSSI": -38,
+            "Timestamp": 1745854032.0854697,
+            "Sequence Number": 1236,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "e6:99:c6:d9:c3:77": [
+        {
+            "MAC": "e6:99:c6:d9:c3:77",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -38,
+            "Timestamp": 1745854032.0881143,
+            "Sequence Number": 1676,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "a2:6d:4d:12:cf:c5": [
+        {
+            "MAC": "a2:6d:4d:12:cf:c5",
+            "SSID": "Mobile",
+            "RSSI": -32,
+            "Timestamp": 1745854032.0999095,
+            "Sequence Number": 2051,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "1e:e4:9e:bb:a0:a0": [
+        {
+            "MAC": "1e:e4:9e:bb:a0:a0",
+            "SSID": "Migration_fc92daf1",
+            "RSSI": -34,
+            "Timestamp": 1745854032.1036835,
+            "Sequence Number": 4017,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "be:11:55:89:ec:c9": [
+        {
+            "MAC": "be:11:55:89:ec:c9",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -36,
+            "Timestamp": 1745854032.1107132,
+            "Sequence Number": 3729,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "82:76:20:ae:e6:2b": [
+        {
+            "MAC": "82:76:20:ae:e6:2b",
+            "SSID": "1EFA",
+            "RSSI": -36,
+            "Timestamp": 1745854032.1121697,
+            "Sequence Number": 3906,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "46:b6:8a:03:60:94": [
+        {
+            "MAC": "46:b6:8a:03:60:94",
+            "SSID": "Eivind sin iPhone",
+            "RSSI": -36,
+            "Timestamp": 1745854032.112795,
+            "Sequence Number": 3260,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "aa:c5:c0:1f:b6:3f": [
+        {
+            "MAC": "aa:c5:c0:1f:b6:3f",
+            "SSID": "Svive_368D30",
+            "RSSI": -36,
+            "Timestamp": 1745854032.1151118,
+            "Sequence Number": 753,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "16:67:b9:62:5a:0a": [
+        {
+            "MAC": "16:67:b9:62:5a:0a",
+            "SSID": "AirLink2617C0_5G",
+            "RSSI": -36,
+            "Timestamp": 1745854032.1156933,
+            "Sequence Number": 1037,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "ae:9c:8b:20:b6:c9": [
+        {
+            "MAC": "ae:9c:8b:20:b6:c9",
+            "SSID": "ROGFK",
+            "RSSI": -36,
+            "Timestamp": 1745854032.1195898,
+            "Sequence Number": 3269,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "d0:c0:bf:bc:79:55": [
+        {
+            "MAC": "d0:c0:bf:bc:79:55",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -64,
+            "Timestamp": 1745854034.9294286,
+            "Sequence Number": 1857,
+            "Features": [
+                "Supported Rates: 82848b968c129824",
+                "Extended Supported Rates: b048606c",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a00010010080002314810470010dba25395ad673fa6a198c75a09bd4509105400080000000000000000103c00010310020002000010090002000010120002000010210001201023000120102400012010110001201049000600372a000120"
+            ]
+        },
+        {
+            "MAC": "d0:c0:bf:bc:79:55",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745854104.1004732,
+            "Sequence Number": 2058,
+            "Features": [
+                "Supported Rates: 82848b968c129824",
+                "Extended Supported Rates: b048606c"
+            ]
+        },
+        {
+            "MAC": "d0:c0:bf:bc:79:55",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854113.1060503,
+            "Sequence Number": 2096,
+            "Features": [
+                "Supported Rates: 82848b968c129824",
+                "Extended Supported Rates: b048606c"
+            ]
+        },
+        {
+            "MAC": "d0:c0:bf:bc:79:55",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854113.1077409,
+            "Sequence Number": 2097,
+            "Features": [
+                "Supported Rates: 82848b968c129824",
+                "Extended Supported Rates: b048606c",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a00010010080002314810470010dba25395ad673fa6a198c75a09bd4509105400080000000000000000103c00010310020002000010090002000010120002000010210001201023000120102400012010110001201049000600372a000120"
+            ]
+        },
+        {
+            "MAC": "d0:c0:bf:bc:79:55",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -60,
+            "Timestamp": 1745854113.2236075,
+            "Sequence Number": 2099,
+            "Features": [
+                "Supported Rates: 82848b968c129824",
+                "Extended Supported Rates: b048606c",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a00010010080002314810470010dba25395ad673fa6a198c75a09bd4509105400080000000000000000103c00010310020002000010090002000010120002000010210001201023000120102400012010110001201049000600372a000120"
+            ]
+        },
+        {
+            "MAC": "d0:c0:bf:bc:79:55",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854122.1866155,
+            "Sequence Number": 2137,
+            "Features": [
+                "Supported Rates: 82848b968c129824",
+                "Extended Supported Rates: b048606c",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a00010010080002314810470010dba25395ad673fa6a198c75a09bd4509105400080000000000000000103c00010310020002000010090002000010120002000010210001201023000120102400012010110001201049000600372a000120"
+            ]
+        },
+        {
+            "MAC": "d0:c0:bf:bc:79:55",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854164.181049,
+            "Sequence Number": 2220,
+            "Features": [
+                "Supported Rates: 82848b968c129824",
+                "Extended Supported Rates: b048606c"
+            ]
+        },
+        {
+            "MAC": "d0:c0:bf:bc:79:55",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854173.06265,
+            "Sequence Number": 2256,
+            "Features": [
+                "Supported Rates: 82848b968c129824",
+                "Extended Supported Rates: b048606c"
+            ]
+        },
+        {
+            "MAC": "d0:c0:bf:bc:79:55",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854173.064401,
+            "Sequence Number": 2257,
+            "Features": [
+                "Supported Rates: 82848b968c129824",
+                "Extended Supported Rates: b048606c",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a00010010080002314810470010dba25395ad673fa6a198c75a09bd4509105400080000000000000000103c00010310020002000010090002000010120002000010210001201023000120102400012010110001201049000600372a000120"
+            ]
+        }
+    ],
+    "d2:87:b7:19:1b:f1": [
+        {
+            "MAC": "d2:87:b7:19:1b:f1",
+            "SSID": "eduroam",
+            "RSSI": -32,
+            "Timestamp": 1745854035.0222514,
+            "Sequence Number": 1137,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08000d00",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        },
+        {
+            "MAC": "d2:87:b7:19:1b:f1",
+            "SSID": "eduroam",
+            "RSSI": -34,
+            "Timestamp": 1745854035.162986,
+            "Sequence Number": 1140,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08000d00",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        },
+        {
+            "MAC": "d2:87:b7:19:1b:f1",
+            "SSID": "eduroam",
+            "RSSI": -36,
+            "Timestamp": 1745854035.2557852,
+            "Sequence Number": 1142,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08000d00",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "92:3e:54:18:32:de": [
+        {
+            "MAC": "92:3e:54:18:32:de",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854038.2947538,
+            "Sequence Number": 3711,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "22:e6:9c:c3:0e:ce": [
+        {
+            "MAC": "22:e6:9c:c3:0e:ce",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -32,
+            "Timestamp": 1745854041.4471118,
+            "Sequence Number": 3258,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        },
+        {
+            "MAC": "22:e6:9c:c3:0e:ce",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -34,
+            "Timestamp": 1745854041.4667494,
+            "Sequence Number": 3293,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "7e:7a:38:24:5e:18": [
+        {
+            "MAC": "7e:7a:38:24:5e:18",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -38,
+            "Timestamp": 1745854041.490415,
+            "Sequence Number": 2994,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        },
+        {
+            "MAC": "7e:7a:38:24:5e:18",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -36,
+            "Timestamp": 1745854041.5122712,
+            "Sequence Number": 2995,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "4e:fc:70:f4:43:7f": [
+        {
+            "MAC": "4e:fc:70:f4:43:7f",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -20,
+            "Timestamp": 1745854041.6468663,
+            "Sequence Number": 282,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        },
+        {
+            "MAC": "4e:fc:70:f4:43:7f",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -20,
+            "Timestamp": 1745854041.666375,
+            "Sequence Number": 283,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "4a:ad:af:52:41:3a": [
+        {
+            "MAC": "4a:ad:af:52:41:3a",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -22,
+            "Timestamp": 1745854041.732622,
+            "Sequence Number": 2753,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        },
+        {
+            "MAC": "4a:ad:af:52:41:3a",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -22,
+            "Timestamp": 1745854041.7551625,
+            "Sequence Number": 2754,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "74:d8:3e:f4:5b:23": [
+        {
+            "MAC": "74:d8:3e:f4:5b:23",
+            "SSID": "eduroam",
+            "RSSI": -60,
+            "Timestamp": 1745854044.269365,
+            "Sequence Number": 1663,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400c880014000000000",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103650101"
+            ]
+        }
+    ],
+    "2c:db:07:8a:75:ff": [
+        {
+            "MAC": "2c:db:07:8a:75:ff",
+            "SSID": "uisemp",
+            "RSSI": -66,
+            "Timestamp": 1745854044.570896,
+            "Sequence Number": 3631,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400c880014000000000",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103"
+            ]
+        },
+        {
+            "MAC": "2c:db:07:8a:75:ff",
+            "SSID": "uisemp",
+            "RSSI": -90,
+            "Timestamp": 1745854094.6885815,
+            "Sequence Number": 3668,
+            "Features": [
+                "Supported Rates: 0c1218243048606c",
+                "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400c880014000000000",
+                "VHT Capabilities: f6799103faff0000faff0020",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103"
+            ]
+        }
+    ],
+    "42:51:71:53:6c:da": [
+        {
+            "MAC": "42:51:71:53:6c:da",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -62,
+            "Timestamp": 1745854046.9110992,
+            "Sequence Number": 2905,
+            "Features": [
+                "Supported Rates: 8c129824b048606c",
+                "HT Capabilities: 6f0017ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400488001004040002120",
+                "VHT Capabilities: 7670910ffaff0000faff0020",
+                "Vendor: 00:90:4C (Epigram, Inc.) Vendor Info: 0417",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030101650101"
+            ]
+        },
+        {
+            "MAC": "42:51:71:53:6c:da",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -62,
+            "Timestamp": 1745854046.9315958,
+            "Sequence Number": 2907,
+            "Features": [
+                "Supported Rates: 8c129824b048606c",
+                "HT Capabilities: 6f0017ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400488001004040002120",
+                "VHT Capabilities: 7670910ffaff0000faff0020",
+                "Vendor: 00:90:4C (Epigram, Inc.) Vendor Info: 0417",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030101650101"
+            ]
+        }
+    ],
+    "2e:05:55:96:8a:99": [
+        {
+            "MAC": "2e:05:55:96:8a:99",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745854055.5303528,
+            "Sequence Number": 3994,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "6e:e9:15:63:61:ac": [
+        {
+            "MAC": "6e:e9:15:63:61:ac",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854058.2817426,
+            "Sequence Number": 2649,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "2e:03:27:80:e1:2e": [
+        {
+            "MAC": "2e:03:27:80:e1:2e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745854062.577505,
+            "Sequence Number": 2507,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d001bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080000000040000020"
+            ]
+        },
+        {
+            "MAC": "2e:03:27:80:e1:2e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745854062.5883367,
+            "Sequence Number": 2508,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d001bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080000000040000020"
+            ]
+        }
+    ],
+    "de:80:b6:68:2b:a9": [
+        {
+            "MAC": "de:80:b6:68:2b:a9",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -42,
+            "Timestamp": 1745854063.076187,
+            "Sequence Number": 3497,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        },
+        {
+            "MAC": "de:80:b6:68:2b:a9",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -42,
+            "Timestamp": 1745854063.0966182,
+            "Sequence Number": 1541,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "4e:6c:59:32:da:38": [
+        {
+            "MAC": "4e:6c:59:32:da:38",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854067.751092,
+            "Sequence Number": 3033,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "da:6f:98:45:ed:d6": [
+        {
+            "MAC": "da:6f:98:45:ed:d6",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -50,
+            "Timestamp": 1745854071.5930321,
+            "Sequence Number": 1601,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "36:96:f7:2a:35:8f": [
+        {
+            "MAC": "36:96:f7:2a:35:8f",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854102.5628517,
+            "Sequence Number": 1958,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        },
+        {
+            "MAC": "36:96:f7:2a:35:8f",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854102.578378,
+            "Sequence Number": 1959,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "66:fa:5e:67:09:b5": [
+        {
+            "MAC": "66:fa:5e:67:09:b5",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -70,
+            "Timestamp": 1745854105.7607136,
+            "Sequence Number": 1769,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 6f0913ff00000000000000000000000000000000000000000000",
+                "VHT Capabilities: 12f19033feff8601feff8601",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08002600",
+                "Extended Capabilities: 00000a82",
+                "Vendor: 8C:FD:F0 (Qualcomm Inc.) Vendor Info: 0101020100"
+            ]
+        }
+    ],
+    "ca:10:55:34:42:e5": [
+        {
+            "MAC": "ca:10:55:34:42:e5",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -66,
+            "Timestamp": 1745854106.2581077,
+            "Sequence Number": 87,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:90:4C (Epigram, Inc.) Vendor Info: 0408bf0c7670810ffaff0000faff0020",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "bc:6e:e2:d2:e1:eb": [
+        {
+            "MAC": "bc:6e:e2:d2:e1:eb",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -66,
+            "Timestamp": 1745854106.5320625,
+            "Sequence Number": 2890,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400c880014000000000",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103650101"
+            ]
+        }
+    ],
+    "1c:4d:70:7c:c0:81": [
+        {
+            "MAC": "1c:4d:70:7c:c0:81",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -66,
+            "Timestamp": 1745854107.3177521,
+            "Sequence Number": 1866,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: e70917ffff000000000000000000000000000000000000000000"
+            ]
+        },
+        {
+            "MAC": "1c:4d:70:7c:c0:81",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -79,
+            "Timestamp": 1745854107.3875587,
+            "Sequence Number": 1867,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: e70917ffff000000000000000000000000000000000000000000"
+            ]
+        }
+    ],
+    "6e:48:a9:14:46:9c": [
+        {
+            "MAC": "6e:48:a9:14:46:9c",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -36,
+            "Timestamp": 1745854115.0465262,
+            "Sequence Number": 57,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002"
+            ]
+        },
+        {
+            "MAC": "6e:48:a9:14:46:9c",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -40,
+            "Timestamp": 1745854115.0643384,
+            "Sequence Number": 58,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002"
+            ]
+        }
+    ],
+    "3e:ea:3e:e3:f4:79": [
+        {
+            "MAC": "3e:ea:3e:e3:f4:79",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -20,
+            "Timestamp": 1745854115.0701127,
+            "Sequence Number": 3696,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "32:2f:d1:21:9e:80": [
+        {
+            "MAC": "32:2f:d1:21:9e:80",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854115.9920394,
+            "Sequence Number": 4014,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "ea:60:a2:73:6c:77": [
+        {
+            "MAC": "ea:60:a2:73:6c:77",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -40,
+            "Timestamp": 1745854116.6847491,
+            "Sequence Number": 1362,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002"
+            ]
+        }
+    ],
+    "fe:1c:b4:dd:23:16": [
+        {
+            "MAC": "fe:1c:b4:dd:23:16",
+            "SSID": "eduroam",
+            "RSSI": -54,
+            "Timestamp": 1745854116.7838244,
+            "Sequence Number": 397,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        },
+        {
+            "MAC": "fe:1c:b4:dd:23:16",
+            "SSID": "eduroam",
+            "RSSI": -50,
+            "Timestamp": 1745854117.4973817,
+            "Sequence Number": 407,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        },
+        {
+            "MAC": "fe:1c:b4:dd:23:16",
+            "SSID": "eduroam",
+            "RSSI": -52,
+            "Timestamp": 1745854117.5195947,
+            "Sequence Number": 408,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "96:d1:0a:bf:a8:2b": [
+        {
+            "MAC": "96:d1:0a:bf:a8:2b",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -66,
+            "Timestamp": 1745854117.2019856,
+            "Sequence Number": 2991,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:90:4C (Epigram, Inc.) Vendor Info: 0408bf0c7670810ffaff0000faff0020",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "56:d8:9e:ea:8c:c2": [
+        {
+            "MAC": "56:d8:9e:ea:8c:c2",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745854120.6163528,
+            "Sequence Number": 336,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "b6:86:ae:8f:92:b4": [
+        {
+            "MAC": "b6:86:ae:8f:92:b4",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -36,
+            "Timestamp": 1745854122.102998,
+            "Sequence Number": 2674,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        },
+        {
+            "MAC": "b6:86:ae:8f:92:b4",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -36,
+            "Timestamp": 1745854122.1237266,
+            "Sequence Number": 2675,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "76:c7:0f:00:81:a1": [
+        {
+            "MAC": "76:c7:0f:00:81:a1",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -32,
+            "Timestamp": 1745854122.1950808,
+            "Sequence Number": 2168,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        },
+        {
+            "MAC": "76:c7:0f:00:81:a1",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -34,
+            "Timestamp": 1745854122.2154653,
+            "Sequence Number": 2169,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "0e:af:d0:66:5b:e1": [
+        {
+            "MAC": "0e:af:d0:66:5b:e1",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -36,
+            "Timestamp": 1745854122.2880385,
+            "Sequence Number": 515,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "26:21:ff:e7:65:db": [
+        {
+            "MAC": "26:21:ff:e7:65:db",
+            "SSID": "EPI-Gast",
+            "RSSI": -68,
+            "Timestamp": 1745854126.029188,
+            "Sequence Number": 1289,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d0113ff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04000a82004000408001",
+                "VHT Capabilities: 92719133feff8601feff8601",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08002400",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030101650101"
+            ]
+        }
+    ],
+    "4a:52:0f:23:5e:fa": [
+        {
+            "MAC": "4a:52:0f:23:5e:fa",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854127.3083143,
+            "Sequence Number": 979,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "7c:21:4a:b3:b1:13": [
+        {
+            "MAC": "7c:21:4a:b3:b1:13",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -60,
+            "Timestamp": 1745854130.650574,
+            "Sequence Number": 2707,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400c880014000000000",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103"
+            ]
+        }
+    ],
+    "5a:40:e5:b2:73:d1": [
+        {
+            "MAC": "5a:40:e5:b2:73:d1",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745854131.0699224,
+            "Sequence Number": 2400,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        },
+        {
+            "MAC": "5a:40:e5:b2:73:d1",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -56,
+            "Timestamp": 1745854131.093288,
+            "Sequence Number": 2401,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "70:1f:3c:bd:ff:ff": [
+        {
+            "MAC": "70:1f:3c:bd:ff:ff",
+            "SSID": "uis-gjestenett",
+            "RSSI": -62,
+            "Timestamp": 1745854132.5770814,
+            "Sequence Number": 2918,
+            "Features": [
+                "Supported Rates: 02040b0c12161824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 6f0117ff00000001000000000000000000000000000000000000",
+                "Extended Capabilities: 0400000000000040",
+                "VHT Capabilities: 31710003feff0000feff0000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001300"
+            ]
+        }
+    ],
+    "9e:e6:3a:e1:99:48": [
+        {
+            "MAC": "9e:e6:3a:e1:99:48",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745854132.5827227,
+            "Sequence Number": 106,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "e0:0a:f6:6d:33:29": [
+        {
+            "MAC": "e0:0a:f6:6d:33:29",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -65,
+            "Timestamp": 1745854132.9472907,
+            "Sequence Number": 1153,
+            "Features": [
+                "Supported Rates: 8c129824b048606c",
+                "HT Capabilities: 6f1903ffff000000000000000000000000000000000000000000",
+                "VHT Capabilities: 3171803ffaff6801faff6801",
+                "Extended Capabilities: 040000000000004000"
+            ]
+        },
+        {
+            "MAC": "e0:0a:f6:6d:33:29",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -62,
+            "Timestamp": 1745854132.9478965,
+            "Sequence Number": 1154,
+            "Features": [
+                "Supported Rates: 8c129824b048606c",
+                "HT Capabilities: 6f1903ffff000000000000000000000000000000000000000000",
+                "VHT Capabilities: 3171803ffaff6801faff6801",
+                "Extended Capabilities: 040000000000004000"
+            ]
+        },
+        {
+            "MAC": "e0:0a:f6:6d:33:29",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -62,
+            "Timestamp": 1745854132.9584897,
+            "Sequence Number": 1155,
+            "Features": [
+                "Supported Rates: 8c129824b048606c",
+                "HT Capabilities: 6f1903ffff000000000000000000000000000000000000000000",
+                "VHT Capabilities: 3171803ffaff6801faff6801",
+                "Extended Capabilities: 040000000000004000"
+            ]
+        },
+        {
+            "MAC": "e0:0a:f6:6d:33:29",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -62,
+            "Timestamp": 1745854132.9591544,
+            "Sequence Number": 1156,
+            "Features": [
+                "Supported Rates: 8c129824b048606c",
+                "HT Capabilities: 6f1903ffff000000000000000000000000000000000000000000",
+                "VHT Capabilities: 3171803ffaff6801faff6801",
+                "Extended Capabilities: 040000000000004000"
+            ]
+        },
+        {
+            "MAC": "e0:0a:f6:6d:33:29",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -62,
+            "Timestamp": 1745854132.973446,
+            "Sequence Number": 1157,
+            "Features": [
+                "Supported Rates: 8c129824b048606c",
+                "HT Capabilities: 6f1903ffff000000000000000000000000000000000000000000",
+                "VHT Capabilities: 3171803ffaff6801faff6801",
+                "Extended Capabilities: 040000000000004000"
+            ]
+        },
+        {
+            "MAC": "e0:0a:f6:6d:33:29",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -62,
+            "Timestamp": 1745854132.973994,
+            "Sequence Number": 1158,
+            "Features": [
+                "Supported Rates: 8c129824b048606c",
+                "HT Capabilities: 6f1903ffff000000000000000000000000000000000000000000",
+                "VHT Capabilities: 3171803ffaff6801faff6801",
+                "Extended Capabilities: 040000000000004000"
+            ]
+        }
+    ],
+    "9e:b6:3d:06:0a:37": [
+        {
+            "MAC": "9e:b6:3d:06:0a:37",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -34,
+            "Timestamp": 1745854134.337718,
+            "Sequence Number": 1016,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c"
+            ]
+        },
+        {
+            "MAC": "9e:b6:3d:06:0a:37",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -84,
+            "Timestamp": 1745854134.3596432,
+            "Sequence Number": 1017,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c"
+            ]
+        },
+        {
+            "MAC": "9e:b6:3d:06:0a:37",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -70,
+            "Timestamp": 1745854134.6597896,
+            "Sequence Number": 1026,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c"
+            ]
+        },
+        {
+            "MAC": "9e:b6:3d:06:0a:37",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -32,
+            "Timestamp": 1745854134.6791534,
+            "Sequence Number": 1027,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c"
+            ]
+        },
+        {
+            "MAC": "9e:b6:3d:06:0a:37",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -36,
+            "Timestamp": 1745854134.7051735,
+            "Sequence Number": 1028,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c"
+            ]
+        },
+        {
+            "MAC": "9e:b6:3d:06:0a:37",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -40,
+            "Timestamp": 1745854134.7233381,
+            "Sequence Number": 1029,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c"
+            ]
+        }
+    ],
+    "e6:03:38:c2:33:4d": [
+        {
+            "MAC": "e6:03:38:c2:33:4d",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -40,
+            "Timestamp": 1745854141.326029,
+            "Sequence Number": 1552,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002"
+            ]
+        },
+        {
+            "MAC": "e6:03:38:c2:33:4d",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -40,
+            "Timestamp": 1745854141.3375597,
+            "Sequence Number": 1553,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002"
+            ]
+        }
+    ],
+    "36:ab:b5:08:ab:2a": [
+        {
+            "MAC": "36:ab:b5:08:ab:2a",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -52,
+            "Timestamp": 1745854142.317538,
+            "Sequence Number": 2972,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d001bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080000000040000020"
+            ]
+        }
+    ],
+    "5a:87:2b:44:b2:9b": [
+        {
+            "MAC": "5a:87:2b:44:b2:9b",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -48,
+            "Timestamp": 1745854142.4420054,
+            "Sequence Number": 1305,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:90:4C (Epigram, Inc.) Vendor Info: 0408bf0c7670810ffaff0000faff0020",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "b6:2d:10:68:0c:06": [
+        {
+            "MAC": "b6:2d:10:68:0c:06",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854143.7466798,
+            "Sequence Number": 3440,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        },
+        {
+            "MAC": "b6:2d:10:68:0c:06",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854143.7707458,
+            "Sequence Number": 3441,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "c2:09:f0:ec:94:f4": [
+        {
+            "MAC": "c2:09:f0:ec:94:f4",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854146.5667953,
+            "Sequence Number": 1187,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "a8:9b:2e:0f:54:34": [
+        {
+            "MAC": "a8:9b:2e:0f:54:34",
+            "SSID": "uis-gjestenett",
+            "RSSI": -58,
+            "Timestamp": 1745854146.7208343,
+            "Sequence Number": 515,
+            "Features": [
+                "Supported Rates: 02040b0c12161824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 6f0117ff00000001000000000000000000000000000000000000",
+                "Extended Capabilities: 0400000000000040",
+                "VHT Capabilities: 31710003feff0000feff0000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001300"
+            ]
+        }
+    ],
+    "9c:fc:e8:45:f2:0a": [
+        {
+            "MAC": "9c:fc:e8:45:f2:0a",
+            "SSID": "DIRECT-",
+            "RSSI": -68,
+            "Timestamp": 1745854151.580052,
+            "Sequence Number": 909,
+            "Features": [
+                "Supported Rates: 0c1218243048606c",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a0001001008000211e81047001056d4dc6d616b4906822db1208932b70f1054000800010050f2000000103c0001021002000200001009000200001012000200001011000f4445534b544f502d53424754484542104900090001371005000200011049000600372a000120",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 0a00000601101c440006",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 090202002500"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:45:f2:0a",
+            "SSID": "DIRECT-",
+            "RSSI": -60,
+            "Timestamp": 1745854152.910572,
+            "Sequence Number": 945,
+            "Features": [
+                "Supported Rates: 0c1218243048606c",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a0001001008000211e81047001056d4dc6d616b4906822db1208932b70f1054000800010050f2000000103c0001021002000200001009000200001012000200001011000f4445534b544f502d53424754484542104900090001371005000200011049000600372a000120",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 0a00000601101c440006",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 090202002500"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:45:f2:0a",
+            "SSID": "DIRECT-",
+            "RSSI": -61,
+            "Timestamp": 1745854153.3199887,
+            "Sequence Number": 954,
+            "Features": [
+                "Supported Rates: 0c1218243048606c",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a0001001008000211e81047001056d4dc6d616b4906822db1208932b70f1054000800010050f2000000103c0001021002000200001009000200001012000200001011000f4445534b544f502d53424754484542104900090001371005000200011049000600372a000120",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 0a00000601101c440006",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 090202002500"
+            ]
+        },
+        {
+            "MAC": "9c:fc:e8:45:f2:0a",
+            "SSID": "DIRECT-",
+            "RSSI": -59,
+            "Timestamp": 1745854153.5265737,
+            "Sequence Number": 958,
+            "Features": [
+                "Supported Rates: 0c1218243048606c",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a0001001008000211e81047001056d4dc6d616b4906822db1208932b70f1054000800010050f2000000103c0001021002000200001009000200001012000200001011000f4445534b544f502d53424754484542104900090001371005000200011049000600372a000120",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 0a00000601101c440006",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 090202002500"
+            ]
+        }
+    ],
+    "ea:58:f8:be:ae:2e": [
+        {
+            "MAC": "ea:58:f8:be:ae:2e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -46,
+            "Timestamp": 1745854163.5008814,
+            "Sequence Number": 2791,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d0017ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400488001404040002120",
+                "Vendor: 00:90:4C (Epigram, Inc.) Vendor Info: 0408bf0c7670910ffaff0000faff0020",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030101650101"
+            ]
+        },
+        {
+            "MAC": "ea:58:f8:be:ae:2e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -50,
+            "Timestamp": 1745854163.5409276,
+            "Sequence Number": 2794,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d0017ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400488001404040002120",
+                "Vendor: 00:90:4C (Epigram, Inc.) Vendor Info: 0408bf0c7670910ffaff0000faff0020",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030101650101"
+            ]
+        }
+    ],
+    "32:87:14:30:68:8e": [
+        {
+            "MAC": "32:87:14:30:68:8e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -20,
+            "Timestamp": 1745854163.8314228,
+            "Sequence Number": 2704,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 2d0917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000088000000000000120",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100"
+            ]
+        },
+        {
+            "MAC": "32:87:14:30:68:8e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -20,
+            "Timestamp": 1745854163.9030585,
+            "Sequence Number": 2705,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 2d0917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000088000000000000120",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100"
+            ]
+        },
+        {
+            "MAC": "32:87:14:30:68:8e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -22,
+            "Timestamp": 1745854163.9795308,
+            "Sequence Number": 2706,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 2d0917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000088000000000000120",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100"
+            ]
+        },
+        {
+            "MAC": "32:87:14:30:68:8e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -22,
+            "Timestamp": 1745854164.0172648,
+            "Sequence Number": 2707,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 2d0917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000088000000000000120",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100"
+            ]
+        },
+        {
+            "MAC": "32:87:14:30:68:8e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -24,
+            "Timestamp": 1745854164.0593102,
+            "Sequence Number": 2708,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 2d0917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000088000000000000120",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100"
+            ]
+        },
+        {
+            "MAC": "32:87:14:30:68:8e",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -26,
+            "Timestamp": 1745854164.0967884,
+            "Sequence Number": 2709,
+            "Features": [
+                "Supported Rates: 02040b160c121824",
+                "Extended Supported Rates: 3048606c",
+                "HT Capabilities: 2d0917ffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000088000000000000120",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001100"
+            ]
+        }
+    ],
+    "76:e4:54:86:ff:ec": [
+        {
+            "MAC": "76:e4:54:86:ff:ec",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854166.6938736,
+            "Sequence Number": 372,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "06:60:44:fa:42:cd": [
+        {
+            "MAC": "06:60:44:fa:42:cd",
+            "SSID": "Higiene Urbana Guest",
+            "RSSI": -54,
+            "Timestamp": 1745854166.6948538,
+            "Sequence Number": 2064,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "32:48:af:65:fd:d7": [
+        {
+            "MAC": "32:48:af:65:fd:d7",
+            "SSID": "WiFi_Utente_CHLO",
+            "RSSI": -52,
+            "Timestamp": 1745854166.696311,
+            "Sequence Number": 2447,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "ce:79:2c:86:24:db": [
+        {
+            "MAC": "ce:79:2c:86:24:db",
+            "SSID": "eduroam",
+            "RSSI": -50,
+            "Timestamp": 1745854166.6970816,
+            "Sequence Number": 1407,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "16:61:47:2b:a8:c0": [
+        {
+            "MAC": "16:61:47:2b:a8:c0",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -58,
+            "Timestamp": 1745854166.8254833,
+            "Sequence Number": 3462,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "7e:9b:3c:8c:36:ab": [
+        {
+            "MAC": "7e:9b:3c:8c:36:ab",
+            "SSID": "Higiene Urbana Guest",
+            "RSSI": -60,
+            "Timestamp": 1745854166.828142,
+            "Sequence Number": 3773,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "5e:6f:40:72:80:bb": [
+        {
+            "MAC": "5e:6f:40:72:80:bb",
+            "SSID": "eduroam",
+            "RSSI": -42,
+            "Timestamp": 1745854166.888866,
+            "Sequence Number": 3827,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08000e00",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "9e:8b:c8:ea:f3:0a": [
+        {
+            "MAC": "9e:8b:c8:ea:f3:0a",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -46,
+            "Timestamp": 1745854167.1286438,
+            "Sequence Number": 4058,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002"
+            ]
+        },
+        {
+            "MAC": "9e:8b:c8:ea:f3:0a",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -38,
+            "Timestamp": 1745854167.1493075,
+            "Sequence Number": 4059,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002"
+            ]
+        }
+    ],
+    "22:29:8a:11:f9:68": [
+        {
+            "MAC": "22:29:8a:11:f9:68",
+            "SSID": "eduroam",
+            "RSSI": -54,
+            "Timestamp": 1745854169.14864,
+            "Sequence Number": 571,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        },
+        {
+            "MAC": "22:29:8a:11:f9:68",
+            "SSID": "eduroam",
+            "RSSI": -50,
+            "Timestamp": 1745854179.2543418,
+            "Sequence Number": 602,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        },
+        {
+            "MAC": "22:29:8a:11:f9:68",
+            "SSID": "eduroam",
+            "RSSI": -54,
+            "Timestamp": 1745854179.3453138,
+            "Sequence Number": 606,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "96:aa:3d:31:38:b0": [
+        {
+            "MAC": "96:aa:3d:31:38:b0",
+            "SSID": "eduroam",
+            "RSSI": -52,
+            "Timestamp": 1745854170.1069784,
+            "Sequence Number": 3817,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08000f00",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000000"
+            ]
+        }
+    ],
+    "76:2c:e3:6a:67:09": [
+        {
+            "MAC": "76:2c:e3:6a:67:09",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -38,
+            "Timestamp": 1745854171.0739286,
+            "Sequence Number": 179,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002"
+            ]
+        },
+        {
+            "MAC": "76:2c:e3:6a:67:09",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -44,
+            "Timestamp": 1745854171.0829551,
+            "Sequence Number": 180,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04004804000000c0010020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002"
+            ]
+        }
+    ],
+    "b2:d8:bb:29:e2:52": [
+        {
+            "MAC": "b2:d8:bb:29:e2:52",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -70,
+            "Timestamp": 1745854171.136495,
+            "Sequence Number": 2247,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040000020"
+            ]
+        }
+    ],
+    "6a:89:ca:35:bf:e2": [
+        {
+            "MAC": "6a:89:ca:35:bf:e2",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -22,
+            "Timestamp": 1745854172.7674572,
+            "Sequence Number": 3928,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        },
+        {
+            "MAC": "6a:89:ca:35:bf:e2",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -22,
+            "Timestamp": 1745854172.7829843,
+            "Sequence Number": 3929,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "ba:9e:40:70:17:49": [
+        {
+            "MAC": "ba:9e:40:70:17:49",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -44,
+            "Timestamp": 1745854179.1287856,
+            "Sequence Number": 292,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0400480400000040000020",
+                "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200",
+                "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002"
+            ]
+        }
+    ],
+    "40:1a:58:b8:ff:b9": [
+        {
+            "MAC": "40:1a:58:b8:ff:b9",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -54,
+            "Timestamp": 1745854179.4912713,
+            "Sequence Number": 492,
+            "Features": [
+                "Supported Rates: 82848b960c121824",
+                "Extended Supported Rates: 3048606c",
+                "Extended Capabilities: 04004800004000400020",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103"
+            ]
+        }
+    ],
+    "12:a9:9b:4d:ec:24": [
+        {
+            "MAC": "12:a9:9b:4d:ec:24",
+            "SSID": "Telia-2G-189100",
+            "RSSI": -44,
+            "Timestamp": 1745854179.7333589,
+            "Sequence Number": 3993,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "f6:22:80:2d:38:11": [
+        {
+            "MAC": "f6:22:80:2d:38:11",
+            "SSID": "Telia-2G-189100",
+            "RSSI": -46,
+            "Timestamp": 1745854179.7639103,
+            "Sequence Number": 756,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "b2:63:65:f4:5c:28": [
+        {
+            "MAC": "b2:63:65:f4:5c:28",
+            "SSID": "Telia-2G-189100",
+            "RSSI": -50,
+            "Timestamp": 1745854179.7855887,
+            "Sequence Number": 2045,
+            "Features": [
+                "Supported Rates: 82848b96",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+                "Extended Capabilities: 0000080400000040"
+            ]
+        }
+    ],
+    "22:db:e3:1b:2e:d2": [
+        {
+            "MAC": "22:db:e3:1b:2e:d2",
+            "SSID": "<Hidden SSID>",
+            "RSSI": -64,
+            "Timestamp": 1745854181.361485,
+            "Sequence Number": 1602,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: ef0913ffff000000000000000000000000000000000000000100",
+                "Extended Capabilities: 04000000000000408020",
+                "VHT Capabilities: 92f19033faff0c03faff0c23",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08002700"
+            ]
+        }
+    ],
+    "3e:45:bb:20:e9:24": [
+        {
+            "MAC": "3e:45:bb:20:e9:24",
+            "SSID": "EPI-Gast",
+            "RSSI": -72,
+            "Timestamp": 1745854186.0430868,
+            "Sequence Number": 799,
+            "Features": [
+                "Supported Rates: 02040b16",
+                "Extended Supported Rates: 0c1218243048606c",
+                "HT Capabilities: 2d0113ff00000000000000000000000000000000000000000000",
+                "Extended Capabilities: 04000a82004000408001",
+                "VHT Capabilities: 92719133feff8601feff8601",
+                "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08002400",
+                "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030101650101"
+            ]
+        }
+>>>>>>> 9357f605777a2675b48021f245afa39e016b21eb
     ]
 }
