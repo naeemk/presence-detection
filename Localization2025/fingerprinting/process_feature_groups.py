@@ -60,6 +60,7 @@ def process_feature_groups(feature_data):
             "Device_Name": f"Device {device_counter}",
             "MACs": list(macs),
             "SSIDs": list(ssids),
+            "Probe Request Count": len(entries),
             "Average_RSSI": average_rssi,
             "First_Timestamp": min(timestamps),
             "Last_Timestamp": max(timestamps),
