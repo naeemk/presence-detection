@@ -54,21 +54,21 @@ def visualize_plot(data):
     # Plotting
     for device_index, device_name, first_timestamp, latest_timestamp, rssi, distance in valid_data:
         # Show label only for the most recent entry of each device
-        if device_latest_data[device_name] == (device_index, device_name, first_timestamp, latest_timestamp, rssi, distance): # Most Recent Device
+        
+        if device_name in device_latest_data and device_latest_data[device_name] == (device_index, device_name, first_timestamp, latest_timestamp, rssi, distance):  # Most Recent Device
             red = (1, 0, 0, 1)  # Bright red
             plt.scatter(device_index, distance, color=red)
-            #plt.scatter(device_index, distance, facecolors='none', edgecolors='black')
-
             plt.text(device_index, distance + 0.2, 
-                     f"{device_name} / {rssi:.2f}dBm / {distance:.2f}m", 
-                     fontsize=8)
-            #legend_labels.append(f"{device_name} / {rssi:.2f}dBm / {distance:.2f}m")
-
+                    f"{device_name} / {rssi:.2f}dBm / {distance:.2f}m", 
+                    fontsize=8)
         else:
             age = current_time - first_timestamp
             alpha = max(min_alpha, max_alpha - (age / fade_time) * (max_alpha - min_alpha))
             color = (1, 0, 0, alpha)
             plt.scatter(device_index, distance, color=color)
+
+
+    
         
     #plt.legend(legend_labels)
     plt.ylim(0, max_distance)

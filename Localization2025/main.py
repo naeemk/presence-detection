@@ -20,6 +20,7 @@ def load_config(filename="config.json"):
 config = load_config()
 
 interface = config["general"]["interface"]
+capture_delay = config["general"]["capture_delay"]
 datafile1 = config["jsonfiles"]["mac_data"]
 datafile2 = config["jsonfiles"]["ssid_data"]
 datafile3 = config["jsonfiles"]["feature_data"]
@@ -96,7 +97,7 @@ async def main():
 
     # Step 1: Start sniffing and capture probe requests until you press 'esc'
     task1 = asyncio.create_task(start_sniffing(interface))  # Replace with your Wi-Fi interface
-    time.sleep(5)
+    time.sleep(capture_delay)
     task2 = asyncio.create_task(save_packets())
     print("[*] Capturing data...")
 

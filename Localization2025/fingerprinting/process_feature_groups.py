@@ -1,7 +1,7 @@
 import json
 import time
 from collections import defaultdict
-from kalman_filter import KalmanFilter  # <-- import Kalman filter
+from kalman_filter import KalmanFilter
 
 # Load configuration
 def load_config(filename="config.json"):
@@ -16,11 +16,13 @@ def process_feature_groups(feature_data):
     devices = []
     device_counter = 1
     time_window = 60  # in seconds
+    current_time = time.time()
 
     for group in feature_data.values():
         macs = set(group.get("macs", []))
         ssids = set()
         rssis = []
+        rssis2 = []
         timestamps = []
         features = set()
 
@@ -28,15 +30,11 @@ def process_feature_groups(feature_data):
         if not entries:
             continue
 
-        reference_ts = entries[0].get("Timestamp")
-        if reference_ts is None:
-            continue
-
         kf = KalmanFilter()  # <-- instantiate a Kalman Filter per device group
 
         for entry in entries:
             timestamp = entry.get("Timestamp")
-            if timestamp is None or abs(timestamp - reference_ts) > time_window:
+            if timestamp is None or abs(timestamp - current_time) > time_window:
                 continue
 
             ssids.add(entry.get("SSID", ""))
@@ -45,6 +43,7 @@ def process_feature_groups(feature_data):
 
             if rssi is not None:
                 filtered_rssi = kf.filter(rssi)  # <-- apply Kalman filter here
+                rssis2.append(rssi)
                 rssis.append(filtered_rssi)
             timestamps.append(timestamp)
 
@@ -61,6 +60,8 @@ def process_feature_groups(feature_data):
             "MACs": list(macs),
             "SSIDs": list(ssids),
             "Probe Request Count": len(entries),
+            "RSSIs": rssis2,
+            "Filtered_RSSIs": rssis,
             "Average_RSSI": average_rssi,
             "First_Timestamp": min(timestamps),
             "Last_Timestamp": max(timestamps),
