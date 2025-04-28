@@ -1,7 +1,7 @@
 import json
 import time
 from collections import defaultdict
-from kalman_filter import KalmanFilter  # <-- import Kalman filter
+from kalman_filter import kalman_filter  # <-- import Kalman filter function
 
 # Load configuration
 def load_config(filename="config.json"):
@@ -32,7 +32,9 @@ def process_feature_groups(feature_data):
         if reference_ts is None:
             continue
 
-        kf = KalmanFilter()  # <-- instantiate a Kalman Filter per device group
+        # Initialize the Kalman filter for the group (no need to instantiate it repeatedly in the loop)
+        posteri_estimate = 0.0
+        posteri_error_estimate = 1.0
 
         for entry in entries:
             timestamp = entry.get("Timestamp")
@@ -44,7 +46,8 @@ def process_feature_groups(feature_data):
             feature_list = entry.get("Features", [])
 
             if rssi is not None:
-                filtered_rssi = kf.filter(rssi)  # <-- apply Kalman filter here
+                # Apply Kalman filter to RSSI values
+                filtered_rssi = kalman_filter(rssi)
                 rssis.append(filtered_rssi)
             timestamps.append(timestamp)
 
@@ -52,10 +55,12 @@ def process_feature_groups(feature_data):
                 features.update(f.strip() for f in feature_list if f.strip())
 
         if not rssis or not timestamps:
-            continue
+            continue  # Skip this group if missing required data
 
+        # Calculate the average filtered RSSI
         average_rssi = sum(rssis) / len(rssis)
 
+        # Prepare device data
         device = {
             "Device_Name": f"Device {device_counter}",
             "MACs": list(macs),
@@ -63,12 +68,13 @@ def process_feature_groups(feature_data):
             "Average_RSSI": average_rssi,
             "First_Timestamp": min(timestamps),
             "Last_Timestamp": max(timestamps),
-            "Features": ", ".join(sorted(features))
+            "Features": ", ".join(sorted(features))  # Sort features for consistency
         }
 
         devices.append(device)
         device_counter += 1
 
+    # Save the processed devices data to a JSON file
     with open("data/devices.json", "w") as json_file:
         json.dump(devices, json_file, indent=4)
 
