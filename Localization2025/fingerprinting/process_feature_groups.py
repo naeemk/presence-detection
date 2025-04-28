@@ -1,7 +1,7 @@
 import json
 import time
 from collections import defaultdict
-from kalman_filter import KalmanFilter
+from kalman_filter import kalman_filter  # <-- import Kalman filter function
 
 # Load configuration
 def load_config(filename="config.json"):
@@ -16,13 +16,11 @@ def process_feature_groups(feature_data):
     devices = []
     device_counter = 1
     time_window = 60  # in seconds
-    current_time = time.time()
 
     for group in feature_data.values():
         macs = set(group.get("macs", []))
         ssids = set()
         rssis = []
-        rssis2 = []
         timestamps = []
         features = set()
 
@@ -30,11 +28,17 @@ def process_feature_groups(feature_data):
         if not entries:
             continue
 
-        kf = KalmanFilter()  # <-- instantiate a Kalman Filter per device group
+        reference_ts = entries[0].get("Timestamp")
+        if reference_ts is None:
+            continue
+
+        # Initialize the Kalman filter for the group (no need to instantiate it repeatedly in the loop)
+        posteri_estimate = 0.0
+        posteri_error_estimate = 1.0
 
         for entry in entries:
             timestamp = entry.get("Timestamp")
-            if timestamp is None or abs(timestamp - current_time) > time_window:
+            if timestamp is None or abs(timestamp - reference_ts) > time_window:
                 continue
 
             ssids.add(entry.get("SSID", ""))
@@ -42,8 +46,8 @@ def process_feature_groups(feature_data):
             feature_list = entry.get("Features", [])
 
             if rssi is not None:
-                filtered_rssi = kf.filter(rssi)  # <-- apply Kalman filter here
-                rssis2.append(rssi)
+                # Apply Kalman filter to RSSI values
+                filtered_rssi = kalman_filter(rssi)
                 rssis.append(filtered_rssi)
             timestamps.append(timestamp)
 
@@ -61,9 +65,6 @@ def process_feature_groups(feature_data):
             "Device_Name": f"Device {device_counter}",
             "MACs": list(macs),
             "SSIDs": list(ssids),
-            "Probe Request Count": len(entries),
-            "RSSIs": rssis2,
-            "Filtered_RSSIs": rssis,
             "Average_RSSI": average_rssi,
             "First_Timestamp": min(timestamps),
             "Last_Timestamp": max(timestamps),
