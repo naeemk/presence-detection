@@ -2,20 +2,19 @@
     {
         "Device_Name": "Device 1",
         "MACs": [
-            "de:a3:50:69:5a:20",
-            "26:e7:a5:b4:6b:f6",
             "fc:31:5d:79:ef:0c",
-            "e0:c2:64:9a:1f:a5",
+            "26:e7:a5:b4:6b:f6",
+            "de:a3:50:69:5a:20",
             "f0:77:c3:4e:7d:9d",
             "36:d5:fb:d9:3d:f2"
         ],
         "SSIDs": [
-            "<Hidden SSID>",
-            "eduroam"
+            "eduroam",
+            "<Hidden SSID>"
         ],
-        "Average_RSSI": -59.0,
-        "First_Timestamp": 1745675484.0892212,
-        "Last_Timestamp": 1745675537.9567316,
+        "Average_RSSI": -53.847627649110585,
+        "First_Timestamp": 1745847925.4800231,
+        "Last_Timestamp": 1745847988.0947754,
         "Features": "Extended Capabilities: 0000080400000040, Extended Capabilities: 0000080400000040000020, Extended Capabilities: 0400480400000040000020, Extended Capabilities: 04004804000000c0010020, Extended Capabilities: 0400c880014000000000, Extended Supported Rates: 0c1218243048606c, Extended Supported Rates: 3048606c, HT Capabilities: 2d401bff00000000000000000000000000000000000000000000, HT Capabilities: 6f001bff00000000000000000000000000000000000000000000, HT Capabilities: e70917ffff000000000000000000000000000000000000000000, Supported Rates: 02040b160c121824, Supported Rates: 82848b96, Supported Rates: 8c129824b048606c, VHT Capabilities: 3270810ffaff0000faff0000, Vendor Info: 02000010000002, Vendor Info: 02010010000000, Vendor Info: 02010010000002, Vendor Info: 0407, Vendor Info: 0408bf0c7670800ffeff0000feff0020, Vendor Info: 08001200, Vendor Info: 08001300, Vendor Info: 0a00010400000000, Vendor Info: 16030103650101, Vendor: 00:10:18 (Broadcom), Vendor: 00:17:F2 (Apple, Inc.), Vendor: 00:50:F2 (MICROSOFT CORP.), Vendor: 00:90:4C (Epigram, Inc.), Vendor: 50:6F:9A (Wi-Fi Alliance)"
     },
     {
@@ -26,9 +25,9 @@
         "SSIDs": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -86.0,
-        "First_Timestamp": 1745675486.194287,
-        "Last_Timestamp": 1745675487.7442544,
+        "Average_RSSI": -85.36044086363,
+        "First_Timestamp": 1745847927.716584,
+        "Last_Timestamp": 1745847929.3348942,
         "Features": "Extended Capabilities: 0400c880014000000000, HT Capabilities: e70917ffff000000000000000000000000000000000000000000, Supported Rates: 0c1218243048606c, VHT Capabilities: f6799103faff0000faff0020, Vendor Info: 16030103, Vendor: 50:6F:9A (Wi-Fi Alliance)"
     },
     {
@@ -39,42 +38,42 @@
         "SSIDs": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -66.0,
-        "First_Timestamp": 1745675501.8052032,
-        "Last_Timestamp": 1745675559.4250839,
+        "Average_RSSI": -65.30695669933652,
+        "First_Timestamp": 1745847944.8906016,
+        "Last_Timestamp": 1745848004.730925,
         "Features": "Extended Supported Rates: b048606c, Supported Rates: 82848b968c129824"
     },
     {
         "Device_Name": "Device 4",
         "MACs": [
-            "26:07:13:57:ab:88",
-            "96:b7:0b:ce:b4:75"
+            "96:b7:0b:ce:b4:75",
+            "26:07:13:57:ab:88"
         ],
         "SSIDs": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -56.0,
-        "First_Timestamp": 1745675511.368717,
-        "Last_Timestamp": 1745675546.7713292,
+        "Average_RSSI": -55.58354288794512,
+        "First_Timestamp": 1745847955.9730227,
+        "Last_Timestamp": 1745847999.9678988,
         "Features": "Extended Capabilities: 0000080000000040, Extended Supported Rates: 0c1218243048606c, HT Capabilities: 2d001bff00000000000000000000000000000000000000000000, Supported Rates: 82848b96"
     },
     {
         "Device_Name": "Device 5",
         "MACs": [
-            "a6:f2:37:8e:93:11",
-            "3a:bb:66:ce:61:d4",
             "aa:8b:48:5d:e7:96",
-            "72:00:a0:08:e0:a8",
             "4e:77:f2:87:f6:af",
+            "3e:05:f2:28:52:8a",
             "c6:43:f6:e5:4a:b8",
-            "3e:05:f2:28:52:8a"
+            "72:00:a0:08:e0:a8",
+            "a6:f2:37:8e:93:11",
+            "3a:bb:66:ce:61:d4"
         ],
         "SSIDs": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -49.53846153846154,
-        "First_Timestamp": 1745675512.9597201,
-        "Last_Timestamp": 1745675534.427943,
+        "Average_RSSI": -46.90193408802519,
+        "First_Timestamp": 1745847957.868934,
+        "Last_Timestamp": 1745847983.4154084,
         "Features": "Extended Capabilities: 0000080400000040, Extended Supported Rates: 0c1218243048606c, HT Capabilities: 2d401bff00000000000000000000000000000000000000000000, Supported Rates: 82848b96"
     },
     {
@@ -85,9 +84,9 @@
         "SSIDs": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -64.0,
-        "First_Timestamp": 1745675536.183702,
-        "Last_Timestamp": 1745675536.183702,
+        "Average_RSSI": -63.36634290749596,
+        "First_Timestamp": 1745847985.9081037,
+        "Last_Timestamp": 1745847985.9081037,
         "Features": "Extended Supported Rates: 3048606c, Supported Rates: 82848b960c121824"
     }
 ]

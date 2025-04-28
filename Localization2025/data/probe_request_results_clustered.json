@@ -4,15 +4,14 @@
         "MACs": [
             "fc:31:5d:79:ef:0c",
             "36:d5:fb:d9:3d:f2",
-            "de:a3:50:69:5a:20",
-            "e0:c2:64:9a:1f:a5"
+            "de:a3:50:69:5a:20"
         ],
         "SSIDs": [
             "eduroam"
         ],
-        "Average_RSSI": -47.6,
-        "First_Timestamp": 1745675506.5551329,
-        "Last_Timestamp": 1745675561.2650764,
+        "Average_RSSI": -52.0,
+        "First_Timestamp": 1745847952.0967114,
+        "Last_Timestamp": 1745847988.0947754,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -44,9 +43,9 @@
         "SSIDs": [
             "<Hidden SSID>"
         ],
-        "Average_RSSI": -58.2,
-        "First_Timestamp": 1745675509.7158198,
-        "Last_Timestamp": 1745675564.8587885,
+        "Average_RSSI": -56.64,
+        "First_Timestamp": 1745847953.9114242,
+        "Last_Timestamp": 1745848009.2053454,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"

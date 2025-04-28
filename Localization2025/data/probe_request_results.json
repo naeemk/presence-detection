@@ -4,7 +4,7 @@
         "MAC": "de:a3:50:69:5a:20",
         "SSID": "eduroam",
         "RSSI": -80,
-        "Timestamp": 1745675484.0892212,
+        "Timestamp": 1745847925.4800231,
         "Features": [
             "Supported Rates: 8c129824b048606c",
             "HT Capabilities: 6f001bff00000000000000000000000000000000000000000000",
@@ -25,7 +25,7 @@
         "MAC": "de:a3:50:69:5a:20",
         "SSID": "eduroam",
         "RSSI": -82,
-        "Timestamp": 1745675485.1264892,
+        "Timestamp": 1745847926.5541098,
         "Features": [
             "Supported Rates: 8c129824b048606c",
             "HT Capabilities: 6f001bff00000000000000000000000000000000000000000000",
@@ -46,7 +46,7 @@
         "MAC": "a0:29:42:b7:39:e1",
         "SSID": "<Hidden SSID>",
         "RSSI": -86,
-        "Timestamp": 1745675486.194287,
+        "Timestamp": 1745847927.716584,
         "Features": [
             "Supported Rates: 0c1218243048606c",
             "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
@@ -61,7 +61,7 @@
         "MAC": "a0:29:42:b7:39:e1",
         "SSID": "<Hidden SSID>",
         "RSSI": -86,
-        "Timestamp": 1745675487.7442544,
+        "Timestamp": 1745847929.3348942,
         "Features": [
             "Supported Rates: 0c1218243048606c",
             "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
@@ -76,7 +76,7 @@
         "MAC": "26:e7:a5:b4:6b:f6",
         "SSID": "<Hidden SSID>",
         "RSSI": -56,
-        "Timestamp": 1745675489.2991674,
+        "Timestamp": 1745847930.9666996,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -97,7 +97,7 @@
         "MAC": "26:e7:a5:b4:6b:f6",
         "SSID": "eduroam",
         "RSSI": -46,
-        "Timestamp": 1745675490.8469696,
+        "Timestamp": 1745847932.622379,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -116,7 +116,7 @@
         "MAC": "26:e7:a5:b4:6b:f6",
         "SSID": "eduroam",
         "RSSI": -50,
-        "Timestamp": 1745675492.405659,
+        "Timestamp": 1745847934.3750415,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -135,7 +135,7 @@
         "MAC": "26:e7:a5:b4:6b:f6",
         "SSID": "eduroam",
         "RSSI": -52,
-        "Timestamp": 1745675493.959282,
+        "Timestamp": 1745847936.15969,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -154,7 +154,7 @@
         "MAC": "f0:77:c3:4e:7d:9d",
         "SSID": "eduroam",
         "RSSI": -87,
-        "Timestamp": 1745675495.5184412,
+        "Timestamp": 1745847937.8749254,
         "Features": [
             "Supported Rates: 02040b160c121824",
             "Extended Supported Rates: 3048606c",
@@ -169,7 +169,7 @@
         "MAC": "f0:77:c3:4e:7d:9d",
         "SSID": "eduroam",
         "RSSI": -72,
-        "Timestamp": 1745675497.0911152,
+        "Timestamp": 1745847939.5837796,
         "Features": [
             "Supported Rates: 02040b160c121824",
             "Extended Supported Rates: 3048606c",
@@ -184,7 +184,7 @@
         "MAC": "26:e7:a5:b4:6b:f6",
         "SSID": "<Hidden SSID>",
         "RSSI": -54,
-        "Timestamp": 1745675498.6631072,
+        "Timestamp": 1745847941.3136005,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -203,7 +203,7 @@
         "MAC": "26:e7:a5:b4:6b:f6",
         "SSID": "<Hidden SSID>",
         "RSSI": -48,
-        "Timestamp": 1745675500.236246,
+        "Timestamp": 1745847943.103707,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -222,7 +222,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -62,
-        "Timestamp": 1745675501.8052032,
+        "Timestamp": 1745847944.8906016,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
@@ -233,7 +233,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -68,
-        "Timestamp": 1745675503.3827176,
+        "Timestamp": 1745847946.690557,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
@@ -244,7 +244,7 @@
         "MAC": "26:e7:a5:b4:6b:f6",
         "SSID": "<Hidden SSID>",
         "RSSI": -54,
-        "Timestamp": 1745675504.9697604,
+        "Timestamp": 1745847948.4667392,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -263,7 +263,7 @@
         "MAC": "fc:31:5d:79:ef:0c",
         "SSID": "eduroam",
         "RSSI": -48,
-        "Timestamp": 1745675506.5551329,
+        "Timestamp": 1745847950.2578146,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -282,7 +282,7 @@
         "MAC": "fc:31:5d:79:ef:0c",
         "SSID": "eduroam",
         "RSSI": -44,
-        "Timestamp": 1745675508.145513,
+        "Timestamp": 1745847952.0967114,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -301,7 +301,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -68,
-        "Timestamp": 1745675509.7158198,
+        "Timestamp": 1745847953.9114242,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
@@ -312,7 +312,7 @@
         "MAC": "96:b7:0b:ce:b4:75",
         "SSID": "<Hidden SSID>",
         "RSSI": -56,
-        "Timestamp": 1745675511.368717,
+        "Timestamp": 1745847955.9730227,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -325,7 +325,7 @@
         "MAC": "a6:f2:37:8e:93:11",
         "SSID": "<Hidden SSID>",
         "RSSI": -44,
-        "Timestamp": 1745675512.9597201,
+        "Timestamp": 1745847957.868934,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -338,7 +338,7 @@
         "MAC": "a6:f2:37:8e:93:11",
         "SSID": "<Hidden SSID>",
         "RSSI": -44,
-        "Timestamp": 1745675514.5547183,
+        "Timestamp": 1745847959.7240164,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -351,7 +351,7 @@
         "MAC": "3a:bb:66:ce:61:d4",
         "SSID": "<Hidden SSID>",
         "RSSI": -48,
-        "Timestamp": 1745675516.1696472,
+        "Timestamp": 1745847961.5923932,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -364,7 +364,7 @@
         "MAC": "3a:bb:66:ce:61:d4",
         "SSID": "<Hidden SSID>",
         "RSSI": -48,
-        "Timestamp": 1745675517.7880387,
+        "Timestamp": 1745847963.4592423,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -377,7 +377,7 @@
         "MAC": "72:00:a0:08:e0:a8",
         "SSID": "<Hidden SSID>",
         "RSSI": -46,
-        "Timestamp": 1745675519.4189,
+        "Timestamp": 1745847965.4055068,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -390,7 +390,7 @@
         "MAC": "72:00:a0:08:e0:a8",
         "SSID": "<Hidden SSID>",
         "RSSI": -44,
-        "Timestamp": 1745675521.0471222,
+        "Timestamp": 1745847967.3256242,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -403,7 +403,7 @@
         "MAC": "c6:43:f6:e5:4a:b8",
         "SSID": "<Hidden SSID>",
         "RSSI": -54,
-        "Timestamp": 1745675522.6700637,
+        "Timestamp": 1745847969.2644002,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -416,7 +416,7 @@
         "MAC": "c6:43:f6:e5:4a:b8",
         "SSID": "<Hidden SSID>",
         "RSSI": -54,
-        "Timestamp": 1745675524.29317,
+        "Timestamp": 1745847971.2689784,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -429,7 +429,7 @@
         "MAC": "3e:05:f2:28:52:8a",
         "SSID": "<Hidden SSID>",
         "RSSI": -54,
-        "Timestamp": 1745675525.9185438,
+        "Timestamp": 1745847973.2639134,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -442,7 +442,7 @@
         "MAC": "3e:05:f2:28:52:8a",
         "SSID": "<Hidden SSID>",
         "RSSI": -54,
-        "Timestamp": 1745675527.5585127,
+        "Timestamp": 1745847975.2421978,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -455,7 +455,7 @@
         "MAC": "aa:8b:48:5d:e7:96",
         "SSID": "<Hidden SSID>",
         "RSSI": -50,
-        "Timestamp": 1745675529.1909163,
+        "Timestamp": 1745847977.216335,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -468,7 +468,7 @@
         "MAC": "aa:8b:48:5d:e7:96",
         "SSID": "<Hidden SSID>",
         "RSSI": -50,
-        "Timestamp": 1745675531.1309016,
+        "Timestamp": 1745847979.2443507,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -481,7 +481,7 @@
         "MAC": "36:d5:fb:d9:3d:f2",
         "SSID": "eduroam",
         "RSSI": -60,
-        "Timestamp": 1745675532.7922573,
+        "Timestamp": 1745847981.3314874,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -500,7 +500,7 @@
         "MAC": "4e:77:f2:87:f6:af",
         "SSID": "<Hidden SSID>",
         "RSSI": -54,
-        "Timestamp": 1745675534.427943,
+        "Timestamp": 1745847983.4154084,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -513,7 +513,7 @@
         "MAC": "dc:03:98:95:61:3c",
         "SSID": "<Hidden SSID>",
         "RSSI": -64,
-        "Timestamp": 1745675536.183702,
+        "Timestamp": 1745847985.9081037,
         "Features": [
             "Supported Rates: 82848b960c121824",
             "Extended Supported Rates: 3048606c"
@@ -524,7 +524,7 @@
         "MAC": "de:a3:50:69:5a:20",
         "SSID": "eduroam",
         "RSSI": -52,
-        "Timestamp": 1745675537.9567316,
+        "Timestamp": 1745847988.0947754,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -543,7 +543,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -66,
-        "Timestamp": 1745675539.6541438,
+        "Timestamp": 1745847990.7010262,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
@@ -554,7 +554,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -66,
-        "Timestamp": 1745675541.429741,
+        "Timestamp": 1745847992.9846923,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
@@ -565,7 +565,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -68,
-        "Timestamp": 1745675543.1917355,
+        "Timestamp": 1745847995.209447,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
@@ -576,7 +576,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -64,
-        "Timestamp": 1745675544.933343,
+        "Timestamp": 1745847997.612545,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
@@ -587,7 +587,7 @@
         "MAC": "26:07:13:57:ab:88",
         "SSID": "<Hidden SSID>",
         "RSSI": -56,
-        "Timestamp": 1745675546.7713292,
+        "Timestamp": 1745847999.9678988,
         "Features": [
             "Supported Rates: 82848b96",
             "Extended Supported Rates: 0c1218243048606c",
@@ -600,7 +600,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -66,
-        "Timestamp": 1745675548.539475,
+        "Timestamp": 1745848002.5047133,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
@@ -611,7 +611,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -68,
-        "Timestamp": 1745675550.292941,
+        "Timestamp": 1745848004.730925,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
@@ -622,7 +622,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -64,
-        "Timestamp": 1745675552.10174,
+        "Timestamp": 1745848006.9515111,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
@@ -633,77 +633,7 @@
         "MAC": "a0:f4:59:8c:22:a9",
         "SSID": "<Hidden SSID>",
         "RSSI": -66,
-        "Timestamp": 1745675553.913613,
-        "Features": [
-            "Supported Rates: 82848b968c129824",
-            "Extended Supported Rates: b048606c"
-        ]
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "a0:f4:59:8c:22:a9",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -62,
-        "Timestamp": 1745675555.7216141,
-        "Features": [
-            "Supported Rates: 82848b968c129824",
-            "Extended Supported Rates: b048606c"
-        ]
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "a0:f4:59:8c:22:a9",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -66,
-        "Timestamp": 1745675557.644316,
-        "Features": [
-            "Supported Rates: 82848b968c129824",
-            "Extended Supported Rates: b048606c"
-        ]
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "a0:f4:59:8c:22:a9",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -70,
-        "Timestamp": 1745675559.4250839,
-        "Features": [
-            "Supported Rates: 82848b968c129824",
-            "Extended Supported Rates: b048606c"
-        ]
-    },
-    {
-        "Device_Name": "Device 1",
-        "MAC": "e0:c2:64:9a:1f:a5",
-        "SSID": "eduroam",
-        "RSSI": -34,
-        "Timestamp": 1745675561.2650764,
-        "Features": [
-            "Supported Rates: 02040b160c121824",
-            "Extended Supported Rates: 3048606c",
-            "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
-            "Extended Capabilities: 0400488000400080010000000000",
-            "Vendor: 50:6F:9A (Wi-Fi Alliance)",
-            "Vendor Info: 16030103650101"
-        ]
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "a0:f4:59:8c:22:a9",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -66,
-        "Timestamp": 1745675563.0883603,
-        "Features": [
-            "Supported Rates: 82848b968c129824",
-            "Extended Supported Rates: b048606c"
-        ]
-    },
-    {
-        "Device_Name": "Device 2",
-        "MAC": "a0:f4:59:8c:22:a9",
-        "SSID": "<Hidden SSID>",
-        "RSSI": -66,
-        "Timestamp": 1745675564.8587885,
+        "Timestamp": 1745848009.2053454,
         "Features": [
             "Supported Rates: 82848b968c129824",
             "Extended Supported Rates: b048606c"
