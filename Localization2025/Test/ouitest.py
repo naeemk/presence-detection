@@ -19,6 +19,7 @@ def get_vendor_name(oui_bytes: bytes) -> str:
     except (AddrFormatError, TypeError, KeyError, AttributeError, NotRegisteredError):
         return "Unknown Vendor"
 
+
 # Example usage:
 print(get_vendor_name(b'\x00\x50\xf2'))  # MICROSOFT CORP.
 print(get_vendor_name(b'\xbb\xbb\xbb'))  # Unknown Vendor

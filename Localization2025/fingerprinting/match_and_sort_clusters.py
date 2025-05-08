@@ -1,5 +1,6 @@
 import json
 from difflib import SequenceMatcher
+from collections import defaultdict
 
 # Load configuration
 def load_config(filename="config.json"):
@@ -44,7 +45,8 @@ def compute_similarity_score(old, new):
 
 
 def match_and_sort_fuzzy(previous, current, threshold=0.7):
-
+    if previous == None:
+        return current
     print("Old Data")
     print(previous)
     print("New Data")

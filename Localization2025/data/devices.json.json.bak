@@ -1,0 +1,800 @@
+[
+    {
+        "Device_Name": "Device 1",
+        "MACs": [
+            "aa:3b:7a:9a:dd:2d",
+            "46:d9:f3:d5:56:3f",
+            "2a:49:b7:45:f3:b1",
+            "ce:b0:cf:50:84:c7",
+            "d6:0f:d2:88:c2:2b",
+            "52:13:91:af:57:e7",
+            "3e:8a:84:cf:a8:b1",
+            "0a:b1:1f:4b:cb:c1",
+            "f6:8d:fc:33:8a:5b",
+            "de:02:ef:98:d8:1b",
+            "02:73:c3:1e:29:29",
+            "d2:3e:85:ff:4c:3f",
+            "f6:91:73:41:b8:75",
+            "b2:b7:70:aa:64:4d",
+            "62:75:8c:4c:82:05",
+            "b6:18:2d:7a:9e:aa",
+            "56:44:d7:16:8c:a4",
+            "5a:93:fd:f9:98:25",
+            "f6:e3:48:c9:5f:5a",
+            "42:4c:a4:12:f6:a3",
+            "0e:6c:07:a2:2e:e4",
+            "66:a5:e3:80:11:16",
+            "4a:98:be:5f:b9:f4",
+            "be:6e:b7:1b:bb:a2"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 38,
+        "RSSIs": [
+            -50,
+            -48,
+            -46,
+            -46,
+            -48,
+            -48,
+            -46,
+            -40,
+            -36,
+            -40,
+            -44,
+            -42,
+            -44,
+            -42,
+            -46
+        ],
+        "Filtered_RSSIs": [
+            -50.1980001980002,
+            -49.09894515718202,
+            -48.05224758850086,
+            -47.522710752477366,
+            -47.62359716023824,
+            -47.69182009485059,
+            -47.42020599962655,
+            -46.339100896893086,
+            -44.94620030934575,
+            -44.320876057388624,
+            -44.28235563919867,
+            -44.01969857588275,
+            -44.01750857578798,
+            -43.7994582274466,
+            -44.03185487382526
+        ],
+        "Average_RSSI": -46.22430534044297,
+        "First_Timestamp": 1746196739.6831977,
+        "Last_Timestamp": 1746196833.0652566,
+        "Features": [
+            "Extended Capabilities: 0400480400000040000020",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Supported Rates: 82848b96",
+            "Vendor: 00:10:18 (Broadcom) Vendor Info: 02000010000002",
+            "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001200"
+        ]
+    },
+    {
+        "Device_Name": "Device 2",
+        "MACs": [
+            "12:23:a1:aa:b0:12",
+            "46:b4:29:4c:36:bb",
+            "d6:dd:c3:69:4e:4d",
+            "be:e7:f5:21:7e:73",
+            "0e:a2:c8:ed:df:25",
+            "86:cb:bf:7f:6e:03",
+            "42:ff:d5:60:27:0d",
+            "ca:3b:19:33:50:e3",
+            "06:60:2c:37:a1:e4",
+            "9a:e9:01:26:b0:40",
+            "36:d9:8a:48:91:3c",
+            "d6:c0:f8:3a:e9:f3",
+            "46:09:b7:e7:34:50",
+            "22:5e:d2:25:8a:7a",
+            "4a:b4:e7:41:3f:8d",
+            "c6:1f:bc:28:b0:31",
+            "6e:71:e1:62:81:f1",
+            "06:c3:02:f9:5e:ea",
+            "fe:ac:8f:34:fa:9a",
+            "16:e1:26:da:bd:82",
+            "d2:f5:ad:d8:6a:fb",
+            "26:6c:c0:53:de:8c",
+            "66:38:7e:60:c9:f7",
+            "fa:26:1a:15:55:d2",
+            "ae:1a:04:3f:9f:d9",
+            "6a:33:ae:c8:df:f2",
+            "fe:bf:f0:a2:08:74",
+            "8e:c6:d4:ec:e3:69",
+            "06:84:70:28:fd:49",
+            "ca:f1:71:46:70:bc",
+            "f6:29:cd:65:95:df",
+            "1e:06:c5:6f:10:4b",
+            "fa:8e:21:cb:4b:40",
+            "ea:38:68:86:29:4c",
+            "e2:05:02:dc:2f:55",
+            "46:78:16:21:7f:c4",
+            "6e:ce:d6:21:35:3d",
+            "26:3d:1c:fa:a7:8d",
+            "d2:fb:00:a4:ae:66",
+            "d2:54:8e:88:63:0f",
+            "ee:2f:b4:2a:3b:35",
+            "12:3b:55:b5:34:02",
+            "e2:af:af:8b:e5:b8",
+            "4e:bf:a3:72:a3:c4",
+            "a6:5a:fd:6b:a2:e7",
+            "a6:c1:95:b2:38:58",
+            "8a:c3:95:8c:d9:4a",
+            "8a:86:8e:54:4e:f9",
+            "7e:71:5c:08:79:26",
+            "c6:47:4d:5e:0b:7b",
+            "2a:a0:6c:1d:0c:72",
+            "c6:d7:1a:b2:36:c5",
+            "2a:9c:bd:85:39:18"
+        ],
+        "SSIDs": [
+            "WiFi_Utente_CHLO",
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 87,
+        "RSSIs": [
+            -28,
+            -28,
+            -66,
+            -40,
+            -40,
+            -36,
+            -36,
+            -34,
+            -64,
+            -42,
+            -40,
+            -40,
+            -40,
+            -40,
+            -40,
+            -32,
+            -34,
+            -30,
+            -28,
+            -30,
+            -30,
+            -32,
+            -32,
+            -32,
+            -30,
+            -32,
+            -32,
+            -28,
+            -28,
+            -38,
+            -38,
+            -32,
+            -32,
+            -30,
+            -30,
+            -32,
+            -30,
+            -30,
+            -32
+        ],
+        "Filtered_RSSIs": [
+            -28.41580041580042,
+            -28.20788981443854,
+            -40.97252676029796,
+            -40.72158786458092,
+            -40.56906314729624,
+            -39.74092142409623,
+            -39.14033334088171,
+            -38.39139987395938,
+            -41.841432378482644,
+            -41.86147931817544,
+            -41.63801309145966,
+            -41.44950797819568,
+            -41.28835812510378,
+            -41.149113642409276,
+            -41.027757092792854,
+            -40.09222447312823,
+            -39.47060771046527,
+            -38.51646972399453,
+            -37.46792298632123,
+            -36.72964583131803,
+            -36.06897824986587,
+            -35.671790693035504,
+            -35.315046637802375,
+            -34.994194561583924,
+            -34.51233741383372,
+            -34.2705603068858,
+            -34.052510013547874,
+            -33.47226549001386,
+            -32.948387557414364,
+            -33.43143674238353,
+            -33.86788245213313,
+            -33.68957733862182,
+            -33.528395191749,
+            -33.19196839423865,
+            -32.88774871870481,
+            -32.80316873801486,
+            -32.536173833305305,
+            -32.294665909089986,
+            -32.266611620300075
+        ],
+        "Average_RSSI": -36.42296807322365,
+        "First_Timestamp": 1746196717.097491,
+        "Last_Timestamp": 1746196829.162394,
+        "Features": [
+            "Extended Capabilities: 0000080400000040",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+            "Supported Rates: 82848b96"
+        ]
+    },
+    {
+        "Device_Name": "Device 3",
+        "MACs": [
+            "48:e7:da:ab:77:2f",
+            "2c:3b:70:5c:85:89"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 50,
+        "RSSIs": [
+            -72,
+            -70,
+            -82,
+            -72,
+            -72,
+            -68,
+            -72,
+            -72,
+            -68,
+            -68,
+            -68,
+            -64,
+            -66,
+            -68,
+            -36,
+            -36,
+            -36,
+            -36,
+            -36,
+            -36
+        ],
+        "Filtered_RSSIs": [
+            -71.98019998019998,
+            -70.99005049247612,
+            -74.70876340810153,
+            -74.0098272696456,
+            -73.58500258627627,
+            -72.5727220559421,
+            -72.480774109755,
+            -72.41072654728242,
+            -71.81650625090573,
+            -71.33400377078418,
+            -70.93376443680997,
+            -70.13581596049963,
+            -69.67601432816967,
+            -69.4948723432144,
+            -65.95751799687443,
+            -62.85306635930875,
+            -60.113128549815016,
+            -57.68379638598703,
+            -55.52180908819421,
+            -53.59188751554992
+        ],
+        "Average_RSSI": -68.0925124717896,
+        "First_Timestamp": 1746196729.590073,
+        "Last_Timestamp": 1746196826.7544086,
+        "Features": [
+            "Extended Capabilities: 0000480000400040",
+            "Extended Supported Rates: 3048606c",
+            "Supported Rates: 82848b960c121824",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103"
+        ]
+    },
+    {
+        "Device_Name": "Device 4",
+        "MACs": [
+            "b8:bc:5b:e2:1b:f5"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 3,
+        "RSSIs": [
+            -70
+        ],
+        "Filtered_RSSIs": [
+            -70.0
+        ],
+        "Average_RSSI": -70.0,
+        "First_Timestamp": 1746196779.9875114,
+        "Last_Timestamp": 1746196779.9875114,
+        "Features": [
+            "Extended Capabilities: 040000000000004080",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: ef011fffff000000000000000000000000000000000000000000",
+            "Supported Rates: 02040b16",
+            "VHT Capabilities: b2018033faff0c03faff0c03",
+            "Vendor: 00:00:F0 (Samsung Electronics Co.,Ltd) Vendor Info: 0f00020801",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a0001001008000242881047001077d7d3a5bc545eb2bc36c1295a3d6db0105400080001708fd0e10002103c0001031002000200001009000200001012000200001021000753616d73756e67102300054861776b6d10240004353530301011000a53616d73756e672d54561049000600372a000120",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001300",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 0902020025000605005858045101",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 0a000006000000000000"
+        ]
+    },
+    {
+        "Device_Name": "Device 5",
+        "MACs": [
+            "ce:b4:ee:51:4c:3b",
+            "f2:23:bc:57:e3:65",
+            "da:38:93:a3:4a:8b",
+            "ea:ec:a9:66:40:fc",
+            "56:0f:e1:f0:0c:2f",
+            "ae:76:b1:4d:64:4f",
+            "1e:22:05:d1:72:24",
+            "a2:02:57:e1:56:c0",
+            "be:08:04:eb:22:f5",
+            "ca:ae:88:cf:8d:d5",
+            "f6:d0:47:84:30:0a",
+            "62:4f:5a:41:e5:2f",
+            "0e:1e:62:31:0f:12",
+            "ba:a5:fd:49:05:d2",
+            "9a:87:ec:32:58:0d",
+            "22:25:8b:57:de:fd",
+            "92:19:b5:31:8c:c0",
+            "9a:eb:0e:36:0a:01"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 32,
+        "RSSIs": [
+            -38,
+            -42,
+            -56,
+            -54,
+            -54,
+            -26,
+            -26,
+            -32,
+            -30,
+            -30,
+            -30,
+            -30,
+            -34,
+            -40,
+            -44,
+            -64
+        ],
+        "Filtered_RSSIs": [
+            -38.31680031680032,
+            -40.15849222467346,
+            -45.50910891250021,
+            -47.699994469724416,
+            -49.03165012742491,
+            -44.85716844271624,
+            -41.82973499358938,
+            -40.39756765745046,
+            -38.996790332269505,
+            -37.85936951776842,
+            -36.91587063848881,
+            -36.11998140852812,
+            -35.88429130010448,
+            -36.329113060197045,
+            -37.13922647035582,
+            -39.92276722894219
+        ],
+        "Average_RSSI": -40.43549544384586,
+        "First_Timestamp": 1746196715.603828,
+        "Last_Timestamp": 1746196808.065651,
+        "Features": [
+            "Extended Capabilities: 0000080400000040000020",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Supported Rates: 82848b96"
+        ]
+    },
+    {
+        "Device_Name": "Device 6",
+        "MACs": [
+            "d0:c0:bf:bc:79:55"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 25,
+        "RSSIs": [
+            -58,
+            -54,
+            -56,
+            -62,
+            -62,
+            -60,
+            -58
+        ],
+        "Filtered_RSSIs": [
+            -58.118800118800124,
+            -56.05929710473835,
+            -56.03926895573558,
+            -57.577302999606744,
+            -58.51214495404088,
+            -58.78181836452144,
+            -58.656300947891054
+        ],
+        "Average_RSSI": -57.67784763504773,
+        "First_Timestamp": 1746196766.4439118,
+        "Last_Timestamp": 1746196825.8961885,
+        "Features": [
+            "Extended Supported Rates: b048606c",
+            "Supported Rates: 82848b968c129824",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 04104a000110103a00010010080002314810470010dba25395ad673fa6a198c75a09bd4509105400080000000000000000103c00010310020002000010090002000010120002000010210001201023000120102400012010110001201049000600372a000120"
+        ]
+    },
+    {
+        "Device_Name": "Device 7",
+        "MACs": [
+            "c2:40:4b:e3:41:06",
+            "08:9d:f4:0b:4a:d7",
+            "66:fd:63:45:b0:bd",
+            "dc:21:48:c9:c8:b8",
+            "c2:3c:6e:f5:51:63"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>",
+            "cat-passpoint-profile"
+        ],
+        "Probe Request Count": 10,
+        "RSSIs": [
+            -72,
+            -62,
+            -70,
+            -60
+        ],
+        "Filtered_RSSIs": [
+            -71.98019998019998,
+            -66.98985052227366,
+            -68.00655652379841,
+            -65.94064272625677
+        ],
+        "Average_RSSI": -68.22931243813221,
+        "First_Timestamp": 1746196719.6112158,
+        "Last_Timestamp": 1746196788.2794154,
+        "Features": [
+            "Extended Capabilities: 0400c880014000000000",
+            "Extended Supported Rates: 3048606c",
+            "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+            "Supported Rates: 02040b160c121824",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103650101"
+        ]
+    },
+    {
+        "Device_Name": "Device 8",
+        "MACs": [
+            "2c:3b:70:85:7a:68"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 12,
+        "RSSIs": [
+            -81,
+            -80,
+            -81
+        ],
+        "Filtered_RSSIs": [
+            -80.89109989109988,
+            -80.44552767137174,
+            -80.6328058608328
+        ],
+        "Average_RSSI": -80.65647780776814,
+        "First_Timestamp": 1746196743.9135313,
+        "Last_Timestamp": 1746196780.1860304,
+        "Features": [
+            "Extended Capabilities: 04004800000000400000",
+            "HT Capabilities: ef1903ffff000000000000000000000000000000000000000000",
+            "Supported Rates: 8c129824b048606c",
+            "VHT Capabilities: b171c03ffaff6801faff6801",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103"
+        ]
+    },
+    {
+        "Device_Name": "Device 9",
+        "MACs": [
+            "64:66:b3:07:2e:8f"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 13,
+        "RSSIs": [
+            -60,
+            -60,
+            -66,
+            -64,
+            -64,
+            -64,
+            -64,
+            -64,
+            -64
+        ],
+        "Filtered_RSSIs": [
+            -60.0990000990001,
+            -60.04949757486632,
+            -62.05933515020517,
+            -62.560080542769164,
+            -62.864441686999875,
+            -63.07026138959657,
+            -63.21952673537903,
+            -63.333239700891205,
+            -63.42306673920369
+        ],
+        "Average_RSSI": -62.297605513212346,
+        "First_Timestamp": 1746196727.687438,
+        "Last_Timestamp": 1746196788.0456145,
+        "Features": [
+            "Extended Capabilities: 000000000000000000",
+            "Extended Supported Rates: 3048606c",
+            "HT Capabilities: 6e1802ff00000000000000000000000000000000000000000000",
+            "Supported Rates: 82848b960c121824"
+        ]
+    },
+    {
+        "Device_Name": "Device 10",
+        "MACs": [
+            "d6:4a:6b:25:40:55",
+            "76:9c:1d:ec:07:eb",
+            "02:95:40:b8:42:02",
+            "e4:c7:67:db:82:ba",
+            "30:f6:ef:27:80:5d",
+            "0c:dd:24:36:8b:2f"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 17,
+        "RSSIs": [
+            -50,
+            -68,
+            -56
+        ],
+        "Filtered_RSSIs": [
+            -50.1980001980002,
+            -59.09944508268819,
+            -58.05257865951452
+        ],
+        "Average_RSSI": -55.78334131340097,
+        "First_Timestamp": 1746196720.7253964,
+        "Last_Timestamp": 1746196721.0237653,
+        "Features": [
+            "Extended Capabilities: 0400c880014000000000",
+            "Extended Supported Rates: 3048606c",
+            "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+            "Supported Rates: 02040b160c121824",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103"
+        ]
+    },
+    {
+        "Device_Name": "Device 11",
+        "MACs": [
+            "a2:0d:5a:5f:07:b7",
+            "a6:ac:e6:c6:4c:03",
+            "ba:d7:1d:04:22:d3",
+            "be:e6:45:4f:03:84",
+            "1e:8b:17:20:71:50",
+            "b2:e6:ec:45:20:db",
+            "02:6d:00:df:35:6a",
+            "92:9f:6b:ca:90:b6",
+            "72:6c:06:a6:b7:2f"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 14,
+        "RSSIs": [
+            -42
+        ],
+        "Filtered_RSSIs": [
+            -42.27720027720028
+        ],
+        "Average_RSSI": -42.27720027720028,
+        "First_Timestamp": 1746196779.3517165,
+        "Last_Timestamp": 1746196779.3517165,
+        "Features": [
+            "Extended Capabilities: 04004804000000c0010020",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: 2d401bff00000000000000000000000000000000000000000000",
+            "Supported Rates: 82848b96",
+            "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002",
+            "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000",
+            "Vendor: 00:90:4C (Epigram, Inc.) Vendor Info: 0408bf0c7670810ffaff0000faff0020"
+        ]
+    },
+    {
+        "Device_Name": "Device 12",
+        "MACs": [
+            "68:7e:2a:a9:fb:ca",
+            "2c:53:54:81:0e:2b",
+            "a8:a6:17:0d:dd:9c",
+            "d6:1a:35:05:e7:05",
+            "7e:09:82:ae:c8:30",
+            "a0:8c:bb:64:89:07",
+            "78:3b:8e:7b:7a:f5",
+            "30:0b:d0:04:ce:c4",
+            "60:cf:5d:58:d6:cb",
+            "70:1f:3c:f6:ac:bf"
+        ],
+        "SSIDs": [
+            "uis-gjestenett"
+        ],
+        "Probe Request Count": 17,
+        "RSSIs": [
+            -68,
+            -70,
+            -72,
+            -62,
+            -60,
+            -70,
+            -70,
+            -68,
+            -66
+        ],
+        "Filtered_RSSIs": [
+            -68.01980001980002,
+            -69.00994950752388,
+            -70.01986688971938,
+            -67.95051864835351,
+            -66.26998787915748,
+            -66.94605178235378,
+            -67.436349411825,
+            -67.51847186598131,
+            -67.31390085198385
+        ],
+        "Average_RSSI": -67.8316552062998,
+        "First_Timestamp": 1746196752.6503508,
+        "Last_Timestamp": 1746196808.296985,
+        "Features": [
+            "Extended Capabilities: 0400000000000040",
+            "Extended Capabilities: 0400480400000040000020",
+            "Extended Supported Rates: 0c1218243048606c",
+            "Extended Supported Rates: 3048606c",
+            "HT Capabilities: 2d401bffff000000000000000000000000000000000000000000",
+            "HT Capabilities: 6f0117ff00000001000000000000000000000000000000000000",
+            "Supported Rates: 02040b0c12161824",
+            "Supported Rates: 82848b96",
+            "VHT Capabilities: 31710003feff0000feff0000",
+            "Vendor: 00:10:18 (Broadcom) Vendor Info: 02010010000002",
+            "Vendor: 00:17:F2 (Apple, Inc.) Vendor Info: 0a00010400000000",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08000f00",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001300"
+        ]
+    },
+    {
+        "Device_Name": "Device 13",
+        "MACs": [
+            "f2:a1:0d:00:69:c8"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 12,
+        "RSSIs": [
+            -30,
+            -32,
+            -32,
+            -32,
+            -36,
+            -34
+        ],
+        "Filtered_RSSIs": [
+            -30.396000396000396,
+            -31.198040292015893,
+            -31.468909647216268,
+            -31.60594569814477,
+            -32.53473333859828,
+            -32.800312609184374
+        ],
+        "Average_RSSI": -31.667323663526663,
+        "First_Timestamp": 1746196793.147814,
+        "Last_Timestamp": 1746196793.3381705,
+        "Features": [
+            "Extended Supported Rates: 3048606c",
+            "Supported Rates: 82848b960c121824",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001000"
+        ]
+    },
+    {
+        "Device_Name": "Device 14",
+        "MACs": [
+            "1c:4d:70:7c:c0:81"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 4,
+        "RSSIs": [
+            -64,
+            -84
+        ],
+        "Filtered_RSSIs": [
+            -64.05940005940006,
+            -74.03019847042596
+        ],
+        "Average_RSSI": -69.04479926491301,
+        "First_Timestamp": 1746196741.300735,
+        "Last_Timestamp": 1746196801.1449683,
+        "Features": [
+            "Extended Supported Rates: 3048606c",
+            "HT Capabilities: e70917ffff000000000000000000000000000000000000000000",
+            "Supported Rates: 02040b160c121824"
+        ]
+    },
+    {
+        "Device_Name": "Device 15",
+        "MACs": [
+            "a4:55:90:d0:37:44"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 2,
+        "RSSIs": [
+            -72,
+            -82
+        ],
+        "Filtered_RSSIs": [
+            -71.98019998019998,
+            -76.99035044777982
+        ],
+        "Average_RSSI": -74.4852752139899,
+        "First_Timestamp": 1746196776.5559082,
+        "Last_Timestamp": 1746196776.5768209,
+        "Features": [
+            "Extended Capabilities: 00000a82004000000001",
+            "Extended Capabilities: 04000a82004000408001",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: ad0113ffff000000000000000000000000000000000000000000",
+            "Supported Rates: 02040b16",
+            "VHT Capabilities: 92f99133faff6203faff6223",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08001d00",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030103650101",
+            "Vendor: 8C:FD:F0 (Qualcomm Inc.) Vendor Info: 0101020100"
+        ]
+    },
+    {
+        "Device_Name": "Device 16",
+        "MACs": [
+            "c2:f9:6f:99:ab:26"
+        ],
+        "SSIDs": [
+            "<Hidden SSID>"
+        ],
+        "Probe Request Count": 2,
+        "RSSIs": [
+            -72,
+            -74
+        ],
+        "Filtered_RSSIs": [
+            -71.98019998019998,
+            -72.99015047757736
+        ],
+        "Average_RSSI": -72.48517522888866,
+        "First_Timestamp": 1746196805.2939174,
+        "Last_Timestamp": 1746196805.334798,
+        "Features": [
+            "Extended Capabilities: 00000a8200404000000120",
+            "Extended Supported Rates: 0c1218243048606c",
+            "HT Capabilities: ad0917ffff000000000000000000000000000000000000000100",
+            "Supported Rates: 02040b16",
+            "VHT Capabilities: 92f99133faff0c03faff0c23",
+            "Vendor: 00:50:F2 (MICROSOFT CORP.) Vendor Info: 08002800",
+            "Vendor: 50:6F:9A (Wi-Fi Alliance) Vendor Info: 16030102650101",
+            "Vendor: 8C:FD:F0 (Qualcomm Inc.) Vendor Info: 0101020100"
+        ]
+    }
+]

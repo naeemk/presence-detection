@@ -1,7 +1,7 @@
 import json
 import time
 from collections import defaultdict
-from kalman_filter import kalman_filter  # <-- import Kalman filter function
+from kalman_filter import KalmanFilter
 
 # Load configuration
 def load_config(filename="config.json"):
@@ -15,60 +15,60 @@ time_window = config["general"]["time_window"]  # Time window in seconds
 def process_feature_groups(feature_data):
     devices = []
     device_counter = 1
-    time_window = 60  # in seconds
+    current_time = time.time()
 
     for group in feature_data.values():
         macs = set(group.get("macs", []))
         ssids = set()
         rssis = []
         timestamps = []
-        features = set()
+        features_set = set()
 
         entries = group.get("entries", [])
         if not entries:
             continue
 
-        reference_ts = entries[0].get("Timestamp")
-        if reference_ts is None:
-            continue
-
-        # Initialize the Kalman filter for the group (no need to instantiate it repeatedly in the loop)
-        posteri_estimate = 0.0
-        posteri_error_estimate = 1.0
-
         for entry in entries:
             timestamp = entry.get("Timestamp")
-            if timestamp is None or abs(timestamp - reference_ts) > time_window:
+            if timestamp is None or abs(timestamp - current_time) > time_window:
                 continue
 
             ssids.add(entry.get("SSID", ""))
             rssi = entry.get("RSSI")
-            feature_list = entry.get("Features", [])
-
             if rssi is not None:
-                # Apply Kalman filter to RSSI values
-                filtered_rssi = kalman_filter(rssi)
-                rssis.append(filtered_rssi)
+                rssis.append(rssi)
+
             timestamps.append(timestamp)
 
-            if feature_list:
-                features.update(f.strip() for f in feature_list if f.strip())
+            features = entry.get("Features", [])
+            features_set.update(features)
+
 
         if not rssis or not timestamps:
             continue  # Skip this group if missing required data
+        
+        # Check if any value in rssis is above 0
+        if any(rssi > 0 for rssi in rssis):
+            rssis = [0]
+
+        # Apply Kalman filter to RSSI values
+        rssis_filtered = KalmanFilter(rssis)
 
         # Calculate the average filtered RSSI
-        average_rssi = sum(rssis) / len(rssis)
+        average_rssi = sum(rssis_filtered) / len(rssis_filtered)
 
         # Prepare device data
         device = {
             "Device_Name": f"Device {device_counter}",
             "MACs": list(macs),
             "SSIDs": list(ssids),
+            "Probe Request Count": len(entries),
+            "RSSIs": rssis,
+            "Filtered_RSSIs": rssis_filtered,
             "Average_RSSI": average_rssi,
             "First_Timestamp": min(timestamps),
             "Last_Timestamp": max(timestamps),
-            "Features": ", ".join(sorted(features))  # Sort features for consistency
+            "Features": sorted(features_set)  # Sort features for consistency
         }
 
         devices.append(device)

@@ -11,13 +11,13 @@ TIME_LIMIT = 1
 
 # Define feature weights 🔥
 FEATURE_WEIGHTS = {
-    "Supported Rates": 1,
-    "Extended Supported Rates": 1,
-    "ERP Information": 0.5,
-    "HT Capabilities": 5,
-    "Extended Capabilities": 4,
-    "VHT Capabilities": 5,
-    "Vendor Specific": 3,
+    "Supported Rates": config["feature_weight"]["supported_rates"],
+    "Extended Supported Rates": config["feature_weight"]["extended_supported_rates"],
+    "ERP Information": config["feature_weight"]["erp_information"],
+    "HT Capabilities": config["feature_weight"]["ht_capabilities"],
+    "Extended Capabilities": config["feature_weight"]["extended_capabilities"],
+    "VHT Capabilities": config["feature_weight"]["vht_capabilities"],
+    "Vendor Specific": config["feature_weight"]["vendor_specific"],
 }
 
 def weighted_jaccard(set1, set2, feature_weights):
@@ -35,10 +35,7 @@ def groupbyFeature(ssid_data, similarity_threshold=0.8):
         all_features = set()
         for entry in group_info["entries"]:
             features = entry.get("Features", [])
-            if isinstance(features, str):
-                all_features.update(f.strip() for f in features.split(","))
-            else:
-                all_features.update(features)
+            all_features.update(features)
         group_features[group_id] = all_features
 
     # Step 2: Group by weighted Jaccard similarity
