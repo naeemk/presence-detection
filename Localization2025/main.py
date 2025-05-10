@@ -25,6 +25,7 @@ datafile1 = config["jsonfiles"]["mac_data"]
 datafile2 = config["jsonfiles"]["ssid_data"]
 datafile3 = config["jsonfiles"]["feature_data"]
 datafile4 = config["jsonfiles"]["devices"]
+datafile5 = config["jsonfiles"]["probe_data"]
 
 # List to store all clustered results
 clustered_results_all = []
@@ -33,20 +34,12 @@ def on_click(event):
     print(f"Clicked at ({event.x}, {event.y})")
 
 
-async def save_packets():
+async def handle_data():
     while True:
         if not probe_data:
             print("[*] No probe data captured. Skipping this iteration.")
             await asyncio.sleep(1)
             continue
-
-        # Step 2: Feature extraction
-        #print("[*] Extracting features from captured probe requests...")
-
-        #X, df = extract_features(probe_data)
-
-        # Step 3: Anomaly detection
-        ##detect_anomalies(X, df)
 
         # Sort probe_data by Timestamp
         sorted_probe_data = sorted(
@@ -62,8 +55,6 @@ async def save_packets():
         with open("data/sorted_probe_data.json", "w") as json_file:
             json.dump(sorted_probe_data, json_file, indent=4)
 
-
-        #print("[*] Radar visualization updated")
         devices = fingerprint(probe_data)
 
         visualize_plot(devices)
@@ -72,54 +63,56 @@ async def save_packets():
         await asyncio.sleep(1)
 
 async def main():
-    
+    start_time = time.time()  # Start timer
+
     # Renaming the existing files to .bak
-    if os.path.exists(datafile1 + ".json"):
-        os.rename(datafile1 + ".json", datafile1 + ".json.bak")
-        print("[*] Existing '" + datafile1 +".json' renamed to '" + datafile1 +".json.bak'")
-
-    if os.path.exists(datafile2 + ".json"):
-        os.rename(datafile2 + ".json", datafile2 + ".json.bak")
-        print("[*] Existing '" + datafile2 +".json' renamed to '" + datafile2 +".json.bak'")
-
-    if os.path.exists(datafile3 + ".json"):
-        os.rename(datafile3 + ".json", datafile3 + ".json.bak")
-        print("[*] Existing '" + datafile3 +".json' renamed to '" + datafile3 +".json.bak'")
-
-    if os.path.exists(datafile4 + ".json"):
-        os.rename(datafile4 + ".json", datafile4 + ".json.bak")
-        print("[*] Existing '" + datafile4 +".json' renamed to '" + datafile4 +".json.bak'")
+    for datafile in [datafile1, datafile2, datafile3, datafile4, datafile5]:
+        json_file = datafile + ".json"
+        backup_file = json_file + ".bak"
+        if os.path.exists(json_file):
+            os.rename(json_file, backup_file)
+            print(f"[*] Existing '{json_file}' renamed to '{backup_file}'")
 
     plt.ion()
     plt.draw()
     plt.show()
 
-
-    # Step 1: Start sniffing and capture probe requests until you press 'esc'
-    task1 = asyncio.create_task(start_sniffing(interface))  # Replace with your Wi-Fi interface
-    time.sleep(capture_delay)
-    task2 = asyncio.create_task(save_packets())
-    print("[*] Capturing data...")
-
-    while True:
-        if keyboard.is_pressed('esc'):
-            print("[*] Stopping the program...")
-            break
-        await asyncio.sleep(1)
-    
-    plt.ioff()
-    task1.cancel()
-    task2.cancel()
     try:
-        await task1
-    except asyncio.CancelledError:
-        print("[*] Sniffing task cancelled")
-    try:
-        await task2
-    except asyncio.CancelledError:
-        print("[*] Saving task cancelled")
+        # Start sniffing and capture probe requests
+        task1 = asyncio.create_task(start_sniffing(interface))
+        print(f"[*] Sniffing started on {interface}, waiting {capture_delay}s before data handling.")
+        
+        await asyncio.sleep(capture_delay)
+        # Start data handling
+        task2 = asyncio.create_task(handle_data())
+        print("[*] Data handler started...")
 
-    print("[*] Program completed")
-    
+        while True:
+            await asyncio.sleep(1)
+            if keyboard.is_pressed('esc'):
+                print("[*] ESC pressed, stopping...")
+                break
+
+    except Exception as e:
+        print(f"[!] Error during execution: {e}")
+    finally:
+        # Clean exit: cancel tasks and close plot
+        plt.ioff()
+
+        for task in [task1, task2]:
+            if not task.done():
+                task.cancel()
+                try:
+                    await task
+                except asyncio.CancelledError:
+                    print(f"[*] Task {task.get_coro().__name__} cancelled")
+        end_time = time.time()
+        elapsed = end_time - start_time
+        minutes, seconds = divmod(int(elapsed), 60)
+        print(f"[*] Program completed. Total runtime: {minutes} min {seconds} sec.")
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\n[!] Keyboard interrupt received. Exiting cleanly.")

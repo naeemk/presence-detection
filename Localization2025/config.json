@@ -1,10 +1,10 @@
 {
     "general": {
       "interface": "wlan0",
-      "time_window": 60,
+      "time_window": 120,
       "capture_delay": 30,
       "duration_of_sniffing": 10,
-      "fake_seconds": 1
+      "fake_seconds_offline": 1
     },
     "distance_calculation": {
       "rssi_1_meter": -22,
@@ -14,10 +14,23 @@
       "environmental_correction_constant": 0
     },
     "fingerprint": {
-      "required_matches": 7,
-      "time_window": 1,
-      "threshold_ratio": 0.3,
-      "ssid_threshold": 0.8
+      "ssid_common_threshold": 0.3,
+      "group_ssid_match_threshold": 0.8
+    },
+    "kalman_filter": {
+      "posteri_estimate": -70.0,
+      "posteri_error_estimate": 1.0,
+      "process_variance": 1e-4,
+      "estimated_measurement_variance": 1e-2
+    },
+    "feature_weight": {
+      "supported_rates": 1,
+      "extended_supported_rates": 1,
+      "erp_information": 0.5,
+      "ht_capabilities": 5,
+      "extended_capabilities": 4,
+      "vht_capabilities": 5,
+      "vendor_specific": 3
     },
     "plot": {
       "max_distance": 100,
@@ -31,11 +44,10 @@
       "ssid_data": "data/ssid_data",
       "feature_data": "data/feature_data",
       "devices": "data/devices",
+      "probe_data": "data/probe_data",
       "plotted_data": "data/plotted_data.json",
       "probe_request_results": "data/probe_request_results",       
       "probe_request_results_clustered": "data/probe_request_results_clustered"
-    },
-    "misc": {
     }
   }
   

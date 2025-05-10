@@ -16,11 +16,10 @@ def load_config(filename="./config.json"):
 config = load_config()
 
 # Accessing values from the config
-time_window = config["fingerprint"]["time_window"]  # Time window in seconds
-threshold_ratio = config["fingerprint"]["threshold_ratio"]  # Threshold ratio for common SSIDs
-ssid_threshold = config["fingerprint"]["ssid_threshold"]  # Threshold for SSID similarity
+ssid_common_threshold = config["fingerprint"]["ssid_common_threshold"]  # Threshold ratio for common SSIDs
+group_ssid_match_threshold = config["fingerprint"]["group_ssid_match_threshold"]  # Threshold for SSID similarity
 
-previous_list = []
+previous_dict = defaultdict(list)
 
 oldtestdata = [
     {
@@ -110,32 +109,27 @@ def get_common_ssids(probe_data, threshold_ratio):
     return common_ssids
 
 def fingerprint(probe_data):
-    common_ssids = get_common_ssids(probe_data, threshold_ratio)
+    common_ssids = get_common_ssids(probe_data, ssid_common_threshold)
     print("Common SSIDs (to ignore):")
     print(common_ssids)  # Output: {"<Hidden >", "eduroam"})
 
     mac_data = groupbyMAC(probe_data)
 
-    ssid_data = groupbySSID(mac_data, ssid_threshold, common_ssids)
+    ssid_data = groupbySSID(mac_data, group_ssid_match_threshold, common_ssids)
 
     feature_data = groupbyFeature(ssid_data)
    
     finaldevicegroup = process_feature_groups(feature_data)
 
-    #print("=======================1======================")
-    #print(previous_list)
-    #print("=============================================")
-
-    print("===================3==========================")
+    print("===================1==========================")
     print(finaldevicegroup)
     print("=============================================")
 
-    new_list = match_and_sort_fuzzy(oldtestdata, testdata)  
+    #new_list = match_and_sort_fuzzy(previous_dict, finaldevicegroup)  
 
     #print("====================4=========================")
     #print(new_list)
     #print("=============================================")
-    #previous_list = new_list
+    #previous_dict = new_list
 
     return finaldevicegroup
-

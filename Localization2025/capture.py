@@ -13,7 +13,6 @@ config = load_config()
 
 interface = config["general"]["interface"]
 duration = config["general"]["duration_of_sniffing"]
-fake_seconds = config["general"]["fake_seconds"]
 pcap_file = config["jsonfiles"]["pcap_file"]
 
 def get_vendor_name(oui_bytes: bytes) -> str:
@@ -52,31 +51,19 @@ def handle_probe_request(packet):
         
         # Filter only for "HUAWEI-5G-9Ysz" or hidden SSID
         #if ssid != "HUAWEI-5G-9Ysz" and mac !="ce:0a:dd:5c:9e:f7":
-           #return  # Ignore packets that don't match the filter
+        #    return  # Ignore packets that don't match the filter
+
+        #if mac !="e2:89:8b:a7:eb:24":
+        #    return
 
         rssi = packet.dBm_AntSignal if hasattr(packet, 'dBm_AntSignal') else None
-        #print(f"Raw RSSI: {rssi}, Adjusted RSSI: {rssi - 256 if rssi > 0 else rssi}")
+        
         timestamp = time.time()
         
-        # DEBUG INFO
-        #print(packet.summary())  # Basic packet info
-        #print("split")
-        #print(packet.show())     # Full packet structure
-        
-
         myvendor_oui = b'\x8C\xFD\xF0'  # Qualcomm Vendor
 
-        #if packet.haslayer(Dot11Elt):
-        #    elt = packet.getlayer(Dot11Elt)
-        #    while elt:
-        #        if elt.ID == 221 and elt.info.startswith(myvendor_oui):
-        #            break  # Found correct vendor, continue
-        #        elt = elt.payload.getlayer(Dot11Elt)
-        #    else:
-        #        return # No matching vendor found, ignore this packet
 
-        
-        # Extract Wi-Fi Capabilities (HT, Extended, Vendor)
+        # Extract Wi-Fi Capabilities (Supported Rates, ERPHT, Extended, Vendor)
         wifi_features = []
         if packet.haslayer(Dot11Elt):
             try:
@@ -84,8 +71,6 @@ def handle_probe_request(packet):
                 while elt:
                     if elt.ID == 1:  # Supported Rates
                         wifi_features.append(f"Supported Rates: {elt.info.hex()}")
-                    elif elt.ID == 42:  # ERP Information
-                        wifi_features.append(f"ERP Information: {elt.info.hex()}")
                     elif elt.ID == 45:  # HT Capabilities
                         wifi_features.append(f"HT Capabilities: {elt.info.hex()}")
                     elif elt.ID == 50:  # Extended Supported Rates
@@ -118,14 +103,12 @@ def handle_probe_request(packet):
             "SSID": ssid,
             "RSSI": rssi,
             "Timestamp": timestamp,
-            "Sequence Number": seq_num,
             "Features": wifi_features
         })
-        # Print captured details
-        #print(f"\n[+] Probe Request from {mac}")
-        #print(f"    - SSID: {ssid}")
-        #print(f"    - RSSI: {rssi} dBm")
-        #print(f"    - Features: {wifi_features}")
+         # Save the processed devices data to a JSON file
+        with open("data/probe_data.json", "w") as json_file:
+            json.dump(probe_data, json_file, indent=4)
+
 
 async def start_sniffing(interface):
     while True:

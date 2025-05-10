@@ -1,20 +1,33 @@
-# Initialize Kalman filter state variables
-posteri_estimate = 0.0
-posteri_error_estimate = 1.0
+import json
 
-process_variance = 1e-5  # How much we trust the model
-estimated_measurement_variance = 1e-2  # How much we trust the measurements
+# Load configuration
+def load_config(filename="config.json"):
+    with open(filename, "r") as file:
+        return json.load(file)
 
-def kalman_filter(measurement):
-    global posteri_estimate, posteri_error_estimate, process_variance, estimated_measurement_variance
+config = load_config()
+
+def KalmanFilter(rssi_list):
+    # Initialize Kalman filter state variables
+    posteri_estimate = config["kalman_filter"]["posteri_estimate"]
+    posteri_error_estimate = config["kalman_filter"]["posteri_error_estimate"] 
+    process_variance = config["kalman_filter"]["process_variance"]  # How much we trust the model
+    estimated_measurement_variance = config["kalman_filter"]["estimated_measurement_variance"]  # How much we trust the measurements
+
+    # List to store the filtered RSSI values
+    filtered_rssis = []
     
-    # Prediction update
-    priori_estimate = posteri_estimate
-    priori_error_estimate = posteri_error_estimate + process_variance
+    for measurement in rssi_list:
+        # Prediction update
+        priori_estimate = posteri_estimate
+        priori_error_estimate = posteri_error_estimate + process_variance
+        
+        # Measurement update
+        kalman_gain = priori_error_estimate / (priori_error_estimate + estimated_measurement_variance)
+        posteri_estimate = priori_estimate + kalman_gain * (measurement - priori_estimate)
+        posteri_error_estimate = (1 - kalman_gain) * priori_error_estimate
+        
+        # Add the filtered value to the list
+        filtered_rssis.append(posteri_estimate)
     
-    # Measurement update
-    kalman_gain = priori_error_estimate / (priori_error_estimate + estimated_measurement_variance)
-    posteri_estimate = priori_estimate + kalman_gain * (measurement - priori_estimate)
-    posteri_error_estimate = (1 - kalman_gain) * priori_error_estimate
-    
-    return posteri_estimate
+    return filtered_rssis

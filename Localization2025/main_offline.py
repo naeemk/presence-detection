@@ -23,7 +23,7 @@ def load_config(filename="config.json"):
 config = load_config()
 
 interface = config["general"]["interface"]
-fake_seconds = config["general"]["fake_seconds"]
+fake_seconds = config["general"]["fake_seconds_offline"]
 pcap_file = config["jsonfiles"]["pcap_file"]
 datafile1 = config["jsonfiles"]["probe_request_results"]
 datafile2 = config["jsonfiles"]["probe_request_results_clustered"]
