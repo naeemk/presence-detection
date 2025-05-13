@@ -50,7 +50,7 @@ def handle_probe_request(packet):
         seq_num = (packet[Dot11].SC >> 4)  # Extract sequence number from SC field
         
         # Filter only for "HUAWEI-5G-9Ysz" or hidden SSID
-        #if ssid != "HUAWEI-5G-9Ysz" and mac !="ce:0a:dd:5c:9e:f7":
+        #if ssid != "HUAWEI-5G-9Ysz" and mac !="ce:0a:dd:5c:9e:f7" and mac !="48:74:6e:de:c7:5c":
         #    return  # Ignore packets that don't match the filter
 
         #if mac !="e2:89:8b:a7:eb:24":

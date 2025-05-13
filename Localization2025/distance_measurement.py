@@ -16,31 +16,18 @@ environmental_correction_constant= config["distance_calculation"]["environmental
 # Function to calculate distance from RSSI free model
 def calculate_distance(rssi):
     """
-    Estimate the distance to a device using RSSI.
+    Calculate the distance to a device based on RSSI using the Path Loss model
 
     :param rssi: Received Signal Strength Indicator (RSSI) in dBm.
-    :param A: RSSI at 1 meter distance (default is -50 dBm).
-    :param n: Path loss exponent (default is 2 for free-space, but can vary).
+    :param reference_distance: Distance at which RSSI is measured (default is 1 meter).
+    :param rssi_1_meter: RSSI value at the reference distance (default is -23.67. dBm).
+    :param shadowing_effect: Effect of obstacles or interference on the signal (default is 0).
+    :param environmental_correction_constant: Constant for environmental adjustments (default is 0).
+    :param path_loss_exponent: Exponent for signal decay with distance (default is 1.847).
+
     :return: Estimated distance in meters.
     """
-    return 10 ** ((rssi_1_meter - rssi) / (10 * path_loss_exponent))
-
-#free loss path model
-def calculate_distance_beacon_to_device(rssi):
-    """
-    Calculate the distance to a device based on RSSI using the Path Loss model.
-
-    :param rssi: Received Signal Strength Indicator (RSSI) in dBm.
-    :param A: RSSI at reference distance (typically 1 meter, default is -50 dBm).
-    :param n: Path loss exponent (default is 3 for tunnels).
-    :param X: Shadowing effect (default is 0).
-    :param d0: Reference distance (default is 1 meter).
-    :param C: Environmental correction constant (default is 0).
-    :return: Estimated distance in meters.
-    """
-    # Rearranged formula to calculate distance
-    distance = reference_distance * 10 ** ((rssi_1_meter - rssi - shadowing_effect + environmental_correction_constant) / (10 * path_loss_exponent))
-    return distance
+    return reference_distance * 10 ** ((rssi_1_meter - rssi - shadowing_effect + environmental_correction_constant) / (10 * path_loss_exponent))
 
 # Function to measure the distance to a fingerprinted device
 def measure_distance_to_device(data, device_name):

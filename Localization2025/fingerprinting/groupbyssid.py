@@ -36,27 +36,21 @@ def groupbySSID(mac_data, ssid_threshold, common_ssids):
         changed = False
         mac_list = list(grouped_macs.keys())
         n = len(mac_list)
-        print(n)
-        print("DEBUG 1")
         for i in range(n):
             print(i)
             mac1 = mac_list[i]
             ssids1 = set(grouped_ssid.get(mac1, []))
-            print("DEBUG 2")
             for j in range(i + 1, n):
                 print(j)
                 mac2 = mac_list[j]
                 ssids2 = set(grouped_ssid.get(mac2, []))
-                print("DEBUG 3")
                 # Skip if already in the same group
                 if grouped_macs[mac1] == grouped_macs[mac2]:
-                    print("DEBUG 3.1")
                     continue
 
                 # Check if they have enough SSIDs in common
                 shared_ssids = ssids1.intersection(ssids2)
                 if len(shared_ssids) >= ssid_threshold:
-                    print("DEBUG 4")
                     # Merge their groups
                     merged_group = grouped_macs[mac1].union(grouped_macs[mac2])
                     for mac in merged_group:

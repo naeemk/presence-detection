@@ -7,9 +7,9 @@ import copy
 import keyboard
 import matplotlib.pyplot as plt
 
-from anomaly_detection import detect_anomalies
+from tempbackup.anomaly_detection import detect_anomalies
 from capture import start_sniffing, probe_data
-from feature_extraction import extract_features
+from tempbackup.feature_extraction import extract_features
 #from radar import visualize_radar  # Import radar visualization function
 from plot import visualize_plot
 from fingerprinting.fingerprinting import fingerprint
@@ -51,11 +51,11 @@ async def handle_data():
         for probe in sorted_probe_data:
             if 'Timestamp' in probe:
                 probe['Timestamp'] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(probe['Timestamp']))
-
+        
         with open("data/sorted_probe_data.json", "w") as json_file:
             json.dump(sorted_probe_data, json_file, indent=4)
 
-        devices = fingerprint(probe_data)
+        devices = fingerprint(probe_data, start_time)
 
         visualize_plot(devices)
         print("[*] Plot visualization updated")
@@ -63,6 +63,7 @@ async def handle_data():
         await asyncio.sleep(1)
 
 async def main():
+    global start_time
     start_time = time.time()  # Start timer
 
     # Renaming the existing files to .bak

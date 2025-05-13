@@ -6,11 +6,11 @@ import time
 import keyboard
 import matplotlib.pyplot as plt
 
-from anomaly_detection import detect_anomalies
+from tempbackup.anomaly_detection import detect_anomalies
 from capture import probe_data
 from tempbackup.clustering import cluster_data
 from tempbackup.device_signature import get_device_name
-from feature_extraction import extract_features
+from tempbackup.feature_extraction import extract_features
 #from radar import visualize_radar  # Import radar visualization function
 from plot import visualize_plot
 from scapy.all import rdpcap

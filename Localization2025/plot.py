@@ -32,7 +32,7 @@ def visualize_plot(data):
         device_name = device["Device_Name"]
         first_ts = device["First_Timestamp"]
         last_ts = device["Last_Timestamp"]
-        rssi = device["Average_RSSI"]
+        rssi = device["Filtered_Average_RSSI"]
         distance = calculate_distance(rssi)
 
         # Assign index once34

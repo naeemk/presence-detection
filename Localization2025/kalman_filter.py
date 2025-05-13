@@ -9,7 +9,7 @@ config = load_config()
 
 def KalmanFilter(rssi_list):
     # Initialize Kalman filter state variables
-    posteri_estimate = config["kalman_filter"]["posteri_estimate"]
+    posteri_estimate = rssi_list[0]  # Initial estimate
     posteri_error_estimate = config["kalman_filter"]["posteri_error_estimate"] 
     process_variance = config["kalman_filter"]["process_variance"]  # How much we trust the model
     estimated_measurement_variance = config["kalman_filter"]["estimated_measurement_variance"]  # How much we trust the measurements

@@ -51,11 +51,15 @@ def process_feature_groups(feature_data):
         if any(rssi > 0 for rssi in rssis):
             rssis = [0]
 
+        # Calculate the average filtered RSSI
+        average_rssi = sum(rssis) / len(rssis)
+
         # Apply Kalman filter to RSSI values
         rssis_filtered = KalmanFilter(rssis)
 
+
         # Calculate the average filtered RSSI
-        average_rssi = sum(rssis_filtered) / len(rssis_filtered)
+        average_rssi_filtered = sum(rssis_filtered) / len(rssis_filtered)
 
         # Prepare device data
         device = {
@@ -66,6 +70,7 @@ def process_feature_groups(feature_data):
             "RSSIs": rssis,
             "Filtered_RSSIs": rssis_filtered,
             "Average_RSSI": average_rssi,
+            "Filtered_Average_RSSI": average_rssi_filtered,
             "First_Timestamp": min(timestamps),
             "Last_Timestamp": max(timestamps),
             "Features": sorted(features_set)  # Sort features for consistency
