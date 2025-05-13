@@ -1,5 +1,8 @@
 ## Setup Instructions
 
+> [!Note]
+> An antenna with monitor mode enabled is required to capture packets!
+
 1. **Clone the repository**:
 
     ```bash
